@@ -3,32 +3,54 @@
 svg {
   font: 10px sans-serif;
 }
-#chart {
-  width:800px;
-  height:400px;
-  position:absolute;
-  /*left:50%;
-  top:50%;
-  margin:-200px 0 0 -400px;*/
-  .title {
-    font: 300 28px Helvetica Neue;
-    fill: #666;
+
+.pourriture-chart {
+  margin: 0 auto;
+  text-align: center;
+  width: 800px;
+  .content {
+    width:800px;
+    height:650px;
   }
+  .legend {
+    width: 400px;
+    height: 40px;
+    margin-bottom: 20px;
+    circle {
+      fill: grey;
+      stroke: black;
+      stroke-width: 1px;
+
+    }
+  }
+
+  circle {
+    stroke-width: 1px;
+    stroke: black;
+    &.ex{
+      .opacity(0.5);
+    }
+  }
+
   .axis path, .axis line {
     fill: none;
-    stroke: #000;
     shape-rendering: crispEdges;
   }
-  .groupe {
-    .opacity(0.6);
+  .axis.x text {
+    font-size: 4em;
+  }
+  .axis.y line {
+    stroke: lightgrey;
+  }
+  .group {
     &.ps {
       fill: red;
     }
     &.ump {
-      fill: blue;
+      fill: DodgerBlue  ;
     }
-    .ex {
-      .opacity(0.5);
+    &.fn {
+      fill : RoyalBlue ;
     }
   }
 }
@@ -47,7 +69,7 @@ svg {
   }
 
   .ribbon {
-    font: bold 15px Sans-Serif;
+    font: bold 1em Sans-Serif;
     color: #333;
     text-align: center;
     text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
@@ -56,10 +78,10 @@ svg {
     -ms-transform:     rotate(45deg);
     -o-transform:      rotate(45deg);
     position: relative;
-    padding: 7px 0;
-    left: -5px;
-    top: 15px;
-    width: 120px;
+    padding: 0 0;
+    left: 36px;
+    top: 11px;
+    width: 64px;
     background-color: #BFDC7A;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#BFDC7A), to(#8EBF45));
     background-image: -webkit-linear-gradient(top, #BFDC7A, #8EBF45);
@@ -89,4 +111,18 @@ svg {
   }
 
 
+}
+
+.cumulated-chart {
+  margin: 20px auto;
+  width: 400px;
+  .line {
+    fill: none;
+    stroke: #000;
+    stroke-width: 1.5px;
+  }
+  .dot {
+    fill : #fff;
+    stroke-width: 1.5px;
+  }
 }
