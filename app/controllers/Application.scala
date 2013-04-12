@@ -1,0 +1,13 @@
+package controllers
+
+import play.api._
+import play.api.mvc._
+
+object Application extends Controller {
+  implicit val app = play.api.Play.current
+
+  def index = Action {
+    Ok(views.html.index())
+  }
+  
+}
