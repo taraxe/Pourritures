@@ -29,7 +29,9 @@
         /* Pourriture list */
         (function(){
             var f = $('.pourriture .filter-box'),
-                c = f.find('.by-name');
+                c = f.find('.by-name'),
+                a = '.pourriture .content circle',
+                $a = $(a);
             d3.nest()
                 .key(function(d){return d.name})
                 .sortKeys(d3.ascending)
@@ -47,13 +49,14 @@
                 var toShow = f.find('li.pourri input:checked').map(function(){ return $(this).prop('name')}).toArray();
 
                 if(toShow.length > 0) {
-                    d3.selectAll(".pourriture .content circle")
+                    d3.selectAll(a)
                         .classed('hidden',true)
-                        .filter(function(d,i){
+                        .filter(function(){
                             return toShow.indexOf(d3.select(this).attr("name")) >= 0;
                         }).classed('hidden',false);
 
-                    if($(this).is(':checked')) $('.pourriture .content circle').tipsy('hide').filter('[name="'+$(this).attr('name')+'"]').first().tipsy('show');
+                    if($(this).is(':checked')) $a.tipsy('hide').filter('[name="'+$(this).attr('name')+'"]').first().tipsy('show');
+                    else $a.tipsy('hide')
                 } else resetNameFilter();
 
             });
