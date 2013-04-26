@@ -13,12 +13,25 @@
 
     <p>Parce qu'il est nécessaire d'arrêter de croire le dogme selon lequel les hommes politiques sont plus vertueux que les autres, voici un petit rappel des faits&nbsp;:</p>
 
-    <h2>Nombre d'affaires cumulées concernant des élus</h2>
-    <div class="cumulated-chart"></div>
+    <h2>Les affaires touchant les élus</h2>
+    <div class="cumulated chart">
+        <svg class="legend">
+            <g transform="translate(10,10)">
+                <g transform="translate(10,10)">
+                    <line x1="0" y1="0" x2="30" y2="0"/>
+                    <text dx="40" dy="4">Nombre d'affaires</text>
+                </g>
+                <g transform="translate(180,10)">
+                    <line x1="0" y1="0" x2="40" y2="0"  stroke-dasharray="5,5"  />
+                    <text dx="40" dy="4">Nombre d'affaires cumulées</text>
+                </g>
+            </g>
+        </svg>
+    </div>
 
     <h2>Les affaires en détail</h2>
 
-    <div class="pourriture-chart">
+    <div class="pourriture chart">
         <svg class="legend">
             <g transform="translate(10,10)">
                 <g transform="translate(10,10)">
@@ -46,7 +59,7 @@
 
     <h2>L'exemplarité, c'est maintenant</h2>
     <p>Les politiques prétendent servir le pays et pas leurs intérêts, réformer la vie politique devrait donc être simple. Que ceux qui ne sont pas d'accord abandonnent tout simplement leur mandat et leurs privilèges : on se passera d'eux.</p>
-    <p>Interpelons la classe politique en faisant un gros buzz, et veillons à ce que la "moralisation de la vie politique" soit effective.</p>
+    <p>Interpelons la classe politique et veillons à ce que la "moralisation de la vie politique" soit effective.</p>
 
     <script type="text/html" id="tooltip-tmpl">
         <div class="tooltip">

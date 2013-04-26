@@ -22,18 +22,18 @@
                 });
 
 
-        d3.select('.pourriture-chart')
+        d3.select('.pourriture.chart')
             .datum(filtered)
             .call(chart1);
 
         /* Pourriture list */
 
-        d3.nest()
+        /*d3.nest()
             .key(function(d){return d.name})
             .entries(filtered)
             .forEach(function(e){
 
-            });
+            });*/
 
 
         /* High score chart */
@@ -84,15 +84,17 @@
                 d.values.push( (i > 0 ? arr[i-1].values[4] : 0) + d.values[0]);
                 return d;
             });
+
         var chart2 = new ns.TimeSeriesChart({width: 400, height:200})
             .x(function(d){
                 var date = new Date();
                 date.setYear(d.key);
                 return date;
             })
-            .y(function (d) {return d.values[4]});
+            .y(function (d) {return d.values[0]})
+            .y2(function(d){ return d.values[4]});
 
-        d3.select('.cumulated-chart').datum(cumulated).call(chart2);
+        d3.select('.cumulated.chart').datum(cumulated).call(chart2);
     });
 
 }(window.pourritures = window.pourritures || {}, d3, jQuery));

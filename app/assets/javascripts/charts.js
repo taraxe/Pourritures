@@ -152,14 +152,17 @@
             line = d3.svg.line()
                 .x(function(d){return xScale(d[0])})
                 .y(function(d){return yScale(d[1])})
-                .interpolate("basis");
-
+                .interpolate("basis"),
+            cLine = d3.svg.line()
+                            .x(function(d){return xScale(d[0])})
+                            .y(function(d){return yScale(d[2])})
+                            .interpolate("basis");
 
         function chart(selection) {
             selection.each(function(data) {
 
                 data = data.map(function(d, i) {
-                    return [xValue.call(data, d, i), yValue.call(data, d, i)];
+                    return [xValue.call(data, d, i), yValue.call(data, d, i), y2Value.call(data,d , i)];
                 });
 
                 xScale
@@ -167,14 +170,15 @@
                     .range([0, usable_width]);
 
                 yScale
-                    .domain([d3.max(data, function(d){return d[1]}), d3.min(data, function(d){return d[1]})])
+                    .domain([d3.max(data, function(d){return d3.max([d[1],d[2]])}), d3.min(data, function(d){return d[1]})])
                     .range([0, usable_height]);
 
-                var svg = d3.select(this).selectAll("svg").data([data]);
+                var svg = d3.select(this).selectAll("svg:not(.legend)").data([data]);
 
                 var gEnter = svg.enter().append("svg").append("g");
 
                 gEnter.append("path").attr("class","line");
+                gEnter.append("path").attr("class","line summed").attr("stroke-dasharray","5,5");
                 gEnter.append("g").attr("class", "x axis").attr('transform','translate(0,'+(height-margin.top-margin.bottom)+')');
                 gEnter.append("g").attr("class", "y axis");
 
@@ -188,6 +192,8 @@
                     .call(xAxis);
 
                 g.select(".line").attr('d',line);
+
+                g.select(".line.summed").attr('d',cLine);
 
                 g.select(".y.axis")
                     .call(yAxis);
@@ -221,6 +227,12 @@
         chart.y = function(_) {
             if (!arguments.length) return yValue;
             yValue = _;
+            return chart;
+        };
+
+        chart.y2 = function(_) {
+            if (!arguments.length) return y2Value;
+            y2Value = _;
             return chart;
         };
         return chart;

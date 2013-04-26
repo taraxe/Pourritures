@@ -4,18 +4,32 @@ svg {
   font: 10px sans-serif;
 }
 
-.pourriture-chart {
-  margin: 0 auto;
+.chart {
+  margin: 20px auto;
+  width: 400px;
   text-align: center;
+  .legend {
+    width: 400px;
+    height: 40px;
+    margin-bottom: 20px;
+    line {
+      stroke: black;
+      stroke-width: 1.5px;
+    }
+  }
+  .axis path, .axis line {
+    fill: none;
+    shape-rendering: crispEdges;
+  }
+}
+
+.pourriture {
   width: 800px;
   .content {
     width:800px;
     height:650px;
   }
   .legend {
-    width: 400px;
-    height: 40px;
-    margin-bottom: 20px;
     circle {
       fill: grey;
       stroke: black;
@@ -23,18 +37,12 @@ svg {
 
     }
   }
-
   circle {
     stroke-width: 1px;
     stroke: black;
     &.ex{
       .opacity(0.5);
     }
-  }
-
-  .axis path, .axis line {
-    fill: none;
-    shape-rendering: crispEdges;
   }
   .axis.x text {
     font-size: 4em;
@@ -113,9 +121,7 @@ svg {
 
 }
 
-.cumulated-chart {
-  margin: 20px auto;
-  width: 400px;
+.cumulated {
   .line {
     fill: none;
     stroke: #000;
