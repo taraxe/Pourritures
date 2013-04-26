@@ -71,6 +71,9 @@
                     .attr("class", function(d){
                         return d[0].ex ? "ex " : "";
                     })
+                    .attr("name",function(d){
+                        return d[0].name.toLowerCase();
+                    })
                     .attr("stroke-dasharray",function(d){
                         return d[0].nature.indexOf("condamnation") >= 0 ? "0" : "5,5";
                     })

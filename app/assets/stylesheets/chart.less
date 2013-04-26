@@ -1,4 +1,5 @@
 @import "_base.less";
+@import "_colors.less";
 
 svg {
   font: 10px sans-serif;
@@ -6,7 +7,6 @@ svg {
 
 .chart {
   margin: 20px auto;
-  width: 400px;
   text-align: center;
   .legend {
     width: 400px;
@@ -24,10 +24,37 @@ svg {
 }
 
 .pourriture {
-  width: 800px;
-  .content {
-    width:800px;
-    height:650px;
+  margin: 0 auto;
+  width:  950px;
+  clear: both;
+  .chart{
+    text-align: center;
+    float: left;
+    width: 800px;
+  }
+  .filter-box {
+    width: 150px;
+    float: left;
+    text-align: center;
+    .by-name {
+      padding: 10px;
+      border: 1px solid @grey;
+      overflow: scroll;
+      max-height:570px;
+      text-align: left;
+    }
+    .border-box();
+    margin-top: 95px;
+    li, a {
+      font-size: 0.5em;
+    }
+    a {
+      padding-bottom: 10px;
+    }
+    li{
+      width: 128px;
+      .text-overflow();
+    }
   }
   .legend {
     circle {
@@ -43,22 +70,25 @@ svg {
     &.ex{
       .opacity(0.5);
     }
+    &.hidden {
+      .opacity(0.1);
+    }
   }
   .axis.x text {
     font-size: 4em;
   }
   .axis.y line {
-    stroke: lightgrey;
+    stroke: @grey;
   }
   .group {
     &.ps {
-      fill: red;
+      fill: @ps;
     }
     &.ump {
-      fill: DodgerBlue  ;
+      fill: @ump  ;
     }
     &.fn {
-      fill : RoyalBlue ;
+      fill : @fn ;
     }
   }
 }
@@ -122,6 +152,7 @@ svg {
 }
 
 .cumulated {
+  width: 400px;
   .line {
     fill: none;
     stroke: #000;

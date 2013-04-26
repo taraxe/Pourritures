@@ -22,19 +22,60 @@
                 });
 
 
-        d3.select('.pourriture.chart')
+        d3.select('.pourriture .chart')
             .datum(filtered)
             .call(chart1);
 
         /* Pourriture list */
+        (function(){
+            var f = $('.pourriture .filter-box'),
+                c = f.find('.by-name');
+            d3.nest()
+                .key(function(d){return d.name})
+                .sortKeys(d3.ascending)
+                .entries(filtered)
+                .forEach(function(e){
+                    c.append($('<li class="pourri"><label><input type="checkbox" name="'+ e.key.toLowerCase()+'">'+ e.key+'</label></li>'));
+                });
 
-        /*d3.nest()
-            .key(function(d){return d.name})
-            .entries(filtered)
-            .forEach(function(e){
+            f.on('click','a', function(e){
+                e.preventDefault();
+                $('li.pourri input[type="checkbox"]').prop('checked',false);
+                resetNameFilter();
+            });
+            f.on('change','li.pourri input', function(){
+                var toShow = f.find('li.pourri input:checked').map(function(){ return $(this).prop('name')}).toArray();
 
-            });*/
+                if(toShow.length > 0) {
+                    d3.selectAll(".pourriture .content circle")
+                        .classed('hidden',true)
+                        .filter(function(d,i){
+                            return toShow.indexOf(d3.select(this).attr("name")) >= 0;
+                        }).classed('hidden',false);
 
+                    if($(this).is(':checked')) $('.pourriture .content circle').tipsy('hide').filter('[name="'+$(this).attr('name')+'"]').first().tipsy('show');
+                } else resetNameFilter();
+
+            });
+            function resetSearch() {
+                c.find('input[type="checkbox"]').closest('li').fadeIn('fast');
+            }
+            function resetNameFilter() {
+                d3.selectAll(".pourriture circle")
+                    .classed('hidden', false);
+                $('.pourriture .content circle').tipsy('hide');
+
+            }
+            f.find('input[type="search"]').on('keyup', function(e){
+                if($(this).val() === "") resetSearch();
+                else c.find('input[type="checkbox"]:not(input[name*="'+$(this).val().toLowerCase()+'"])').closest('li').hide();
+            });
+            f.find('input[type="search"]').on('search', function(e){
+                if($(this).val() === "") resetSearch();
+            });
+
+
+        }());
 
         /* High score chart */
         var t = $('#highscore-tmpl').html();

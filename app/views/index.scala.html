@@ -30,25 +30,35 @@
     </div>
 
     <h2>Les affaires en détail</h2>
-
-    <div class="pourriture chart">
-        <svg class="legend">
-            <g transform="translate(10,10)">
+    <div class="pourriture">
+        <div class="chart">
+            <svg class="legend">
                 <g transform="translate(10,10)">
-                    <circle r="10" cy="0" cx="0"></circle>
-                    <text dx="20" dy="4">Condamnation</text>
+                    <g transform="translate(10,10)">
+                        <circle r="10" cy="0" cx="0"></circle>
+                        <text dx="20" dy="4">Condamnation</text>
+                    </g>
+                    <g transform="translate(140,10)">
+                        <circle r="10" cy="0" cx="0" stroke-dasharray="5,5"></circle>
+                        <text dx="20" dy="4">Mise en examen</text>
+                    </g>
+                    <g transform="translate(280,10)">
+                        <circle r="10" cy="0" cx="0" class="ex"></circle>
+                        <text dx="20" dy="4">Radié du groupe</text>
+                    </g>
                 </g>
-                <g transform="translate(140,10)">
-                    <circle r="10" cy="0" cx="0" stroke-dasharray="5,5"></circle>
-                    <text dx="20" dy="4">Mise en examen</text>
-                </g>
-                <g transform="translate(280,10)">
-                    <circle r="10" cy="0" cx="0" class="ex"></circle>
-                    <text dx="20" dy="4">Radié du groupe</text>
-                </g>
-            </g>
-        </svg>
+            </svg>
+        </div>
+        <div class="filter-box">
+            <input type="search" placeholder="Recherche">
+            <a href="">Déselectionner tout</a>
+            <ul class="by-name">
+            </ul>
+        </div>
     </div>
+
+
+
     <p>Au risque de mettre la démocratie en péril, il apparait aujourd'hui nécessaire de réformer en profondeur la méthode politique en France : désacralisation et déprofessionalisation, mise sous surveillance des patrimoines, transparence absolue, non cumul et révocabilité des mandats, abolition de la Cour de Justice de la République (des élus qui jugent des élus), durcissement des peines (prison, inéligibilité à vie)...</p>
 
     <h2 class="no-hl">
