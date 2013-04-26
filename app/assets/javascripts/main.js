@@ -68,7 +68,9 @@
             }
             f.find('input[type="search"]').on('keyup', function(e){
                 if($(this).val() === "") resetSearch();
-                else c.find('input[type="checkbox"]:not(input[name*="'+$(this).val().toLowerCase()+'"])').closest('li').hide();
+                else {
+                    var find = c.find('li').show().find('input[type="checkbox"]:not(input[name*="'+$(this).val().toLowerCase()+'"])').closest('li').hide();
+                }
             });
             f.find('input[type="search"]').on('search', function(e){
                 if($(this).val() === "") resetSearch();
