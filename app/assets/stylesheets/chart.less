@@ -6,8 +6,6 @@ svg {
 }
 
 .chart {
-  margin: 20px auto;
-  text-align: center;
   .legend {
     width: 400px;
     height: 40px;
@@ -24,9 +22,9 @@ svg {
 }
 
 .pourriture {
-  margin: 0 auto;
   width:  950px;
-  clear: both;
+  margin: 0 auto 60px auto;
+  overflow: hidden;
   .chart{
     text-align: center;
     float: left;
@@ -36,6 +34,7 @@ svg {
     width: 150px;
     float: left;
     text-align: center;
+    margin-top: 75px;
     .by-name {
       padding: 10px;
       border: 1px solid @grey;
@@ -44,7 +43,6 @@ svg {
       text-align: left;
     }
     .border-box();
-    margin-top: 95px;
     li, a {
       font-size: 0.5em;
     }
@@ -155,6 +153,7 @@ svg {
 
 .cumulated {
   width: 400px;
+  margin: 0 auto;
   .line {
     fill: none;
     stroke: #000;
