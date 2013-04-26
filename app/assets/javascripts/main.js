@@ -64,9 +64,9 @@
                 c.find('input[type="checkbox"]').closest('li').fadeIn('fast');
             }
             function resetNameFilter() {
-                d3.selectAll(".pourriture circle")
+                d3.selectAll(a)
                     .classed('hidden', false);
-                $('.pourriture .content circle').tipsy('hide');
+                $a.tipsy('hide');
 
             }
             f.find('input[type="search"]').on('keyup', function(e){
