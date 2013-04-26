@@ -81,6 +81,7 @@
                         $(this).tipsy({
                             title: function() {return tooltip(d);},
                             html : true,
+                            fade: true,
                             gravity: 's'
                         });
                     }).append("text",function(d){ return d.name});

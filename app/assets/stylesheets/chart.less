@@ -67,11 +67,14 @@ svg {
   circle {
     stroke-width: 1px;
     stroke: black;
-    &.ex{
+    .opacity(1);
+    .transition(opacity 200ms);
+  &.ex{
       .opacity(0.5);
     }
     &.hidden {
       .opacity(0.1);
+      .transition(opacity 200ms);
     }
   }
   .axis.x text {
