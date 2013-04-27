@@ -11,7 +11,7 @@
             yScale = d3.time.scale(),
             xScale = d3.scale.ordinal(),
             xAxis = d3.svg.axis().scale(xScale).orient("top").tickSize(0).tickFormat(function(d){return d.toUpperCase()}),
-            yAxis = d3.svg.axis().scale(yScale).orient("left").ticks(15),
+            yAxis = d3.svg.axis().scale(yScale).orient("left").tickSize(0).tickPadding(10).ticks(d3.time.years),
             circleWidth = usable_width / 65;
 
         function chart(selection) {
@@ -32,8 +32,13 @@
                 console.log("X ["+xScale.domain()+"] => ["+xScale.range()+"]");
 
 
+                // we want 1 year before the first condamnation date
+                var minDate = d3.min(data, function (d) {return d[2]}),
+                    d = new Date();
+                d.setYear(minDate.getYear() - 1);
+
                 yScale
-                    .domain([d3.max(data, function(d){return d[2]}), d3.min(data, function(d){return d[2]})])
+                    .domain([d3.max(data, function(d){return d[2]}), d])
                     .range([0, usable_height]);
 
                 console.log("Y ["+yScale.domain() +"] => ["+yScale.range()+"]");
@@ -41,19 +46,19 @@
                 var svg = d3.select(this).selectAll("svg:not(.legend)").data([data]);
 
                 var svgEnter = svg.enter().append("svg").attr('class','content');
-                var gEnter = svgEnter.append("g")
+                var gEnter = svgEnter.append("g");
 
                 gEnter.append("g").attr("class", "x axis");
                 gEnter.append("g").attr("class", "y axis");
-                var gouvs = gEnter.append("g").attr("class", "gouv").attr("transform","translate(-60,0)");
 
-
-                gouvs.selectAll("rect")
+                //gouvernment color
+                gEnter.append("g").attr("class", "gouv").attr("transform","translate(-67,0)")
+                    .selectAll("rect")
                     .data(alternance).enter()
                     .append("rect")
                     .attr("x", function(){ return xScale.range()[0]})
                     .attr("y", function(d){ return yScale(d[1])})
-                    .attr("width", 30)
+                    .attr("width", 40)
                     .attr("height", function(d){ return Math.abs(yScale(d[1]) - yScale(d[0]))})
                     .attr("class", function(d){
                         return "group "+ d[2];

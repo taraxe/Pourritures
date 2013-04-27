@@ -4,9 +4,9 @@
     var off = $.Deferred(function(){ var self = this; d3.json('/assets/data/pourritures.json', function(d){ return self.resolve(d)});});
 
 
-    $.when(off,alt).then(function(data, alter) {
+    $.when(off,alt).then(function(rawData, alter) {
 
-        var filtered = data.filter(function(e){
+        var filtered = rawData.filter(function(e){
             return e.annee >= 1995;
         });
 
@@ -38,6 +38,7 @@
                 c = f.find('.by-name'),
                 a = '.pourriture .content circle',
                 $a = $(a);
+
             d3.nest()
                 .key(function(d){return d.name})
                 .sortKeys(d3.ascending)
