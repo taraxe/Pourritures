@@ -10,11 +10,33 @@
     <script src="@routes.Assets.at("javascripts/jquery.tipsy.js")"></script>
     <script src="@routes.Assets.at("javascripts/charts."+"min.".when(app.mode != Mode.Dev)+"js")"></script>
     <script src="@routes.Assets.at("javascripts/main."+"min.".when(app.mode != Mode.Dev)+"js")"></script>
+    <script>
+        $(document).scroll(function() {
+            $("header").each(function(){
+                var bottomPosition = $(document).height(),
+                    offset = $(this).offset();
+                if (window.scrollY >= 120){
+                    $(this).addClass("stick");
+                    /*$(this).css("top","-130px");
+                    $(".features").css("padding-top","190px");
+                    $(".teasing .logo").removeClass("hide");*/
 
-    <p>Parce qu'il est nécessaire d'arrêter de croire le dogme selon lequel les hommes politiques sont plus vertueux que les autres, voici un petit rappel des faits&nbsp;:</p>
+                }else{
+                    $(this).removeClass("stick");
+                    /*$(".features").css("padding-top","0px");
+                    $(".teasing .logo").addClass("hide");*/
+                }
+            });
+        });
+    </script>
 
+    <h2>Avant propos</h2>
+    <p>Les données proviennent de <a target="_blank" href="http://www.wikistrike.com/article-liste-des-condamnations-et-mises-en-examen-du-ps-du-parti-de-gauche-des-verts-de-l-ump-et-du-fn-116776009.html">Wikistike</a> et de Wikipedia.</p>
+    <p>Le jeu de données est incomplet, si vous souhaitez le rendre exhaustif vous pouvez nous contacter sur <a href="https://twitter.com/Pourritures">Twitter</a></p>
+
+    <hr/>
     <h2>Les affaires touchant les élus</h2>
-    <div class="cumulated chart">
+    <figure class="cumulated">
         <svg class="legend">
             <g transform="translate(10,10)">
                 <g transform="translate(10,10)">
@@ -27,10 +49,10 @@
                 </g>
             </g>
         </svg>
-    </div>
-
+    </figure>
+    <hr/>
     <h2>Les affaires en détail</h2>
-    <div class="pourriture">
+    <figure class="pourriture">
         <div class="chart">
             <svg class="legend">
                 <g transform="translate(10,10)">
@@ -55,20 +77,16 @@
             <ul class="by-name">
             </ul>
         </div>
-    </div>
+    </figure>
 
-
-
-    <p>Au risque de mettre la démocratie en péril, il apparait aujourd'hui nécessaire de réformer en profondeur la méthode politique en France : désacralisation et déprofessionalisation, mise sous surveillance des patrimoines, transparence absolue, non cumul et révocabilité des mandats, abolition de la Cour de Justice de la République (des élus qui jugent des élus), durcissement des peines (prison, inéligibilité à vie)...</p>
-
-    <h2 class="no-hl">
+    <h2>
         <img src="@routes.Assets.at("images/champions.png")" width="419"/>
         Les champions
     </h2>
     <ul class="high-score"></ul>
 
+    <hr/>
     <h2>L'exemplarité, c'est maintenant</h2>
-    <p>Les politiques prétendent servir le pays et pas leurs intérêts, réformer la vie politique devrait donc être simple. Que ceux qui ne sont pas d'accord abandonnent tout simplement leur mandat et leurs privilèges : on se passera d'eux.</p>
     <p>Interpelons la classe politique et veillons à ce que la "moralisation de la vie politique" soit effective.</p>
 
     <script type="text/html" id="tooltip-tmpl">

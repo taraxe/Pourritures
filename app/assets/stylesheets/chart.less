@@ -5,24 +5,22 @@ svg {
   font: 10px sans-serif;
 }
 
-.chart {
-  .legend {
-    width: 400px;
-    height: 40px;
-    margin-bottom: 20px;
-    line {
-      stroke: black;
-      stroke-width: 1.5px;
-    }
+.legend {
+  width: 400px;
+  height: 40px;
+  margin-bottom: 20px;
+  line {
+    stroke: black;
+    stroke-width: 1.5px;
   }
-  .axis path, .axis line {
-    fill: none;
-    shape-rendering: crispEdges;
-  }
+}
+.axis path, .axis line {
+  fill: none;
+  shape-rendering: crispEdges;
 }
 
 .pourriture {
-  width:  950px;
+  width:  960px;
   margin: 0 auto 60px auto;
   overflow: hidden;
   .chart{
@@ -31,14 +29,15 @@ svg {
     width: 800px;
   }
   .filter-box {
-    width: 150px;
+    width: 160px;
     float: left;
     text-align: center;
     margin-top: 75px;
     .by-name {
       padding: 10px;
       border: 1px solid @grey;
-      overflow: scroll;
+      overflow-y: scroll;
+      overflow-x: hidden;
       max-height:570px;
       text-align: left;
     }
@@ -69,11 +68,11 @@ svg {
     stroke: black;
     .opacity(1);
     .transition(opacity 200ms);
-  &.ex{
-      .opacity(0.5);
+    &.ex{
+      .opacity(0.6);
     }
     &.hidden {
-      .opacity(0.1);
+      .opacity(0.3);
       .transition(opacity 200ms);
     }
   }
@@ -93,6 +92,9 @@ svg {
     &.fn {
       fill : @fn ;
     }
+  }
+  rect {
+    .opacity(0.2)
   }
 }
 

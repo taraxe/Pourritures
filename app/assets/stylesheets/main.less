@@ -7,6 +7,9 @@ p, a, h1, h2, h3, h4, text, ul, li {
   font-family: 'Sanchez', serif;
   -webkit-font-smoothing: subpixel-antialiased;
 }
+* {
+  .border-box();
+}
 
 h1 {
   font-size: 1em;
@@ -23,18 +26,24 @@ h4 {
 body {
   background-image: url('/assets/images/grid_noise.png');
 }
+a {
+  color: black;
+}
 
 header {
-  padding-bottom: 20px;
-  .logo{
-    padding: 10px 0 20px 0;
-  }
   width: 100%;
   background: @hbg;
   text-align: center;
   color: #fff;
+  overflow: hidden;
+  padding: 30px 20px 20px 20px;
+  margin-bottom: 20px;
+  min-height: 320px;
   a {
     color: #fff;
+  }
+  h1 {
+    margin: 20px;
   }
   .twitter-follow-button{
     position: absolute;
@@ -42,11 +51,19 @@ header {
     top: 20px;
     overflow: hidden;
   }
-  .box-shadow(0 0 5px rgba(0,0,0,0.7))
+  .box-shadow(0 3px 3px rgba(0,0,0,0.1));
+
+  &.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    height: 190px;
+  }
 }
 
 .container {
-  padding: 50px 0 60px;
+  padding: 0 20px;
   > p {
     margin: 30px auto 30px auto;
     max-width: 400px;
@@ -60,14 +77,15 @@ header {
   }
   h2 {
     text-align: center;
-    margin: 40px auto;
-    padding: 60px 30px 30px;
-    max-width: 500px;
-    border-top: 2px solid #000;
+    margin: 0 auto;
+    padding: 20px 0 30px;
+    max-width: 400px;
     .border-box();
-    &.no-hl{
-      border-top: none;
-    }
+  }
+  hr {
+    border-top: 2px solid #000;
+    width: 50%;
+    margin: 30px auto;
   }
   .high-score {
     margin: 30px auto;
@@ -91,12 +109,8 @@ header {
       }
     }
   }
-  .viral {
-    width: 250px;
+  figure {
     margin: 20px auto;
-    > span {
-      margin-bottom: 10px;
-    }
   }
 }
 

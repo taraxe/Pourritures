@@ -21,26 +21,47 @@
                     return [d, xValue.call(data, d, i), yValue.call(data, d, i)];
                 });
 
+                var format = d3.time.format("%d/%m/%Y");
+                var alternance = conf.alter.map(function(d){
+                    return [format.parse(d.start),format.parse(d.end), d.gouv];
+                })//.sort(function(a,b){return b[0].getTime() - a[0].getTime()})
+
                 xScale
                     .domain(data.map(function(d){return d[1]}))
                     .rangeBands([0, usable_width], 0.1);
+                console.log("X ["+xScale.domain()+"] => ["+xScale.range()+"]");
+
 
                 yScale
                     .domain([d3.max(data, function(d){return d[2]}), d3.min(data, function(d){return d[2]})])
                     .range([0, usable_height]);
 
+                console.log("Y ["+yScale.domain() +"] => ["+yScale.range()+"]");
+
                 var svg = d3.select(this).selectAll("svg:not(.legend)").data([data]);
 
                 var svgEnter = svg.enter().append("svg").attr('class','content');
-                conf.title ? svgEnter.append("text").attr('class','title').text(conf.title).attr('transform','translate()') : '';
-                var gEnter = svgEnter.append("g").attr('transform','translate('+ margin.left+','+margin.top+')');
+                var gEnter = svgEnter.append("g")
 
-                gEnter.append("g").attr("class", "x axis")
-                gEnter.append("g").attr("class", "y axis")
+                gEnter.append("g").attr("class", "x axis");
+                gEnter.append("g").attr("class", "y axis");
+                var gouvs = gEnter.append("g").attr("class", "gouv").attr("transform","translate(-60,0)");
+
+
+                gouvs.selectAll("rect")
+                    .data(alternance).enter()
+                    .append("rect")
+                    .attr("x", function(){ return xScale.range()[0]})
+                    .attr("y", function(d){ return yScale(d[1])})
+                    .attr("width", 30)
+                    .attr("height", function(d){ return Math.abs(yScale(d[1]) - yScale(d[0]))})
+                    .attr("class", function(d){
+                        return "group "+ d[2];
+                    });
 
                 var nest = d3.nest()
-                    .key(function(d){ return d[1]})
-                    .key(function(d){ return d[2]})
+                    .key(function(d){ return d[1]}) //by Year
+                    .key(function(d){ return d[2]}) //by Groupe politique
                     .entries(data);
 
                 var groups = gEnter.append("g").selectAll("g").data(nest).enter()
@@ -57,7 +78,11 @@
                 });
 
                 years.selectAll("circle")
-                    .data(function(d){return d.values})
+                    .data(function(d){
+                        return d.values.sort(function (a, b) {
+                            return b[0].raison.length - a[0].raison.length ;
+                        });
+                    })
                     .enter()
                     .append("circle")
                     .attr("r",function(d){
@@ -84,9 +109,9 @@
                             fade: true,
                             gravity: 's'
                         });
-                    }).append("text",function(d){ return d.name});
+                    });
 
-                svg .attr("width", width)
+                svg.attr("width", width)
                     .attr("height", height);
 
                 var g = svg.select("g")
