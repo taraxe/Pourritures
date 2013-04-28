@@ -1,0 +1,19 @@
+@()(implicit app:play.api.Application)
+<!-- UserVoice JavaScript SDK (only needed once on a page) -->
+<script>(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/h4nwvdxr76inzA6XxPCIgg.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})()</script>
+
+<!-- A tab to launch the Classic Widget -->
+<script>
+    UserVoice = window.UserVoice || [];
+    UserVoice.push(['showTab', 'classic_widget', {
+    mode: 'full',
+    primary_color: '#272f33',
+    link_color: '#007dbf',
+    default_mode: 'feedback',
+    forum_id: 204556,
+    tab_label: 'Feedback',
+    tab_color: '#cc6d00',
+    tab_position: 'middle-right',
+    tab_inverted: false
+    }]);
+</script>
