@@ -2,7 +2,7 @@
 
 @import play.api.Mode
 
-@main("Pourritures") {
+@head = {
     <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/chart.css")"/>
     <link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/tipsy.css")"/>
     <script src="@routes.Assets.at("javascripts/d3.v3"+".min".when(app.mode != Mode.Dev)+".js")"></script>
@@ -10,7 +10,8 @@
     <script src="@routes.Assets.at("javascripts/jquery.tipsy.js")"></script>
     <script src="@routes.Assets.at("javascripts/charts."+"min.".when(app.mode != Mode.Dev)+"js")"></script>
     <script src="@routes.Assets.at("javascripts/main."+"min.".when(app.mode != Mode.Dev)+"js")"></script>
-
+}
+@main("Pourritures", head) {
     <h2>Les affaires touchant les élus</h2>
     <figure class="cumulated">
         <svg class="legend">
@@ -63,8 +64,10 @@
 
     <hr/>
     <h2>A propos</h2>
+    <p>La crise de confiance du peuple souverain envers ses représentants élus démocratiquement est profonde. L'OpenData comme outil d'information et de sensibilisation de l'opinion publique peut et doit catalyser la réforme de la vie politique.</p>
     <p>Le jeu de données est incomplet, si vous souhaitez ajouter des affaires vous pouvez utiliser le <a href="javascript:void(0)" data-uv-lightbox="classic_widget" data-uv-mode="full" data-uv-primary-color="#272f33" data-uv-link-color="#007dbf" data-uv-default-mode="feedback" data-uv-forum-id="204556">Feedback</a>, nous contacter sur <a href="https://twitter.com/Pourritures">Twitter</a> ou directement via une pull request sur <a target="_blank" href="https://github.com/taraxe/pourritures">Github</a></p>
     <p>Les <a target="_blank" href="@routes.Assets.at("data/pourritures.json")">sources</a> proviennent de <a target="_blank" href="http://www.wikistrike.com/article-liste-des-condamnations-et-mises-en-examen-du-ps-du-parti-de-gauche-des-verts-de-l-ump-et-du-fn-116776009.html">Wikistike</a> et d'articles sur Wikipedia.</p>
+    <p>Design par <a href="http://dribbble.com/gwen">Gwen</a>, code par <a href="https://twitter.com/taraxe">Antoine</a></p>
 
 
 

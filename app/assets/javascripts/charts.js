@@ -1,6 +1,6 @@
 (function(ns, d3, $){
 
-    ns.PourrituresChart = function(opts) {
+    var Pourritures = function(opts) {
         var defaults = { width: 800, height: 650, margin : {top: 70, right: 20, bottom: 20, left: 40}},
             conf = $.extend(defaults,opts),
             margin = conf.margin,
@@ -24,7 +24,7 @@
                 var format = d3.time.format("%d/%m/%Y");
                 var alternance = conf.alter.map(function(d){
                     return [format.parse(d.start),format.parse(d.end), d.gouv];
-                })//.sort(function(a,b){return b[0].getTime() - a[0].getTime()})
+                });
 
                 xScale
                     .domain(data.map(function(d){return d[1]}))
@@ -120,7 +120,7 @@
                     .attr("height", height);
 
                 var g = svg.select("g")
-                        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+                    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
                 g.select(".x.axis")
                     .call(xAxis)
@@ -171,7 +171,7 @@
         return chart;
     };
 
-    ns.TimeSeriesChart = function(opts) {
+    var TimeSeries = function(opts) {
         var defaults = { width: 800, height: 650, margin : {top: 20, right: 20, bottom: 20, left: 30}},
             conf = $.extend(defaults,opts),
             margin = conf.margin,
@@ -188,9 +188,9 @@
                 .y(function(d){return yScale(d[1])})
                 .interpolate("basis"),
             cLine = d3.svg.line()
-                            .x(function(d){return xScale(d[0])})
-                            .y(function(d){return yScale(d[2])})
-                            .interpolate("basis");
+                .x(function(d){return xScale(d[0])})
+                .y(function(d){return yScale(d[2])})
+                .interpolate("basis");
 
         function chart(selection) {
             selection.each(function(data) {
@@ -270,6 +270,10 @@
             return chart;
         };
         return chart;
-    }
+    };
 
+    ns.charts = {
+        Pourritures : Pourritures,
+        TimeSeries : TimeSeries
+    }
 }(window.pourritures = window.pourritures || {}, d3, jQuery));

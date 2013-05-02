@@ -1,10 +1,7 @@
 (function(ns, d3, $){
 
-    var alt = $.Deferred(function(){ var self = this; d3.json('/assets/data/alternance.json', function(d){ return self.resolve(d)});});
-    var off = $.Deferred(function(){ var self = this; d3.json('/assets/data/pourritures.json', function(d){ return self.resolve(d)});});
-
-
-    $.when(off,alt).then(function(rawData, alter) {
+    d3.json('/assets/data/pourritures.json', function(rawData){
+    d3.json('/assets/data/alternance.json', function(alter){
 
         var filtered = rawData.filter(function(e){
             return e.annee >= 1995;
@@ -12,7 +9,7 @@
 
         /* Main chart */
         (function(data, alter){
-            var chart1 = new ns.PourrituresChart({ alter:  alter})
+            var chart1 = new ns.charts.Pourritures({ alter:  alter})
                 .x(function(d) {
                     return d.formation;
                 })
@@ -77,8 +74,8 @@
             f.find('input[type="search"]').on('keyup', function(e){
                 if($(this).val() === "") resetSearch();
                 else c.find('li').show()
-                      .find('input[type="checkbox"]:not(input[name*="'+$(this).val().toLowerCase()+'"])')
-                      .closest('li').hide();
+                    .find('input[type="checkbox"]:not(input[name*="'+$(this).val().toLowerCase()+'"])')
+                    .closest('li').hide();
             });
             f.find('input[type="search"]').on('search', function(e){
                 if($(this).val() === "") resetSearch();
@@ -118,7 +115,7 @@
         })(filtered);
 
 
-         /* Cumulated chart */
+        /* Cumulated chart */
         (function(data){
             var cumulated = d3.nest()
                 .key(function(d){return d.annee})
@@ -139,7 +136,7 @@
                     return d;
                 });
 
-            var chart2 = new ns.TimeSeriesChart({width: 400, height:200})
+            var chart2 = new ns.charts.TimeSeries({width: 400, height:200})
                 .x(function(d){
                     var date = new Date();
                     date.setYear(d.key);
@@ -151,6 +148,7 @@
             d3.select('.cumulated').datum(cumulated).call(chart2);
         })(filtered)
 
+    });
     });
 
 }(window.pourritures = window.pourritures || {}, d3, jQuery));
