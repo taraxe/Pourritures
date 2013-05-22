@@ -1,4 +1,29 @@
 [
+
+    {
+        "name": "Jean-Pierre Kucheida",
+        "formation":"ps",
+        "annee": 2013,
+        "ex": true,
+        "nature": "condamnation",
+        "ammende": 30000,
+        "raison": ["abus de biens sociaux (lors du procès des frais de la Soginorpa)"]
+    },
+    {
+        "name": "Dominique Strauss-Kahn",
+        "formation":"ps",
+        "annee": 2012,
+        "nature": "mis en examen",
+        "raison": ["proxénétisme aggravé en bande organisée"]
+    },
+    {
+        "name": "Dominique Strauss-Kahn",
+        "formation":"ps",
+        "annee": 1999,
+        "nature": "mis en examen",
+        "ammende": 30000,
+        "raison": ["faux et usage de faux (dans l'affaire de la MNEF)"]
+    },
     {
         "name": "Anne Hidalgo",
         "formation":"ps",

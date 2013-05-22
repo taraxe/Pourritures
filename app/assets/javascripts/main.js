@@ -1,21 +1,5 @@
-require.config({
-    paths: {
-        'd3': 'd3.v3-min',
-        'tipsy': 'jquery.tipsy',
-        'jquery': 'jquery-1.9.0.min',
-        'underscore': 'underscore.min'
-    },
-    shim: {
-        jquery : { exports : '$' },
-        underscore: { exports: '_'},
-        d3 : { exports: 'd3'},
-        tipsy : {
-            deps : ['jquery']
-        }
-    }
-});
+(function(ns, d3, $){
 
-define(["d3", "charts", "underscore", "jquery"], function(ignore, charts, _, $){
     d3.json('/assets/data/pourritures.json', function(rawData){
     d3.json('/assets/data/alternance.json', function(alter){
 
@@ -25,7 +9,7 @@ define(["d3", "charts", "underscore", "jquery"], function(ignore, charts, _, $){
 
         /* Main chart */
         (function(data, alter){
-            var chart1 = new charts.Pourritures({ alter:  alter})
+            var chart1 = new ns.charts.Pourritures({ alter:  alter})
                 .x(function(d) {
                     return d.formation;
                 })
@@ -152,7 +136,7 @@ define(["d3", "charts", "underscore", "jquery"], function(ignore, charts, _, $){
                     return d;
                 });
 
-            var chart2 = new charts.TimeSeries({width: 400, height:200})
+            var chart2 = new ns.charts.TimeSeries({width: 400, height:200})
                 .x(function(d){
                     var date = new Date();
                     date.setYear(d.key);
@@ -166,4 +150,5 @@ define(["d3", "charts", "underscore", "jquery"], function(ignore, charts, _, $){
 
     });
     });
-})
+
+}(window.pourritures = window.pourritures || {}, d3, jQuery));

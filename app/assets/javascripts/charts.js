@@ -1,4 +1,4 @@
-define(["d3", "jquery", "tipsy"], function(ignore,$){
+(function(ns, d3, $){
 
     var Pourritures = function(opts) {
         var defaults = { width: 800, height: 650, margin : {top: 70, right: 20, bottom: 20, left: 40}},
@@ -272,9 +272,8 @@ define(["d3", "jquery", "tipsy"], function(ignore,$){
         return chart;
     };
 
-    return {
+    ns.charts = {
         Pourritures : Pourritures,
         TimeSeries : TimeSeries
     }
-})
-
+}(window.pourritures = window.pourritures || {}, d3, jQuery));

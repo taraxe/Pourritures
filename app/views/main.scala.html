@@ -1,4 +1,4 @@
-@(title: String, moreHead : Html = Html.empty)(content: Html)(implicit app: play.api.Application)
+@(title: String, head:Html = Html.empty)(content: Html)(implicit app:play.api.Application)
 
 @import play.api.Mode
 
@@ -6,27 +6,26 @@
 
 <html>
     <head>
-        <title> @title </title>
+        <title>@title</title>
         <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/reset.css")">
         <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
         <link rel="shortcut icon" type="image/png" sizes="16x16" href="@routes.Assets.at("images/favicon16.png")">
         <link rel="shortcut icon" type="image/png" sizes="32x32" href="@routes.Assets.at("images/favicon.png")">
         <link href='http://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet' type='text/css'>
-        <!-- share this -->
-        <script type="text/javascript"> var switchTo5x=false; </script>
+        <script src="@routes.Assets.at("javascripts/jquery-1.9.0.min.js")" type="text/javascript"></script>
+        <script type="text/javascript">var switchTo5x=false;</script>
         <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-        <!-- user voice -->
-        <script type="text/javascript"> stLight.options({publisher: "ur-ad67e76-205c-5b5f-fcbb-7c6b6cf3cb78", doNotHash: false, doNotCopy: false, hashAddressBar: false}); </script>
-        @moreHead
+        <script type="text/javascript">stLight.options({publisher: "ur-ad67e76-205c-5b5f-fcbb-7c6b6cf3cb78", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+        @head
     </head>
     <body>
-        <a href="https://github.com/taraxe/pourritures"> <img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_orange_ff7600.png" alt="Fork me on GitHub"> </a>
+        <a href="https://github.com/taraxe/pourritures"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_orange_ff7600.png" alt="Fork me on GitHub"></a>
         @if(app.mode != Mode.Dev) {
             @analytics()
         }
         <header>
             <img class="logo" src="@routes.Assets.at("images/logo@2x.png")" width="419" height="174">
-            <h1> Condamnations et mises en examen des élus de la république française </h1>
+            <h1>Condamnations et mises en examen des élus de la république française</h1>
             @viral()
         </header>
         <section class="container">
@@ -36,6 +35,6 @@
             @viral()
             @twitterButton()
         </footer>
-          @userVoice()
+        @userVoice()
     </body>
 </html>
