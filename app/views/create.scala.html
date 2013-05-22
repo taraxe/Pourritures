@@ -1,0 +1,37 @@
+@(form:Form[Pourri])(implicit app:play.api.Application)
+
+@import play.api.Mode
+
+@head = {
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/create.css")"/>
+}
+@main("Pourritures", head) {
+    <h2>Ajouter un élu</h2>
+    @helper.form(routes.Application.create) {
+        <label>
+            Nom
+            <input type="text" name="nom">
+        </label>
+        <label>
+            Prenom
+            <input type="text" name="prenom">
+        </label>
+        <label>
+            Groupe politique
+            <input type="select" name="formation">
+            Radié
+            <input type="checkbox" name="ex">
+        </label>
+        <label>
+            Membre du gourvenement
+            <input type="checkbox" name="gouvernement">
+        </label>
+
+
+    }
+
+
+
+
+
+}
