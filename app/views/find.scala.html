@@ -14,7 +14,7 @@
     <input type="text"> @* put a autocomplete component to find existing one, allow creation of new one *@
 
     @pourri.map{ p =>
-        <h2>@p.name</h2>
+        <h2>@p.fullname</h2>
         <ul>
             @p.affaires.map { a =>
               <li>

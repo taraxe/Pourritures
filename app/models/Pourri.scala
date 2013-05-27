@@ -10,8 +10,11 @@ import play.api.libs.json._
  * Time: 15:48
  */
 
-case class Pourri(_id:Option[BSONObjectID] = None, name:String, formation:Formation.Formation, ex:Option[Boolean], gouvernement:Option[Boolean], affaires:Seq[Affaire])
-case class Affaire(annee:DateTime, typeAffaire:TypeAffaire.TypeAffaire, amende:Option[Int], raisons:Seq[String])
+case class Pourri(_id:Option[BSONObjectID] = None, nom:String, prenom:String, formation:Formation.Formation, ex:Option[Boolean], gouvernement:Option[Boolean], affaires:Seq[Affaire]) {
+  def fullname = prenom + " " + nom
+  val slug = fullname.replaceAll(" ","-").toLowerCase
+}
+case class Affaire(annee:DateTime, typeAffaire:TypeAffaire.TypeAffaire, amende:Option[Int], raisons:Seq[String], source:Option[String], checked:Boolean)
 
 object Formation extends Enumeration {
   type Formation = Value
@@ -39,5 +42,5 @@ object Pourri extends MongoDAO {
   implicit val affairesWrite = play.api.libs.json.Writes.traversableWrites[Affaire]
   implicit val affairesRead = play.api.libs.json.Reads.traversableReads[Seq,Affaire]
   val collection = db.collection[JSONCollection]("pourris")
-  def byName(name:String) = find[Pourri](Json.obj("name"->name)).map(_.headOption)
+  def bySlug(slug:String) = find[Pourri](Json.obj("slug"->slug)).map(_.headOption)
 }
