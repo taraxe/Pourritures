@@ -1,5 +1,11 @@
 [
-
+    {
+        "name": "Gérard Dalongeville",
+        "formation":"ps",
+        "nature": "mis en examen",
+        "annee": 2009,
+        "raison": ["détournement de fonds publics","faux et usage de faux","favoritisme","corruption"]
+    },
     {
         "name": "Jean-Pierre Kucheida",
         "formation":"ps",
@@ -326,8 +332,11 @@
     {
         "name": "Sylvie Andrieux",
         "formation":"ps",
-        "nature": "mise en examen",
-        "annee": 2010,
+        "nature": "condamnation",
+        "annee": 2013,
+        "amende" : 100000,
+        "prison" : 3,
+        "sursis" : 2,
         "raison": ["complicité de tentative d'escroquerie et de détournements de fonds publics dans l'affaire du financement présumés à hauteur de 700 000 € d'associations présumées fictives"]
     },
     {
@@ -345,6 +354,20 @@
         "annee": 2013,
         "raison": ["blanchiment d'argent","fraude fiscale"]
     },
+
+
+
+
+
+
+    {
+        "name": "Jean-Christophe Lagarde",
+        "formation":"udi",
+        "nature": "mis en examen",
+        "annee": 2013,
+        "raison": ["favoritisme dans une affaire de marchés publics"]
+    },
+
 
 
 
@@ -956,6 +979,7 @@
 
 
 
+
     {
         "name": "Alexandre Gabriac",
         "formation":"fn",
@@ -1081,7 +1105,8 @@
         "ex":true,
         "nature": "condamnation",
         "annee": 1985,
-        "raison": ["reconnu coupable de meurtre, alors qu’il collait des affiches pour le FN, pour avoir tué Abdallah Moktari, 23 ans ; qui l’avait insulté. 8 ans de prison"]
+        "raison": ["reconnu coupable de meurtre, alors qu’il collait des affiches pour le FN, pour avoir tué Abdallah Moktari, 23 ans ; qui l’avait insulté"],
+        "prison" : 8
     },
     {
         "name": "Francis Watez",
