@@ -2,11 +2,12 @@
 
 @import play.api.Mode
 
-<!DOCTYPE html>
+<!DOCTYPE html lang="fr">
 
 <html>
     <head>
         <title>@title</title>
+        <meta name="desc" content="Zoom sur les démélés judiciaires des élus républicains"/>
         <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/reset.css")">
         <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
         <link rel="shortcut icon" type="image/png" sizes="16x16" href="@routes.Assets.at("images/favicon16.png")">
@@ -17,17 +18,18 @@
         <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
         <script type="text/javascript">stLight.options({publisher: "ur-ad67e76-205c-5b5f-fcbb-7c6b6cf3cb78", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
         @head
-    </head>
-    <body>
-        <a href="https://github.com/taraxe/pourritures"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_orange_ff7600.png" alt="Fork me on GitHub"></a>
         @if(app.mode != Mode.Dev) {
             @analytics()
         }
-        <header>
+    </head>
+    <body>
+        <a href="https://github.com/taraxe/pourritures"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_orange_ff7600.png" alt="Fork me on GitHub"></a>
+
+        <div class="header">
             <img class="logo" src="@routes.Assets.at("images/logo@2x.png")" width="419" height="174">
             <h1>Condamnations et mises en examen des élus de la république française</h1>
             @viral()
-        </header>
+        </div>
         <section class="container">
             @content
         </section>
