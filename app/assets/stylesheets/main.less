@@ -7,10 +7,6 @@ p, a, h1, h2, h3, h4, text, ul, li {
   font-family: 'Sanchez', serif;
   -webkit-font-smoothing: subpixel-antialiased;
 }
-* {
-  .border-box();
-}
-
 h1 {
   font-size: 1em;
 }
@@ -91,6 +87,7 @@ header {
     margin: 30px auto;
     width: 300px;
     > li {
+      list-style: none;
       text-align: center;
       border-bottom: 2px dotted @hbg;
       &:last-of-type{
@@ -99,6 +96,8 @@ header {
       padding: 20px 0;
       h3 {
         margin-bottom: 15px;
+        line-height: 28px;
+        margin-top: 0;
       }
       .nb {
         font-size: 3em;
@@ -120,5 +119,8 @@ footer {
   text-align: center;
 }
 
+div.hidden {
+  display: none;
+}
 
 

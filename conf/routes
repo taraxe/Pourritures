@@ -3,11 +3,14 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.Application.index
-GET     /search                     controllers.Application.search(name:Option[String])
-GET     /create                     controllers.Application.create()
-POST    /create                     controllers.Application.doCreate()
-GET     /:n                         controllers.Application.find(n)
+GET     /                           controllers.Pourritures.index
+GET     /contrib                    controllers.Pourritures.contrib(slug:Option[String])
+POST    /pourri                     controllers.Pourritures.create()
+GET     /routes                     controllers.Pourritures.javascriptRoutes
+POST    /:slug/affaire              controllers.Pourritures.createAffaire(slug:String)
+GET     /:slug                      controllers.Pourritures.show(slug:String)
+GET     /:slug/fragment             controllers.Pourritures.showFragment(slug:String)
+
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)

@@ -8,12 +8,13 @@ trait MongoDAO {
   import play.modules.reactivemongo.json.collection.JSONCollection
   import reactivemongo.bson._
   import play.api.libs.json._
-  import reactivemongo.core.commands.LastError
+  import reactivemongo.core.commands.{Count, LastError}
+  import reactivemongo.api._
 
   implicit val objectIdFormat = OFormat[BSONObjectID](
-    (__ \ "$oid").read[String].map( obj => BSONObjectID(obj) ),
+    (__ \ "$oid").read[String].map(obj => BSONObjectID(obj)),
     OWrites[BSONObjectID](s => Json.obj("$oid" -> s.stringify))
-  )
+    )
 
   def driver = ReactiveMongoPlugin.driver
   def connection = ReactiveMongoPlugin.connection
@@ -25,11 +26,13 @@ trait MongoDAO {
 
   def insert[T](e:T)(implicit w:Writes[T]):Future[T] = collection.insert(e).map(log).map(_ => e)
 
-  def log(err:LastError):Unit = {
-    import play.api.Logger
-    Logger.debug("Mongo Last Error: %s".format(err))
+  def log(err:LastError) {
+    if(err.inError){
+      import play.api.Logger
+      Logger.error("Mongo Last Error: %s".format(err))
+    }
   }
 
-  def find[T](js:JsObject)(implicit f:Format[T]):Future[Seq[T]] =
-    collection.find(js).cursor[JsObject].toList().map(_.map(f.reads(_).get))
+  def find[T](js:JsObject)(implicit f:Format[T]):Cursor[T] = collection.find(js).cursor[T]
+  def count(/*js:Option[JsObject]*/):Future[Int] = db.command(Count(collection.name))
 }

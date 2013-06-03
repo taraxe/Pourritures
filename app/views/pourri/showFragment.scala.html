@@ -1,0 +1,60 @@
+@(p:Pourri, affaires:Seq[Affaire] = Nil)(implicit app:play.api.Application)
+
+@import org.joda.time.DateTime
+
+
+<ul class="affaires">
+  @affaires.sortBy(_.annee.getYear).reverse.map { a =>
+      <li>
+        @if(!a.checked){<span class="label label-warning">Non vérifié</span>}
+        <h3>@a.annee.getYear.toString <span>@a.typeAffaire.toString</span></h3>
+        <p>@a.raisons.mkString(", ")</p>
+      </li>
+  }
+  </ul>
+
+  @helper.form(routes.Pourritures.createAffaire(p.slug), 'class -> "affaire-form form-horizontal") {
+    <fieldset>
+        <legend>Ajouter une affaire à <strong>@p.fullname</strong></legend>
+        <div class="control-group">
+            <label class="control-label">Nature</label>
+            <div class="controls">
+                <select name="nature">
+                @TypeAffaire.values.map { v =>
+                    <option value="@v.id">@v.toString</option>
+                }
+                </select>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" >Année</label>
+            <div class="controls">
+                <input type="text" name="annee" max="@{new DateTime().getYear}" placeholder="ex 1999">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" >Raisons</label>
+            <div class="controls">
+                <input type="text" name="raisons">
+                <span class="help-inline">Séparées par des virgules</span>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" >Amende</label>
+            <div class="controls">
+                <input type="text" name="amende" min="1">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" >Source</label>
+            <div class="controls">
+                <input type="text" name="source">
+            </div>
+        </div>
+    </fieldset>
+    <div class="form-actions">
+        <button type="submit" class="btn btn-primary">Ajouter</button>
+        <button type="button" class="btn">Annuler</button>
+    </div>
+}

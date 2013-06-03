@@ -1,0 +1,144 @@
+@(pourris:List[Pourri], currentSlug:Option[String] = None)(implicit app:play.api.Application)
+
+@import play.api.Mode
+
+@head = {
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/bootstrap/bootstrap.css")">
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/contrib.css")">
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/select2.css")">
+    <script src="@routes.Assets.at("javascripts/select2."+"min.".when(app.mode != Mode.Dev)+"js")"></script>
+    <script type="text/javascript">
+      $(function(){
+        $("#auto")
+          .select2({
+            allowClear: true,
+            width: '100%',
+            formatNoMatches : function(term){
+              return term + " n'existe pas, <a class=\"create-pourri-link\" onclick=\"$(this).trigger('new-pourri')\">l'ajouter</a>" //hacky!
+            }
+          })
+          .on('change',function(e){
+            if(e.added &&  e.added.id) {
+              var slug = e.added.id,
+                  url = jsRoutes.controllers.Pourritures.showFragment(e.added.id).url;
+              addAffaireMode();
+              $('.show-pourri-block').load(url);
+              history.pushState({},document.title,'?slug='+slug);
+            } else searchMode();
+          })
+
+          @currentSlug.map{ s =>
+          addAffaireMode();
+          $('.show-pourri-block').load(jsRoutes.controllers.Pourritures.showFragment('@s').url);
+          }
+        $(document).on('submit','form',function(e){
+          e.preventDefault();
+          var url = $(this).attr('action');
+          $.ajax({
+            url : url,
+            type: 'post',
+            dataType: 'json',
+            data : $(this).serialize()
+          })
+          .done(function(data){
+              window.location = jsRoutes.controllers.Pourritures.contrib(data.slug).url;
+          })
+          .fail(function(xhr){
+            var r = JSON.parse(xhr.responseText)
+            for (var p in r) {
+              $('[name="'+p+'"]').closest('.control-group').addClass('error');
+            }
+          })
+        })
+
+      function searchMode(){
+          $('.show-pourri-block, .create-pourri-block').addClass('hidden');
+          $('.search-block').removeClass('hidden');
+      }
+      function newPourriMode(){
+          $('#auto').select2('close').select2('val','');
+          $('.show-pourri-block, .search-block').addClass('hidden');
+          $('.create-pourri-block').removeClass('hidden');
+      }
+      function addAffaireMode(){
+          $('.search-block, .create-pourri-block').addClass('hidden');
+          $('.show-pourri-block').removeClass('hidden');
+      }
+
+      $(document).on('new-pourri',function(e){
+        e.preventDefault();
+        newPourriMode();
+      })
+    })
+  </script>
+}
+@backOffice("Pourritures", head) {
+<div class="container">
+    <div class="row-fluid">
+        <div class="span12">
+            @if(currentSlug.isEmpty) {
+            <div class="hero-unit">
+                <h1>Contribuer à Pourritures.fr ?</h1>
+                <p>Le formulaire suivant existe dans ce but. Toutes les données saisies seront validées avant d'être affichées publiquement. Pas d'inquiètude si vous ne voyez pas apparaitre les affaires que vous venez de saisir, envoyez-nous un message sur Twitter si la validation prend trop longtemps.</p>
+                <p>Merci par avance pour vos contributions.</p>
+            </div>
+            }
+            <div class="select-block">
+                <select id="auto" data-placeholder="Rechercher un élu">
+                    <option></option>
+                    @pourris.map { p =>
+                        <option value="@p.slug" @if(currentSlug.exists(_ == p.slug)){selected="selected"}>@p.fullname.replace("-"," ")</option>
+                    }
+                </select>
+            </div>
+            <div class="create-pourri-block hidden">
+            @helper.form(routes.Pourritures.create(), 'class -> "pourriture-form form-horizontal") {
+                <fieldset>
+                    <legend>Ajouter un élu</legend>
+
+                    <div class="control-group">
+                        <label class="control-label">Nom</label>
+                        <div class="controls">
+                            <input type="text" name="nom">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">Prenom</label>
+                        <div class="controls">
+                            <input type="text" name="prenom">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">Groupe politique</label>
+                        <div class="controls">
+                            <select name="formation">
+                              @Formation.values.map{ v =>
+                                <option value="@v.id">@v</option>
+                              }
+                          </select>
+                            <label class="checkbox">
+                                <input type="checkbox"> Ancien
+                            </label>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="controls">
+                            <label class="checkbox">
+                                <input type="checkbox" name="gourvernement">Membre du gouvernement
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Ajouter</button>
+                    <button type="button" class="btn">Annuler</button>
+                </div>
+                }
+
+            </div>
+            <div class="show-pourri-block"></div>
+        </div>
+    </div>
+
+</div>
+}
