@@ -10,6 +10,9 @@
   @helper.form(routes.Pourritures.createAffaire(p.slug), 'class -> "affaire-form form-horizontal") {
     <fieldset>
         <legend>Ajouter une affaire à <strong>@p.fullname</strong></legend>
+        <div class="alert">
+            Les données que vous aller saisir seront vérifiées avant d'être publiées.
+        </div>
         <div class="control-group">
             <label class="control-label">Nature</label>
             <div class="controls">

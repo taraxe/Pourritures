@@ -13,12 +13,17 @@
     <div class="container">
         <div class="row">
             <div class="span12">
+                <div class="btn-toolbar">
+                    <div class="btn-group">
+                        <a class="btn btn-mini" href="@routes.Pourritures.index()">Retour</a>
+                        <a class="btn btn-mini btn-primary" href="@routes.Pourritures.contrib(Some(p.slug))">Ajouter une affaire</a>
+                    </div>
+                </div>
                 <div class="page-header">
-                  <h1>@p.fullname <small>@p.formation.toString</small></h1>
+                  <h1>@p.fullname <small>@p.formation.toString</small> </h1>
                 </div>
                 <ul class="affaires">
                     @affaires.map(parts.affaire(_))
-                    <li><a href="@routes.Pourritures.contrib(Some(p.slug))">Ajouter une affaire</a></li>
                 </ul>
 
             </div>
