@@ -3,7 +3,7 @@
 @import play.api.Mode
 
 @head = {
-  <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/find.css")"/>
+  <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/show.css")"/>
   <script src="@routes.Assets.at("javascripts/d3.v3"+".min".when(app.mode != Mode.Dev)+".js")"></script>
   <script src="@routes.Assets.at("javascripts/underscore."+"min.".when(app.mode != Mode.Dev)+"js")"></script>
   <script src="@routes.Assets.at("javascripts/charts."+"min.".when(app.mode != Mode.Dev)+"js")"></script>
@@ -13,17 +13,17 @@
     <div class="container">
         <div class="row">
             <div class="span12">
-                <div class="btn-toolbar">
-                    <div class="btn-group">
-                        <a class="btn btn-mini" href="@routes.Pourritures.index()">Retour</a>
-                        <a class="btn btn-mini btn-primary" href="@routes.Pourritures.contrib(Some(p.slug))">Ajouter une affaire</a>
-                    </div>
-                </div>
                 <div class="page-header">
                   <h1>@p.fullname <small>@p.formation.toString</small> </h1>
                 </div>
+                <div class="btn-toolbar">
+                    <div class="btn-group">
+                        @*<a class="btn btn-mini" href="@routes.Pourritures.index()">Retour</a>*@
+                        <a class="btn btn-mini btn-primary" href="@routes.Pourritures.contrib(p.slug)">Ajouter une affaire</a>
+                    </div>
+                </div>
                 <ul class="affaires">
-                    @affaires.map(parts.affaire(_))
+                    @affaires.sortBy(_.annee.getYear).reverse.map(parts.affaire(_))
                 </ul>
 
             </div>

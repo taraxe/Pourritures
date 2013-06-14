@@ -1,8 +1,9 @@
 @(a:Affaire)(implicit app:play.api.Application)
 
 <li>
+  <span class="corner"></span>
   @if(!a.checked){<span class="label label-warning">Non vérifié</span>}
   <h3>@a.annee.getYear.toString <span>@a.typeAffaire.toString</span></h3>
-  <p>@a.raisons.mkString(", ")</p>
+  <p>@a.raisons.map(_.trim).mkString("",", ",".").capitalize</p>
 </li>
 

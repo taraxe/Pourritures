@@ -1,10 +1,10 @@
-@(pourris:List[Pourri], currentSlug:Option[String] = None)(implicit app:play.api.Application)
+@(pourris:List[Pourri], currentPourri:Option[Pourri] = None)(implicit app:play.api.Application)
 
 @import play.api.Mode
 
 @head = {
-    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/contrib.css")">
     <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/select2.css")">
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/contrib.css")">
     <script src="@routes.Assets.at("javascripts/select2."+"min.".when(app.mode != Mode.Dev)+"js")"></script>
     <script type="text/javascript">
       $(function(){
@@ -18,20 +18,20 @@
           })
           .on('change',function(e){
             if(e.added &&  e.added.id) {
-              var slug = e.added.id,
-                  url = jsRoutes.controllers.Pourritures.showFragment(e.added.id).url;
-              addAffaireMode();
-              $('.show-pourri-block').load(url);
-              history.pushState({},document.title,'?slug='+slug);
-            } else searchMode();
+              var slug = e.added.id;
+              window.location = jsRoutes.controllers.Pourritures.contrib(e.added.id).url;
+            } else {
+              history.pushState({},document.title,'@routes.Pourritures.search()');
+              searchMode();
+            }
           })
 
-          @currentSlug.map{ s =>
-          addAffaireMode();
-          $('.show-pourri-block').load(jsRoutes.controllers.Pourritures.showFragment('@s').url);
+          @currentPourri.map{ s =>
+            addAffaireMode();
           }
         $(document).on('submit','form',function(e){
           e.preventDefault();
+          $('.control-group').removeClass('error');
           var url = $(this).attr('action');
           $.ajax({
             url : url,
@@ -76,16 +76,29 @@
     <div class="row">
         <div class="span12">
             <div class="page-header">
-                <h1>Contribuer <small> au référentiel</small></h1>
+                <h1>Contribuer <small>au référentiel</small></h1>
             </div>
+            @currentPourri.map{ cp =>
+            <select id="auto" data-placeholder="Rechercher un élu">
+                <option></option>
+                @pourris.sortBy(_.fullname).map { p =>
+                    <option value="@p.slug" @if(cp.slug == p.slug){selected="selected"}>@p.fullname.replace("-"," ")</option>
+                }
+            </select>
+            <div class="show-pourri-block">
+                @parts.pourri(cp)
+            </div>
+            }.getOrElse{
             <div class="select-block">
                 <select id="auto" data-placeholder="Rechercher un élu">
                     <option></option>
                     @pourris.sortBy(_.fullname).map { p =>
-                        <option value="@p.slug" @if(currentSlug.exists(_ == p.slug)){selected="selected"}>@p.fullname.replace("-"," ")</option>
+                        <option value="@p.slug">@p.fullname.replace("-"," ")</option>
                     }
                 </select>
             </div>
+            }
+
             <div class="create-pourri-block hidden">
             @helper.form(routes.Pourritures.create(), 'class -> "pourriture-form form-horizontal") {
                 <fieldset>
@@ -107,12 +120,12 @@
                         <label class="control-label">Groupe politique</label>
                         <div class="controls">
                             <select name="formation">
-                              @Formation.values.map{ v =>
+                              @Formation.values.toList.sortBy(_.id).map{ v =>
                                 <option value="@v.id">@v</option>
                               }
                           </select>
                             <label class="checkbox">
-                                <input type="checkbox"> Ancien
+                                <input type="checkbox">Radié / exclu / ancien membre
                             </label>
                         </div>
                     </div>
@@ -123,15 +136,21 @@
                             </label>
                         </div>
                     </div>
+                    <div class="control-group">
+                        <label class="control-label">Captcha</label>
+                        <div class="controls">
+                            @Html(views.ReCaptcha.render())
+                        </div>
+                    </div>
+
+
                 </fieldset>
                 <div class="form-actions">
                     <button type="submit" class="btn btn-primary">Ajouter</button>
                     <button type="button" class="btn">Annuler</button>
                 </div>
                 }
-
             </div>
-            <div class="show-pourri-block"></div>
         </div>
     </div>
 

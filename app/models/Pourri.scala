@@ -6,6 +6,7 @@ import scala.concurrent.Future
 import reactivemongo.bson._
 import play.modules.reactivemongo._
 import play.api.Logger
+import scala.concurrent.duration._
 
 /**
  * User: ala
@@ -15,6 +16,8 @@ import play.api.Logger
 
 case class Pourri(_id:Option[BSONObjectID] = None, nom:String, prenom:String, formation:Formation.Formation, ex:Option[Boolean], gouvernement:Option[Boolean]) {
 
+  import scala.concurrent.{Await, duration}
+
   def fullname = prenom + " " + nom
   val slug = Pourri.slugify(fullname)
 
@@ -22,6 +25,7 @@ case class Pourri(_id:Option[BSONObjectID] = None, nom:String, prenom:String, fo
     import scala.concurrent.ExecutionContext.Implicits.global
     this._id.map(Affaire.byPid).getOrElse(Future(Nil))
   }
+  def affairesBlockin:Seq[Affaire] = Await.result(affaires,1 second)
 
 }
 case class Affaire(_id:Option[BSONObjectID] = None, pid:Option[BSONObjectID], annee:DateTime, typeAffaire:TypeAffaire.TypeAffaire, amende:Option[Int], raisons:Seq[String], source:Option[String], checked:Boolean, approvalCount:Option[Int] = None)

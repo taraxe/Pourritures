@@ -4,13 +4,13 @@
 
 # Home page
 GET     /                           controllers.Pourritures.index
-GET     /contrib                    controllers.Pourritures.contrib(slug:Option[String])
+GET     /contrib                    controllers.Pourritures.search
+GET     /contrib/:slug              controllers.Pourritures.contrib(slug:String)
 POST    /pourri                     controllers.Pourritures.create()
 GET     /routes                     controllers.Pourritures.javascriptRoutes
 GET     /pourritures.json           controllers.Pourritures.pourrituresJson
 POST    /:slug/affaire              controllers.Pourritures.createAffaire(slug:String)
 GET     /:slug                      controllers.Pourritures.show(slug:String)
-GET     /:slug/fragment             controllers.Pourritures.showFragment(slug:String)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)

@@ -3,6 +3,7 @@
 @import play.api.Mode
 
 @head = {
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/index.css")"/>
     <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/chart.css")"/>
     <link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/tipsy.css")"/>
     <script src="@routes.Assets.at("javascripts/d3.v3"+".min".when(app.mode != Mode.Dev)+".js")"></script>
@@ -65,7 +66,7 @@
     <hr/>
     <h2>A propos</h2>
     <p>La crise de confiance du peuple souverain envers ses représentants élus démocratiquement est profonde. L'OpenData comme outil d'information et de sensibilisation de l'opinion publique peut et doit catalyser la réforme de la vie politique.</p>
-    <p>Le jeu de données est incomplet, vous pouvez nous aider à <a href="@routes.Pourritures.contrib(None)">ajouter des affaires</a>. Nous contacter sur <a href="https://twitter.com/Pourritures">Twitter</a> et contribuer au projet directement via une pull request sur <a target="_blank" href="https://github.com/taraxe/pourritures">Github</a></p>
+    <p>Le jeu de données est incomplet, vous pouvez nous aider à <a href="@routes.Pourritures.search()">ajouter des affaires</a>. Nous contacter sur <a href="https://twitter.com/Pourritures">Twitter</a> et contribuer au projet directement via une pull request sur <a target="_blank" href="https://github.com/taraxe/pourritures">Github</a></p>
     <p>Les <a target="_blank" href="@routes.Assets.at("data/pourritures.json")">sources</a> proviennent de <a target="_blank" href="http://www.wikistrike.com/article-liste-des-condamnations-et-mises-en-examen-du-ps-du-parti-de-gauche-des-verts-de-l-ump-et-du-fn-116776009.html">Wikistrike</a>, d'articles sur Wikipedia et de vos contributions après vérification.</p>
     <p>Design par <a href="http://dribbble.com/gwen">Gwen</a>, code par <a href="https://twitter.com/taraxe">Antoine</a></p>
 
