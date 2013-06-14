@@ -4,14 +4,8 @@
 
 
 <ul class="affaires">
-  @affaires.sortBy(_.annee.getYear).reverse.map { a =>
-      <li>
-        @if(!a.checked){<span class="label label-warning">Non vérifié</span>}
-        <h3>@a.annee.getYear.toString <span>@a.typeAffaire.toString</span></h3>
-        <p>@a.raisons.mkString(", ")</p>
-      </li>
-  }
-  </ul>
+  @affaires.sortBy(_.annee.getYear).reverse.map(a => parts.affaire(a))
+</ul>
 
   @helper.form(routes.Pourritures.createAffaire(p.slug), 'class -> "affaire-form form-horizontal") {
     <fieldset>

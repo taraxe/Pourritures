@@ -1,3 +1,18 @@
-body {
-  padding-top: 60px;
+@import "_base.less";
+@import "_colors.less";
+
+.navbar-inverse {
+  .brand {
+    color: white;
+    &:hover {
+      color: #999999;
+    }
+  }
+  .navbar-inner {
+    background-color: @hbg;
+    background-image: none;
+    background-repeat: no-repeat;
+    filter: none;
+    .box-shadow(0 3px 3px rgba(0,0,0,0.1));
+  }
 }

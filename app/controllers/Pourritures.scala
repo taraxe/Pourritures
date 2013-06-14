@@ -19,7 +19,7 @@ object Pourritures extends Controller {
   def index = Action(Ok(views.html.index()))
 
   def contrib(slug:Option[String]) = Action(Async(
-    Pourri.withAffaires.map(lp => Ok(views.html.pourri.contrib(lp, slug)))
+    Pourri.all.map(lp => Ok(views.html.contrib(lp, slug)))
   ))
 
   def show(slug: String) = Action{
@@ -30,8 +30,8 @@ object Pourritures extends Controller {
         all <- Pourri.withAffaires
       } yield {
         p match {
-          case None => NotFound(views.html.pourri.contrib(all)) // todo add flasing
-          case Some(p) => Ok(views.html.pourri.show(p,a))
+          case None => NotFound(views.html.contrib(all)) // todo add flasing
+          case Some(p) => Ok(views.html.show(p,a))
         }
       }
     )
@@ -44,7 +44,7 @@ object Pourritures extends Controller {
       } yield {
         p match {
           case None => NotFound("")
-          case Some(p) => Ok(views.html.pourri.showFragment(p,a))
+          case Some(p) => Ok(views.html.parts.pourri(p,a))
         }
       }
     )
@@ -61,7 +61,7 @@ object Pourritures extends Controller {
   )
 
   val affaireForm:Form[Affaire] = Form(mapping(
-      "annee" -> number(max = new DateTime().year().get()),
+      "annee" -> number(min = 1900, max = new DateTime().year().get()),
       "nature" -> number(min = 0, max = TypeAffaire.maxId),
       "amende" -> optional(number(min = 1)),
       "raisons" -> nonEmptyText,
@@ -72,13 +72,14 @@ object Pourritures extends Controller {
 
 
   def create() = Action { implicit request =>
+    import play.api.libs.json.Json
     Async(pourriForm.bindFromRequest().fold(
       err => Future(BadRequest(err.errorsAsJson)),
-      newPourri => {
-        Pourri.insert(newPourri).map{ _ =>
-          import play.api.libs.json.Json
-          Ok(Json.toJson(newPourri))
+      p => Pourri.bySlug(Pourri.slugify(p.fullname)).flatMap {
+        case None => Pourri.insert(p).map {_ =>
+            Ok(Json.toJson(p))
         }
+        case Some(p) => Future(Ok(Json.toJson(p)))
       }
     ))
   }
@@ -86,24 +87,21 @@ object Pourritures extends Controller {
   def createAffaire(slug:String) = Action { implicit request =>
     import play.api.libs.json.Json
     Async(
-        Pourri.withAffaires.flatMap{ all =>
-          Logger.debug(slug)
-          Pourri.bySlug(slug).flatMap {
-            case Some(p) => affaireForm.bindFromRequest().fold(
-              err => Future(BadRequest(Json.toJson(err.errorsAsJson))),
-              newAffaire => {
-                Logger.debug(newAffaire.toString)
-                Affaire.insert(newAffaire.copy(pid = p._id)).map(_ => Ok(Json.toJson(p)))
-              }
-            )
-            case None => Future(NotFound(""))
-          }}
-      )
+      Pourri.bySlug(slug).flatMap {
+        case Some(p) => affaireForm.bindFromRequest().fold(
+          err => Future(BadRequest(Json.toJson(err.errorsAsJson))),
+          newAffaire => Affaire.insert(newAffaire.copy(pid = p._id)).map(_ => Ok(Json.toJson(p)))
+        )
+        case None => Future(NotFound(""))
+      }
+    )
   }
 
+/*
   def voteAffaire() = Action { implicit request =>
     Ok("")
   }
+*/
 
   def javascriptRoutes = Action { implicit request =>
     Ok(
@@ -117,5 +115,28 @@ object Pourritures extends Controller {
   }
 
   //json apis
-
+  def pourrituresJson = Action { implicit request =>
+      import play.api.libs.json._
+      Async(
+        Pourri.withAffaires.flatMap { la =>
+            Future.sequence(la.map { p =>
+                p.affaires.map(_.map { a =>
+                    Json.toJson(a)(new Writes[Affaire] {
+                      def writes(o: Affaire) = Json.obj(
+                        "raison" -> Json.toJson(o.raisons),
+                        "nature" -> Json.toJson(o.typeAffaire.toString),
+                        "annee" -> Json.toJson(o.annee.getYear)
+                      )
+                    }).as[JsObject] ++ Json.obj(
+                      "name" -> p.fullname,
+                      "slug" -> p.slug,
+                      "formation"->p.formation.toString.toLowerCase,
+                      "ex"-> Json.toJson(p.ex),
+                      "gouvernement" -> Json.toJson(p.gouvernement)
+                    )
+                })
+            }).map(_.flatten)
+        }.map(r => Ok(Json.toJson(r)))
+      )
+  }
 }

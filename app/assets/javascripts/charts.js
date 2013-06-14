@@ -26,8 +26,9 @@
                     return [format.parse(d.start),format.parse(d.end), d.gouv];
                 });
 
+                var order = ["ps","udi","ump","fn"]; // natural ordering
                 xScale
-                    .domain(data.map(function(d){return d[1]}))
+                    .domain(data.map(function(d){return d[1]}).sort(function(a,b){ return order[a] - order[b]}))
                     .rangeBands([0, usable_width], 0.1);
                 console.log("X ["+xScale.domain()+"] => ["+xScale.range()+"]");
 
@@ -89,14 +90,17 @@
                         });
                     })
                     .enter()
+                    .append("a").attr("xlink:href",function(d){
+                        return jsRoutes.controllers.Pourritures.show(d[0].slug).url;
+                    })
                     .append("circle")
                     .attr("r",function(d){
                         var l = d[0].raison.length;
                         return Math.sqrt(l) * circleWidth
                     })
-                    .attr("cy",function(d){ return yScale(d[2])})
+                    .attr("cy",function(d){return yScale(d[2])})
                     .attr("cx",function(d,i){
-                        return i * xScale.rangeBand()/this.parentNode.__data__.values.length
+                        return i * xScale.rangeBand()/this.parentNode.parentNode.__data__.values.length
                     })
                     .attr("class", function(d){
                         return d[0].ex ? "ex " : "";

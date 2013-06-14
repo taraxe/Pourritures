@@ -12,23 +12,7 @@
     <script src="@routes.Assets.at("javascripts/main."+"min.".when(app.mode != Mode.Dev)+"js")"></script>
 }
 @main("Pourritures", head) {
-    <h2>Les affaires touchant les élus</h2>
-    <figure class="cumulated">
-        <svg class="legend">
-            <g transform="translate(10,10)">
-                <g transform="translate(10,10)">
-                    <line x1="0" y1="0" x2="30" y2="0"/>
-                    <text dx="40" dy="4">Nombre d'affaires</text>
-                </g>
-                <g transform="translate(180,10)">
-                    <line x1="0" y1="0" x2="40" y2="0"  stroke-dasharray="5,5"  />
-                    <text dx="40" dy="4">Nombre d'affaires cumulées</text>
-                </g>
-            </g>
-        </svg>
-    </figure>
-    <hr/>
-    <h2>Les affaires en détail</h2>
+    <h2>Les faits</h2>
     <figure class="pourriture">
         <div class="chart">
             <svg class="legend">
@@ -55,6 +39,22 @@
             </ul>
         </div>
     </figure>
+    <hr/>
+    <h2>Les chiffres</h2>
+    <figure class="cumulated">
+        <svg class="legend">
+            <g transform="translate(10,10)">
+                <g transform="translate(10,10)">
+                    <line x1="0" y1="0" x2="30" y2="0"/>
+                    <text dx="40" dy="4">Nombre d'affaires</text>
+                </g>
+                <g transform="translate(180,10)">
+                    <line x1="0" y1="0" x2="40" y2="0"  stroke-dasharray="5,5"  />
+                    <text dx="40" dy="4">Nombre d'affaires cumulées</text>
+                </g>
+            </g>
+        </svg>
+    </figure>
 
     <h2>
         <img src="@routes.Assets.at("images/champions.png")" width="419"/>
@@ -65,15 +65,15 @@
     <hr/>
     <h2>A propos</h2>
     <p>La crise de confiance du peuple souverain envers ses représentants élus démocratiquement est profonde. L'OpenData comme outil d'information et de sensibilisation de l'opinion publique peut et doit catalyser la réforme de la vie politique.</p>
-    <p>Le jeu de données est incomplet, si vous souhaitez ajouter des affaires vous pouvez utiliser le <a href="javascript:void(0)" data-uv-lightbox="classic_widget" data-uv-mode="full" data-uv-primary-color="#272f33" data-uv-link-color="#007dbf" data-uv-default-mode="feedback" data-uv-forum-id="204556">Feedback</a>, nous contacter sur <a href="https://twitter.com/Pourritures">Twitter</a> ou directement via une pull request sur <a target="_blank" href="https://github.com/taraxe/pourritures">Github</a></p>
-    <p>Les <a target="_blank" href="@routes.Assets.at("data/pourritures.json")">sources</a> proviennent de <a target="_blank" href="http://www.wikistrike.com/article-liste-des-condamnations-et-mises-en-examen-du-ps-du-parti-de-gauche-des-verts-de-l-ump-et-du-fn-116776009.html">Wikistrike</a> et d'articles sur Wikipedia.</p>
+    <p>Le jeu de données est incomplet, vous pouvez nous aider à <a href="@routes.Pourritures.contrib(None)">ajouter des affaires</a>. Nous contacter sur <a href="https://twitter.com/Pourritures">Twitter</a> et contribuer au projet directement via une pull request sur <a target="_blank" href="https://github.com/taraxe/pourritures">Github</a></p>
+    <p>Les <a target="_blank" href="@routes.Assets.at("data/pourritures.json")">sources</a> proviennent de <a target="_blank" href="http://www.wikistrike.com/article-liste-des-condamnations-et-mises-en-examen-du-ps-du-parti-de-gauche-des-verts-de-l-ump-et-du-fn-116776009.html">Wikistrike</a>, d'articles sur Wikipedia et de vos contributions après vérification.</p>
     <p>Design par <a href="http://dribbble.com/gwen">Gwen</a>, code par <a href="https://twitter.com/taraxe">Antoine</a></p>
 
 
 
     <script type="text/html" id="tooltip-tmpl">
         <div class="tooltip">
-            <% if(typeof(gouvernement) != "undefined") { %>
+            <% if(gouvernement) { %>
             <div class="ribbon-wrapper"><div class="ribbon">GOUV</div></div>
             <% } %>
             <h3><%= name %></h2>
@@ -83,7 +83,7 @@
                 <li><%= item %></li>
                 <% }) %>
             </ul>
-            <a href="<%= url %>">Détail</a>
+            @*<a href="<%= url %>">Détail</a>*@
         </div>
     </script>
     <script type="text/html" id="highscore-tmpl">

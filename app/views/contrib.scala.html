@@ -3,7 +3,6 @@
 @import play.api.Mode
 
 @head = {
-    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/bootstrap/bootstrap.css")">
     <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/contrib.css")">
     <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/select2.css")">
     <script src="@routes.Assets.at("javascripts/select2."+"min.".when(app.mode != Mode.Dev)+"js")"></script>
@@ -72,21 +71,17 @@
     })
   </script>
 }
-@backOffice("Pourritures", head) {
+@back("Pourritures", head) {
 <div class="container">
-    <div class="row-fluid">
+    <div class="row">
         <div class="span12">
-            @if(currentSlug.isEmpty) {
-            <div class="hero-unit">
-                <h1>Contribuer à Pourritures.fr ?</h1>
-                <p>Le formulaire suivant existe dans ce but. Toutes les données saisies seront validées avant d'être affichées publiquement. Pas d'inquiètude si vous ne voyez pas apparaitre les affaires que vous venez de saisir, envoyez-nous un message sur Twitter si la validation prend trop longtemps.</p>
-                <p>Merci par avance pour vos contributions.</p>
+            <div class="page-header">
+                <h1>Contributions <small>Nous aider à saisir les dossiers</small></h1>
             </div>
-            }
             <div class="select-block">
                 <select id="auto" data-placeholder="Rechercher un élu">
                     <option></option>
-                    @pourris.map { p =>
+                    @pourris.sortBy(_.fullname).map { p =>
                         <option value="@p.slug" @if(currentSlug.exists(_ == p.slug)){selected="selected"}>@p.fullname.replace("-"," ")</option>
                     }
                 </select>

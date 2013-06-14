@@ -16,7 +16,7 @@
         return strAccentsOut;
     }
 
-    d3.json('/assets/data/pourritures.json', function(rawData){
+    d3.json('/pourritures.json', function(rawData){
     d3.json('/assets/data/alternance.json', function(alter){
 
         var filtered = rawData.filter(function(e){
@@ -38,7 +38,7 @@
                 .tooltip(function(d){
                     var template = $('#tooltip-tmpl').html();
                     var slug = removeAccents(d[0].name.replace(/ /g, '-').toLowerCase());
-                    d[0].url = jsRoutes.controllers.Pourritures.show(slug).url;
+                    /*d[0].url = jsRoutes.controllers.Pourritures.show(slug).url;*/
                     return _.template(template, d[0])
                 });
 
@@ -143,7 +143,7 @@
                     var f = function (d) {return +d.raison.length},
                         filter = function(g){ return function(d){ return d.formation === g}};
                     return [
-                        d3.sum(values, f),
+                        d3.sum(values, f), // todo make this generic for every group
                         d3.sum(values.filter(filter("ps")), f),
                         d3.sum(values.filter(filter("ump")), f),
                         d3.sum(values.filter(filter("fn")), f)

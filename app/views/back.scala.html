@@ -1,11 +1,13 @@
 @(title: String, head:Html = Html.empty)(content: Html)(implicit app:play.api.Application)
 
 @moreHead = {
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/bootstrap/bootstrap.css")">
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/bootstrap-responsive.min.css")">
     <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/back.css")">
 }
 
 @base("Pourritures", head.+=(moreHead)) {
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse">
         <div class="navbar-inner">
             <div class="container">
                 <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -13,7 +15,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="brand" href="#">Pourritures</a>
+                <a class="brand" href="@routes.Pourritures.index()">Pourritures</a>
             </div>
         </div>
     </div>
