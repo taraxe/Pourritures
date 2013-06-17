@@ -4,10 +4,6 @@
 
 @head = {
   <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/show.css")"/>
-  <script src="@routes.Assets.at("javascripts/d3.v3"+".min".when(app.mode != Mode.Dev)+".js")"></script>
-  <script src="@routes.Assets.at("javascripts/underscore."+"min.".when(app.mode != Mode.Dev)+"js")"></script>
-  <script src="@routes.Assets.at("javascripts/charts."+"min.".when(app.mode != Mode.Dev)+"js")"></script>
-  <script src="@routes.Assets.at("javascripts/find."+"min.".when(app.mode != Mode.Dev)+"js")"></script>
 }
 @back("Pourritures", head) {
     <div class="container">
