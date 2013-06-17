@@ -33,6 +33,6 @@ trait MongoDAO {
     }
   }
 
-  def find[T](js:JsObject)(implicit f:Format[T]):Cursor[T] = collection.find(js).cursor[T]
+  def find[T](js:JsObject, sort:JsObject=Json.obj())(implicit f:Format[T]):Cursor[T] = collection.find(js).sort(sort).cursor[T]
   def count(/*js:Option[JsObject]*/):Future[Int] = db.command(Count(collection.name))
 }

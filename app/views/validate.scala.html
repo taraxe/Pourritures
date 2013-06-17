@@ -1,0 +1,26 @@
+@(affaires:List[Affaire])(implicit app:play.api.Application)
+
+@import play.api.Mode
+
+@head = {
+}
+@back("Pourritures", head) {
+<div class="container">
+    <div class="row">
+        <div class="span12">
+            <div class="page-header">
+                <h1>Validation</h1>
+            </div>
+            @if(affaires.isEmpty){
+            <p>Rien a valider pour l'instant</p>
+            }
+            <ul>
+                @affaires.map {a =>
+                @parts.affaire(a)
+                }
+            </ul>
+        </div>
+    </div>
+
+</div>
+}

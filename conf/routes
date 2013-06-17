@@ -8,8 +8,14 @@ GET     /contrib                    controllers.Pourritures.search
 GET     /contrib/:slug              controllers.Pourritures.contrib(slug:String)
 POST    /pourri                     controllers.Pourritures.create()
 GET     /routes                     controllers.Pourritures.javascriptRoutes
-GET     /import.json           controllers.Pourritures.pourrituresJson
+GET     /import.json                controllers.Pourritures.pourrituresJson
 POST    /:slug/affaire              controllers.Pourritures.createAffaire(slug:String)
+
+GET     /sign-in                    controllers.BackOffice.signin
+GET     /sign-in-callback           controllers.BackOffice.signinCallback
+GET     /sign-out                   controllers.BackOffice.signOut
+GET     /admin                      controllers.BackOffice.index
+
 GET     /:slug                      controllers.Pourritures.show(slug:String)
 
 # Map static resources from the /public folder to the /assets URL path

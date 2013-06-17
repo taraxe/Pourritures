@@ -148,12 +148,6 @@ object Pourritures extends Controller {
     )
   }
 
-/*
-  def voteAffaire() = Action { implicit request =>
-    Ok("")
-  }
-*/
-
   def javascriptRoutes = Action { implicit request =>
     Ok(
       Routes.javascriptRouter("jsRoutes")(

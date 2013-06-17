@@ -87,6 +87,7 @@ object Affaire extends MongoDAO {
   //def incrementApprovalCountForId(id:BSONObjectID)
   def pourriIds:Future[List[Affaire]] = find[Affaire](Json.obj()).toList // how to get only pid field
   def allChecked:Future[List[Affaire]] = find[Affaire](Json.obj("checked"->true)).toList // how to get only pid field
+  def allUnchecked:Future[List[Affaire]] = find[Affaire](Json.obj("checked"->false), Json.obj("_id" -> -1)).toList
   //def pourriIds = collection.find(Json.obj(), Json.obj("pid"->1)).cursor[BSONObjectID](objectIdReads,ec).toList() // how to get only pid field
 
 }
