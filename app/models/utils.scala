@@ -26,11 +26,12 @@ trait MongoDAO {
 
   def insert[T](e:T)(implicit w:Writes[T]):Future[T] = collection.insert(e).map(log).map(_ => e)
 
-  def log(err:LastError) {
+  def log(err:LastError) = {
     if(err.inError){
       import play.api.Logger
       Logger.error("Mongo Last Error: %s".format(err))
     }
+    err
   }
 
   def find[T](js:JsObject, sort:JsObject=Json.obj())(implicit f:Format[T]):Cursor[T] = collection.find(js).sort(sort).cursor[T]

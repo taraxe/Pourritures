@@ -28,7 +28,15 @@ case class Pourri(_id:Option[BSONObjectID] = None, nom:String, prenom:String, fo
   def affairesBlockin:Seq[Affaire] = Await.result(affaires,1 second)
 
 }
-case class Affaire(_id:Option[BSONObjectID] = None, pid:Option[BSONObjectID], annee:DateTime, typeAffaire:TypeAffaire.TypeAffaire, amende:Option[Int], raisons:Seq[String], source:Option[String], checked:Boolean, approvalCount:Option[Int] = None)
+case class Affaire(_id:Option[BSONObjectID] = None,
+                   pid:Option[BSONObjectID],
+                   annee:DateTime,
+                   typeAffaire:TypeAffaire.TypeAffaire,
+                   amende:Option[Int], raisons:Seq[String],
+                   source:Option[String],
+                   checked:Boolean,
+                   approvalCount:Option[Int] = None,
+                   deleted:Option[Boolean] = None)
 
 object Formation extends Enumeration {
   type Formation = Value
@@ -82,9 +90,21 @@ object Affaire extends MongoDAO {
   implicit val affairesWrite = play.api.libs.json.Writes.traversableWrites[Affaire]
   implicit val affairesRead = play.api.libs.json.Reads.traversableReads[Seq,Affaire]
   val collection = db.collection[JSONCollection]("affaires")
+  val alivesQuery = Json.obj("deleted"->false)
+  def alives(js:JsObject) = find[Affaire](alivesQuery ++ js)
   def byPid(id:BSONObjectID) = find[Affaire](Json.obj("pid"->id)).toList
-  def byId(id:BSONObjectID):Future[Option[Affaire]] = find[Affaire](Json.obj("_id"->Json.toJson(id))).headOption
-  //def incrementApprovalCountForId(id:BSONObjectID)
+  def byId(id:BSONObjectID):Future[Option[Affaire]] = find[Affaire](Json.obj("_id"-> Json.toJson(id))).headOption
+  def byId(id:String):Future[Option[Affaire]] = byId(BSONObjectID(id))
+
+  def delete(a:Affaire):Future[Boolean] = {
+    assert(a._id.nonEmpty)
+    val copy: Affaire = a.copy(deleted = Some(true))
+    collection.update[JsObject,JsValue](
+      Json.obj("_id"-> Json.toJson(a._id.get)),
+      Json.toJson(copy
+    )).map(log).map(!_.inError)
+
+  }  //def incrementApprovalCountForId(id:BSONObjectID)
   def pourriIds:Future[List[Affaire]] = find[Affaire](Json.obj()).toList // how to get only pid field
   def allChecked:Future[List[Affaire]] = find[Affaire](Json.obj("checked"->true)).toList // how to get only pid field
   def allUnchecked:Future[List[Affaire]] = find[Affaire](Json.obj("checked"->false), Json.obj("_id" -> -1)).toList

@@ -3,8 +3,28 @@
 @import play.api.Mode
 
 @head = {
+    <script>
+        $(function(){
+          $('button[data-action$="-affair"]').on('click',function(e){
+            var $self = $(this),
+                aid = $self.closest('li').attr('data-aid'),
+                action = $self.attr('data-action').indexOf('validate') < 0 ? jsRoutes.controllers.BackOffice.unValidate(aid) : jsRoutes.controllers.BackOffice.doValidate(aid);
+            $.ajax(action)
+              .done(function(r){
+              $('[data-aid="'+aid+'"]').hide('fast')
+            }).fail(function(r){
+              alert(r)
+            })
+          })
+        })
+    </script>
 }
-@back("Pourritures", head) {
+@menu = {
+    <li><a href="@routes.Pourritures.search()">Contrib</a></li>
+    <li><a href="@routes.Pourritures.search()">Validation</a></li>
+    <li><a href="@routes.BackOffice.signOut()">Logout</a></li>
+}
+@back("Pourritures", head, menu) {
 <div class="container">
     <div class="row">
         <div class="span12">
@@ -16,7 +36,7 @@
             }
             <ul>
                 @affaires.map {a =>
-                @parts.affaire(a)
+                @parts.affaireCheck(a)
                 }
             </ul>
         </div>

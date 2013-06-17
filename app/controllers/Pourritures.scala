@@ -153,7 +153,9 @@ object Pourritures extends Controller {
       Routes.javascriptRouter("jsRoutes")(
         routes.javascript.Pourritures.index,
         routes.javascript.Pourritures.show,
-        routes.javascript.Pourritures.contrib
+        routes.javascript.Pourritures.contrib,
+        routes.javascript.BackOffice.doValidate,
+        routes.javascript.BackOffice.unValidate
       )
     ).as("text/javascript")
   }

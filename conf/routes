@@ -15,6 +15,8 @@ GET     /sign-in                    controllers.BackOffice.signin
 GET     /sign-in-callback           controllers.BackOffice.signinCallback
 GET     /sign-out                   controllers.BackOffice.signOut
 GET     /admin                      controllers.BackOffice.index
+POST    /affaire/:id/validate       controllers.BackOffice.doValidate(id:String)
+DELETE  /affaire/:id/delete         controllers.BackOffice.unValidate(id:String)
 
 GET     /:slug                      controllers.Pourritures.show(slug:String)
 

@@ -1,0 +1,11 @@
+@(a:Affaire)(implicit app:play.api.Application)
+
+<li @a._id.map{af => data-aid="@af.stringify"}>
+  <h3>@a.annee.getYear.toString <span>@a.typeAffaire.toString</span></h3><span>@a.raisons.map(_.trim).mkString("",", ",".").capitalize</span>
+  @a.source.map{ s =>
+  <a href="@s">@s</a>
+  <button class="btn btn-mini btn-block btn-success" type="button" data-action="validate-affair">Accepter</button>
+  <button class="btn btn-mini btn-block btn-danger" type="button" data-action="delete-affair">Effacer</button>
+  }
+</li>
+
