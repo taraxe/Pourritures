@@ -5,15 +5,15 @@
 @head = {
     <script>
         $(function(){
-          $('button[data-action$="-affair"]').on('click',function(e){
+          $('button[data-action$="-affair"]').on('click',function(){
             var $self = $(this),
                 aid = $self.closest('li').attr('data-aid'),
                 action = $self.attr('data-action').indexOf('validate') < 0 ? jsRoutes.controllers.BackOffice.unValidate(aid) : jsRoutes.controllers.BackOffice.doValidate(aid);
             $.ajax(action)
-              .done(function(r){
+              .done(function(){
               $('[data-aid="'+aid+'"]').hide('fast')
             }).fail(function(r){
-              alert(r)
+              console.log(r)
             })
           })
         })

@@ -67,7 +67,7 @@ object Pourri extends MongoDAO {
   val collection = db.collection[JSONCollection]("pourris")
   def bySlug(slug:String) = find[Pourri](Json.obj("slug"->slug)).headOption
   def all = Pourri.find(Json.obj()).toList
-  def withAffaires:Future[List[Pourri]] = Affaire.pourriIds.flatMap{ ids =>
+  def withAffaires:Future[List[Pourri]] = Affaire.allChecked.flatMap{ ids =>
     val toFind = ids.map(_.pid).collect {
       case Some(id) => id
     }
@@ -90,8 +90,8 @@ object Affaire extends MongoDAO {
   implicit val affairesWrite = play.api.libs.json.Writes.traversableWrites[Affaire]
   implicit val affairesRead = play.api.libs.json.Reads.traversableReads[Seq,Affaire]
   val collection = db.collection[JSONCollection]("affaires")
-  val alivesQuery = Json.obj("deleted"->false)
-  def alives(js:JsObject) = find[Affaire](alivesQuery ++ js)
+  val alivesQuery = Json.obj("deleted"->Json.obj("$ne"->true))
+  def alives(js:JsObject,sort:JsObject = Json.obj()) = find[Affaire](alivesQuery ++ js, sort)
   def byPid(id:BSONObjectID) = find[Affaire](Json.obj("pid"->id)).toList
   def byId(id:BSONObjectID):Future[Option[Affaire]] = find[Affaire](Json.obj("_id"-> Json.toJson(id))).headOption
   def byId(id:String):Future[Option[Affaire]] = byId(BSONObjectID(id))
@@ -104,10 +104,7 @@ object Affaire extends MongoDAO {
       Json.toJson(copy
     )).map(log).map(!_.inError)
 
-  }  //def incrementApprovalCountForId(id:BSONObjectID)
-  def pourriIds:Future[List[Affaire]] = find[Affaire](Json.obj()).toList // how to get only pid field
-  def allChecked:Future[List[Affaire]] = find[Affaire](Json.obj("checked"->true)).toList // how to get only pid field
-  def allUnchecked:Future[List[Affaire]] = find[Affaire](Json.obj("checked"->false), Json.obj("_id" -> -1)).toList
-  //def pourriIds = collection.find(Json.obj(), Json.obj("pid"->1)).cursor[BSONObjectID](objectIdReads,ec).toList() // how to get only pid field
-
+  }
+  def allChecked:Future[List[Affaire]] = alives(Json.obj("checked"->true)).toList // how to get only pid field
+  def allUnchecked:Future[List[Affaire]] = alives(Json.obj("checked"->false),Json.obj("_id" -> -1)).toList
 }
