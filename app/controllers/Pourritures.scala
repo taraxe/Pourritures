@@ -65,20 +65,33 @@ object Pourritures extends Controller {
   )
 
   import scala.util.control.Exception._
-  val affaireForm:Form[Affaire] = Form(mapping(
+  val affaireForm:Form[Affaire] = {
+    import play.api.libs.ws.WS
+    import scala.concurrent.Await
+    import scala.concurrent.duration._
+    import java.net.ConnectException
+
+    Form(mapping(
       "annee" -> number(min = 1900, max = new DateTime().year().get()),
       "nature" -> number(min = 0, max = TypeAffaire.maxId),
       "amende" -> optional(number(min = 1)),
       "raisons" -> nonEmptyText,
-      "source" -> nonEmptyText.verifying{s =>
-        (catching(classOf[MalformedURLException]) opt new URL(s)) match{
-          case Some(url) => true
+      "source" -> nonEmptyText.verifying{ s =>
+        (for {
+          url <- catching(classOf[MalformedURLException]) opt new URL(s)
+          status <- catching(classOf[ConnectException]) opt Await.result(WS.url(url.toString).get(),2 seconds).status
+          if (status >= 200 && status < 300 || status == 304)
+        } yield {
+          true
+        }) match {
+          case Some(x) => true
           case None => false
         }
       }
     )((year: Int, typeAffaireNb: Int, amende: Option[Int], raisons: String, source: String) => Affaire(None, None, new DateTime().withYear(year), TypeAffaire(typeAffaireNb), amende, raisons.split(",").map(_.trim), Some(source), false))
       ((a: Affaire) => Some(a.annee.year().get(), a.typeAffaire.id, a.amende, a.raisons.mkString(", "), a.source.getOrElse("")))
     )
+  }
 
 
   def create() = Action { implicit request =>

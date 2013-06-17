@@ -6,8 +6,7 @@ import play.api._
  * Time: 16:24
  */
 import play.api.libs.json._
-import services.NosDeputes
-import models.Pourri
+import models._
 import scala.concurrent.ExecutionContext.Implicits.global
 
 
@@ -34,7 +33,7 @@ object Global extends GlobalSettings {
   }
 
   def importData():Unit = {
-    val jsonBytes = io.Source.fromFile("public/data/newPourritures.json").getLines().mkString
+    val jsonBytes = io.Source.fromFile("public/data/import.json").getLines().mkString
     val json = Json.parse(jsonBytes)
 
     val pourriReads = new Reads[Pourri] {
@@ -54,18 +53,18 @@ object Global extends GlobalSettings {
       ))
     }
 
+    import org.joda.time.DateTime
     json match {
+
       case JsArray(arr) =>
-        val name2Affaires = arr.groupBy(x => (x \ "name").as[String])
+        val name2Affaires = arr.groupBy(x => (x \ "fullname").as[String])
 
       name2Affaires.foreach{ case (name,affaires) =>
-        Logger.debug(name)
         val p = affaires.head.as[Pourri](pourriReads)
         Pourri.save(p).map{ _ =>
           affaires.foreach{a =>
-            import _root_.models.Affaire
-            import org.joda.time.DateTime
-            val newAffaire = Affaire(
+
+            val na = Affaire(
               None,
               p._id,
               new DateTime().withYear((a \ "annee").as[Int]),
@@ -78,55 +77,13 @@ object Global extends GlobalSettings {
               None,
               true
             )
-            Affaire.save(newAffaire)
+            Affaire.save(na)
           }
         }
 
       }
+        Logger.info("Inserted %s pourritures".format(name2Affaires.size))
       case _ => Logger.error("malformed json")
     }
   }
-
-
-/*  def loadFromRegardsCitoyens()={
-    val jsonBytes = io.Source.fromFile("public/data/pourritures.json").getLines().mkString
-    val json = Json.parse(jsonBytes)
-
-    json match {
-      case JsArray(v) => {
-        v.groupBy(e => ( e \ "name").as[String]).map{ case (k,d) =>
-          val slug = Pourri.slugFromString((d.head \ "name").as[String])
-          NosDeputes.bySlug(slug).collect{
-            case Some((n,p)) => {
-              //Logger.debug(n +" "+ p)
-            }
-            case None => Logger.error(slug+" not found on nos deputés")
-          }.recover{
-            case t:org.codehaus.jackson.JsonParseException => Logger.error(s"$slug failed")
-          }
-        }
-      }
-      case _ => Logger.error("Malformed json")
-    }
-  }*/
-
-  import java.io.File
-  class RichFile( file: File ) {
-
-    import scala.io.{Source, Codec}
-
-    def text = Source.fromFile( file )(Codec.UTF8).mkString
-
-    def text_=( s: String ) {
-      import java.io.PrintWriter
-      val out = new PrintWriter( file , "UTF-8")
-      try{ out.print( s ) }
-      finally{ out.close }
-    }
-  }
-  object RichFile {
-    implicit def enrichFile( file: File ):RichFile = new RichFile( file )
-
-  }
-
 }

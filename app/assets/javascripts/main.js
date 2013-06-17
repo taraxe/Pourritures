@@ -16,7 +16,7 @@
         return strAccentsOut;
     }
 
-    d3.json('/pourritures.json', function(rawData){
+    d3.json('/import.json', function(rawData){
     d3.json('/assets/data/alternance.json', function(alter){
 
         var filtered = rawData.filter(function(e){

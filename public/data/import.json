@@ -1,0 +1,1882 @@
+[
+    {
+        "fullname": "Jean-Pierre Kucheida",
+        "formation": "ps",
+        "annee": 2013,
+        "ex": true,
+        "nature": "condamnation",
+        "ammende": 30000,
+        "raison": ["abus de biens sociaux (lors du procès des frais de la Soginorpa)"],
+        "prenom": "Jean-Pierre",
+        "nom": "Kucheida"
+    },
+    {
+        "fullname": "Dominique Strauss-Kahn",
+        "formation": "ps",
+        "annee": 2012,
+        "nature": "mis en examen",
+        "raison": ["proxénétisme aggravé en bande organisée"],
+        "prenom": "Dominique",
+        "nom": "Strauss-Kahn"
+    },
+    {
+        "fullname": "Dominique Strauss-Kahn",
+        "formation": "ps",
+        "annee": 1999,
+        "nature": "mis en examen",
+        "ammende": 30000,
+        "raison": ["faux et usage de faux (dans l'affaire de la MNEF)"],
+        "prenom": "Dominique",
+        "nom": "Strauss-Kahn"
+    },
+    {
+        "fullname": "Anne Hidalgo",
+        "formation": "ps",
+        "annee": 2012,
+        "nature": "condamnation",
+        "ammende": 40000,
+        "raison": ["infraction à la législation sur la durée du travail"],
+        "prenom": "Anne",
+        "nom": "Hidalgo"
+    },
+    {
+        "fullname": "Bernard Granie",
+        "formation": "ps",
+        "annee": 2011,
+        "nature": "condamnation",
+        "raison": ["corruption"],
+        "prenom": "Bernard",
+        "nom": "Granie"
+    },
+    {
+        "fullname": "Bertrand Delanöe",
+        "formation": "ps",
+        "annee": 2010,
+        "nature": "condamnation",
+        "raison": ["atteinte au droit du travail"],
+        "prenom": "Bertrand",
+        "nom": "Delanöe"
+    },
+    {
+        "fullname": "Catherine Trautmann",
+        "formation": "ps",
+        "annee": 1999,
+        "nature": "condamnation",
+        "raison": ["diffamation"],
+        "prenom": "Catherine",
+        "nom": "Trautmann"
+    },
+    {
+        "fullname": "Christian Bourquin",
+        "formation": "ps",
+        "annee": 2012,
+        "nature": "condamnation",
+        "raison": ["délit de favoritisme"],
+        "prenom": "Christian",
+        "nom": "Bourquin"
+    },
+    {
+        "fullname": "Claude Pradille",
+        "formation": "ps",
+        "annee": 1995,
+        "nature": "condamnation",
+        "raison": ["corruption"],
+        "prenom": "Claude",
+        "nom": "Pradille"
+    },
+    {
+        "fullname": "Edmond Hervé",
+        "formation": "ps",
+        "annee": 1999,
+        "nature": "condamnation",
+        "raison": ["manquement à une obligation de sécurité dans l'affaire du sang contaminé"],
+        "prenom": "Edmond",
+        "nom": "Hervé"
+    },
+    {
+        "fullname": "Elie Pigmal",
+        "formation": "ps",
+        "annee": 2012,
+        "nature": "condamnation",
+        "raison": ["délit de favoritisme"],
+        "prenom": "Elie",
+        "nom": "Pigmal"
+    },
+    {
+        "fullname": "François Bernardini",
+        "formation": "ps",
+        "annee": 2001,
+        "nature": "condamnation",
+        "raison": ["ingérence", "détournement de fonds publics", "abus de confiance et abus de biens sociaux"],
+        "prenom": "François",
+        "nom": "Bernardini"
+    },
+    {
+        "fullname": "François Xavier Bordeaux",
+        "formation": "ps",
+        "annee": 2011,
+        "nature": "condamnation",
+        "raison": ["abus de faiblesse"],
+        "prenom": "François Xavier",
+        "nom": "Bordeaux"
+    },
+    {
+        "fullname": "Georges Frêche",
+        "formation": "ps",
+        "ex": true,
+        "annee": 2012,
+        "nature": "condamnation",
+        "raison": ["dérapages verbaux multiples"],
+        "prenom": "Georges",
+        "nom": "Frêche"
+    },
+    {
+        "fullname": "Harlem Desir",
+        "formation": "ps",
+        "annee": 1998,
+        "nature": "condamnation",
+        "raison": ["recel d'abus de confiance"],
+        "prenom": "Harlem",
+        "nom": "Desir"
+    },
+    {
+        "fullname": "Henri Emmanuelli",
+        "formation": "ps",
+        "annee": 1997,
+        "nature": "condamnation",
+        "raison": ["trafic d'influence"],
+        "prenom": "Henri",
+        "nom": "Emmanuelli"
+    },
+    {
+        "fullname": "Jack Lang",
+        "formation": "ps",
+        "annee": 2008,
+        "nature": "condamnation",
+        "raison": ["rupture de contrat"],
+        "prenom": "Jack",
+        "nom": "Lang"
+    },
+    {
+        "fullname": "Jack Mellick",
+        "formation": "ps",
+        "annee": 1997,
+        "nature": "condamnation",
+        "raison": ["dans l'affaire OM-VA pour faux témoignage"],
+        "prenom": "Jack",
+        "nom": "Mellick"
+    },
+    {
+        "fullname": "Jeanine Ecochard",
+        "formation": "ps",
+        "annee": 1998,
+        "nature": "condamnation",
+        "raison": ["l'affaire Urba (financement occulte du PS)"],
+        "prenom": "Jeanine",
+        "nom": "Ecochard"
+    },
+    {
+        "fullname": "Jean-Christophe Cambadélis",
+        "formation": "ps",
+        "annee": 2006,
+        "nature": "condamnation",
+        "raison": ["affaire de la MNEF"],
+        "prenom": "Jean-Christophe",
+        "nom": "Cambadélis"
+    },
+    {
+        "fullname": "Jean-François Noyes",
+        "formation": "ps",
+        "annee": 2012,
+        "nature": "condamnation",
+        "raison": ["dans le cadre de l'Affaire Guérini pour association de malfaiteurs en vue de trafic d'influence et recel de trafic d'influence"],
+        "prenom": "Jean-François",
+        "nom": "Noyes"
+    },
+    {
+        "fullname": "Jean-Marc Ayrault",
+        "formation": "ps",
+        "annee": 1997,
+        "gouvernement": true,
+        "nature": "condamnation",
+        "raison": ["délit de favoritisme"],
+        "prenom": "Jean-Marc",
+        "nom": "Ayrault"
+    },
+    {
+        "fullname": "Jean-Marie Le Chevallier",
+        "formation": "ps",
+        "annee": 2003,
+        "nature": "condamnation",
+        "raison": ["subordination de témoin"],
+        "prenom": "Jean-Marie",
+        "nom": "Le Chevallier"
+    },
+    {
+        "fullname": "Jean-Noel Guérini",
+        "formation": "ps",
+        "annee": 2011,
+        "nature": "condamnation",
+        "raison": ["prise illégale d'intérêt", "trafic d'influence"],
+        "prenom": "Jean-Noel",
+        "nom": "Guérini"
+    },
+    {
+        "fullname": "Jean-Paul Huchon",
+        "formation": "ps",
+        "annee": 2007,
+        "nature": "condamnation",
+        "raison": ["prise illégale d'intérêt (et en 2011 par le Conseil d'Etat)"],
+        "prenom": "Jean-Paul",
+        "nom": "Huchon"
+    },
+    {
+        "fullname": "Jean-Pierre Balduyck",
+        "formation": "ps",
+        "annee": 2005,
+        "nature": "condamnation",
+        "raison": ["délit de favoritisme (a fait appel de sa condamnation)"],
+        "prenom": "Jean-Pierre",
+        "nom": "Balduyck"
+    },
+    {
+        "fullname": "Jean-Pierre Destrade",
+        "formation": "ps",
+        "annee": 2005,
+        "nature": "condamnation",
+        "raison": ["escroquerie", "trafic d'influence"],
+        "prenom": "Jean-Pierre",
+        "nom": "Destrade"
+    },
+    {
+        "fullname": "Khadija Aram",
+        "formation": "ps",
+        "ex": true,
+        "annee": 2011,
+        "nature": "condamnation",
+        "raison": ["trafic d'influence", "abus de confiance"],
+        "prenom": "Khadija",
+        "nom": "Aram"
+    },
+    {
+        "fullname": "Line Cohen Solal",
+        "formation": "ps",
+        "annee": 2011,
+        "nature": "condamnation",
+        "raison": ["même affaire que celle touchant Pierre Mauroy"],
+        "prenom": "Line",
+        "nom": "Cohen Solal"
+    },
+    {
+        "fullname": "Malek Boutih",
+        "formation": "ps",
+        "annee": 2006,
+        "nature": "condamnation",
+        "raison": ["diffamation"],
+        "prenom": "Malek",
+        "nom": "Boutih"
+    },
+    {
+        "fullname": "Michel Delebarre",
+        "formation": "ps",
+        "annee": 2005,
+        "nature": "condamnation",
+        "raison": ["Affaire des Ecoutes Téléphoniques"],
+        "prenom": "Michel",
+        "nom": "Delebarre"
+    },
+    {
+        "fullname": "Michel Laignel",
+        "formation": "ps",
+        "annee": 2006,
+        "nature": "condamnation",
+        "raison": ["faux", "usage de faux", "délit de favoritisme", "prise illégale d'intérêt", "détournement de fonds"],
+        "prenom": "Michel",
+        "nom": "Laignel"
+    },
+    {
+        "fullname": "Michel Pezet",
+        "formation": "ps",
+        "annee": 1998,
+        "nature": "condamnation",
+        "raison": ["recel de fonds utilisés [pour un financement politique] en dehors de tout enrichissement personnel"],
+        "prenom": "Michel",
+        "nom": "Pezet"
+    },
+    {
+        "fullname": "Mohamed Abdi",
+        "formation": "ps",
+        "annee": 2007,
+        "nature": "condamnation",
+        "raison": ["escroquerie"],
+        "prenom": "Mohamed",
+        "nom": "Abdi"
+    },
+    {
+        "fullname": "Monique Delessard",
+        "formation": "ps",
+        "annee": 2010,
+        "nature": "condamnation",
+        "raison": ["mariage illégal"],
+        "prenom": "Monique",
+        "nom": "Delessard"
+    },
+    {
+        "fullname": "Olivier Spithakis",
+        "formation": "ps",
+        "annee": 2005,
+        "nature": "condamnation",
+        "raison": ["affaire de la MNEF"],
+        "prenom": "Olivier",
+        "nom": "Spithakis"
+    },
+    {
+        "fullname": "Patrick Sève",
+        "formation": "ps",
+        "nature": "mis en examen",
+        "annee": 2011,
+        "raison": ["octroie injustifié de marchés publics", "soustraction de fonds publics."],
+        "prenom": "Patrick",
+        "nom": "Sève"
+    },
+    {
+        "fullname": "Pascal Buchet",
+        "formation": "ps",
+        "annee": 2012,
+        "nature": "condamnation",
+        "raison": ["harcèlement moral (après le suicide d'une de ses collaboratrice)"],
+        "prenom": "Pascal",
+        "nom": "Buchet"
+    },
+    {
+        "fullname": "Philippe Sanmarco",
+        "formation": "ps",
+        "annee": 1997,
+        "nature": "condamnation",
+        "raison": ["complicité de trafic d'influence dans l'affaire du financement occulte du PS, l'Affaire Urba"],
+        "prenom": "Philippe",
+        "nom": "Sanmarco"
+    },
+    {
+        "fullname": "Pierre Mauroy",
+        "formation": "ps",
+        "annee": 2011,
+        "nature": "condamnation",
+        "raison": ["emploi fictif"],
+        "prenom": "Pierre",
+        "nom": "Mauroy"
+    },
+    {
+        "fullname": "Pierre Moscovici",
+        "formation": "ps",
+        "annee": 2001,
+        "gouvernement": true,
+        "nature": "condamnation",
+        "raison": ["atteinte au droit à l'image"],
+        "prenom": "Pierre",
+        "nom": "Moscovici"
+    },
+    {
+        "fullname": "René Teulade",
+        "formation": "ps",
+        "annee": 2011,
+        "nature": "condamnation",
+        "raison": ["abus de confiance"],
+        "prenom": "René",
+        "nom": "Teulade"
+    },
+    {
+        "fullname": "Robert Gaïa",
+        "formation": "ps",
+        "annee": 2002,
+        "nature": "condamnation",
+        "raison": ["délit de favoritisme"],
+        "prenom": "Robert",
+        "nom": "Gaïa"
+    },
+    {
+        "fullname": "Ségolène Royal",
+        "formation": "ps",
+        "annee": 2008,
+        "nature": "condamnation",
+        "raison": ["licenciements abusifs"],
+        "prenom": "Ségolène",
+        "nom": "Royal"
+    },
+    {
+        "fullname": "Serge Andréoni",
+        "formation": "ps",
+        "nature": "mis en examen",
+        "annee": 2011,
+        "raison": ["complicité de trafic d'influence dans l'affaire Guérini"],
+        "prenom": "Serge",
+        "nom": "Andréoni"
+    },
+    {
+        "fullname": "Sylvie Andrieux",
+        "formation": "ps",
+        "nature": "condamnation",
+        "annee": 2013,
+        "raison": ["complicité de tentative d'escroquerie et de détournements de fonds publics dans l'affaire du financement présumés à hauteur de 700 000 € d'associations présumées fictives"],
+        "prenom": "Sylvie",
+        "nom": "Andrieux",
+        "amende" : 100000
+    },
+    {
+        "fullname": "Yacine Chaouat",
+        "formation": "ps",
+        "nature": "mis en examen",
+        "annee": 2011,
+        "raison": ["pour violences conjugales (en appel)"],
+        "prenom": "Yacine",
+        "nom": "Chaouat"
+    },
+
+    {
+        "fullname": "Gérard Dalongeville",
+        "formation":"ps",
+        "nature": "mis en examen",
+        "annee": 2009,
+        "raison": ["détournement de fonds publics","faux et usage de faux","favoritisme","corruption"],
+        "prenom": "Gérard",
+        "nom": "Dalongeville"
+
+    },
+
+    {
+        "fullname": "Jérome Cahuzac",
+        "formation": "ps",
+        "ex": true,
+        "nature": "mis en examen",
+        "annee": 2013,
+        "raison": ["blanchiment d'argent", "fraude fiscale"],
+        "prenom": "Jérome",
+        "nom": "Cahuzac"
+    },
+
+    {
+        "fullname": "Jean-Christophe Lagarde",
+        "formation":"udi",
+        "nature": "mis en examen",
+        "annee": 2013,
+        "raison": ["favoritisme dans une affaire de marchés publics"],
+        "prenom": "Jean-Christophe",
+        "nom": "Lagarde"
+    },
+
+    {
+        "fullname": "Alain Agostini",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2008,
+        "raison": ["proxénétisme aggravé en bande organisée"],
+        "prenom": "Alain",
+        "nom": "Agostini"
+    },
+    {
+        "fullname": "Alain Carignon",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 1999,
+        "raison": ["corruption", "abus de biens sociaux", "subornation de témoins"],
+        "prenom": "Alain",
+        "nom": "Carignon"
+    },
+    {
+        "fullname": "Alain Ferrand",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2006,
+        "raison": ["faux", "usage de faux"],
+        "prenom": "Alain",
+        "nom": "Ferrand"
+    },
+    {
+        "fullname": "Alain Ferrand",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 1998,
+        "raison": ["prises illégales d’intérêts", "condamné pour fraude fiscale"],
+        "prenom": "Alain",
+        "nom": "Ferrand"
+    },
+    {
+        "fullname": "Alain Juppé",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2007,
+        "raison": ["abus de confiance", "recel d’abus de biens sociaux", "prise illégale d’intérêt"],
+        "prenom": "Alain",
+        "nom": "Juppé"
+    },
+    {
+        "fullname": "Alain Tuduri",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2010,
+        "raison": ["discrimination raciale", "préemption de biens immobiliers que voulait acheter des personnes d’origines étrangères dans sa commune"],
+        "prenom": "Alain",
+        "nom": "Tuduri"
+    },
+    {
+        "fullname": "Axel Poniatowski",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2010,
+        "raison": ["diffamation"],
+        "prenom": "Axel",
+        "nom": "Poniatowski"
+    },
+    {
+        "fullname": "Brice Hortefeux",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2010,
+        "raison": ["atteinte à la présomption d’innocence", "injure non publique envers un groupe de personnes à raison de leur origine"],
+        "prenom": "Brice",
+        "nom": "Hortefeux"
+    },
+    {
+        "fullname": "Brigitte Barèges",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2011,
+        "raison": ["refus de mariage"],
+        "prenom": "Brigitte",
+        "nom": "Barèges"
+    },
+    {
+        "fullname": "Bruno Sandras",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2011,
+        "raison": ["détournement de fonds publics", "prise illégale d’intérêts"],
+        "prenom": "Bruno",
+        "nom": "Sandras"
+    },
+    {
+        "fullname": "Charles Fabre",
+        "formation": "ump",
+        "nature": "mis en examen",
+        "annee": 2010,
+        "raison": ["délit de favoritisme"],
+        "prenom": "Charles",
+        "nom": "Fabre"
+    },
+    {
+        "fullname": "Charles Pasqua",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2010,
+        "raison": ["trafic d’influence", "délit de favoritisme", "faux", "financement illégal de campagne", "abus de confiance", "cité dans l’affaire de recel d’abus de biens sociaux pour l’association France Afrique Orient", "mentionné dans l’affaire du financement occulte du ministère de l’Intérieur et de l’Union des groupements d’achats publics"],
+        "prenom": "Charles",
+        "nom": "Pasqua"
+    },
+    {
+        "fullname": "Christian Vanneste",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2007,
+        "raison": ["propos homophobes (confirmé en appel, puis annulé en cassation)"],
+        "prenom": "Christian",
+        "nom": "Vanneste"
+    },
+    {
+        "fullname": "Claude Polony",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2009,
+        "raison": ["prise illégale d’intérêt", "favoritisme", "détournements de fonds"],
+        "prenom": "Claude",
+        "nom": "Polony"
+    },
+    {
+        "fullname": "Daniel Simonpieri",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2011,
+        "raison": ["favoritisme", "fausses factures", "emploi fictif"],
+        "prenom": "Daniel",
+        "nom": "Simonpieri"
+    },
+    {
+        "fullname": "Damien Meslot",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2010,
+        "raison": ["outrage à magistrat"],
+        "prenom": "Damien",
+        "nom": "Meslot"
+    },
+    {
+        "fullname": "Damien Meslot",
+        "formation": "ump",
+        "nature": "mis en examen",
+        "annee": 2010,
+        "raison": ["atteinte ou tentative d´atteinte à la sincérité d´un scrutin"],
+        "prenom": "Damien",
+        "nom": "Meslot"
+    },
+    {
+        "fullname": "Denis Gautier-Sauvagnac",
+        "formation": "ump",
+        "nature": "mis en examen",
+        "annee": 2008,
+        "raison": ["blanchiment d’argent"],
+        "prenom": "Denis",
+        "nom": "Gautier-Sauvagnac"
+    },
+    {
+        "fullname": "Denis Jacquat",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2011,
+        "raison": ["abus de confiance", "infraction à la législation sur le financement des campagnes électorales"],
+        "prenom": "Denis",
+        "nom": "Jacquat"
+    },
+    {
+        "fullname": "Didier Schuller",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2007,
+        "raison": ["financement occulte d'activités politiques"],
+        "prenom": "Didier",
+        "nom": "Schuller"
+    },
+    {
+        "fullname": "Didier Schuller",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2005,
+        "raison": ["financement illégal de sa campagne"],
+        "prenom": "Didier",
+        "nom": "Schuller"
+    },
+    {
+        "fullname": "Dominique Paillé",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2004,
+        "raison": ["abus de confiance"],
+        "prenom": "Dominique",
+        "nom": "Paillé"
+    },
+    {
+        "fullname": "Frédéric Chazal",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2010,
+        "raison": ["diffamation"],
+        "prenom": "Frédéric",
+        "nom": "Chazal"
+    },
+    {
+        "fullname": "Gaston Flosse",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2011,
+        "raison": ["détournement de fonds publics et prise illégale d’intérêts"],
+        "prenom": "Gaston",
+        "nom": "Flosse"
+    },
+    {
+        "fullname": "Georges Tron",
+        "formation": "ump",
+        "nature": "mis en examen",
+        "annee": 2011,
+        "raison": ["harcèlement sexuel", "agression sexuelle", "viol"],
+        "prenom": "Georges",
+        "nom": "Tron"
+    },
+    {
+        "fullname": "Gérard Dezempte",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2006,
+        "raison": ["discrimination"],
+        "prenom": "Gérard",
+        "nom": "Dezempte"
+    },
+    {
+        "fullname": "Gérard Larrat",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2011,
+        "raison": ["constitution de partie civile abusive ou dilatoire dans le but de nuire à son adversaire socialiste"],
+        "prenom": "Gérard",
+        "nom": "Larrat"
+    },
+    {
+        "fullname": "Gérard Larrat",
+        "formation": "ump",
+        "nature": "mis en examen",
+        "annee": 2011,
+        "raison": ["complicité d’atteinte à la sincérité du scrutin", "complicité de faux administratif", "usage et complicité de manoeuvre frauduleuse tendant à l’exercice irrégulier du vote par procuration (son élection a été anulée)"],
+        "prenom": "Gérard",
+        "nom": "Larrat"
+    },
+    {
+        "fullname": "Gilles Forray",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2006,
+        "raison": ["corruption passive", "recel d’abus de biens sociaux"],
+        "prenom": "Gilles",
+        "nom": "Forray"
+    },
+    {
+        "fullname": "Guy Drut",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2005,
+        "raison": ["bénéfice d’un emploi fictif"],
+        "prenom": "Guy",
+        "nom": "Drut"
+    },
+    {
+        "fullname": "Guy Wildenstein",
+        "formation": "ump",
+        "nature": "mis en examen",
+        "annee": 2011,
+        "raison": ["recel d’abus de confiance"],
+        "prenom": "Guy",
+        "nom": "Wildenstein"
+    },
+    {
+        "fullname": "Henry Chabert",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2002,
+        "raison": ["recel d’abus de biens sociaux"],
+        "prenom": "Henry",
+        "nom": "Chabert"
+    },
+    {
+        "fullname": "Jacques Blanc",
+        "formation": "ump",
+        "nature": "mis en examen",
+        "annee": 2009,
+        "raison": ["détournement de fonds publics", "prise illégale d’intérêt"],
+        "prenom": "Jacques",
+        "nom": "Blanc"
+    },
+    {
+        "fullname": "Jacques Masdeu-Arus",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2009,
+        "raison": ["corruption passive", "recel d’abus de biens sociaux"],
+        "prenom": "Jacques",
+        "nom": "Masdeu-Arus"
+    },
+    {
+        "fullname": "Jacques Myard",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2009,
+        "raison": ["diffamation"],
+        "prenom": "Jacques",
+        "nom": "Myard"
+    },
+    {
+        "fullname": "Jean Reynaud",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2004,
+        "raison": ["prise illégale d’intérêt"],
+        "prenom": "Jean",
+        "nom": "Reynaud"
+    },
+    {
+        "fullname": "Jean Reynaud",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2006,
+        "raison": ["harcèlement moral", "dégradation de conditions de travail"],
+        "prenom": "Jean",
+        "nom": "Reynaud"
+    },
+    {
+        "fullname": "Jean Tiberi",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2009,
+        "raison": ["occupation illégale des locaux de sa permanence", "fraude aux électeurs"],
+        "prenom": "Jean",
+        "nom": "Tiberi"
+    },
+    {
+        "fullname": "Jean-Louis Garnier",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2011,
+        "raison": ["coups et blessures"],
+        "prenom": "Jean-Louis",
+        "nom": "Garnier"
+    },
+    {
+        "fullname": "Jean-Louis Masson",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 1997,
+        "raison": ["financement de la campagne d’un concurrent afin d’affaiblir sa rivale à droite"],
+        "prenom": "Jean-Louis",
+        "nom": "Masson"
+    },
+    {
+        "fullname": "Jean-Paul Alduy",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2008,
+        "raison": ["son élection est annulée pour fraude"],
+        "prenom": "Jean-Paul",
+        "nom": "Alduy"
+    },
+    {
+        "fullname": "Jean-Paul Fournier",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2010,
+        "raison": ["prise illégale d’intérêt"],
+        "prenom": "Jean-Paul",
+        "nom": "Fournier"
+    },
+    {
+        "fullname": "Joëlle Ceccaldi-Raynaud",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2006,
+        "raison": ["diffamation", "complicité de diffamation"],
+        "prenom": "Joëlle",
+        "nom": "Ceccaldi-Raynaud"
+    },
+    {
+        "fullname": "Joëlle Ferrand",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2010,
+        "raison": ["prise illégale d’intérêt", "malversations"],
+        "prenom": "Joëlle",
+        "nom": "Ferrand"
+    },
+    {
+        "fullname": "Laurence Spicher-Bernier",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2011,
+        "raison": ["exercice illégal de la profession d’avocat", "escroquerie"],
+        "prenom": "Laurence",
+        "nom": "Spicher-Bernier"
+    },
+    {
+        "fullname": "Lionel Cressiot",
+        "formation": "ump",
+        "nature": "mis en examen",
+        "annee": 2011,
+        "raison": ["injures", "diffamation"],
+        "prenom": "Lionel",
+        "nom": "Cressiot"
+    },
+    {
+        "fullname": "Lucette Michaux-Chevry",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2002,
+        "raison": ["favoritisme dans l’attribution de marchés publics"],
+        "prenom": "Lucette",
+        "nom": "Michaux-Chevry"
+    },
+    {
+        "fullname": "Manuel Aeschlimann",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2009,
+        "raison": ["favoritisme dans l’attribution d’un marché public"],
+        "prenom": "Manuel",
+        "nom": "Aeschlimann"
+    },
+    {
+        "fullname": "Marie-Jeanne Bozzi",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2002,
+        "raison": ["proxénétisme aggravé", "association de malfaiteurs", "dissimulation de travail clandestin"],
+        "prenom": "Marie-Jeanne",
+        "nom": "Bozzi"
+    },
+    {
+        "fullname": "Marie-Jeanne Bozzi",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2007,
+        "raison": ["soustraction au paiement de l’impôt", "omission de déclaration", "fraude fiscale"],
+        "prenom": "Marie-Jeanne",
+        "nom": "Bozzi"
+    },
+    {
+        "fullname": "Marie-Jeanne Bozzi",
+        "formation": "ump",
+        "nature": "mise en examen",
+        "annee": 2009,
+        "raison": ["association de malfaiteurs en vue de la commission d’un homicide en bande organisée"],
+        "prenom": "Marie-Jeanne",
+        "nom": "Bozzi"
+    },
+    {
+        "fullname": "Maurice Gutman",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2010,
+        "raison": ["proposition sexuelle à une mineure de 12 ans"],
+        "prenom": "Maurice",
+        "nom": "Gutman"
+    },
+    {
+        "fullname": "Michel Buillard",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2011,
+        "raison": ["détournement de fonds publics", "prise illégale d’intérêts"],
+        "prenom": "Michel",
+        "nom": "Buillard"
+    },
+    {
+        "fullname": "Michel Habig",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2006,
+        "raison": ["pour avoir fair incendier 14 caravanes appartenant à des Roms installées sur un terrain municipal"],
+        "prenom": "Michel",
+        "nom": "Habig"
+    },
+    {
+        "fullname": "Nicolas Bazire",
+        "formation": "ump",
+        "nature": "mis en examen",
+        "annee": 2011,
+        "raison": ["dans le cadre de l'affaire Karachi"],
+        "prenom": "Nicolas",
+        "nom": "Bazire"
+    },
+    {
+        "fullname": "Olivier Deleu",
+        "formation": "ump",
+        "nature": "mis en examen",
+        "annee": 2011,
+        "raison": ["injures", "diffamation"],
+        "prenom": "Olivier",
+        "nom": "Deleu"
+    },
+    {
+        "fullname": "Olivier Rey",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2008,
+        "raison": ["violences", "menaces", "dégradation grave du bien d’autrui à raison de la religion"],
+        "prenom": "Olivier",
+        "nom": "Rey"
+    },
+    {
+        "fullname": "Pascal Buchet",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2011,
+        "raison": ["harcèlement moral ayant mené au suicide"],
+        "prenom": "Pascal",
+        "nom": "Buchet"
+    },
+    {
+        "fullname": "Patrick Balkany",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2003,
+        "raison": ["injure publique", "diffamation"],
+        "prenom": "Patrick",
+        "nom": "Balkany"
+    },
+    {
+        "fullname": "Patrick Balkany",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 1999,
+        "raison": ["pour avoir rémunéré aux frais du contribuable trois personnes désignées comme des employés municipaux mais qui ne s’occupaient que de son appartement de Levallois-Perret et de sa résidence secondaire près de Giverny"],
+        "prenom": "Patrick",
+        "nom": "Balkany"
+    },
+    {
+        "fullname": "Philippe Brun",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2011,
+        "raison": ["fraudes et multiples abus de biens sociaux"],
+        "prenom": "Philippe",
+        "nom": "Brun"
+    },
+    {
+        "fullname": "Pierre Bédier",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2009,
+        "raison": ["corruption passive", "recel d’abus de biens sociaux"],
+        "prenom": "Pierre",
+        "nom": "Bédier"
+    },
+    {
+        "fullname": "Philippe Pemezec",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2010,
+        "raison": ["injures"],
+        "prenom": "Philippe",
+        "nom": "Pemezec"
+    },
+    {
+        "fullname": "Philippe Pemezec",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2007,
+        "raison": ["irrégularités lors de sa campagne (son élection sera annulée)"],
+        "prenom": "Philippe",
+        "nom": "Pemezec"
+    },
+    {
+        "fullname": "Renaud Donnedieu de Vabres",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2004,
+        "raison": ["blanchiment d’argent"],
+        "prenom": "Renaud",
+        "nom": "Donnedieu de Vabres"
+    },
+    {
+        "fullname": "Renaud Donnedieu de Vabres",
+        "formation": "ump",
+        "nature": "mis en examen",
+        "annee": 2004,
+        "raison": ["dans le cadre de l’affaire Karachi"],
+        "prenom": "Renaud",
+        "nom": "Donnedieu de Vabres"
+    },
+    {
+        "fullname": "René Vestri",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2009,
+        "raison": ["travail dissimulé"],
+        "prenom": "René",
+        "nom": "Vestri"
+    },
+    {
+        "fullname": "René Vestri",
+        "formation": "ump",
+        "nature": "mis en examen",
+        "annee": 2009,
+        "raison": ["blanchiment à titre habituel et en bande organisée", "trafic d’influence", "association de malfaiteurs"],
+        "prenom": "René",
+        "nom": "Vestri"
+    },
+    {
+        "fullname": "Richard Cazenave",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 1999,
+        "raison": ["abus de biens sociaux"],
+        "prenom": "Richard",
+        "nom": "Cazenave"
+    },
+    {
+        "fullname": "Richard Cazenave",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2004,
+        "raison": ["recel et complicité d’abus de biens sociaux"],
+        "prenom": "Richard",
+        "nom": "Cazenave"
+    },
+    {
+        "fullname": "Serge Dassault",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 1998,
+        "raison": ["corruption"],
+        "prenom": "Serge",
+        "nom": "Dassault"
+    },
+    {
+        "fullname": "Serge Dassault",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2009,
+        "raison": ["pour avoir acheté des voix lors des municipales"],
+        "prenom": "Serge",
+        "nom": "Dassault"
+    },
+    {
+        "fullname": "Serge Dassault",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2010,
+        "raison": ["procédure abusive"],
+        "prenom": "Serge",
+        "nom": "Dassault"
+    },
+    {
+        "fullname": "Thérèse Aillaud",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2002,
+        "raison": ["détournement de fonds publics"],
+        "prenom": "Thérèse",
+        "nom": "Aillaud"
+    },
+    {
+        "fullname": "Thierry Gaubert",
+        "formation": "ump",
+        "nature": "mis en examen",
+        "annee": 2008,
+        "raison": ["abus de biens sociaux", "escroquerie"],
+        "prenom": "Thierry",
+        "nom": "Gaubert"
+    },
+    {
+        "fullname": "Thierry Gaubert",
+        "formation": "ump",
+        "nature": "mis en examen",
+        "annee": 2008,
+        "raison": ["dans le cadre de l’affaire Karachi"],
+        "prenom": "Thierry",
+        "nom": "Gaubert"
+    },
+    {
+        "fullname": "Thierry Leprince",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2007,
+        "raison": ["viol sur une mineure de 12 ans"],
+        "prenom": "Thierry",
+        "nom": "Leprince"
+    },
+    {
+        "fullname": "Vincent Toni",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2011,
+        "raison": ["corruption passive"],
+        "prenom": "Vincent",
+        "nom": "Toni"
+    },
+    {
+        "fullname": "Vincent Toni",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2008,
+        "raison": ["corruption passive"],
+        "prenom": "Vincent",
+        "nom": "Toni"
+    },
+    {
+        "fullname": "Xavier Dugoin",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 1997,
+        "raison": ["trafic d’alcool", "salaires fictifs", "corruption"],
+        "prenom": "Xavier",
+        "nom": "Dugoin"
+    },
+    {
+        "fullname": "Xavier Dugoin",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2000,
+        "raison": ["abus de confiance", "détournement de fonds publics", "falsification de documents administratifs", "prise illégale d’intérêt"],
+        "prenom": "Xavier",
+        "nom": "Dugoin"
+    },
+    {
+        "fullname": "Xavier Dugoin",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2001,
+        "raison": ["dans le cadre de l’affaire des emplois fictifs du conseil général de l’Essonne (annulée pour vice de forme)"],
+        "prenom": "Xavier",
+        "nom": "Dugoin"
+    },
+    {
+        "fullname": "André Santini",
+        "formation": "ump",
+        "nature": "mis en examen",
+        "annee": 2006,
+        "raison": ["prise illégale d'intérêt", "faux et usage de faux", "détournement de fonds publics"],
+        "prenom": "André",
+        "nom": "Santini"
+    },
+    {
+        "fullname": "Eric Woerth",
+        "formation": "ump",
+        "nature": "mis en examen",
+        "annee": 2012,
+        "raison": ["recel dans l'enquête sur l'héritière de L'Oréal Liliane Bettencourt"],
+        "prenom": "Eric",
+        "nom": "Woerth"
+    },
+    {
+        "fullname": "Yanick Paternotte",
+        "formation": "ump",
+        "nature": "condamnation",
+        "annee": 2012,
+        "raison": ["abus de faiblesse"],
+        "prenom": "Yanick",
+        "nom": "Paternotte"
+    },
+    {
+        "fullname": "Nicolas Sarkozy",
+        "formation": "ump",
+        "nature": "mis en examen",
+        "annee": 2013,
+        "raison": ["abus de faiblesse sur l'héritière de L'Oréal Liliane Bettencourt"],
+        "prenom": "Nicolas",
+        "nom": "Sarkozy"
+    },
+    {
+        "fullname": "Alexandre Gabriac",
+        "formation": "fn",
+        "nature": "examen",
+        "annee": 2007,
+        "raison": ["pour ses liens étroits avec un commando d'extrême-droite ayant tenté de cambrioler un stand de tir à Saint-Andéol-le-Château, dont l'aventure s'est terminée par le meurtre du Gendarme Ambrosse"],
+        "prenom": "Alexandre",
+        "nom": "Gabriac"
+    },
+    {
+        "fullname": "Alexandre Gabriac",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2007,
+        "raison": ["apologie de crime contre l'humanité", "injures à caractère raciste", "violences volontaires ayant entraîné une incapacité de travail supérieure à 8 jours "],
+        "prenom": "Alexandre",
+        "nom": "Gabriac"
+    },
+    {
+        "fullname": "Alexandre Simonnot",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2010,
+        "raison": ["pour avoir détruit un préservatif géant à l'occasion de la journée mondiale contre le Sida"],
+        "prenom": "Alexandre",
+        "nom": "Simonnot"
+    },
+    {
+        "fullname": "Antoinette Martinet",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 1998,
+        "raison": ["provocation à la haine, à la violence et à la discrimination"],
+        "prenom": "Antoinette",
+        "nom": "Martinet"
+    },
+    {
+        "fullname": "Bruno Gollnisch",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2007,
+        "raison": ["condamné en première instance et par le Conseil d'État pour contestation de l'existence de crime contre l'humanité (négationnisme)", "la Cour de Cassation va pourtant casser sans renvoi l'arrêt de la cour d'appel"],
+        "prenom": "Bruno",
+        "nom": "Gollnisch"
+    },
+    {
+        "fullname": "Bruno Mégret",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 1998,
+        "raison": ["pour avoir tenu des propos sur l’inégalité des races"],
+        "prenom": "Bruno",
+        "nom": "Mégret"
+    },
+    {
+        "fullname": "Bruno Mégret",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2002,
+        "raison": ["pour avoir envoyé aux frais de la commune de Vitrolles plusieurs milliers de lettres appelant à parrainer sa candidature pour l'élection présidentielle"],
+        "prenom": "Bruno",
+        "nom": "Mégret"
+    },
+    {
+        "fullname": "Bruno Mégret",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2006,
+        "raison": ["détournement de fonds"],
+        "prenom": "Bruno",
+        "nom": "Mégret"
+    },
+    {
+        "fullname": "Calude Jaffres",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 1997,
+        "raison": ["pour usurpation de fonction"],
+        "prenom": "Calude",
+        "nom": "Jaffres"
+    },
+    {
+        "fullname": "Catherine Mégret",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 1998,
+        "raison": ["pour discrimination et incitation à la discrimination"],
+        "prenom": "Catherine",
+        "nom": "Mégret"
+    },
+    {
+        "fullname": "Catherine Mégret",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2002,
+        "raison": ["pour avoir envoyé aux frais de la commune de Vitrolles plusieurs milliers de lettres appelant à parrainer la candidature de son époux pour l'élection présidentielle"],
+        "prenom": "Catherine",
+        "nom": "Mégret"
+    },
+    {
+        "fullname": "Catherine Mégret",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2006,
+        "raison": ["détournement de fonds"],
+        "prenom": "Catherine",
+        "nom": "Mégret"
+    },
+    {
+        "fullname": "Cédric Bégin",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2002,
+        "raison": ["détention sans autorisation de munitions et d'armes, condamné pour incitation à la haine raciale"],
+        "prenom": "Cédric",
+        "nom": "Bégin"
+    },
+    {
+        "fullname": "Christophe Klein",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2002,
+        "raison": ["provocation à la discrimination raciale"],
+        "prenom": "Christophe",
+        "nom": "Klein"
+    },
+    {
+        "fullname": "Claude Jaffrès",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 1997,
+        "raison": ["abus d’autorité", "usurpation de fonction"],
+        "prenom": "Claude",
+        "nom": "Jaffrès"
+    },
+    {
+        "fullname": "Denis Monteillet",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 1995,
+        "raison": ["pour avoir inscrit plusieurs personnes de son voisinage sur la liste présentée par son parti au municipales sans les avoir prévenues. Le Conseil d’Etat a annulé les élections des conseillers municipaux FN pour « liste irrégulière »"],
+        "prenom": "Denis",
+        "nom": "Monteillet"
+    },
+    {
+        "fullname": "Emilien Bonnal",
+        "formation": "fn",
+        "ex": true,
+        "nature": "condamnation",
+        "annee": 1985,
+        "raison": ["reconnu coupable de meurtre, alors qu’il collait des affiches pour le FN, pour avoir tué Abdallah Moktari, 23 ans ; qui l’avait insulté. 8 ans de prison"],
+        "prenom": "Emilien",
+        "nom": "Bonnal"
+    },
+    {
+        "fullname": "Francis Watez",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2007,
+        "ammende": 7500,
+        "raison": ["incitation à la discrimination raciale"],
+        "prenom": "Francis",
+        "nom": "Watez"
+    },
+    {
+        "fullname": "François Nicolas-Schmitt",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 1997,
+        "raison": ["détournement de fonds"],
+        "prenom": "François",
+        "nom": "Nicolas-Schmitt"
+    },
+    {
+        "fullname": "Gilles Lacroix",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 1997,
+        "raison": ["complicité de violence en réunion, avec arme et préméditation", "pour complicité de destruction de biens"],
+        "prenom": "Gilles",
+        "nom": "Lacroix"
+    },
+    {
+        "fullname": "Georges Theil",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2001,
+        "raison": ["contestation de crimes contre l'Humanité"],
+        "prenom": "Georges",
+        "nom": "Theil"
+    },
+    {
+        "fullname": "Georges Theil",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2006,
+        "raison": ["contestation de crimes contre l'Humanité"],
+        "prenom": "Georges",
+        "nom": "Theil"
+    },
+    {
+        "fullname": "Guy Cannie",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2011,
+        "raison": ["escroquerie en bande organisée"],
+        "prenom": "Guy",
+        "nom": "Cannie"
+    },
+    {
+        "fullname": "Jacky Codvelle",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 1990,
+        "raison": ["pour avoir mis le feu à la voiture du député du Rhône et maire PS de la ville, Jean Jacques Queyranne pour fêter le 14 juillet"],
+        "prenom": "Jacky",
+        "nom": "Codvelle"
+    },
+    {
+        "fullname": "Jacques Bompard",
+        "formation": "fn",
+        "nature": "mis en examen",
+        "annee": 2010,
+        "raison": ["prise illégale d’intérêt"],
+        "prenom": "Jacques",
+        "nom": "Bompard"
+    },
+    {
+        "fullname": "Jacques Coutela",
+        "formation": "fn",
+        "nature": "mis en examen",
+        "annee": 2011,
+        "raison": ["incitation à la haine raciale (suite à son apologie d’Anders Behring Breivik, auteur des attentats d’Oslo)"],
+        "prenom": "Jacques",
+        "nom": "Coutela"
+    },
+    {
+        "fullname": "Jean Holtzer",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 1990,
+        "raison": ["coupable de vol à main armé pour avoir braqué une banque (8 ans fermes)"],
+        "prenom": "Jean",
+        "nom": "Holtzer"
+    },
+    {
+        "fullname": "Jean-Claude Poulet",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 1992,
+        "raison": ["pour avoir battu sa femme pendant quinze ans"],
+        "prenom": "Jean-Claude",
+        "nom": "Poulet"
+    },
+    {
+        "fullname": "Jean-Marc Maurice",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2006,
+        "raison": ["pour outrage à agent dépositaire de l'autorité publique"],
+        "prenom": "Jean-Marc",
+        "nom": "Maurice"
+    },
+    {
+        "fullname": "Jean-Marc Maurice",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2007,
+        "raison": ["vol"],
+        "prenom": "Jean-Marc",
+        "nom": "Maurice"
+    },
+    {
+        "fullname": "Jean-Marc Maurice",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2008,
+        "raison": ["escroquerie"],
+        "prenom": "Jean-Marc",
+        "nom": "Maurice"
+    },
+    {
+        "fullname": "Jean-Marc Maurice",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2009,
+        "raison": ["banqueroute"],
+        "prenom": "Jean-Marc",
+        "nom": "Maurice"
+    },
+    {
+        "fullname": "Jean-Marc Maurice",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2010,
+        "raison": ["travail dissimulé et non déclaré"],
+        "prenom": "Jean-Marc",
+        "nom": "Maurice"
+    },
+    {
+        "fullname": "Jean-Marc Maurice",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2011,
+        "raison": ["abus de bien sociaux"],
+        "prenom": "Jean-Marc",
+        "nom": "Maurice"
+    },
+    {
+        "fullname": "Jean-Marie Le Chevallier",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2001,
+        "raison": ["détournements de fonds publics", "abus de confiance"],
+        "prenom": "Jean-Marie",
+        "nom": "Le Chevallier"
+    },
+    {
+        "fullname": "Jean-Marie Le Chevallier",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2001,
+        "raison": ["subordination de témoins (dans l'affaire du meurtre de son directeur de cabinet)"],
+        "prenom": "Jean-Marie",
+        "nom": "Le Chevallier"
+    },
+    {
+        "fullname": "Jean-Yves Douissard",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2002,
+        "raison": ["incitation à la haine raciale"],
+        "prenom": "Jean-Yves",
+        "nom": "Douissard"
+    },
+    {
+        "fullname": "Jean-Yves Le Gallou",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 1998,
+        "raison": ["provocation à la haine raciale"],
+        "prenom": "Jean-Yves",
+        "nom": "Le Gallou"
+    },
+    {
+        "fullname": "Joël Klein",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 1998,
+        "raison": ["coups et blessures"],
+        "prenom": "Joël",
+        "nom": "Klein"
+    },
+    {
+        "fullname": "Laurent Mirabeau",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 1994,
+        "raison": ["escroquerie", "exercice illégal de la profession de banquier"],
+        "prenom": "Laurent",
+        "nom": "Mirabeau"
+    },
+    {
+        "fullname": "Louis Aliot",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2008,
+        "raison": ["diffamation"],
+        "prenom": "Louis",
+        "nom": "Aliot"
+    },
+    {
+        "fullname": "Louis de Noëll",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 1997,
+        "raison": ["détournement de fonds"],
+        "prenom": "Louis",
+        "nom": "de Noëll"
+    },
+    {
+        "fullname": "Marc Georges",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 1995,
+        "raison": ["pour blessure par balle"],
+        "prenom": "Marc",
+        "nom": "Georges"
+    },
+    {
+        "fullname": "Marc Lyoen",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2007,
+        "raison": ["pour avoir employé des clandestins"],
+        "prenom": "Marc",
+        "nom": "Lyoen"
+    },
+    {
+        "fullname": "Marc Lyoen",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2008,
+        "raison": ["fraude au RSA"],
+        "prenom": "Marc",
+        "nom": "Lyoen"
+    },
+    {
+        "fullname": "Marine Le Pen",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2007,
+        "raison": ["diffamation"],
+        "prenom": "Marine",
+        "nom": "Le Pen"
+    },
+    {
+        "fullname": "Patrick Bassot",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2012,
+        "raison": ["incitation à la discrimination, à la haine et à la violence à l’encontre des immigrés"],
+        "prenom": "Patrick",
+        "nom": "Bassot"
+    },
+    {
+        "fullname": "Patrick Binder",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2005,
+        "raison": ["pour injures racistes en public"],
+        "prenom": "Patrick",
+        "nom": "Binder"
+    },
+    {
+        "fullname": "Patrick Binder",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2011,
+        "raison": ["injure publique", "provocation à la haine raciale"],
+        "prenom": "Patrick",
+        "nom": "Binder"
+    },
+    {
+        "fullname": "Philippe Bernard",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2008,
+        "raison": ["faux et falsification", "abus de confiance", "escroquerie"],
+        "prenom": "Philippe",
+        "nom": "Bernard"
+    },
+    {
+        "fullname": "Philippe Viard",
+        "formation": "fn",
+        "nature": "examen",
+        "annee": 1998,
+        "raison": ["discrimination"],
+        "prenom": "Philippe",
+        "nom": "Viard"
+    },
+    {
+        "fullname": "Philippe Viard",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 1998,
+        "raison": ["injures", "délit de fuite"],
+        "prenom": "Philippe",
+        "nom": "Viard"
+    },
+    {
+        "fullname": "Richard Jacob",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2011,
+        "raison": ["outrage et rebellion"],
+        "prenom": "Richard",
+        "nom": "Jacob"
+    },
+    {
+        "fullname": "Roger Fabregues",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 1996,
+        "raison": ["trafic de drogues"],
+        "prenom": "Roger",
+        "nom": "Fabregues"
+    },
+    {
+        "fullname": "Sylvain Ferrua",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 1996,
+        "raison": ["proxénétisme"],
+        "prenom": "Sylvain",
+        "nom": "Ferrua"
+    },
+    {
+        "fullname": "Tanguy Deshayes",
+        "formation": "fn",
+        "nature": "examen",
+        "annee": 2009,
+        "raison": ["menaces de mort"],
+        "prenom": "Tanguy",
+        "nom": "Deshayes"
+    },
+    {
+        "fullname": "Xavier Voute",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 1997,
+        "raison": ["pour avoir aspergé de gaz lacrymogène des militants de Ras l'Front (mouvement anti-FN)"],
+        "prenom": "Xavier",
+        "nom": "Voute"
+    },
+    {
+        "fullname": "Yannick Lecointre",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2011,
+        "raison": ["trafic de drogue (transport, détention, acquisition, cession et emploi non autorisés de stupéfiants)"],
+        "prenom": "Yannick",
+        "nom": "Lecointre"
+    },
+    {
+        "fullname": "Jean-Marie Le Pen",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 1995,
+        "raison": ["oublis de plus-value boursière", "sous-estimation de loyer"],
+        "prenom": "Jean-Marie",
+        "nom": "Le Pen"
+    },
+    {
+        "fullname": "Jean-Marie Le Pen",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 1996,
+        "raison": ["pour avoir tenu des propos ayant gravement porté atteinte au président du tribunal d'Auch"],
+        "prenom": "Jean-Marie",
+        "nom": "Le Pen"
+    },
+    {
+        "fullname": "Jean-Marie Le Pen",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 1997,
+        "raison": ["pour avoir injurié l'association Ras l'front (mouvement anti-FN) de « mouvement de tueurs de flics »"],
+        "prenom": "Jean-Marie",
+        "nom": "Le Pen"
+    },
+    {
+        "fullname": "Jean-Marie Le Pen",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 1997,
+        "raison": ["pour avoir injurié le président de SOS-Racisme"],
+        "prenom": "Jean-Marie",
+        "nom": "Le Pen"
+    },
+    {
+        "fullname": "Jean-Marie Le Pen",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 1997,
+        "raison": ["pour banalisation de crimes contre l'humanité et consentement à l’horrible"],
+        "prenom": "Jean-Marie",
+        "nom": "Le Pen"
+    },
+    {
+        "fullname": "Jean-Marie Le Pen",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 1998,
+        "raison": ["injures publiques et violences sur personne dépositaire de l'autorité publique dans l'exercice de ses fonctions"],
+        "prenom": "Jean-Marie",
+        "nom": "Le Pen"
+    },
+    {
+        "fullname": "Jean-Marie Le Pen",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 1998,
+        "raison": ["pour avoir présenté une tête en carton à l'effigie de Catherine Trautmann"],
+        "prenom": "Jean-Marie",
+        "nom": "Le Pen"
+    },
+    {
+        "fullname": "Jean-Marie Le Pen",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 1998,
+        "raison": ["pour avoir déclaré « Je crois à l'inégalité des races »"],
+        "prenom": "Jean-Marie",
+        "nom": "Le Pen"
+    },
+    {
+        "fullname": "Jean-Marie Le Pen",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 1999,
+        "raison": ["incitation à la haine raciale et apologie de crime de guerre"],
+        "prenom": "Jean-Marie",
+        "nom": "Le Pen"
+    },
+    {
+        "fullname": "Jean-Marie Le Pen",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2002,
+        "raison": ["reproduction sans autorisation un reportage de treize photographies prises par l’AFP"],
+        "prenom": "Jean-Marie",
+        "nom": "Le Pen"
+    },
+    {
+        "fullname": "Jean-Marie Le Pen",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2004,
+        "raison": ["provocation à la haine raciale"],
+        "prenom": "Jean-Marie",
+        "nom": "Le Pen"
+    },
+    {
+        "fullname": "Jean-Marie Le Pen",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2005,
+        "raison": ["incitation à la haine raciale"],
+        "prenom": "Jean-Marie",
+        "nom": "Le Pen"
+    },
+    {
+        "fullname": "Jean-Marie Le Pen",
+        "formation": "fn",
+        "nature": "condamnation",
+        "annee": 2008,
+        "raison": ["complicité d'apologie de crimes de guerre", "contestation de crime contre l'humanité"],
+        "prenom": "Jean-Marie",
+        "nom": "Le Pen"
+    }
+]

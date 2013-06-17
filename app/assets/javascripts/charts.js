@@ -26,9 +26,11 @@
                     return [format.parse(d.start),format.parse(d.end), d.gouv];
                 });
 
-                var order = ["ps","udi","ump","fn"]; // natural ordering
+                var order = ["pcf","fdg","verts","ps","udi","ump","fn"]; // natural ordering
                 xScale
-                    .domain(data.map(function(d){return d[1]}).sort(function(a,b){ return order[a] - order[b]}))
+                    .domain(data.map(function(d){return d[1]}).sort(function(a,b){
+                        return order.indexOf(a) - order.indexOf(b);
+                    }))
                     .rangeBands([0, usable_width], 0.1);
                 console.log("X ["+xScale.domain()+"] => ["+xScale.range()+"]");
 

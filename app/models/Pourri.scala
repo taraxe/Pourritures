@@ -32,11 +32,12 @@ case class Affaire(_id:Option[BSONObjectID] = None, pid:Option[BSONObjectID], an
 
 object Formation extends Enumeration {
   type Formation = Value
-  val FdG, Verts, PS, UMP, FN, UDI = Value
+  val PCF, FdG, Verts, PS, UMP, FN, UDI = Value
   implicit val jsonFormat = new Format[Formation] {
     def reads(json: JsValue) = JsSuccess(Formation(json.as[Int]))
     def writes(o: Formation.Formation) = JsNumber(o.id)
   }
+  override def toString() = super.toString().toLowerCase()
 }
 
 object TypeAffaire extends Enumeration {
