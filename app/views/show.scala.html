@@ -1,0 +1,28 @@
+@(p:Pourri, affaires:Seq[Affaire] = Nil)(implicit app:play.api.Application)
+
+@import play.api.Mode
+
+@head = {
+  <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/show.css")"/>
+}
+@back("Pourritures", head) {
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <div class="page-header">
+                  <h1>@p.fullname <small>@p.formation.toString</small> </h1>
+                </div>
+                <div class="btn-toolbar">
+                    <div class="btn-group">
+                        @*<a class="btn btn-mini" href="@routes.Pourritures.index()">Retour</a>*@
+                        <a class="btn btn-mini btn-primary" href="@routes.Pourritures.contrib(p.slug)">Ajouter une affaire</a>
+                    </div>
+                </div>
+                <ul class="affaires">
+                    @affaires.sortBy(_.annee.getYear).reverse.map(parts.affaire(_))
+                </ul>
+
+            </div>
+        </div>
+    </div>
+}

@@ -1,0 +1,67 @@
+@(p:Pourri)(implicit app:play.api.Application)
+
+@import org.joda.time.DateTime
+
+@defining(p.affairesBlockin.sortBy(_.annee.getYear).reverse){ affs =>
+  @if(affs.nonEmpty) {
+<legend>Affaires connues</legend>
+<ul class="affaires">
+  @affs.map(a => parts.affaire(a))
+</ul>
+  }
+}
+
+  @helper.form(routes.Pourritures.createAffaire(p.slug), 'class -> "affaire-form form-horizontal") {
+    <fieldset>
+        <legend>Ajouter une affaire à <strong>@p.fullname</strong></legend>
+        <div class="control-group">
+            <label class="control-label" >Année</label>
+            <div class="controls">
+                <input class="input-mini" type="text" name="annee" max="@{new DateTime().getYear}" placeholder="ex : 1999">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">Nature</label>
+            <div class="controls">
+                <select name="nature">
+                @TypeAffaire.values.map { v =>
+                    <option value="@v.id">@v.toString</option>
+                }
+                </select>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" >Raisons</label>
+            <div class="controls">
+                <textarea class="input-xlarge" name="raisons" placeholder="ex : abus de bien sociaux, escroquerie ne bande organisée" rows="3"></textarea>
+                <span class="help-block">Séparées par des virgules</span>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" >Amende</label>
+            <div class="controls">
+                <input class="input-small"type="text" name="amende" min="1">
+                <span class="help-block">En euros</span>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" >Source</label>
+            <div class="controls">
+                <input class="input-xlarge" type="text" name="source">
+                <span class="help-block">Une URL de vérification de la source.</span>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">Captcha</label>
+            <div class="controls">
+            @Html(views.ReCaptcha.render())
+            </div>
+        </div>
+        <div class="alert">Les données vont etre vérifiées par un humain avant leur publication.</div>
+    </fieldset>
+
+    <div class="form-actions">
+        <button type="submit" class="btn btn-primary">Ajouter</button>
+        <button type="button" class="btn">Annuler</button>
+    </div>
+}
