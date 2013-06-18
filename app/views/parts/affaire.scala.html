@@ -2,7 +2,7 @@
 
 <li>
   <span class="corner"></span>
-  @if(!a.checked){<span class="label label-warning">Non vérifié</span>}
+  @if(!a.checked){<a href="@routes.BackOffice.index()#@a._id.map(_.stringify)"><span class="label label-warning">Non vérifié</span></a>}
   <h3>@a.annee.getYear.toString <span>@a.typeAffaire.toString</span></h3>
   <p>@a.raisons.map(_.trim).mkString("",", ",".").capitalize</p>
 </li>
