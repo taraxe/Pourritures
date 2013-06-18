@@ -1,4 +1,4 @@
-@()(implicit app:play.api.Application)
+@()(implicit app:play.api.Application, req:RequestHeader)
 
 @import play.api.Mode
 
@@ -11,6 +11,13 @@
     <script src="@routes.Assets.at("javascripts/jquery.tipsy.js")"></script>
     <script src="@routes.Assets.at("javascripts/charts."+"min.".when(app.mode != Mode.Dev)+"js")"></script>
     <script src="@routes.Assets.at("javascripts/main."+"min.".when(app.mode != Mode.Dev)+"js")"></script>
+
+    <meta property="og:title" content="Transparence sur les affaires"/>
+    <meta property="og:image" content="@routes.Assets.at("images/logo-big.jpg").absoluteURL()"/>
+    <meta property="og:site_name" content="Pourritures"/>
+    <meta property="og:url" content="@routes.Pourritures.index().absoluteURL()"/>
+    <meta property="og:description" content="Pourritures.fr recense les affaires des élus de la république Française. Néé de l'initiative opendata, vous pouvez aussi contribuer à l'exhaustivité des données."/>
+
 }
 @main("Pourritures", head) {
     <h2>Les faits</h2>

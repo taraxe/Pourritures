@@ -18,7 +18,9 @@ object Pourritures extends Controller {
 
   implicit val app = play.api.Play.current
 
-  def index = Action(Ok(views.html.index()))
+  def index = Action{ implicit request =>
+    (Ok(views.html.index()))
+  }
 
   def search = doContrib(None)
   def contrib(slug:String) = doContrib(Some(slug))
