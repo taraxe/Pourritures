@@ -6,7 +6,7 @@
         "ex": true,
         "nature": "condamnation",
         "ammende": 30000,
-        "raison": ["abus de biens sociaux (lors du procès des frais de la Soginorpa)"],
+        "infractions": ["abus de biens sociaux (lors du procès des frais de la Soginorpa)"],
         "prenom": "Jean-Pierre",
         "nom": "Kucheida"
     },
@@ -15,7 +15,7 @@
         "formation": "ps",
         "annee": 2012,
         "nature": "mis en examen",
-        "raison": ["proxénétisme aggravé en bande organisée"],
+        "infractions": ["proxénétisme aggravé en bande organisée"],
         "prenom": "Dominique",
         "nom": "Strauss-Kahn"
     },
@@ -25,7 +25,7 @@
         "annee": 1999,
         "nature": "mis en examen",
         "ammende": 30000,
-        "raison": ["faux et usage de faux (dans l'affaire de la MNEF)"],
+        "infractions": ["faux et usage de faux (dans l'affaire de la MNEF)"],
         "prenom": "Dominique",
         "nom": "Strauss-Kahn"
     },
@@ -35,7 +35,7 @@
         "annee": 2012,
         "nature": "condamnation",
         "ammende": 40000,
-        "raison": ["infraction à la législation sur la durée du travail"],
+        "infractions": ["infraction à la législation sur la durée du travail"],
         "prenom": "Anne",
         "nom": "Hidalgo"
     },
@@ -44,7 +44,7 @@
         "formation": "ps",
         "annee": 2011,
         "nature": "condamnation",
-        "raison": ["corruption"],
+        "infractions": ["corruption"],
         "prenom": "Bernard",
         "nom": "Granie"
     },
@@ -53,7 +53,7 @@
         "formation": "ps",
         "annee": 2010,
         "nature": "condamnation",
-        "raison": ["atteinte au droit du travail"],
+        "infractions": ["atteinte au droit du travail"],
         "prenom": "Bertrand",
         "nom": "Delanöe"
     },
@@ -62,7 +62,7 @@
         "formation": "ps",
         "annee": 1999,
         "nature": "condamnation",
-        "raison": ["diffamation"],
+        "infractions": ["diffamation"],
         "prenom": "Catherine",
         "nom": "Trautmann"
     },
@@ -71,7 +71,7 @@
         "formation": "ps",
         "annee": 2012,
         "nature": "condamnation",
-        "raison": ["délit de favoritisme"],
+        "infractions": ["délit de favoritisme"],
         "prenom": "Christian",
         "nom": "Bourquin"
     },
@@ -80,7 +80,7 @@
         "formation": "ps",
         "annee": 1995,
         "nature": "condamnation",
-        "raison": ["corruption"],
+        "infractions": ["corruption"],
         "prenom": "Claude",
         "nom": "Pradille"
     },
@@ -89,7 +89,7 @@
         "formation": "ps",
         "annee": 1999,
         "nature": "condamnation",
-        "raison": ["manquement à une obligation de sécurité dans l'affaire du sang contaminé"],
+        "infractions": ["manquement à une obligation de sécurité dans l'affaire du sang contaminé"],
         "prenom": "Edmond",
         "nom": "Hervé"
     },
@@ -98,7 +98,7 @@
         "formation": "ps",
         "annee": 2012,
         "nature": "condamnation",
-        "raison": ["délit de favoritisme"],
+        "infractions": ["délit de favoritisme"],
         "prenom": "Elie",
         "nom": "Pigmal"
     },
@@ -107,7 +107,7 @@
         "formation": "ps",
         "annee": 2001,
         "nature": "condamnation",
-        "raison": ["ingérence", "détournement de fonds publics", "abus de confiance et abus de biens sociaux"],
+        "infractions": ["ingérence", "détournement de fonds publics", "abus de confiance et abus de biens sociaux"],
         "prenom": "François",
         "nom": "Bernardini"
     },
@@ -116,7 +116,7 @@
         "formation": "ps",
         "annee": 2011,
         "nature": "condamnation",
-        "raison": ["abus de faiblesse"],
+        "infractions": ["abus de faiblesse"],
         "prenom": "François Xavier",
         "nom": "Bordeaux"
     },
@@ -126,7 +126,7 @@
         "ex": true,
         "annee": 2012,
         "nature": "condamnation",
-        "raison": ["dérapages verbaux multiples"],
+        "infractions": ["dérapages verbaux multiples"],
         "prenom": "Georges",
         "nom": "Frêche"
     },
@@ -135,7 +135,7 @@
         "formation": "ps",
         "annee": 1998,
         "nature": "condamnation",
-        "raison": ["recel d'abus de confiance"],
+        "infractions": ["recel d'abus de confiance"],
         "prenom": "Harlem",
         "nom": "Desir"
     },
@@ -144,7 +144,7 @@
         "formation": "ps",
         "annee": 1997,
         "nature": "condamnation",
-        "raison": ["trafic d'influence"],
+        "infractions": ["trafic d'influence"],
         "prenom": "Henri",
         "nom": "Emmanuelli"
     },
@@ -153,7 +153,7 @@
         "formation": "ps",
         "annee": 2008,
         "nature": "condamnation",
-        "raison": ["rupture de contrat"],
+        "infractions": ["rupture de contrat"],
         "prenom": "Jack",
         "nom": "Lang"
     },
@@ -162,7 +162,7 @@
         "formation": "ps",
         "annee": 1997,
         "nature": "condamnation",
-        "raison": ["dans l'affaire OM-VA pour faux témoignage"],
+        "infractions": ["dans l'affaire OM-VA pour faux témoignage"],
         "prenom": "Jack",
         "nom": "Mellick"
     },
@@ -171,7 +171,7 @@
         "formation": "ps",
         "annee": 1998,
         "nature": "condamnation",
-        "raison": ["l'affaire Urba (financement occulte du PS)"],
+        "infractions": ["l'affaire Urba (financement occulte du PS)"],
         "prenom": "Jeanine",
         "nom": "Ecochard"
     },
@@ -180,7 +180,7 @@
         "formation": "ps",
         "annee": 2006,
         "nature": "condamnation",
-        "raison": ["affaire de la MNEF"],
+        "infractions": ["affaire de la MNEF"],
         "prenom": "Jean-Christophe",
         "nom": "Cambadélis"
     },
@@ -189,7 +189,7 @@
         "formation": "ps",
         "annee": 2012,
         "nature": "condamnation",
-        "raison": ["dans le cadre de l'Affaire Guérini pour association de malfaiteurs en vue de trafic d'influence et recel de trafic d'influence"],
+        "infractions": ["dans le cadre de l'Affaire Guérini pour association de malfaiteurs en vue de trafic d'influence et recel de trafic d'influence"],
         "prenom": "Jean-François",
         "nom": "Noyes"
     },
@@ -199,7 +199,7 @@
         "annee": 1997,
         "gouvernement": true,
         "nature": "condamnation",
-        "raison": ["délit de favoritisme"],
+        "infractions": ["délit de favoritisme"],
         "prenom": "Jean-Marc",
         "nom": "Ayrault"
     },
@@ -208,7 +208,7 @@
         "formation": "ps",
         "annee": 2003,
         "nature": "condamnation",
-        "raison": ["subordination de témoin"],
+        "infractions": ["subordination de témoin"],
         "prenom": "Jean-Marie",
         "nom": "Le Chevallier"
     },
@@ -217,7 +217,7 @@
         "formation": "ps",
         "annee": 2011,
         "nature": "condamnation",
-        "raison": ["prise illégale d'intérêt", "trafic d'influence"],
+        "infractions": ["prise illégale d'intérêt", "trafic d'influence"],
         "prenom": "Jean-Noel",
         "nom": "Guérini"
     },
@@ -226,7 +226,7 @@
         "formation": "ps",
         "annee": 2007,
         "nature": "condamnation",
-        "raison": ["prise illégale d'intérêt (et en 2011 par le Conseil d'Etat)"],
+        "infractions": ["prise illégale d'intérêt (et en 2011 par le Conseil d'Etat)"],
         "prenom": "Jean-Paul",
         "nom": "Huchon"
     },
@@ -235,7 +235,7 @@
         "formation": "ps",
         "annee": 2005,
         "nature": "condamnation",
-        "raison": ["délit de favoritisme (a fait appel de sa condamnation)"],
+        "infractions": ["délit de favoritisme (a fait appel de sa condamnation)"],
         "prenom": "Jean-Pierre",
         "nom": "Balduyck"
     },
@@ -244,7 +244,7 @@
         "formation": "ps",
         "annee": 2005,
         "nature": "condamnation",
-        "raison": ["escroquerie", "trafic d'influence"],
+        "infractions": ["escroquerie", "trafic d'influence"],
         "prenom": "Jean-Pierre",
         "nom": "Destrade"
     },
@@ -254,7 +254,7 @@
         "ex": true,
         "annee": 2011,
         "nature": "condamnation",
-        "raison": ["trafic d'influence", "abus de confiance"],
+        "infractions": ["trafic d'influence", "abus de confiance"],
         "prenom": "Khadija",
         "nom": "Aram"
     },
@@ -263,7 +263,7 @@
         "formation": "ps",
         "annee": 2011,
         "nature": "condamnation",
-        "raison": ["même affaire que celle touchant Pierre Mauroy"],
+        "infractions": ["même affaire que celle touchant Pierre Mauroy"],
         "prenom": "Line",
         "nom": "Cohen Solal"
     },
@@ -272,7 +272,7 @@
         "formation": "ps",
         "annee": 2006,
         "nature": "condamnation",
-        "raison": ["diffamation"],
+        "infractions": ["diffamation"],
         "prenom": "Malek",
         "nom": "Boutih"
     },
@@ -281,7 +281,7 @@
         "formation": "ps",
         "annee": 2005,
         "nature": "condamnation",
-        "raison": ["Affaire des Ecoutes Téléphoniques"],
+        "infractions": ["Affaire des Ecoutes Téléphoniques"],
         "prenom": "Michel",
         "nom": "Delebarre"
     },
@@ -290,7 +290,7 @@
         "formation": "ps",
         "annee": 2006,
         "nature": "condamnation",
-        "raison": ["faux", "usage de faux", "délit de favoritisme", "prise illégale d'intérêt", "détournement de fonds"],
+        "infractions": ["faux", "usage de faux", "délit de favoritisme", "prise illégale d'intérêt", "détournement de fonds"],
         "prenom": "Michel",
         "nom": "Laignel"
     },
@@ -299,7 +299,7 @@
         "formation": "ps",
         "annee": 1998,
         "nature": "condamnation",
-        "raison": ["recel de fonds utilisés [pour un financement politique] en dehors de tout enrichissement personnel"],
+        "infractions": ["recel de fonds utilisés [pour un financement politique] en dehors de tout enrichissement personnel"],
         "prenom": "Michel",
         "nom": "Pezet"
     },
@@ -308,7 +308,7 @@
         "formation": "ps",
         "annee": 2007,
         "nature": "condamnation",
-        "raison": ["escroquerie"],
+        "infractions": ["escroquerie"],
         "prenom": "Mohamed",
         "nom": "Abdi"
     },
@@ -317,7 +317,7 @@
         "formation": "ps",
         "annee": 2010,
         "nature": "condamnation",
-        "raison": ["mariage illégal"],
+        "infractions": ["mariage illégal"],
         "prenom": "Monique",
         "nom": "Delessard"
     },
@@ -326,7 +326,7 @@
         "formation": "ps",
         "annee": 2005,
         "nature": "condamnation",
-        "raison": ["affaire de la MNEF"],
+        "infractions": ["affaire de la MNEF"],
         "prenom": "Olivier",
         "nom": "Spithakis"
     },
@@ -335,7 +335,7 @@
         "formation": "ps",
         "nature": "mis en examen",
         "annee": 2011,
-        "raison": ["octroie injustifié de marchés publics", "soustraction de fonds publics."],
+        "infractions": ["octroie injustifié de marchés publics", "soustraction de fonds publics."],
         "prenom": "Patrick",
         "nom": "Sève"
     },
@@ -344,7 +344,7 @@
         "formation": "ps",
         "annee": 2012,
         "nature": "condamnation",
-        "raison": ["harcèlement moral (après le suicide d'une de ses collaboratrice)"],
+        "infractions": ["harcèlement moral (après le suicide d'une de ses collaboratrice)"],
         "prenom": "Pascal",
         "nom": "Buchet"
     },
@@ -353,7 +353,7 @@
         "formation": "ps",
         "annee": 1997,
         "nature": "condamnation",
-        "raison": ["complicité de trafic d'influence dans l'affaire du financement occulte du PS, l'Affaire Urba"],
+        "infractions": ["complicité de trafic d'influence dans l'affaire du financement occulte du PS, l'Affaire Urba"],
         "prenom": "Philippe",
         "nom": "Sanmarco"
     },
@@ -362,7 +362,7 @@
         "formation": "ps",
         "annee": 2011,
         "nature": "condamnation",
-        "raison": ["emploi fictif"],
+        "infractions": ["emploi fictif"],
         "prenom": "Pierre",
         "nom": "Mauroy"
     },
@@ -372,7 +372,7 @@
         "annee": 2001,
         "gouvernement": true,
         "nature": "condamnation",
-        "raison": ["atteinte au droit à l'image"],
+        "infractions": ["atteinte au droit à l'image"],
         "prenom": "Pierre",
         "nom": "Moscovici"
     },
@@ -381,7 +381,7 @@
         "formation": "ps",
         "annee": 2011,
         "nature": "condamnation",
-        "raison": ["abus de confiance"],
+        "infractions": ["abus de confiance"],
         "prenom": "René",
         "nom": "Teulade"
     },
@@ -390,7 +390,7 @@
         "formation": "ps",
         "annee": 2002,
         "nature": "condamnation",
-        "raison": ["délit de favoritisme"],
+        "infractions": ["délit de favoritisme"],
         "prenom": "Robert",
         "nom": "Gaïa"
     },
@@ -399,7 +399,7 @@
         "formation": "ps",
         "annee": 2008,
         "nature": "condamnation",
-        "raison": ["licenciements abusifs"],
+        "infractions": ["licenciements abusifs"],
         "prenom": "Ségolène",
         "nom": "Royal"
     },
@@ -408,7 +408,7 @@
         "formation": "ps",
         "nature": "mis en examen",
         "annee": 2011,
-        "raison": ["complicité de trafic d'influence dans l'affaire Guérini"],
+        "infractions": ["complicité de trafic d'influence dans l'affaire Guérini"],
         "prenom": "Serge",
         "nom": "Andréoni"
     },
@@ -417,7 +417,7 @@
         "formation": "ps",
         "nature": "condamnation",
         "annee": 2013,
-        "raison": ["complicité de tentative d'escroquerie et de détournements de fonds publics dans l'affaire du financement présumés à hauteur de 700 000 € d'associations présumées fictives"],
+        "infractions": ["complicité de tentative d'escroquerie et de détournements de fonds publics dans l'affaire du financement présumés à hauteur de 700 000 € d'associations présumées fictives"],
         "prenom": "Sylvie",
         "nom": "Andrieux",
         "amende" : 100000
@@ -427,7 +427,7 @@
         "formation": "ps",
         "nature": "mis en examen",
         "annee": 2011,
-        "raison": ["pour violences conjugales (en appel)"],
+        "infractions": ["pour violences conjugales (en appel)"],
         "prenom": "Yacine",
         "nom": "Chaouat"
     },
@@ -437,7 +437,7 @@
         "formation":"ps",
         "nature": "mis en examen",
         "annee": 2009,
-        "raison": ["détournement de fonds publics","faux et usage de faux","favoritisme","corruption"],
+        "infractions": ["détournement de fonds publics","faux et usage de faux","favoritisme","corruption"],
         "prenom": "Gérard",
         "nom": "Dalongeville"
 
@@ -449,7 +449,7 @@
         "ex": true,
         "nature": "mis en examen",
         "annee": 2013,
-        "raison": ["blanchiment d'argent", "fraude fiscale"],
+        "infractions": ["blanchiment d'argent", "fraude fiscale"],
         "prenom": "Jérome",
         "nom": "Cahuzac"
     },
@@ -459,7 +459,7 @@
         "formation":"udi",
         "nature": "mis en examen",
         "annee": 2013,
-        "raison": ["favoritisme dans une affaire de marchés publics"],
+        "infractions": ["favoritisme dans une affaire de marchés publics"],
         "prenom": "Jean-Christophe",
         "nom": "Lagarde"
     },
@@ -469,7 +469,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2008,
-        "raison": ["proxénétisme aggravé en bande organisée"],
+        "infractions": ["proxénétisme aggravé en bande organisée"],
         "prenom": "Alain",
         "nom": "Agostini"
     },
@@ -478,7 +478,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 1999,
-        "raison": ["corruption", "abus de biens sociaux", "subornation de témoins"],
+        "infractions": ["corruption", "abus de biens sociaux", "subornation de témoins"],
         "prenom": "Alain",
         "nom": "Carignon"
     },
@@ -487,7 +487,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2006,
-        "raison": ["faux", "usage de faux"],
+        "infractions": ["faux", "usage de faux"],
         "prenom": "Alain",
         "nom": "Ferrand"
     },
@@ -496,7 +496,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 1998,
-        "raison": ["prises illégales d’intérêts", "condamné pour fraude fiscale"],
+        "infractions": ["prises illégales d’intérêts", "condamné pour fraude fiscale"],
         "prenom": "Alain",
         "nom": "Ferrand"
     },
@@ -505,7 +505,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2007,
-        "raison": ["abus de confiance", "recel d’abus de biens sociaux", "prise illégale d’intérêt"],
+        "infractions": ["abus de confiance", "recel d’abus de biens sociaux", "prise illégale d’intérêt"],
         "prenom": "Alain",
         "nom": "Juppé"
     },
@@ -514,7 +514,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2010,
-        "raison": ["discrimination raciale", "préemption de biens immobiliers que voulait acheter des personnes d’origines étrangères dans sa commune"],
+        "infractions": ["discrimination raciale", "préemption de biens immobiliers que voulait acheter des personnes d’origines étrangères dans sa commune"],
         "prenom": "Alain",
         "nom": "Tuduri"
     },
@@ -523,7 +523,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2010,
-        "raison": ["diffamation"],
+        "infractions": ["diffamation"],
         "prenom": "Axel",
         "nom": "Poniatowski"
     },
@@ -532,7 +532,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2010,
-        "raison": ["atteinte à la présomption d’innocence", "injure non publique envers un groupe de personnes à raison de leur origine"],
+        "infractions": ["atteinte à la présomption d’innocence", "injure non publique envers un groupe de personnes à infractions de leur origine"],
         "prenom": "Brice",
         "nom": "Hortefeux"
     },
@@ -541,7 +541,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2011,
-        "raison": ["refus de mariage"],
+        "infractions": ["refus de mariage"],
         "prenom": "Brigitte",
         "nom": "Barèges"
     },
@@ -550,7 +550,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2011,
-        "raison": ["détournement de fonds publics", "prise illégale d’intérêts"],
+        "infractions": ["détournement de fonds publics", "prise illégale d’intérêts"],
         "prenom": "Bruno",
         "nom": "Sandras"
     },
@@ -559,7 +559,7 @@
         "formation": "ump",
         "nature": "mis en examen",
         "annee": 2010,
-        "raison": ["délit de favoritisme"],
+        "infractions": ["délit de favoritisme"],
         "prenom": "Charles",
         "nom": "Fabre"
     },
@@ -568,7 +568,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2010,
-        "raison": ["trafic d’influence", "délit de favoritisme", "faux", "financement illégal de campagne", "abus de confiance", "cité dans l’affaire de recel d’abus de biens sociaux pour l’association France Afrique Orient", "mentionné dans l’affaire du financement occulte du ministère de l’Intérieur et de l’Union des groupements d’achats publics"],
+        "infractions": ["trafic d’influence", "délit de favoritisme", "faux", "financement illégal de campagne", "abus de confiance", "cité dans l’affaire de recel d’abus de biens sociaux pour l’association France Afrique Orient", "mentionné dans l’affaire du financement occulte du ministère de l’Intérieur et de l’Union des groupements d’achats publics"],
         "prenom": "Charles",
         "nom": "Pasqua"
     },
@@ -577,7 +577,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2007,
-        "raison": ["propos homophobes (confirmé en appel, puis annulé en cassation)"],
+        "infractions": ["propos homophobes (confirmé en appel, puis annulé en cassation)"],
         "prenom": "Christian",
         "nom": "Vanneste"
     },
@@ -586,7 +586,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2009,
-        "raison": ["prise illégale d’intérêt", "favoritisme", "détournements de fonds"],
+        "infractions": ["prise illégale d’intérêt", "favoritisme", "détournements de fonds"],
         "prenom": "Claude",
         "nom": "Polony"
     },
@@ -595,7 +595,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2011,
-        "raison": ["favoritisme", "fausses factures", "emploi fictif"],
+        "infractions": ["favoritisme", "fausses factures", "emploi fictif"],
         "prenom": "Daniel",
         "nom": "Simonpieri"
     },
@@ -604,7 +604,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2010,
-        "raison": ["outrage à magistrat"],
+        "infractions": ["outrage à magistrat"],
         "prenom": "Damien",
         "nom": "Meslot"
     },
@@ -613,7 +613,7 @@
         "formation": "ump",
         "nature": "mis en examen",
         "annee": 2010,
-        "raison": ["atteinte ou tentative d´atteinte à la sincérité d´un scrutin"],
+        "infractions": ["atteinte ou tentative d´atteinte à la sincérité d´un scrutin"],
         "prenom": "Damien",
         "nom": "Meslot"
     },
@@ -622,7 +622,7 @@
         "formation": "ump",
         "nature": "mis en examen",
         "annee": 2008,
-        "raison": ["blanchiment d’argent"],
+        "infractions": ["blanchiment d’argent"],
         "prenom": "Denis",
         "nom": "Gautier-Sauvagnac"
     },
@@ -631,7 +631,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2011,
-        "raison": ["abus de confiance", "infraction à la législation sur le financement des campagnes électorales"],
+        "infractions": ["abus de confiance", "infraction à la législation sur le financement des campagnes électorales"],
         "prenom": "Denis",
         "nom": "Jacquat"
     },
@@ -640,7 +640,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2007,
-        "raison": ["financement occulte d'activités politiques"],
+        "infractions": ["financement occulte d'activités politiques"],
         "prenom": "Didier",
         "nom": "Schuller"
     },
@@ -649,7 +649,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2005,
-        "raison": ["financement illégal de sa campagne"],
+        "infractions": ["financement illégal de sa campagne"],
         "prenom": "Didier",
         "nom": "Schuller"
     },
@@ -658,7 +658,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2004,
-        "raison": ["abus de confiance"],
+        "infractions": ["abus de confiance"],
         "prenom": "Dominique",
         "nom": "Paillé"
     },
@@ -667,7 +667,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2010,
-        "raison": ["diffamation"],
+        "infractions": ["diffamation"],
         "prenom": "Frédéric",
         "nom": "Chazal"
     },
@@ -676,7 +676,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2011,
-        "raison": ["détournement de fonds publics et prise illégale d’intérêts"],
+        "infractions": ["détournement de fonds publics et prise illégale d’intérêts"],
         "prenom": "Gaston",
         "nom": "Flosse"
     },
@@ -685,7 +685,7 @@
         "formation": "ump",
         "nature": "mis en examen",
         "annee": 2011,
-        "raison": ["harcèlement sexuel", "agression sexuelle", "viol"],
+        "infractions": ["harcèlement sexuel", "agression sexuelle", "viol"],
         "prenom": "Georges",
         "nom": "Tron"
     },
@@ -694,7 +694,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2006,
-        "raison": ["discrimination"],
+        "infractions": ["discrimination"],
         "prenom": "Gérard",
         "nom": "Dezempte"
     },
@@ -703,7 +703,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2011,
-        "raison": ["constitution de partie civile abusive ou dilatoire dans le but de nuire à son adversaire socialiste"],
+        "infractions": ["constitution de partie civile abusive ou dilatoire dans le but de nuire à son adversaire socialiste"],
         "prenom": "Gérard",
         "nom": "Larrat"
     },
@@ -712,7 +712,7 @@
         "formation": "ump",
         "nature": "mis en examen",
         "annee": 2011,
-        "raison": ["complicité d’atteinte à la sincérité du scrutin", "complicité de faux administratif", "usage et complicité de manoeuvre frauduleuse tendant à l’exercice irrégulier du vote par procuration (son élection a été anulée)"],
+        "infractions": ["complicité d’atteinte à la sincérité du scrutin", "complicité de faux administratif", "usage et complicité de manoeuvre frauduleuse tendant à l’exercice irrégulier du vote par procuration (son élection a été anulée)"],
         "prenom": "Gérard",
         "nom": "Larrat"
     },
@@ -721,7 +721,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2006,
-        "raison": ["corruption passive", "recel d’abus de biens sociaux"],
+        "infractions": ["corruption passive", "recel d’abus de biens sociaux"],
         "prenom": "Gilles",
         "nom": "Forray"
     },
@@ -730,7 +730,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2005,
-        "raison": ["bénéfice d’un emploi fictif"],
+        "infractions": ["bénéfice d’un emploi fictif"],
         "prenom": "Guy",
         "nom": "Drut"
     },
@@ -739,7 +739,7 @@
         "formation": "ump",
         "nature": "mis en examen",
         "annee": 2011,
-        "raison": ["recel d’abus de confiance"],
+        "infractions": ["recel d’abus de confiance"],
         "prenom": "Guy",
         "nom": "Wildenstein"
     },
@@ -748,7 +748,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2002,
-        "raison": ["recel d’abus de biens sociaux"],
+        "infractions": ["recel d’abus de biens sociaux"],
         "prenom": "Henry",
         "nom": "Chabert"
     },
@@ -757,7 +757,7 @@
         "formation": "ump",
         "nature": "mis en examen",
         "annee": 2009,
-        "raison": ["détournement de fonds publics", "prise illégale d’intérêt"],
+        "infractions": ["détournement de fonds publics", "prise illégale d’intérêt"],
         "prenom": "Jacques",
         "nom": "Blanc"
     },
@@ -766,7 +766,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2009,
-        "raison": ["corruption passive", "recel d’abus de biens sociaux"],
+        "infractions": ["corruption passive", "recel d’abus de biens sociaux"],
         "prenom": "Jacques",
         "nom": "Masdeu-Arus"
     },
@@ -775,7 +775,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2009,
-        "raison": ["diffamation"],
+        "infractions": ["diffamation"],
         "prenom": "Jacques",
         "nom": "Myard"
     },
@@ -784,7 +784,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2004,
-        "raison": ["prise illégale d’intérêt"],
+        "infractions": ["prise illégale d’intérêt"],
         "prenom": "Jean",
         "nom": "Reynaud"
     },
@@ -793,7 +793,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2006,
-        "raison": ["harcèlement moral", "dégradation de conditions de travail"],
+        "infractions": ["harcèlement moral", "dégradation de conditions de travail"],
         "prenom": "Jean",
         "nom": "Reynaud"
     },
@@ -802,7 +802,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2009,
-        "raison": ["occupation illégale des locaux de sa permanence", "fraude aux électeurs"],
+        "infractions": ["occupation illégale des locaux de sa permanence", "fraude aux électeurs"],
         "prenom": "Jean",
         "nom": "Tiberi"
     },
@@ -811,7 +811,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2011,
-        "raison": ["coups et blessures"],
+        "infractions": ["coups et blessures"],
         "prenom": "Jean-Louis",
         "nom": "Garnier"
     },
@@ -820,7 +820,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 1997,
-        "raison": ["financement de la campagne d’un concurrent afin d’affaiblir sa rivale à droite"],
+        "infractions": ["financement de la campagne d’un concurrent afin d’affaiblir sa rivale à droite"],
         "prenom": "Jean-Louis",
         "nom": "Masson"
     },
@@ -829,7 +829,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2008,
-        "raison": ["son élection est annulée pour fraude"],
+        "infractions": ["son élection est annulée pour fraude"],
         "prenom": "Jean-Paul",
         "nom": "Alduy"
     },
@@ -838,7 +838,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2010,
-        "raison": ["prise illégale d’intérêt"],
+        "infractions": ["prise illégale d’intérêt"],
         "prenom": "Jean-Paul",
         "nom": "Fournier"
     },
@@ -847,7 +847,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2006,
-        "raison": ["diffamation", "complicité de diffamation"],
+        "infractions": ["diffamation", "complicité de diffamation"],
         "prenom": "Joëlle",
         "nom": "Ceccaldi-Raynaud"
     },
@@ -856,7 +856,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2010,
-        "raison": ["prise illégale d’intérêt", "malversations"],
+        "infractions": ["prise illégale d’intérêt", "malversations"],
         "prenom": "Joëlle",
         "nom": "Ferrand"
     },
@@ -865,7 +865,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2011,
-        "raison": ["exercice illégal de la profession d’avocat", "escroquerie"],
+        "infractions": ["exercice illégal de la profession d’avocat", "escroquerie"],
         "prenom": "Laurence",
         "nom": "Spicher-Bernier"
     },
@@ -874,7 +874,7 @@
         "formation": "ump",
         "nature": "mis en examen",
         "annee": 2011,
-        "raison": ["injures", "diffamation"],
+        "infractions": ["injures", "diffamation"],
         "prenom": "Lionel",
         "nom": "Cressiot"
     },
@@ -883,7 +883,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2002,
-        "raison": ["favoritisme dans l’attribution de marchés publics"],
+        "infractions": ["favoritisme dans l’attribution de marchés publics"],
         "prenom": "Lucette",
         "nom": "Michaux-Chevry"
     },
@@ -892,7 +892,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2009,
-        "raison": ["favoritisme dans l’attribution d’un marché public"],
+        "infractions": ["favoritisme dans l’attribution d’un marché public"],
         "prenom": "Manuel",
         "nom": "Aeschlimann"
     },
@@ -901,7 +901,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2002,
-        "raison": ["proxénétisme aggravé", "association de malfaiteurs", "dissimulation de travail clandestin"],
+        "infractions": ["proxénétisme aggravé", "association de malfaiteurs", "dissimulation de travail clandestin"],
         "prenom": "Marie-Jeanne",
         "nom": "Bozzi"
     },
@@ -910,7 +910,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2007,
-        "raison": ["soustraction au paiement de l’impôt", "omission de déclaration", "fraude fiscale"],
+        "infractions": ["soustraction au paiement de l’impôt", "omission de déclaration", "fraude fiscale"],
         "prenom": "Marie-Jeanne",
         "nom": "Bozzi"
     },
@@ -919,7 +919,7 @@
         "formation": "ump",
         "nature": "mise en examen",
         "annee": 2009,
-        "raison": ["association de malfaiteurs en vue de la commission d’un homicide en bande organisée"],
+        "infractions": ["association de malfaiteurs en vue de la commission d’un homicide en bande organisée"],
         "prenom": "Marie-Jeanne",
         "nom": "Bozzi"
     },
@@ -928,7 +928,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2010,
-        "raison": ["proposition sexuelle à une mineure de 12 ans"],
+        "infractions": ["proposition sexuelle à une mineure de 12 ans"],
         "prenom": "Maurice",
         "nom": "Gutman"
     },
@@ -937,7 +937,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2011,
-        "raison": ["détournement de fonds publics", "prise illégale d’intérêts"],
+        "infractions": ["détournement de fonds publics", "prise illégale d’intérêts"],
         "prenom": "Michel",
         "nom": "Buillard"
     },
@@ -946,7 +946,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2006,
-        "raison": ["pour avoir fair incendier 14 caravanes appartenant à des Roms installées sur un terrain municipal"],
+        "infractions": ["pour avoir fair incendier 14 caravanes appartenant à des Roms installées sur un terrain municipal"],
         "prenom": "Michel",
         "nom": "Habig"
     },
@@ -955,7 +955,7 @@
         "formation": "ump",
         "nature": "mis en examen",
         "annee": 2011,
-        "raison": ["dans le cadre de l'affaire Karachi"],
+        "infractions": ["dans le cadre de l'affaire Karachi"],
         "prenom": "Nicolas",
         "nom": "Bazire"
     },
@@ -964,7 +964,7 @@
         "formation": "ump",
         "nature": "mis en examen",
         "annee": 2011,
-        "raison": ["injures", "diffamation"],
+        "infractions": ["injures", "diffamation"],
         "prenom": "Olivier",
         "nom": "Deleu"
     },
@@ -973,7 +973,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2008,
-        "raison": ["violences", "menaces", "dégradation grave du bien d’autrui à raison de la religion"],
+        "infractions": ["violences", "menaces", "dégradation grave du bien d’autrui à infractions de la religion"],
         "prenom": "Olivier",
         "nom": "Rey"
     },
@@ -982,7 +982,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2011,
-        "raison": ["harcèlement moral ayant mené au suicide"],
+        "infractions": ["harcèlement moral ayant mené au suicide"],
         "prenom": "Pascal",
         "nom": "Buchet"
     },
@@ -991,7 +991,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2003,
-        "raison": ["injure publique", "diffamation"],
+        "infractions": ["injure publique", "diffamation"],
         "prenom": "Patrick",
         "nom": "Balkany"
     },
@@ -1000,7 +1000,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 1999,
-        "raison": ["pour avoir rémunéré aux frais du contribuable trois personnes désignées comme des employés municipaux mais qui ne s’occupaient que de son appartement de Levallois-Perret et de sa résidence secondaire près de Giverny"],
+        "infractions": ["pour avoir rémunéré aux frais du contribuable trois personnes désignées comme des employés municipaux mais qui ne s’occupaient que de son appartement de Levallois-Perret et de sa résidence secondaire près de Giverny"],
         "prenom": "Patrick",
         "nom": "Balkany"
     },
@@ -1009,7 +1009,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2011,
-        "raison": ["fraudes et multiples abus de biens sociaux"],
+        "infractions": ["fraudes et multiples abus de biens sociaux"],
         "prenom": "Philippe",
         "nom": "Brun"
     },
@@ -1018,7 +1018,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2009,
-        "raison": ["corruption passive", "recel d’abus de biens sociaux"],
+        "infractions": ["corruption passive", "recel d’abus de biens sociaux"],
         "prenom": "Pierre",
         "nom": "Bédier"
     },
@@ -1027,7 +1027,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2010,
-        "raison": ["injures"],
+        "infractions": ["injures"],
         "prenom": "Philippe",
         "nom": "Pemezec"
     },
@@ -1036,7 +1036,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2007,
-        "raison": ["irrégularités lors de sa campagne (son élection sera annulée)"],
+        "infractions": ["irrégularités lors de sa campagne (son élection sera annulée)"],
         "prenom": "Philippe",
         "nom": "Pemezec"
     },
@@ -1045,7 +1045,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2004,
-        "raison": ["blanchiment d’argent"],
+        "infractions": ["blanchiment d’argent"],
         "prenom": "Renaud",
         "nom": "Donnedieu de Vabres"
     },
@@ -1054,7 +1054,7 @@
         "formation": "ump",
         "nature": "mis en examen",
         "annee": 2004,
-        "raison": ["dans le cadre de l’affaire Karachi"],
+        "infractions": ["dans le cadre de l’affaire Karachi"],
         "prenom": "Renaud",
         "nom": "Donnedieu de Vabres"
     },
@@ -1063,7 +1063,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2009,
-        "raison": ["travail dissimulé"],
+        "infractions": ["travail dissimulé"],
         "prenom": "René",
         "nom": "Vestri"
     },
@@ -1072,7 +1072,7 @@
         "formation": "ump",
         "nature": "mis en examen",
         "annee": 2009,
-        "raison": ["blanchiment à titre habituel et en bande organisée", "trafic d’influence", "association de malfaiteurs"],
+        "infractions": ["blanchiment à titre habituel et en bande organisée", "trafic d’influence", "association de malfaiteurs"],
         "prenom": "René",
         "nom": "Vestri"
     },
@@ -1081,7 +1081,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 1999,
-        "raison": ["abus de biens sociaux"],
+        "infractions": ["abus de biens sociaux"],
         "prenom": "Richard",
         "nom": "Cazenave"
     },
@@ -1090,7 +1090,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2004,
-        "raison": ["recel et complicité d’abus de biens sociaux"],
+        "infractions": ["recel et complicité d’abus de biens sociaux"],
         "prenom": "Richard",
         "nom": "Cazenave"
     },
@@ -1099,7 +1099,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 1998,
-        "raison": ["corruption"],
+        "infractions": ["corruption"],
         "prenom": "Serge",
         "nom": "Dassault"
     },
@@ -1108,7 +1108,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2009,
-        "raison": ["pour avoir acheté des voix lors des municipales"],
+        "infractions": ["pour avoir acheté des voix lors des municipales"],
         "prenom": "Serge",
         "nom": "Dassault"
     },
@@ -1117,7 +1117,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2010,
-        "raison": ["procédure abusive"],
+        "infractions": ["procédure abusive"],
         "prenom": "Serge",
         "nom": "Dassault"
     },
@@ -1126,7 +1126,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2002,
-        "raison": ["détournement de fonds publics"],
+        "infractions": ["détournement de fonds publics"],
         "prenom": "Thérèse",
         "nom": "Aillaud"
     },
@@ -1135,7 +1135,7 @@
         "formation": "ump",
         "nature": "mis en examen",
         "annee": 2008,
-        "raison": ["abus de biens sociaux", "escroquerie"],
+        "infractions": ["abus de biens sociaux", "escroquerie"],
         "prenom": "Thierry",
         "nom": "Gaubert"
     },
@@ -1144,7 +1144,7 @@
         "formation": "ump",
         "nature": "mis en examen",
         "annee": 2008,
-        "raison": ["dans le cadre de l’affaire Karachi"],
+        "infractions": ["dans le cadre de l’affaire Karachi"],
         "prenom": "Thierry",
         "nom": "Gaubert"
     },
@@ -1153,7 +1153,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2007,
-        "raison": ["viol sur une mineure de 12 ans"],
+        "infractions": ["viol sur une mineure de 12 ans"],
         "prenom": "Thierry",
         "nom": "Leprince"
     },
@@ -1162,7 +1162,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2011,
-        "raison": ["corruption passive"],
+        "infractions": ["corruption passive"],
         "prenom": "Vincent",
         "nom": "Toni"
     },
@@ -1171,7 +1171,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2008,
-        "raison": ["corruption passive"],
+        "infractions": ["corruption passive"],
         "prenom": "Vincent",
         "nom": "Toni"
     },
@@ -1180,7 +1180,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 1997,
-        "raison": ["trafic d’alcool", "salaires fictifs", "corruption"],
+        "infractions": ["trafic d’alcool", "salaires fictifs", "corruption"],
         "prenom": "Xavier",
         "nom": "Dugoin"
     },
@@ -1189,7 +1189,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2000,
-        "raison": ["abus de confiance", "détournement de fonds publics", "falsification de documents administratifs", "prise illégale d’intérêt"],
+        "infractions": ["abus de confiance", "détournement de fonds publics", "falsification de documents administratifs", "prise illégale d’intérêt"],
         "prenom": "Xavier",
         "nom": "Dugoin"
     },
@@ -1198,7 +1198,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2001,
-        "raison": ["dans le cadre de l’affaire des emplois fictifs du conseil général de l’Essonne (annulée pour vice de forme)"],
+        "infractions": ["dans le cadre de l’affaire des emplois fictifs du conseil général de l’Essonne (annulée pour vice de forme)"],
         "prenom": "Xavier",
         "nom": "Dugoin"
     },
@@ -1207,7 +1207,7 @@
         "formation": "ump",
         "nature": "mis en examen",
         "annee": 2006,
-        "raison": ["prise illégale d'intérêt", "faux et usage de faux", "détournement de fonds publics"],
+        "infractions": ["prise illégale d'intérêt", "faux et usage de faux", "détournement de fonds publics"],
         "prenom": "André",
         "nom": "Santini"
     },
@@ -1216,7 +1216,7 @@
         "formation": "ump",
         "nature": "mis en examen",
         "annee": 2012,
-        "raison": ["recel dans l'enquête sur l'héritière de L'Oréal Liliane Bettencourt"],
+        "infractions": ["recel dans l'enquête sur l'héritière de L'Oréal Liliane Bettencourt"],
         "prenom": "Eric",
         "nom": "Woerth"
     },
@@ -1225,7 +1225,7 @@
         "formation": "ump",
         "nature": "condamnation",
         "annee": 2012,
-        "raison": ["abus de faiblesse"],
+        "infractions": ["abus de faiblesse"],
         "prenom": "Yanick",
         "nom": "Paternotte"
     },
@@ -1234,7 +1234,7 @@
         "formation": "ump",
         "nature": "mis en examen",
         "annee": 2013,
-        "raison": ["abus de faiblesse sur l'héritière de L'Oréal Liliane Bettencourt"],
+        "infractions": ["abus de faiblesse sur l'héritière de L'Oréal Liliane Bettencourt"],
         "prenom": "Nicolas",
         "nom": "Sarkozy"
     },
@@ -1243,7 +1243,7 @@
         "formation": "fn",
         "nature": "examen",
         "annee": 2007,
-        "raison": ["pour ses liens étroits avec un commando d'extrême-droite ayant tenté de cambrioler un stand de tir à Saint-Andéol-le-Château, dont l'aventure s'est terminée par le meurtre du Gendarme Ambrosse"],
+        "infractions": ["pour ses liens étroits avec un commando d'extrême-droite ayant tenté de cambrioler un stand de tir à Saint-Andéol-le-Château, dont l'aventure s'est terminée par le meurtre du Gendarme Ambrosse"],
         "prenom": "Alexandre",
         "nom": "Gabriac"
     },
@@ -1252,7 +1252,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2007,
-        "raison": ["apologie de crime contre l'humanité", "injures à caractère raciste", "violences volontaires ayant entraîné une incapacité de travail supérieure à 8 jours "],
+        "infractions": ["apologie de crime contre l'humanité", "injures à caractère raciste", "violences volontaires ayant entraîné une incapacité de travail supérieure à 8 jours "],
         "prenom": "Alexandre",
         "nom": "Gabriac"
     },
@@ -1261,7 +1261,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2010,
-        "raison": ["pour avoir détruit un préservatif géant à l'occasion de la journée mondiale contre le Sida"],
+        "infractions": ["pour avoir détruit un préservatif géant à l'occasion de la journée mondiale contre le Sida"],
         "prenom": "Alexandre",
         "nom": "Simonnot"
     },
@@ -1270,7 +1270,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 1998,
-        "raison": ["provocation à la haine, à la violence et à la discrimination"],
+        "infractions": ["provocation à la haine, à la violence et à la discrimination"],
         "prenom": "Antoinette",
         "nom": "Martinet"
     },
@@ -1279,7 +1279,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2007,
-        "raison": ["condamné en première instance et par le Conseil d'État pour contestation de l'existence de crime contre l'humanité (négationnisme)", "la Cour de Cassation va pourtant casser sans renvoi l'arrêt de la cour d'appel"],
+        "infractions": ["condamné en première instance et par le Conseil d'État pour contestation de l'existence de crime contre l'humanité (négationnisme)", "la Cour de Cassation va pourtant casser sans renvoi l'arrêt de la cour d'appel"],
         "prenom": "Bruno",
         "nom": "Gollnisch"
     },
@@ -1288,7 +1288,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 1998,
-        "raison": ["pour avoir tenu des propos sur l’inégalité des races"],
+        "infractions": ["pour avoir tenu des propos sur l’inégalité des races"],
         "prenom": "Bruno",
         "nom": "Mégret"
     },
@@ -1297,7 +1297,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2002,
-        "raison": ["pour avoir envoyé aux frais de la commune de Vitrolles plusieurs milliers de lettres appelant à parrainer sa candidature pour l'élection présidentielle"],
+        "infractions": ["pour avoir envoyé aux frais de la commune de Vitrolles plusieurs milliers de lettres appelant à parrainer sa candidature pour l'élection présidentielle"],
         "prenom": "Bruno",
         "nom": "Mégret"
     },
@@ -1306,7 +1306,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2006,
-        "raison": ["détournement de fonds"],
+        "infractions": ["détournement de fonds"],
         "prenom": "Bruno",
         "nom": "Mégret"
     },
@@ -1315,7 +1315,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 1997,
-        "raison": ["pour usurpation de fonction"],
+        "infractions": ["pour usurpation de fonction"],
         "prenom": "Calude",
         "nom": "Jaffres"
     },
@@ -1324,7 +1324,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 1998,
-        "raison": ["pour discrimination et incitation à la discrimination"],
+        "infractions": ["pour discrimination et incitation à la discrimination"],
         "prenom": "Catherine",
         "nom": "Mégret"
     },
@@ -1333,7 +1333,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2002,
-        "raison": ["pour avoir envoyé aux frais de la commune de Vitrolles plusieurs milliers de lettres appelant à parrainer la candidature de son époux pour l'élection présidentielle"],
+        "infractions": ["pour avoir envoyé aux frais de la commune de Vitrolles plusieurs milliers de lettres appelant à parrainer la candidature de son époux pour l'élection présidentielle"],
         "prenom": "Catherine",
         "nom": "Mégret"
     },
@@ -1342,7 +1342,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2006,
-        "raison": ["détournement de fonds"],
+        "infractions": ["détournement de fonds"],
         "prenom": "Catherine",
         "nom": "Mégret"
     },
@@ -1351,7 +1351,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2002,
-        "raison": ["détention sans autorisation de munitions et d'armes, condamné pour incitation à la haine raciale"],
+        "infractions": ["détention sans autorisation de munitions et d'armes, condamné pour incitation à la haine raciale"],
         "prenom": "Cédric",
         "nom": "Bégin"
     },
@@ -1360,7 +1360,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2002,
-        "raison": ["provocation à la discrimination raciale"],
+        "infractions": ["provocation à la discrimination raciale"],
         "prenom": "Christophe",
         "nom": "Klein"
     },
@@ -1369,7 +1369,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 1997,
-        "raison": ["abus d’autorité", "usurpation de fonction"],
+        "infractions": ["abus d’autorité", "usurpation de fonction"],
         "prenom": "Claude",
         "nom": "Jaffrès"
     },
@@ -1378,7 +1378,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 1995,
-        "raison": ["pour avoir inscrit plusieurs personnes de son voisinage sur la liste présentée par son parti au municipales sans les avoir prévenues. Le Conseil d’Etat a annulé les élections des conseillers municipaux FN pour « liste irrégulière »"],
+        "infractions": ["pour avoir inscrit plusieurs personnes de son voisinage sur la liste présentée par son parti au municipales sans les avoir prévenues. Le Conseil d’Etat a annulé les élections des conseillers municipaux FN pour « liste irrégulière »"],
         "prenom": "Denis",
         "nom": "Monteillet"
     },
@@ -1388,7 +1388,7 @@
         "ex": true,
         "nature": "condamnation",
         "annee": 1985,
-        "raison": ["reconnu coupable de meurtre, alors qu’il collait des affiches pour le FN, pour avoir tué Abdallah Moktari, 23 ans ; qui l’avait insulté. 8 ans de prison"],
+        "infractions": ["reconnu coupable de meurtre, alors qu’il collait des affiches pour le FN, pour avoir tué Abdallah Moktari, 23 ans ; qui l’avait insulté. 8 ans de prison"],
         "prenom": "Emilien",
         "nom": "Bonnal"
     },
@@ -1398,7 +1398,7 @@
         "nature": "condamnation",
         "annee": 2007,
         "ammende": 7500,
-        "raison": ["incitation à la discrimination raciale"],
+        "infractions": ["incitation à la discrimination raciale"],
         "prenom": "Francis",
         "nom": "Watez"
     },
@@ -1407,7 +1407,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 1997,
-        "raison": ["détournement de fonds"],
+        "infractions": ["détournement de fonds"],
         "prenom": "François",
         "nom": "Nicolas-Schmitt"
     },
@@ -1416,7 +1416,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 1997,
-        "raison": ["complicité de violence en réunion, avec arme et préméditation", "pour complicité de destruction de biens"],
+        "infractions": ["complicité de violence en réunion, avec arme et préméditation", "pour complicité de destruction de biens"],
         "prenom": "Gilles",
         "nom": "Lacroix"
     },
@@ -1425,7 +1425,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2001,
-        "raison": ["contestation de crimes contre l'Humanité"],
+        "infractions": ["contestation de crimes contre l'Humanité"],
         "prenom": "Georges",
         "nom": "Theil"
     },
@@ -1434,7 +1434,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2006,
-        "raison": ["contestation de crimes contre l'Humanité"],
+        "infractions": ["contestation de crimes contre l'Humanité"],
         "prenom": "Georges",
         "nom": "Theil"
     },
@@ -1443,7 +1443,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2011,
-        "raison": ["escroquerie en bande organisée"],
+        "infractions": ["escroquerie en bande organisée"],
         "prenom": "Guy",
         "nom": "Cannie"
     },
@@ -1452,7 +1452,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 1990,
-        "raison": ["pour avoir mis le feu à la voiture du député du Rhône et maire PS de la ville, Jean Jacques Queyranne pour fêter le 14 juillet"],
+        "infractions": ["pour avoir mis le feu à la voiture du député du Rhône et maire PS de la ville, Jean Jacques Queyranne pour fêter le 14 juillet"],
         "prenom": "Jacky",
         "nom": "Codvelle"
     },
@@ -1461,7 +1461,7 @@
         "formation": "fn",
         "nature": "mis en examen",
         "annee": 2010,
-        "raison": ["prise illégale d’intérêt"],
+        "infractions": ["prise illégale d’intérêt"],
         "prenom": "Jacques",
         "nom": "Bompard"
     },
@@ -1470,7 +1470,7 @@
         "formation": "fn",
         "nature": "mis en examen",
         "annee": 2011,
-        "raison": ["incitation à la haine raciale (suite à son apologie d’Anders Behring Breivik, auteur des attentats d’Oslo)"],
+        "infractions": ["incitation à la haine raciale (suite à son apologie d’Anders Behring Breivik, auteur des attentats d’Oslo)"],
         "prenom": "Jacques",
         "nom": "Coutela"
     },
@@ -1479,7 +1479,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 1990,
-        "raison": ["coupable de vol à main armé pour avoir braqué une banque (8 ans fermes)"],
+        "infractions": ["coupable de vol à main armé pour avoir braqué une banque (8 ans fermes)"],
         "prenom": "Jean",
         "nom": "Holtzer"
     },
@@ -1488,7 +1488,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 1992,
-        "raison": ["pour avoir battu sa femme pendant quinze ans"],
+        "infractions": ["pour avoir battu sa femme pendant quinze ans"],
         "prenom": "Jean-Claude",
         "nom": "Poulet"
     },
@@ -1497,7 +1497,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2006,
-        "raison": ["pour outrage à agent dépositaire de l'autorité publique"],
+        "infractions": ["pour outrage à agent dépositaire de l'autorité publique"],
         "prenom": "Jean-Marc",
         "nom": "Maurice"
     },
@@ -1506,7 +1506,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2007,
-        "raison": ["vol"],
+        "infractions": ["vol"],
         "prenom": "Jean-Marc",
         "nom": "Maurice"
     },
@@ -1515,7 +1515,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2008,
-        "raison": ["escroquerie"],
+        "infractions": ["escroquerie"],
         "prenom": "Jean-Marc",
         "nom": "Maurice"
     },
@@ -1524,7 +1524,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2009,
-        "raison": ["banqueroute"],
+        "infractions": ["banqueroute"],
         "prenom": "Jean-Marc",
         "nom": "Maurice"
     },
@@ -1533,7 +1533,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2010,
-        "raison": ["travail dissimulé et non déclaré"],
+        "infractions": ["travail dissimulé et non déclaré"],
         "prenom": "Jean-Marc",
         "nom": "Maurice"
     },
@@ -1542,7 +1542,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2011,
-        "raison": ["abus de bien sociaux"],
+        "infractions": ["abus de bien sociaux"],
         "prenom": "Jean-Marc",
         "nom": "Maurice"
     },
@@ -1551,7 +1551,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2001,
-        "raison": ["détournements de fonds publics", "abus de confiance"],
+        "infractions": ["détournements de fonds publics", "abus de confiance"],
         "prenom": "Jean-Marie",
         "nom": "Le Chevallier"
     },
@@ -1560,7 +1560,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2001,
-        "raison": ["subordination de témoins (dans l'affaire du meurtre de son directeur de cabinet)"],
+        "infractions": ["subordination de témoins (dans l'affaire du meurtre de son directeur de cabinet)"],
         "prenom": "Jean-Marie",
         "nom": "Le Chevallier"
     },
@@ -1569,7 +1569,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2002,
-        "raison": ["incitation à la haine raciale"],
+        "infractions": ["incitation à la haine raciale"],
         "prenom": "Jean-Yves",
         "nom": "Douissard"
     },
@@ -1578,7 +1578,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 1998,
-        "raison": ["provocation à la haine raciale"],
+        "infractions": ["provocation à la haine raciale"],
         "prenom": "Jean-Yves",
         "nom": "Le Gallou"
     },
@@ -1587,7 +1587,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 1998,
-        "raison": ["coups et blessures"],
+        "infractions": ["coups et blessures"],
         "prenom": "Joël",
         "nom": "Klein"
     },
@@ -1596,7 +1596,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 1994,
-        "raison": ["escroquerie", "exercice illégal de la profession de banquier"],
+        "infractions": ["escroquerie", "exercice illégal de la profession de banquier"],
         "prenom": "Laurent",
         "nom": "Mirabeau"
     },
@@ -1605,7 +1605,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2008,
-        "raison": ["diffamation"],
+        "infractions": ["diffamation"],
         "prenom": "Louis",
         "nom": "Aliot"
     },
@@ -1614,7 +1614,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 1997,
-        "raison": ["détournement de fonds"],
+        "infractions": ["détournement de fonds"],
         "prenom": "Louis",
         "nom": "de Noëll"
     },
@@ -1623,7 +1623,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 1995,
-        "raison": ["pour blessure par balle"],
+        "infractions": ["pour blessure par balle"],
         "prenom": "Marc",
         "nom": "Georges"
     },
@@ -1632,7 +1632,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2007,
-        "raison": ["pour avoir employé des clandestins"],
+        "infractions": ["pour avoir employé des clandestins"],
         "prenom": "Marc",
         "nom": "Lyoen"
     },
@@ -1641,7 +1641,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2008,
-        "raison": ["fraude au RSA"],
+        "infractions": ["fraude au RSA"],
         "prenom": "Marc",
         "nom": "Lyoen"
     },
@@ -1650,7 +1650,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2007,
-        "raison": ["diffamation"],
+        "infractions": ["diffamation"],
         "prenom": "Marine",
         "nom": "Le Pen"
     },
@@ -1659,7 +1659,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2012,
-        "raison": ["incitation à la discrimination, à la haine et à la violence à l’encontre des immigrés"],
+        "infractions": ["incitation à la discrimination, à la haine et à la violence à l’encontre des immigrés"],
         "prenom": "Patrick",
         "nom": "Bassot"
     },
@@ -1668,7 +1668,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2005,
-        "raison": ["pour injures racistes en public"],
+        "infractions": ["pour injures racistes en public"],
         "prenom": "Patrick",
         "nom": "Binder"
     },
@@ -1677,7 +1677,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2011,
-        "raison": ["injure publique", "provocation à la haine raciale"],
+        "infractions": ["injure publique", "provocation à la haine raciale"],
         "prenom": "Patrick",
         "nom": "Binder"
     },
@@ -1686,7 +1686,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2008,
-        "raison": ["faux et falsification", "abus de confiance", "escroquerie"],
+        "infractions": ["faux et falsification", "abus de confiance", "escroquerie"],
         "prenom": "Philippe",
         "nom": "Bernard"
     },
@@ -1695,7 +1695,7 @@
         "formation": "fn",
         "nature": "examen",
         "annee": 1998,
-        "raison": ["discrimination"],
+        "infractions": ["discrimination"],
         "prenom": "Philippe",
         "nom": "Viard"
     },
@@ -1704,7 +1704,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 1998,
-        "raison": ["injures", "délit de fuite"],
+        "infractions": ["injures", "délit de fuite"],
         "prenom": "Philippe",
         "nom": "Viard"
     },
@@ -1713,7 +1713,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2011,
-        "raison": ["outrage et rebellion"],
+        "infractions": ["outrage et rebellion"],
         "prenom": "Richard",
         "nom": "Jacob"
     },
@@ -1722,7 +1722,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 1996,
-        "raison": ["trafic de drogues"],
+        "infractions": ["trafic de drogues"],
         "prenom": "Roger",
         "nom": "Fabregues"
     },
@@ -1731,7 +1731,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 1996,
-        "raison": ["proxénétisme"],
+        "infractions": ["proxénétisme"],
         "prenom": "Sylvain",
         "nom": "Ferrua"
     },
@@ -1740,7 +1740,7 @@
         "formation": "fn",
         "nature": "examen",
         "annee": 2009,
-        "raison": ["menaces de mort"],
+        "infractions": ["menaces de mort"],
         "prenom": "Tanguy",
         "nom": "Deshayes"
     },
@@ -1749,7 +1749,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 1997,
-        "raison": ["pour avoir aspergé de gaz lacrymogène des militants de Ras l'Front (mouvement anti-FN)"],
+        "infractions": ["pour avoir aspergé de gaz lacrymogène des militants de Ras l'Front (mouvement anti-FN)"],
         "prenom": "Xavier",
         "nom": "Voute"
     },
@@ -1758,7 +1758,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2011,
-        "raison": ["trafic de drogue (transport, détention, acquisition, cession et emploi non autorisés de stupéfiants)"],
+        "infractions": ["trafic de drogue (transport, détention, acquisition, cession et emploi non autorisés de stupéfiants)"],
         "prenom": "Yannick",
         "nom": "Lecointre"
     },
@@ -1767,7 +1767,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 1995,
-        "raison": ["oublis de plus-value boursière", "sous-estimation de loyer"],
+        "infractions": ["oublis de plus-value boursière", "sous-estimation de loyer"],
         "prenom": "Jean-Marie",
         "nom": "Le Pen"
     },
@@ -1776,7 +1776,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 1996,
-        "raison": ["pour avoir tenu des propos ayant gravement porté atteinte au président du tribunal d'Auch"],
+        "infractions": ["pour avoir tenu des propos ayant gravement porté atteinte au président du tribunal d'Auch"],
         "prenom": "Jean-Marie",
         "nom": "Le Pen"
     },
@@ -1785,7 +1785,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 1997,
-        "raison": ["pour avoir injurié l'association Ras l'front (mouvement anti-FN) de « mouvement de tueurs de flics »"],
+        "infractions": ["pour avoir injurié l'association Ras l'front (mouvement anti-FN) de « mouvement de tueurs de flics »"],
         "prenom": "Jean-Marie",
         "nom": "Le Pen"
     },
@@ -1794,7 +1794,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 1997,
-        "raison": ["pour avoir injurié le président de SOS-Racisme"],
+        "infractions": ["pour avoir injurié le président de SOS-Racisme"],
         "prenom": "Jean-Marie",
         "nom": "Le Pen"
     },
@@ -1803,7 +1803,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 1997,
-        "raison": ["pour banalisation de crimes contre l'humanité et consentement à l’horrible"],
+        "infractions": ["pour banalisation de crimes contre l'humanité et consentement à l’horrible"],
         "prenom": "Jean-Marie",
         "nom": "Le Pen"
     },
@@ -1812,7 +1812,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 1998,
-        "raison": ["injures publiques et violences sur personne dépositaire de l'autorité publique dans l'exercice de ses fonctions"],
+        "infractions": ["injures publiques et violences sur personne dépositaire de l'autorité publique dans l'exercice de ses fonctions"],
         "prenom": "Jean-Marie",
         "nom": "Le Pen"
     },
@@ -1821,7 +1821,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 1998,
-        "raison": ["pour avoir présenté une tête en carton à l'effigie de Catherine Trautmann"],
+        "infractions": ["pour avoir présenté une tête en carton à l'effigie de Catherine Trautmann"],
         "prenom": "Jean-Marie",
         "nom": "Le Pen"
     },
@@ -1830,7 +1830,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 1998,
-        "raison": ["pour avoir déclaré « Je crois à l'inégalité des races »"],
+        "infractions": ["pour avoir déclaré « Je crois à l'inégalité des races »"],
         "prenom": "Jean-Marie",
         "nom": "Le Pen"
     },
@@ -1839,7 +1839,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 1999,
-        "raison": ["incitation à la haine raciale et apologie de crime de guerre"],
+        "infractions": ["incitation à la haine raciale et apologie de crime de guerre"],
         "prenom": "Jean-Marie",
         "nom": "Le Pen"
     },
@@ -1848,7 +1848,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2002,
-        "raison": ["reproduction sans autorisation un reportage de treize photographies prises par l’AFP"],
+        "infractions": ["reproduction sans autorisation un reportage de treize photographies prises par l’AFP"],
         "prenom": "Jean-Marie",
         "nom": "Le Pen"
     },
@@ -1857,7 +1857,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2004,
-        "raison": ["provocation à la haine raciale"],
+        "infractions": ["provocation à la haine raciale"],
         "prenom": "Jean-Marie",
         "nom": "Le Pen"
     },
@@ -1866,7 +1866,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2005,
-        "raison": ["incitation à la haine raciale"],
+        "infractions": ["incitation à la haine raciale"],
         "prenom": "Jean-Marie",
         "nom": "Le Pen"
     },
@@ -1875,7 +1875,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2008,
-        "raison": ["complicité d'apologie de crimes de guerre", "contestation de crime contre l'humanité"],
+        "infractions": ["complicité d'apologie de crimes de guerre", "contestation de crime contre l'humanité"],
         "prenom": "Jean-Marie",
         "nom": "Le Pen"
     }

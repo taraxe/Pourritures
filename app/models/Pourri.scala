@@ -32,11 +32,15 @@ case class Affaire(_id:Option[BSONObjectID] = None,
                    pid:Option[BSONObjectID],
                    annee:DateTime,
                    typeAffaire:TypeAffaire.TypeAffaire,
-                   amende:Option[Int], raisons:Seq[String],
+                   amende:Option[Int],
+                   infractions:Seq[String],
                    source:Option[String],
                    checked:Boolean,
                    approvalCount:Option[Int] = None,
-                   deleted:Option[Boolean] = None)
+                   deleted:Option[Boolean] = None) {
+
+  lazy val natures = NatureAffaire.readFromString(infractions)
+}
 
 object Formation extends Enumeration {
   type Formation = Value

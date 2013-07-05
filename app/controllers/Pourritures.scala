@@ -75,7 +75,7 @@ object Pourritures extends Controller {
       "annee" -> number(min = 1900, max = new DateTime().year().get()),
       "nature" -> number(min = 0, max = TypeAffaire.maxId),
       "amende" -> optional(number(min = 1)),
-      "raisons" -> nonEmptyText,
+      "infractions" -> nonEmptyText,
       "source" -> nonEmptyText.verifying{ s =>
         (for {
           url <- catching(classOf[MalformedURLException]) opt new URL(s)
@@ -89,7 +89,7 @@ object Pourritures extends Controller {
         }
       }
     )((year: Int, typeAffaireNb: Int, amende: Option[Int], raisons: String, source: String) => Affaire(None, None, new DateTime().withYear(year), TypeAffaire(typeAffaireNb), amende, raisons.split(",").map(_.trim), Some(source), false))
-      ((a: Affaire) => Some(a.annee.year().get(), a.typeAffaire.id, a.amende, a.raisons.mkString(", "), a.source.getOrElse("")))
+      ((a: Affaire) => Some(a.annee.year().get(), a.typeAffaire.id, a.amende, a.infractions.mkString(", "), a.source.getOrElse("")))
     )
   }
 
@@ -169,9 +169,12 @@ object Pourritures extends Controller {
                 p.affaires.map(_.map { a =>
                     Json.toJson(a)(new Writes[Affaire] {
                       def writes(o: Affaire) = Json.obj(
-                        "raison" -> Json.toJson(o.raisons),
-                        "nature" -> Json.toJson(o.typeAffaire.toString),
-                        "annee" -> Json.toJson(o.annee.getYear)
+                        "infractions" -> Json.toJson(o.infractions),
+                        "type" -> Json.toJson(o.typeAffaire.toString),
+                        "annee" -> Json.toJson(o.annee.getYear),
+                        "natures" -> Json.toJson(o.natures)(Writes.traversableWrites(new Writes[NatureAffaire.NatureAffaire] {
+                          def writes(o: NatureAffaire.NatureAffaire) = JsString(o.toString)
+                        }))
                       )
                     }).as[JsObject] ++ Json.obj(
                       "name" -> p.fullname,

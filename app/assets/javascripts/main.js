@@ -1,25 +1,9 @@
 (function(ns, d3, $){
 
-    function removeAccents(strAccents) {
-        var strAccents = strAccents.split('');
-        var strAccentsOut = new Array();
-        var strAccentsLen = strAccents.length;
-        var accents = 'ÀÁÂÃÄÅàáâãäåÒÓÔÕÕÖØòóôõöøÈÉÊËèéêëðÇçÐÌÍÎÏìíîïÙÚÛÜùúûüÑñŠšŸÿýŽž';
-        var accentsOut = "AAAAAAaaaaaaOOOOOOOooooooEEEEeeeeeCcDIIIIiiiiUUUUuuuuNnSsYyyZz";
-        for (var y = 0; y < strAccentsLen; y++) {
-            if (accents.indexOf(strAccents[y]) != -1) {
-                strAccentsOut[y] = accentsOut.substr(accents.indexOf(strAccents[y]), 1);
-            } else
-                strAccentsOut[y] = strAccents[y];
-        }
-        strAccentsOut = strAccentsOut.join('');
-        return strAccentsOut;
-    }
-
-    d3.json('/import.json', function(rawData){
+    d3.json('/import.json', function(data){
     d3.json('/assets/data/alternance.json', function(alter){
 
-        var filtered = rawData.filter(function(e){
+        var filtered = data.filter(function(e){
             return e.annee >= 1995;
         });
 
@@ -37,8 +21,6 @@
                 })
                 .tooltip(function(d){
                     var template = $('#tooltip-tmpl').html();
-                    var slug = removeAccents(d[0].name.replace(/ /g, '-').toLowerCase());
-                    /*d[0].url = jsRoutes.controllers.Pourritures.show(slug).url;*/
                     return _.template(template, d[0])
                 });
 
@@ -109,7 +91,7 @@
                 .key(function (d) { return d.name})
                 .rollup(function (values) { return {
                     condamnations: d3.sum(values, function (d) {
-                        return +d.raison.length
+                        return +d.infractions.length
                     }),
                     formation: values[0].formation,
                     lower: d3.min(values, function (d) {
@@ -140,7 +122,7 @@
                 .key(function(d){return d.annee})
                 .sortKeys(d3.ascending)
                 .rollup(function(values){
-                    var f = function (d) {return +d.raison.length},
+                    var f = function (d) {return +d.infractions.length},
                         filter = function(g){ return function(d){ return d.formation === g}};
                     return [
                         d3.sum(values, f), // todo make this generic for every group
