@@ -1,6 +1,6 @@
 (function(ns, d3, $){
 
-    d3.json('/import.json', function(data){
+    d3.json('/affaires.json', function(data){
     d3.json('/assets/data/alternance.json', function(alter){
 
         var filtered = data.filter(function(e){
@@ -150,7 +150,7 @@
         })(filtered);
 
         /* TODO */
-        /*(function(data){
+        (function(data){
 
             var natures = d3.keys(
                 d3.merge(data.map(function (e) {return e.natures}))
@@ -160,13 +160,16 @@
                   }, {}));
 
             var byGroup = d3.nest()
-                .key(function(d){return d.formation})
+                .key(function(d){
+                    return d.formation
+                })
                 .rollup(function(affaires){
-                    return { "natures" : natures.map(function (e){
-                        return {
-                            "name":e,
-                            "value": affaires.filter(function(i){ return i.natures.indexOf(e)>0}).length
-                        }
+                    return {
+                        "natures" : natures.map(function (e){
+                            return {
+                                "name":e,
+                                "value": affaires.filter(function(i){ return i.natures.indexOf(e)>=0}).length
+                            }
                     })};
                 })
                 .map(data);
@@ -175,8 +178,12 @@
                 e.value.formation = e.key;
                 return e.value;
             });
+            console.log(r);
+            var donuts = new ns.charts.Donuts();
 
-        })(filtered)*/
+            d3.select('.donuts').datum(r).call(donuts);
+
+        })(filtered)
 
     });
     });

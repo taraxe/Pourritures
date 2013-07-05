@@ -165,7 +165,7 @@ object Pourritures extends Controller {
   }
 
   //json apis
-  def pourrituresJson = Action { implicit request =>
+  def affaires = Action { implicit request =>
       import play.api.libs.json._
       Async(
         Pourri.withAffaires.flatMap { la =>

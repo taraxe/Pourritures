@@ -39,7 +39,10 @@ case class Affaire(_id:Option[BSONObjectID] = None,
                    approvalCount:Option[Int] = None,
                    deleted:Option[Boolean] = None) {
 
-  lazy val natures = NatureAffaire.readFromString(infractions)
+  lazy val natures = NatureAffaire.readFromString(infractions) match {
+    case x if (x.isEmpty) => Set(NatureAffaire.undefined)
+    case x => x
+  }
 }
 
 object Formation extends Enumeration {
@@ -65,6 +68,7 @@ object TypeAffaire extends Enumeration {
 object NatureAffaire extends Enumeration {
   type NatureAffaire = Value
   val sexuel, discrimination, economique, fiscal, diffamation, violence = Value
+  val undefined = Value("indéterminé")
 
   val categorisation:Map[NatureAffaire,Set[String]] = Map(
     sexuel -> Set("proxénétisme","viol","viols","sexuel","sexuelle","attouchement","attouchements"),
@@ -75,9 +79,11 @@ object NatureAffaire extends Enumeration {
     diffamation -> Set("image","diffamation")
   )
 
+  //favoritisme dans une affaire de marchés publics
+
   def readFromString(infractions:Seq[String]):Set[NatureAffaire] = {
     infractions.foldLeft(Set.empty[NatureAffaire]){(r,s) =>
-      categorisation.filter{ case (k,v) => v.exists(x => s.contains(x) && ( !s.sameElements(x) || s.equalsIgnoreCase(x) ))}.toSeq match {
+      categorisation.filter{ case (k,v) => v.exists(x => s.contains(x))}.toSeq match {
         case m => r ++ m.map(_._1)
         case Nil => r
       }

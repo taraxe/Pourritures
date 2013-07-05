@@ -1,5 +1,8 @@
 (function(ns, d3, $){
 
+    var order = ["pcf","fdg","verts","ps","udi","ump","fn"]; // natural ordering
+
+
     var Pourritures = function(opts) {
         var defaults = { width: 800, height: 650, margin : {top: 70, right: 20, bottom: 20, left: 40}},
             conf = $.extend(defaults,opts),
@@ -12,8 +15,7 @@
             xScale = d3.scale.ordinal(),
             xAxis = d3.svg.axis().scale(xScale).orient("top").tickSize(0).tickFormat(function(d){return d.toUpperCase()}),
             yAxis = d3.svg.axis().scale(yScale).orient("left").tickSize(0).tickPadding(10).ticks(d3.time.years),
-            circleWidth = usable_width / 65,
-            order = ["pcf","fdg","verts","ps","udi","ump","fn"]; // natural ordering
+            circleWidth = usable_width / 65;
 
         function chart(selection) {
             selection.each(function(data) {
@@ -278,8 +280,86 @@
         return chart;
     };
 
+    var Donuts = function(opts) {
+        var defaults = { width: 800, height: 650, margin : {top: 20, right: 20, bottom: 20, left: 30}},
+            conf = $.extend(defaults,opts),
+            margin = conf.margin,
+            width = conf.width,
+            height = conf.height,
+
+            usable_height = height - margin.bottom - margin.top,
+            usable_width = width - margin.right - margin.left,
+
+            radius = 74,
+            padding = 10,
+            color = d3.scale.category10(),
+            arc = d3.svg.arc().outerRadius(radius).innerRadius(radius - 30)
+            pie = d3.layout.pie().sort(null).value(function(e){return e.value});
+
+        function chart(selection) {
+            selection.each(function(data) {
+
+                data = data.sort(function (a, b) {
+                    return order.indexOf(a.formation) - order.indexOf(b.formation);
+                });
+
+                color.domain(data[0].natures.map(function(e){return e.name}));
+
+                    var legend = d3.select(this).append("svg")
+                        .attr("class", "legend")
+                        .attr("width", radius * 2)
+                        .attr("height", radius * 2)
+                        .selectAll("g")
+                        .data(color.domain().slice().reverse())
+                        .enter().append("g")
+                        .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+                    legend.append("rect")
+                        .attr("width", 18)
+                        .attr("height", 18)
+                        .style("fill", color);
+
+                    legend.append("text")
+                        .attr("x", 24)
+                        .attr("y", 9)
+                        .attr("dy", ".35em")
+                        .text(function(d) { return d; });
+
+                    var svg = d3.select(this).selectAll(".pie")
+                        .data(data)
+                        .enter().append("svg")
+                        .attr("class", "pie")
+                        .attr("width", radius * 2)
+                        .attr("height", radius * 2)
+                        .append("g")
+                        .attr("transform", "translate(" + radius + "," + radius + ")");
+
+                    svg.selectAll(".arc")
+                        .data(function(d) {
+                            return pie(d.natures);
+                        })
+                        .enter().append("path")
+                        .attr("class", "arc")
+                        .attr("d", arc)
+                        .style("fill", function(d) {
+                            return color(d.data.name);
+                        });
+
+                    svg.append("text")
+                        .attr("dy", ".35em")
+                        .style("text-anchor", "middle")
+                        .text(function(d) { return d.formation; });
+
+                });
+
+        }
+
+        return chart;
+    };
+
     ns.charts = {
         Pourritures : Pourritures,
-        TimeSeries : TimeSeries
+        TimeSeries : TimeSeries,
+        Donuts : Donuts
     }
 }(window.pourritures = window.pourritures || {}, d3, jQuery));
