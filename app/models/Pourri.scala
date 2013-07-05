@@ -54,11 +54,36 @@ object Formation extends Enumeration {
 
 object TypeAffaire extends Enumeration {
   type TypeAffaire = Value
-  val condamnation, examen = Value
+  val condamnation = Value
+  val examen = Value("mise en examen")
   implicit val jsonFormat = new Format[TypeAffaire] {
     def reads(json: JsValue) = JsSuccess(TypeAffaire(json.as[Int]))
     def writes(o: TypeAffaire.TypeAffaire) = JsNumber(o.id)
   }
+}
+
+object NatureAffaire extends Enumeration {
+  type NatureAffaire = Value
+  val sexuel, discrimination, economique, fiscal, diffamation, violence = Value
+
+  val categorisation:Map[NatureAffaire,Set[String]] = Map(
+    sexuel -> Set("proxénétisme","viol","viols","sexuel","sexuelle","attouchement","attouchements"),
+    discrimination -> Set("discrimination","discriminatoire","racial","raciale","haine raciale","racisme","nazisme","nazi","immigré","immigrés","humanité"),
+    economique -> Set("vol","abus de confiance","traffic d'influence","favoritisme","blanchiment","bien social","biens sociaux","emploi fictif","emploi fictifs","emplois fictifs","travail dissimulé", "corruption"),
+    fiscal -> Set("fraude fiscale","impots","impôts","détournement","fonds publics"),
+    violence -> Set("violence","coups","coup","blaissure","blaissures","violent","menace","menaces"),
+    diffamation -> Set("image","diffamation")
+  )
+
+  def readFromString(infractions:Seq[String]):Set[NatureAffaire] = {
+    infractions.foldLeft(Set.empty[NatureAffaire]){(r,s) =>
+      categorisation.filter{ case (k,v) => v.exists(x => s.contains(x) && ( !s.sameElements(x) || s.equalsIgnoreCase(x) ))}.toSeq match {
+        case m => r ++ m.map(_._1)
+        case Nil => r
+      }
+    }
+  }
+  override def toString() = super.toString().toLowerCase()
 }
 
 
