@@ -73,7 +73,7 @@ object Global extends GlobalSettings {
                 case _ => TypeAffaire.examen
               },
               (a \ "ammende").asOpt[Int],
-              (a \ "raison").as[Array[String]],
+              (a \ "infractions").as[Array[String]],
               None,
               true
             )

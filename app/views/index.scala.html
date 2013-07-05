@@ -13,7 +13,7 @@
     <script src="@routes.Assets.at("javascripts/main."+"min.".when(app.mode != Mode.Dev)+"js")"></script>
 }
 @main("Pourritures", head) {
-    <h2>Les faits</h2>
+    <h2>Le palmares</h2>
     <figure class="pourriture">
         <div class="chart">
             <svg class="legend">
@@ -40,8 +40,8 @@
             </ul>
         </div>
     </figure>
-    <hr/>
-    <h2>Les chiffres</h2>
+
+    <h2>Les records</h2>
     <figure class="cumulated">
         <svg class="legend">
             <g transform="translate(10,10)">
@@ -57,9 +57,11 @@
         </svg>
     </figure>
 
+    <hr/>
+
     <h2>
         <img src="@routes.Assets.at("images/champions.png")" width="419"/>
-        Les champions
+        Les champions de France
     </h2>
     <ul class="high-score"></ul>
 
@@ -78,9 +80,9 @@
             <div class="ribbon-wrapper"><div class="ribbon">GOUV</div></div>
             <% } %>
             <h3><%= name %></h2>
-                <h4><%= nature %></h3>
+                <h4><%= type %></h3>
             <ul>
-                <% _.each(raison,function(item,key,list){ %>
+                <% _.each(infractions,function(item,key,list){ %>
                 <li><%= item %></li>
                 <% }) %>
             </ul>

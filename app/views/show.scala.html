@@ -1,4 +1,4 @@
-@(p:Pourri, affaires:Seq[Affaire] = Nil)(implicit app:play.api.Application)
+@(p:Pourri, affaires:Seq[Affaire] = Nil)(implicit app:play.api.Application, req:play.api.mvc.RequestHeader)
 
 @import play.api.Mode
 
@@ -13,15 +13,13 @@
                   <h1>@p.fullname <small>@p.formation.toString</small> </h1>
                 </div>
                 <div class="btn-toolbar">
-                    <div class="btn-group">
-                        @*<a class="btn btn-mini" href="@routes.Pourritures.index()">Retour</a>*@
-                        <a class="btn btn-mini btn-primary" href="@routes.Pourritures.contrib(p.slug)">Ajouter une affaire</a>
-                    </div>
+                    <a class="btn btn-mini" href="@routes.Pourritures.index()">Retour</a>
+                    <a target="_blank" class="btn btn-mini btn-success" href="http://www.twitter.com/share?via=Pourritures&lang=fr&text=@{helper.urlEncode("Dis donc %s, on a des problèmes avec la justice on dirait! %s".format(p.fullname,routes.Pourritures.show(p.slug).absoluteURL()))}">Le nez dans le caca</a>
+                    <a class="btn btn-mini btn-primary" href="@routes.Pourritures.contrib(p.slug)">Ajouter une affaire</a>
                 </div>
                 <ul class="affaires">
-                    @affaires.sortBy(_.annee.getYear).reverse.map(parts.affaire(_))
+                @affaires.sortBy(_.annee.getYear).reverse.map(parts.affaire(_))
                 </ul>
-
             </div>
         </div>
     </div>

@@ -12,7 +12,8 @@
             xScale = d3.scale.ordinal(),
             xAxis = d3.svg.axis().scale(xScale).orient("top").tickSize(0).tickFormat(function(d){return d.toUpperCase()}),
             yAxis = d3.svg.axis().scale(yScale).orient("left").tickSize(0).tickPadding(10).ticks(d3.time.years),
-            circleWidth = usable_width / 65;
+            circleWidth = usable_width / 65,
+            order = ["pcf","fdg","verts","ps","udi","ump","fn"]; // natural ordering
 
         function chart(selection) {
             selection.each(function(data) {
@@ -26,9 +27,8 @@
                     return [format.parse(d.start),format.parse(d.end), d.gouv];
                 });
 
-                var order = ["pcf","fdg","verts","ps","udi","ump","fn"]; // natural ordering
                 xScale
-                    .domain(data.map(function(d){return d[1]}).sort(function(a,b){
+                    .domain(data.map(function(d){return d[1]}).sort(function (a, b) {
                         return order.indexOf(a) - order.indexOf(b);
                     }))
                     .rangeBands([0, usable_width], 0.1);
@@ -88,7 +88,7 @@
                 years.selectAll("circle")
                     .data(function(d){
                         return d.values.sort(function (a, b) {
-                            return b[0].raison.length - a[0].raison.length ;
+                            return b[0].infractions.length - a[0].infractions.length ;
                         });
                     })
                     .enter()
@@ -97,7 +97,7 @@
                     })
                     .append("circle")
                     .attr("r",function(d){
-                        var l = d[0].raison.length;
+                        var l = d[0].infractions.length;
                         return Math.sqrt(l) * circleWidth
                     })
                     .attr("cy",function(d){return yScale(d[2])})
@@ -111,7 +111,7 @@
                         return d[0].name.toLowerCase();
                     })
                     .attr("stroke-dasharray",function(d){
-                        return d[0].nature.indexOf("condamnation") >= 0 ? "0" : "5,5";
+                        return d[0].type.indexOf("condamnation") >= 0 ? "0" : "5,5";
                     })
                     .each(function(d){
                         $(this).tipsy({
