@@ -30,16 +30,20 @@ object Pourritures extends Controller {
     }
   ))
 
-  def show(slug: String) = Action{
+  def show(slug: String) = Action{ implicit request =>
+    import services.NosDeputes
     Async(
       for {
         p <- Pourri.bySlug(slug)
         a <- p.map(_.affaires).getOrElse(Future(Nil))
         all <- Pourri.withAffaires
+        /*rcJson <- NosDeputes.bySlug(slug)
+        widget <- NosDeputes.widget(slug)*/
+        pic <- NosDeputes.pic(slug)
       } yield {
         p match {
           case None => NotFound(views.html.contrib(all))
-          case Some(p) => Ok(views.html.show(p,a))
+          case Some(p) => Ok(views.html.show(p,a, pic))
         }
       }
     )

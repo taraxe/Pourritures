@@ -1,6 +1,5 @@
-@(p:Pourri, affaires:Seq[Affaire] = Nil)(implicit app:play.api.Application)
+@(p:Pourri, affaires:Seq[Affaire] = Nil, pic:Option[String] = None, json:Option[play.api.libs.json.JsValue] = None)(implicit app:play.api.Application, req:play.api.mvc.RequestHeader)
 
-@import play.api.Mode
 
 @head = {
   <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/show.css")"/>
@@ -10,7 +9,7 @@
         <div class="row">
             <div class="span12">
                 <div class="page-header">
-                  <h1>@p.fullname <small>@p.formation.toString</small> </h1>
+                  <h1>@pic.map{ x => <img class="picture" src="@x">}@p.fullname <small>@p.formation.toString</small> </h1>
                 </div>
                 <div class="btn-toolbar">
                     <a class="btn btn-mini" href="@routes.Pourritures.index()">Retour</a>
@@ -21,6 +20,7 @@
                 @affaires.sortBy(_.annee.getYear).reverse.map(parts.affaire(_))
                 </ul>
             </div>
+            @json.map(_.toString)
         </div>
     </div>
 }
