@@ -147,7 +147,36 @@
                 .y2(function(d){ return d.values[4]});
 
             d3.select('.cumulated').datum(cumulated).call(chart2);
-        })(filtered)
+        })(filtered);
+
+        /* TODO */
+        /*(function(data){
+
+            var natures = d3.keys(
+                d3.merge(data.map(function (e) {return e.natures}))
+                  .reduce(function (r, i) {
+                    r["" + i] = i;
+                    return r
+                  }, {}));
+
+            var byGroup = d3.nest()
+                .key(function(d){return d.formation})
+                .rollup(function(affaires){
+                    return { "natures" : natures.map(function (e){
+                        return {
+                            "name":e,
+                            "value": affaires.filter(function(i){ return i.natures.indexOf(e)>0}).length
+                        }
+                    })};
+                })
+                .map(data);
+
+            var r = d3.entries(byGroup).map(function(e){
+                e.value.formation = e.key;
+                return e.value;
+            });
+
+        })(filtered)*/
 
     });
     });
