@@ -9,6 +9,7 @@
     <script src="@routes.Assets.at("javascripts/d3.v3.js")"></script>
     <script src="@routes.Assets.at("javascripts/underscore.js")"></script>
     <script src="@routes.Assets.at("javascripts/jquery.tipsy.js")"></script>
+    <script src="@routes.Assets.at("javascripts/colorbrewer.js")"></script>
     <script src="@routes.Assets.at("javascripts/charts."+"min.".when(app.mode != Mode.Dev)+"js")"></script>
     <script src="@routes.Assets.at("javascripts/main."+"min.".when(app.mode != Mode.Dev)+"js")"></script>
 }
@@ -58,10 +59,13 @@
     </figure>
 
     <hr/>
-    <h2>Les domaines d'excellence</h2>
-    <figure class="donuts"></figure>
+
+    <h2>Performances par parti</h2>
+    <figure class="stacked"></figure>
 
     <hr/>
+    <h2>Les domaines d'excellence</h2>
+    <figure class="donuts"></figure>
 
     <h2>
         <img src="@routes.Assets.at("images/champions.png")" width="419"/>
@@ -90,7 +94,6 @@
                 <li><%= item %></li>
                 <% }) %>
             </ul>
-            @*<a href="<%= url %>">Détail</a>*@
         </div>
     </script>
     <script type="text/html" id="highscore-tmpl">
@@ -105,5 +108,10 @@
             <% } %>
             </p>
         </li>
+    </script>
+    <script type="text/html" id="stacked-tmpl">
+        <div class="tooltip">
+            <h3><%= value %> <%= group %></h3>
+        </div>
     </script>
 }
