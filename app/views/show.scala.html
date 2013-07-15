@@ -4,7 +4,7 @@
 @head = {
   <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/show.css")"/>
 }
-@back("Pourritures", head) {
+@back("Obscon", head) {
     <div class="container">
         <div class="row">
             <div class="span12">
@@ -13,7 +13,7 @@
                 </div>
                 <div class="btn-toolbar">
                     <a class="btn btn-mini" href="@routes.Pourritures.index()">Retour</a>
-                    <a target="_blank" class="btn btn-mini btn-success" href="http://www.twitter.com/share?via=Pourritures&lang=fr&text=@{helper.urlEncode("Dis donc %s, on a des problèmes avec la justice on dirait! %s".format(p.fullname,routes.Pourritures.show(p.slug).absoluteURL()))}">Le nez dans le caca</a>
+                    <a target="_blank" class="btn btn-mini btn-success" href="http://www.twitter.com/share?via=Pourritures&lang=fr&text=@{helper.urlEncode("Dis donc %s, on a des problèmes avec la justice on dirait! %s".format(p.fullname,routes.Pourritures.show(p.slug).absoluteURL()))}">L'interpeler</a>
                     <a class="btn btn-mini btn-primary" href="@routes.Pourritures.contrib(p.slug)">Ajouter une affaire</a>
                 </div>
                 <ul class="affaires">

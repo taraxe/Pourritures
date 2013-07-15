@@ -125,7 +125,7 @@ object Affaire extends MongoDAO {
   implicit val affairesWrite = play.api.libs.json.Writes.traversableWrites[Affaire]
   implicit val affairesRead = play.api.libs.json.Reads.traversableReads[Seq,Affaire]
   val collection = db.collection[JSONCollection]("affaires")
-  val alivesQuery = Json.obj("deleted"->Json.obj("$ne"->true))
+  val alivesQuery = Json.obj("deleted"->Json.obj("$ne"->true), "typeAffaire"->TypeAffaire.condamnation.id)
   def alives(js:JsObject,sort:JsObject = Json.obj()) = find[Affaire](alivesQuery ++ js, sort)
   def byPid(id:BSONObjectID) = find[Affaire](Json.obj("pid"->id)).toList
   def byId(id:BSONObjectID):Future[Option[Affaire]] = find[Affaire](Json.obj("_id"-> Json.toJson(id))).headOption
