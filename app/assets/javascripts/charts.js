@@ -191,7 +191,7 @@
             yScale = d3.scale.linear(),
             xScale = d3.time.scale(),
             xAxis = d3.svg.axis().scale(xScale).orient("bottom").tickSize(6,0),
-            yAxis = d3.svg.axis().scale(yScale).orient("left").tickSize(6,0),
+            yAxis = d3.svg.axis().scale(yScale).orient("left").tickSize(6,0).ticks(5),
             line = d3.svg.line()
                 .x(function(d){return xScale(d[0])})
                 .y(function(d){return yScale(d[1])})
@@ -213,7 +213,7 @@
                     .range([0, usable_width]);
 
                 yScale
-                    .domain([d3.max(data, function(d){return d3.max([d[1],d[2]])}), d3.min(data, function(d){return d[1]})])
+                    .domain([d3.max(data, function(d){return d3.max([d[1],d[2]])})+10, 0])
                     .range([0, usable_height]);
 
                 var svg = d3.select(this).selectAll("svg:not(.legend)").data([data]);
@@ -368,7 +368,7 @@
             y1 = d3.scale.linear(),
             x = d3.scale.ordinal().rangeRoundBands([0, width], .1, 0),
             xAxis = d3.svg.axis().scale(x).orient("bottom").tickFormat(formatDate).tickSize(0),
-            yAxis = d3.svg.axis().scale(y1).orient("left").tickSize(0),
+            yAxis = d3.svg.axis().scale(y1).orient("left").tickSize(0).ticks(8),
 
             nest = d3.nest().key(function(d) { return d.group; }),
 
@@ -440,6 +440,16 @@
                 svg.append("g").attr("class", "y axis")
                     .call(yAxis);
 
+                var average = dataByYear.reduce(function(a,b){
+                    return a + b.values;
+                },0) / dataByYear.length;
+                svg.append("line")
+                    .attr("class","average")
+                    .attr("x1", 0)
+                    .attr("y1", y1(average))
+                    .attr("x2", width)
+                    .attr("y2", y1(average))
+                    .attr("stroke-dasharray","2 2");
             });
         }
         chart.tooltip = function(_) {
