@@ -137,8 +137,10 @@ object Affaire extends MongoDAO {
     collection.update[JsObject,JsValue](
       Json.obj("_id"-> Json.toJson(a._id.get)),
       Json.toJson(copy
-    )).map(log).map(!_.inError)
-
+    )).map(handleError).map{_ match{
+      case Left(_) => false
+      case Right(_) => true
+    }}
   }
   def allChecked:Future[List[Affaire]] = alives(Json.obj("checked"->true)).toList // how to get only pid field
   def allUnchecked:Future[List[Affaire]] = alives(Json.obj("checked"->false),Json.obj("_id" -> -1)).toList

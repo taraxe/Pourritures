@@ -178,14 +178,48 @@
                 e.value.formation = e.key;
                 return e.value;
             });
-            console.log(r);
             var donuts = new ns.charts.Donuts();
 
             d3.select('.donuts').datum(r).call(donuts);
 
+        })(filtered);
+
+        /* Stacked */
+        (function(data){
+
+            var yAcessor = function (d) {return d.annee};
+            var b = [d3.min(data, yAcessor), d3.max(data,yAcessor)];
+
+            var r = d3.nest()
+                .key(function(d){return d.formation})
+                .key(function(d){return d.annee})
+                .rollup(function(affaires){return affaires.length;})
+                .entries(data).map(function(f){
+                    var res = [];
+                    for (var i = b[0]; i <= b[1]; i++) {
+
+                        var item = f.values.filter(function(e){ return e.key == i });
+                        res.push({
+                            group: f.key,
+                            date: ""+i,
+                            value: item.length > 0 ? item[0].values : 0
+                        })
+                    }
+                    return res;
+                });
+
+            var d = [].concat.apply([],r);
+
+            var chart3 = ns.charts.Stacked({width: 800, height: 350})
+                .tooltip(function(d){
+                    var template = $('#stacked-tmpl').html();
+                    return _.template(template, d)
+                });
+            d3.select('.stacked').datum(d).call(chart3);
+
         })(filtered)
 
-    });
+        });
     });
 
 }(window.pourritures = window.pourritures || {}, d3, jQuery));

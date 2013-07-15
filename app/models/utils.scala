@@ -22,16 +22,22 @@ trait MongoDAO {
   def collection:JSONCollection
   implicit def ec: ExecutionContext = ExecutionContext.Implicits.global
 
-  def save[T](e:T)(implicit w:Writes[T]):Future[T] = collection.save(e).map(log).map(_ => e)
+  def save[T](e:T)(implicit w:Writes[T]):Future[T] = collection.save(e).map(handleError).map(_ => e)
 
-  def insert[T](e:T)(implicit w:Writes[T]):Future[T] = collection.insert(e).map(log).map(_ => e)
+  def insert[T](e:T)(implicit w:Writes[T]):Future[T] = collection.insert(e).map(handleError).map(_ => e)
 
-  def log(err:LastError) = {
-    if(err.inError){
-      import play.api.Logger
-      Logger.error("Mongo Last Error: %s".format(err))
+  def handleError(error:LastError):Either[LastError, BSONDocument] = {
+      error match {
+        case LastError(true, _, _, _, Some(doc), _, _) => Right(doc)
+        case LastError(false, Some(err), code, errorMsg, _, _, _) => {
+          import play.api.Logger
+          val message = """Error : %s \n
+                           Error code: %d \n
+                           Error message: %s""".format(err, code, errorMsg)
+          Logger.error(message)
+          Left(error)
+        }
     }
-    err
   }
 
   def find[T](js:JsObject, sort:JsObject=Json.obj())(implicit f:Format[T]):Cursor[T] = collection.find(js).sort(sort).cursor[T]

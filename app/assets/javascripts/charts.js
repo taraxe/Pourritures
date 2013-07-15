@@ -15,7 +15,8 @@
             xScale = d3.scale.ordinal(),
             xAxis = d3.svg.axis().scale(xScale).orient("top").tickSize(0).tickFormat(function(d){return d.toUpperCase()}),
             yAxis = d3.svg.axis().scale(yScale).orient("left").tickSize(0).tickPadding(10).ticks(d3.time.years),
-            circleWidth = usable_width / 65;
+            circleWidth = usable_width / 65,
+            tooltip = null;
 
         function chart(selection) {
             selection.each(function(data) {
@@ -284,16 +285,12 @@
         var defaults = { width: 800, height: 650, margin : {top: 20, right: 20, bottom: 20, left: 30}},
             conf = $.extend(defaults,opts),
             margin = conf.margin,
-            width = conf.width,
-            height = conf.height,
 
-            usable_height = height - margin.bottom - margin.top,
-            usable_width = width - margin.right - margin.left,
-
+            height = conf.height - margin.bottom - margin.top,
+            width = conf.width - margin.right - margin.left,
             radius = 74,
-            padding = 10,
-            color = d3.scale.category10(),
-            arc = d3.svg.arc().outerRadius(radius).innerRadius(radius - 30)
+            color = d3.scale.ordinal().range(colorbrewer.Pastel1[7]);
+            arc = d3.svg.arc().outerRadius(radius).innerRadius(radius - 30),
             pie = d3.layout.pie().sort(null).value(function(e){return e.value});
 
         function chart(selection) {
@@ -357,9 +354,105 @@
         return chart;
     };
 
+
+    var Stacked = function(options){
+        var defaults = { width: 800, height: 650, margin : {top: 20, right: 20, bottom: 20, left: 20}},
+            conf = $.extend(defaults,options),
+            margin = conf.margin,
+            height = conf.height - (margin.top + margin.bottom),
+            width = conf.width - (margin.left + margin.right),
+
+            parseDate = d3.time.format("%Y").parse,
+            formatDate = function(d) { return d.getFullYear(); },
+
+            y1 = d3.scale.linear(),
+            x = d3.scale.ordinal().rangeRoundBands([0, width], .1, 0),
+            xAxis = d3.svg.axis().scale(x).orient("bottom").tickFormat(formatDate).tickSize(0),
+            yAxis = d3.svg.axis().scale(y1).orient("left").tickSize(0),
+
+            nest = d3.nest().key(function(d) { return d.group; }),
+
+            stack = d3.layout.stack()
+            .values(function(d) {return d.values;})
+            .x(function(d) {return d.date;})
+            .y(function(d) {return d.value; })
+            .out(function(d, y0) {d.valueOffset = y0;}),
+
+            tooltip = null;
+
+
+
+
+        function chart(selection){
+            selection.each(function(data) {
+
+                data.forEach(function(d) {
+                    d.date = parseDate(d.date);
+                    d.value = +d.value;
+                });
+                var dataByGroup = nest.entries(data);
+
+                x.domain(dataByGroup[0].values.map(function(d) { return d.date; }));
+                var dataByYear = d3.nest().key(function (d) {return d.date}).rollup(function (aff) {
+                    var reduction = aff.reduce(function (a, b) {
+                        return a + b.value;
+                    }, 0);
+                    return  reduction;
+                    }).entries(data);
+
+                y1.domain([0, d3.max(dataByYear,function(d){ return d.values})]).range([height, 0]);
+
+                stack(dataByGroup);
+
+                var svg = d3.select(this).append("svg")
+                    .attr("width", width + margin.left + margin.right)
+                    .attr("height", height + margin.top + margin.bottom)
+                    .append("g")
+                    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+                var group = svg.selectAll(".group")
+                    .data(dataByGroup)
+                    .enter().append("g")
+                    .attr("class", function(d){return "group " + d.key;});
+
+
+                group.selectAll("rect")
+                    .data(function(d) { return d.values; })
+                    .enter().append("rect")
+                    .attr("x", function(d) { return x(d.date); })
+                    .attr("y", function(d) {return y1(d.value + d.valueOffset);})
+                    .attr("width", x.rangeBand())
+                    .attr("height", function(d) { return y1(0) - y1(d.value); })
+                    .each(function(d){
+                        $(this).tipsy({
+                            title: function() {return tooltip(d);},
+                            html : true,
+                            fade: true,
+                            gravity: 's'
+                        });
+                    });
+
+                svg.append("g")
+                    .attr("class", "x axis")
+                    .attr("transform", "translate(0," + (height) + ")")
+                    .call(xAxis);
+
+                svg.append("g").attr("class", "y axis")
+                    .call(yAxis);
+
+            });
+        }
+        chart.tooltip = function(_) {
+            if (!arguments.length) return tooltip;
+            tooltip = _;
+            return chart;
+        };
+        return chart
+    }
     ns.charts = {
         Pourritures : Pourritures,
         TimeSeries : TimeSeries,
-        Donuts : Donuts
+        Donuts : Donuts,
+        Stacked: Stacked
     }
 }(window.pourritures = window.pourritures || {}, d3, jQuery));
