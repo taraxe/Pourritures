@@ -61,11 +61,11 @@ object Pourritures extends Controller {
   val pourriForm: Form[Pourri] = Form(mapping(
     "nom" -> nonEmptyText,
     "prenom" -> nonEmptyText,
-    "formation" -> number(min = 0, max = Formation.maxId),
+    "formation" -> nonEmptyText,
     "ex" -> optional(boolean),
     "gouvernement" -> optional(boolean)
-  )((nom: String, prenom: String, formation: Int, ex: Option[Boolean], gouv: Option[Boolean]) => Pourri(None, nom, prenom, Formation(formation), ex, gouv))
-    ((p: Pourri) => Some(p.nom, p.prenom, p.formation.id, p.ex, p.gouvernement))
+  )((nom: String, prenom: String, formation: String, ex: Option[Boolean], gouv: Option[Boolean]) => Pourri(None, nom, prenom, Formation.withName(formation), ex, gouv))
+    ((p: Pourri) => Some(p.nom, p.prenom, p.formation.toString, p.ex, p.gouvernement))
   )
 
   import scala.util.control.Exception._
@@ -158,8 +158,8 @@ object Pourritures extends Controller {
         routes.javascript.Pourritures.index,
         routes.javascript.Pourritures.show,
         routes.javascript.Pourritures.contrib,
-        routes.javascript.BackOffice.doValidate,
-        routes.javascript.BackOffice.unValidate
+        routes.javascript.BackOffice.update,
+        routes.javascript.BackOffice.addCategory
       )
     ).as("text/javascript")
   }
@@ -167,6 +167,8 @@ object Pourritures extends Controller {
   //json apis
   def affaires = Action { implicit request =>
       import play.api.libs.json._
+    import play.api.libs.json.Writes._
+
       Async(
         Pourri.withAffaires.flatMap { la =>
             Future.sequence(la.map { p =>
@@ -176,8 +178,8 @@ object Pourritures extends Controller {
                         "infractions" -> Json.toJson(o.infractions),
                         "type" -> Json.toJson(o.typeAffaire.toString),
                         "annee" -> Json.toJson(o.annee.getYear),
-                        "natures" -> Json.toJson(o.natures)(Writes.traversableWrites(new Writes[NatureAffaire.NatureAffaire] {
-                          def writes(o: NatureAffaire.NatureAffaire) = JsString(o.toString)
+                        "natures" -> Json.toJson(o.natures)(Writes.traversableWrites(new Writes[Droits.Droits] {
+                          def writes(o: Droits.Droits) = JsString(o.toString)
                         }))
                       )
                     }).as[JsObject] ++ Json.obj(

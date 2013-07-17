@@ -11,10 +11,8 @@ trait MongoDAO {
   import reactivemongo.core.commands.{Count, LastError}
   import reactivemongo.api._
 
-  implicit val objectIdFormat = OFormat[BSONObjectID](
-    (__ \ "$oid").read[String].map(obj => BSONObjectID(obj)),
-    OWrites[BSONObjectID](s => Json.obj("$oid" -> s.stringify))
-    )
+  implicit val oidReads = (__ \ "$oid").read[String].map(obj => BSONObjectID(obj))
+  implicit val oidWrites = OWrites[BSONObjectID](s => Json.obj("$oid" -> s.stringify))
 
   def driver = ReactiveMongoPlugin.driver
   def connection = ReactiveMongoPlugin.connection
@@ -40,6 +38,18 @@ trait MongoDAO {
     }
   }
 
+
   def find[T](js:JsObject, sort:JsObject=Json.obj())(implicit f:Format[T]):Cursor[T] = collection.find(js).sort(sort).cursor[T]
   def count(/*js:Option[JsObject]*/):Future[Int] = db.command(Count(collection.name))
+}
+
+object MongoUtils {
+  import reactivemongo.core.commands.LastError
+  import play.api.libs.json._
+
+  implicit def lastErrorAsJson(l:LastError):JsObject = l match {
+    case LastError(true, _, _, _, Some(doc), _, _) => import play.api.libs.json.Json
+      Json.obj()
+    case LastError(false, Some(err), code, errorMsg, _, _, _) => Json.obj("error"-> err, "code"->code, "message"->errorMsg)
+  }
 }

@@ -37,29 +37,61 @@ object BackOffice extends Controller with Authentication {
     )
   }
 
-  def doValidate(aid:String) = Authenticated{ implicit request =>
-    import play.api.libs.json.Json
+  def categorize = Authenticated { implicit request =>
     Async(
-      Affaire.byId(aid).map {
-        case Some(a) => {
-          Affaire.save(a.copy(checked = true))
-          Ok(Json.toJson(a))
-        }
-      case None => NotFound(Json.obj("error"-> s"$aid not found"))
+      Affaire.uncategorized.map { r =>
+        Ok(views.html.category(r))
       }
     )
   }
-  def unValidate(aid:String) = Authenticated{ implicit request =>
-    import play.api.libs.json.Json
-    Async(
-      Affaire.byId(aid).map {
-        case Some(a) => {
-          Affaire.delete(a)
-          Ok(Json.toJson(a))
-        }
-      case None => NotFound(Json.obj("error"-> s"$aid not found"))
+  import play.api.libs.json._
+  import play.api.libs.json.Reads._
+  import play.api.libs.functional.syntax._
+
+  val emptyObj = __.json.put(Json.obj())
+  val validateNatures = Reads.verifyingIf( (x:JsArray) => x.value.nonEmpty)(Reads.list[String])
+  val naturesOrEmptyArray = ((__ \ 'natures).json.pick[JsArray] orElse Reads.pure(Json.arr())) andThen validateNatures
+  val natureValidate = (__ \ "natures").json.copyFrom(naturesOrEmptyArray)
+  val affaireValidate:Reads[JsObject] = {
+    (
+      ((__ \ "checked").json.pickBranch or emptyObj) and
+      ((__ \ "deleted").json.pickBranch or emptyObj) and
+      natureValidate
+      ).reduce
+  }
+  val toObjectId = OWrites[String]{ s => Json.obj("_id" -> Json.obj("$oid" -> s)) }
+
+
+  def update(aid:String) = Authenticated(parse.json){ implicit request =>
+    val toMongoUpdate = (__ \ '$set).json.copyFrom( __.json.pick )
+    request.body.transform(affaireValidate).flatMap{ jsonAffaire =>
+      jsonAffaire.transform(toMongoUpdate).map {updateSelector =>
+        Async(
+          Affaire.collection.update(toObjectId.writes(aid), updateSelector).map {
+            case lastError if lastError.ok => Ok(jsonAffaire)
+            case err => InternalServerError(MongoUtils.lastErrorAsJson(err))
+          }
+        )
       }
-    )
+    }.recoverTotal{ e =>
+      BadRequest( JsError.toFlatJson(e))
+    }
+  }
+
+  def addCategory(aid:String)= Authenticated(parse.json){ implicit request =>
+    val toMongoAddToSet = (__ \ '$addToSet \ 'natures \ '$each).json.copyFrom((__ \ "natures").json.pick[JsArray])
+    request.body.transform(natureValidate).flatMap{ jsonAffaire =>
+      jsonAffaire.transform(toMongoAddToSet).map { updateSelector =>
+        Async(
+          Affaire.collection.update(toObjectId.writes(aid), updateSelector).map {
+            case lastError if lastError.ok => Ok(jsonAffaire)
+            case err => InternalServerError(MongoUtils.lastErrorAsJson(err))
+          }
+        )
+      }
+    }.recoverTotal{ e =>
+      BadRequest( JsError.toFlatJson(e) )
+    }
   }
 
   val signOut = Action { implicit request =>

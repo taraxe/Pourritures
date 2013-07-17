@@ -5,7 +5,7 @@
         "annee": 2013,
         "ex": true,
         "nature": "condamnation",
-        "ammende": 30000,
+        "amende": 30000,
         "infractions": ["abus de biens sociaux (lors du procès des frais de la Soginorpa)"],
         "prenom": "Jean-Pierre",
         "nom": "Kucheida"
@@ -24,7 +24,7 @@
         "formation": "ps",
         "annee": 1999,
         "nature": "mis en examen",
-        "ammende": 30000,
+        "amende": 30000,
         "infractions": ["faux et usage de faux (dans l'affaire de la MNEF)"],
         "prenom": "Dominique",
         "nom": "Strauss-Kahn"
@@ -34,7 +34,7 @@
         "formation": "ps",
         "annee": 2012,
         "nature": "condamnation",
-        "ammende": 40000,
+        "amende": 40000,
         "infractions": ["infraction à la législation sur la durée du travail"],
         "prenom": "Anne",
         "nom": "Hidalgo"
@@ -1397,7 +1397,7 @@
         "formation": "fn",
         "nature": "condamnation",
         "annee": 2007,
-        "ammende": 7500,
+        "amende": 7500,
         "infractions": ["incitation à la discrimination raciale"],
         "prenom": "Francis",
         "nom": "Watez"

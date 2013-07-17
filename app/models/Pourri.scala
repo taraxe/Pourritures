@@ -28,7 +28,7 @@ case class Pourri(_id:Option[BSONObjectID] = None, nom:String, prenom:String, fo
   def affairesBlockin:Seq[Affaire] = Await.result(affaires,1 second)
 
 }
-case class Affaire(_id:Option[BSONObjectID] = None,
+case class Affaire(id:Option[BSONObjectID] = None,
                    pid:Option[BSONObjectID],
                    annee:DateTime,
                    typeAffaire:TypeAffaire.TypeAffaire,
@@ -37,61 +37,52 @@ case class Affaire(_id:Option[BSONObjectID] = None,
                    source:Option[String],
                    checked:Boolean,
                    approvalCount:Option[Int] = None,
-                   deleted:Option[Boolean] = None) {
-
-  lazy val natures = NatureAffaire.readFromString(infractions) match {
-    case x if (x.isEmpty) => Set(NatureAffaire.undefined)
-    case x => x
-  }
-}
+                   deleted:Option[Boolean] = None,
+                   natures:Set[Droits.Value] = Set.empty)
 
 object Formation extends Enumeration {
   type Formation = Value
-  val PCF, FdG, Verts, PS, UMP, FN, UDI = Value
+  val PCF = Value("pcf")
+  val FdG= Value("fdg")
+  val Verts=Value("eelv")
+  val PS = Value("ps")
+  val UMP = Value("ump")
+  val FN = Value("fn")
+  val UDI = Value("udi")
   implicit val jsonFormat = new Format[Formation] {
-    def reads(json: JsValue) = JsSuccess(Formation(json.as[Int]))
-    def writes(o: Formation.Formation) = JsNumber(o.id)
+    def reads(json: JsValue) = JsSuccess(Formation.withName(json.as[String]))
+    def writes(o: Formation.Formation) = JsString(o.toString)
   }
-  override def toString() = super.toString().toLowerCase()
 }
 
 object TypeAffaire extends Enumeration {
   type TypeAffaire = Value
-  val condamnation = Value
+  val condamnation = Value("condamnation")
   val examen = Value("mise en examen")
   implicit val jsonFormat = new Format[TypeAffaire] {
-    def reads(json: JsValue) = JsSuccess(TypeAffaire(json.as[Int]))
-    def writes(o: TypeAffaire.TypeAffaire) = JsNumber(o.id)
+    def reads(json: JsValue) = JsSuccess(TypeAffaire.withName(json.as[String]))
+    def writes(o: TypeAffaire.TypeAffaire) = JsString(o.toString)
   }
 }
 
-object NatureAffaire extends Enumeration {
-  type NatureAffaire = Value
-  val sexuel, discrimination, economique, fiscal, diffamation, violence = Value
-  val undefined = Value("indéterminé")
+object Droits extends Enumeration {
+  type Droits = Value
 
-  val categorisation:Map[NatureAffaire,Set[String]] = Map(
-    sexuel -> Set("proxénétisme","viol","viols","sexuel","sexuelle","attouchement","attouchements"),
-    discrimination -> Set("discrimination","discriminatoire","racial","raciale","haine raciale","racisme","nazisme","nazi","immigré","immigrés","humanité"),
-    economique -> Set("vol","abus de confiance","traffic d'influence","favoritisme","blanchiment","bien social","biens sociaux","emploi fictif","emploi fictifs","emplois fictifs","travail dissimulé", "corruption"),
-    fiscal -> Set("fraude fiscale","impots","impôts","détournement","fonds publics"),
-    violence -> Set("violence","coups","coup","blaissure","blaissures","violent","menace","menaces"),
-    diffamation -> Set("image","diffamation")
-  )
+  val civil = Value("c")
+  val proprieteIntellectuelle = Value("dpi")
+  val travail = Value("dt")
+  val fiscal = Value("df")
+  val electoral = Value("de")
+  val procedurePenale = Value("pp")
+  val penalGeneral = Value("dpg")
+  val affaires = Value("da")
+  val indetermine = Value("")
 
-  //favoritisme dans une affaire de marchés publics
-
-  def readFromString(infractions:Seq[String]):Set[NatureAffaire] = {
-    infractions.foldLeft(Set.empty[NatureAffaire]){(r,s) =>
-      categorisation.filter{ case (k,v) => v.exists(x => s.contains(x))}.toSeq match {
-        case m => r ++ m.map(_._1)
-        case Nil => r
-      }
-    }
+  implicit val jsonFormat = new Format[Droits] {
+    def reads(json: JsValue) = JsSuccess(Droits.withName(json.as[String]))
+    def writes(o: Droits.Droits) = JsString(o.toString)
   }
-  override def toString() = super.toString().toLowerCase()
 }
-
 
 object Pourri extends MongoDAO {
   import play.modules.reactivemongo.json.collection.JSONCollection
@@ -120,28 +111,47 @@ object Pourri extends MongoDAO {
 }
 object Affaire extends MongoDAO {
   import play.modules.reactivemongo.json.collection.JSONCollection
+  import play.api.libs.functional.syntax._
+  import play.api.libs.json.util._
+  import play.api.libs.json.Writes._
+  import play.api.libs.json.Reads._
 
-  implicit val affaireJsonFormat = Json.format[Affaire]
-  implicit val affairesWrite = play.api.libs.json.Writes.traversableWrites[Affaire]
-  implicit val affairesRead = play.api.libs.json.Reads.traversableReads[Seq,Affaire]
+  implicit val mongoReads:Reads[Affaire] = (
+      (__ \ "_id").readNullable[BSONObjectID] and
+      (__ \ "pid").readNullable[BSONObjectID] and
+      (__ \ "annee").read[DateTime] and
+      (__ \ "typeAffaire").read[TypeAffaire.TypeAffaire] and
+      (__ \ "amende").readNullable[Int] and
+      (__ \ "infractions").read[Seq[String]] and
+      (__ \ "source").readNullable[String] and
+      (__ \ "checked").read[Boolean] and
+      (__ \ "approvalCount").readNullable[Int] and
+      (__ \ "deleted").readNullable[Boolean] and
+      (__ \ "natures").readNullable(traversableReads[Set, Droits.Value]).map{ _.getOrElse(Set.empty)}
+    )(Affaire.apply _)
+
+  implicit val mongoWrites:Writes[Affaire] = (
+      (__ \ "_id").writeNullable[BSONObjectID] and
+      (__ \ "pid").writeNullable[BSONObjectID] and
+      (__ \ "annee").write[DateTime] and
+      (__ \ "typeAffaire").write[TypeAffaire.TypeAffaire] and
+      (__ \ "amende").writeNullable[Int] and
+      (__ \ "infractions").write(traversableWrites[String]) and
+      (__ \ "source").writeNullable[String] and
+      (__ \ "checked").write[Boolean] and
+      (__ \ "approvalCount").writeNullable[Int] and
+      (__ \ "deleted").writeNullable[Boolean] and
+      (__ \ "natures").write(traversableWrites[Droits.Value])
+    )(unlift(Affaire.unapply))
+
   val collection = db.collection[JSONCollection]("affaires")
-  val alivesQuery = Json.obj("deleted"->Json.obj("$ne"->true), "typeAffaire"->TypeAffaire.condamnation.id)
+  val alivesQuery = Json.obj("deleted"->Json.obj("$ne"->true), "typeAffaire"->TypeAffaire.condamnation.toString)
   def alives(js:JsObject,sort:JsObject = Json.obj()) = find[Affaire](alivesQuery ++ js, sort)
   def byPid(id:BSONObjectID) = find[Affaire](Json.obj("pid"->id)).toList
   def byId(id:BSONObjectID):Future[Option[Affaire]] = find[Affaire](Json.obj("_id"-> Json.toJson(id))).headOption
   def byId(id:String):Future[Option[Affaire]] = byId(BSONObjectID(id))
 
-  def delete(a:Affaire):Future[Boolean] = {
-    assert(a._id.nonEmpty)
-    val copy: Affaire = a.copy(deleted = Some(true))
-    collection.update[JsObject,JsValue](
-      Json.obj("_id"-> Json.toJson(a._id.get)),
-      Json.toJson(copy
-    )).map(handleError).map{_ match{
-      case Left(_) => false
-      case Right(_) => true
-    }}
-  }
+  def uncategorized:Future[List[Affaire]] = find[Affaire](Json.obj("natures" -> Json.arr())).toList
   def allChecked:Future[List[Affaire]] = alives(Json.obj("checked"->true)).toList // how to get only pid field
   def allUnchecked:Future[List[Affaire]] = alives(Json.obj("checked"->false),Json.obj("_id" -> -1)).toList
 }

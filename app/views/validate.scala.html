@@ -6,10 +6,16 @@
     <script>
         $(function(){
           $('button[data-action$="-affair"]').on('click',function(){
-            var $self = $(this),
+           var $self = $(this),
                 aid = $self.closest('li').attr('data-aid'),
-                action = $self.attr('data-action').indexOf('validate') < 0 ? jsRoutes.controllers.BackOffice.unValidate(aid) : jsRoutes.controllers.BackOffice.doValidate(aid);
-            $.ajax(action)
+                data = {};
+            $self.attr('data-action').indexOf('validate') < 0 ? data.deleted = true : data.checked = true;
+            $.ajax({
+                url: jsRoutes.controllers.BackOffice.update(aid).url,
+                type: 'put',
+                data: JSON.stringify(data),
+                contentType: 'application/json'
+            })
               .done(function(){
               $('[data-aid="'+aid+'"]').hide('fast')
             }).fail(function(r){
@@ -19,12 +25,8 @@
         })
     </script>
 }
-@menu = {
-    <li><a href="@routes.Pourritures.search()">Contrib</a></li>
-    <li><a href="@routes.Pourritures.search()">Validation</a></li>
-    <li><a href="@routes.BackOffice.signOut()">Logout</a></li>
-}
-@back("Obscon", head, menu) {
+
+@back("Obscon", head) {
 <div class="container">
     <div class="row">
         <div class="span12">
