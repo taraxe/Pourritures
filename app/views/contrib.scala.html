@@ -18,7 +18,6 @@
           })
           .on('change',function(e){
             if(e.added &&  e.added.id) {
-              var slug = e.added.id;
               window.location = jsRoutes.controllers.Pourritures.contrib(e.added.id).url;
             } else {
               history.pushState({},document.title,'@routes.Pourritures.search()');
@@ -85,7 +84,7 @@
                     <option value="@p.slug" @if(cp.slug == p.slug){selected="selected"}>@p.fullname.replace("-"," ")</option>
                 }
             </select>
-            <div class="show-pourri-block">
+            <div id="target" class="show-pourri-block">
                 @parts.pourri(cp)
             </div>
             }.getOrElse{
@@ -121,7 +120,7 @@
                         <div class="controls">
                             <select name="formation">
                               @Formation.values.toList.sortBy(_.id).map{ v =>
-                                <option value="@v.id">@v</option>
+                                <option value="@v.toString">@v</option>
                               }
                           </select>
                             <label class="checkbox">
