@@ -1,0 +1,51 @@
+@(affaires:List[Affaire])(implicit app:play.api.Application)
+
+@import play.api.Mode
+
+@head = {
+    <script>
+        $(function(){
+          $('button[data-action$="-affair"]').on('click',function(){
+           var $self = $(this),
+                aid = $self.closest('li').attr('data-aid'),
+                data = {};
+            $self.attr('data-action').indexOf('validate') < 0 ? data.deleted = true : data.checked = true;
+            $.ajax({
+                url: jsRoutes.controllers.BackOffice.update(aid).url,
+                type: 'put',
+                data: JSON.stringify(data),
+                contentType: 'application/json'
+            })
+              .done(function(){
+              $('[data-aid="'+aid+'"]').hide('fast')
+            }).fail(function(r){
+              console.log(r)
+            })
+          })
+        })
+    </script>
+}
+@menu = {
+    @parts.adminMenu()
+}
+
+@back("Obscon", head, menu) {
+<div class="container">
+    <div class="row">
+        <div class="span12">
+            <div class="page-header">
+                <h1>Validation</h1>
+            </div>
+            @if(affaires.isEmpty){
+            <p>Rien a valider pour l'instant</p>
+            }
+            <ul>
+                @affaires.map {a =>
+                @parts.affaireCheck(a)
+                }
+            </ul>
+        </div>
+    </div>
+
+</div>
+}

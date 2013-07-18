@@ -1,0 +1,109 @@
+@(affaires:List[Affaire])(implicit app:play.api.Application)
+
+@head = {
+    <style>
+        .affaires{
+            clear: both;
+            padding-top: 20px;
+        }
+        .categories li {
+            float: left;
+            border: 1px solid;
+            padding: 5px;
+            margin-right: 4px;
+        }
+        .categories li.receiver {
+            background-color: #ddd;
+        }
+        .affaires li {
+            margin-bottom: 5px;
+        }
+    </style>
+    <script>
+        $.event.props.push('dataTransfer');
+        var $this, i;
+        $(function() {
+            $('.affaires li').on({
+                dragstart: function(e) {
+                    $this = $(this);
+                    $(this).css('opacity', '0.5');
+                    e.dataTransfer.setData('text/plain', $(this).data("aid"));
+                },
+                dragend: function() {
+                    $(this).css('opacity', '1');
+                },
+                dragleave: function() {
+                    $(this).css('opacity', '1');
+                },
+                drop: function(){
+                    $(this).css('opacity', '1');
+                }
+            });
+            $('.categories li').on({
+                dragenter: function(e) {
+                    $(this).addClass("receiver");
+                    e.preventDefault();
+                },
+                dragleave: function() {
+                    $(this).removeClass("receiver");
+                },
+                dragover: function(e) {
+                    //console.log(e);
+                    e.preventDefault();
+                },
+                // on lâche l élément
+                drop: function(e) {
+                        var aid = e.dataTransfer.getData('text/plain'),
+                            data = { natures: [$(this).data('did') ] }
+
+                        aid.split(',').forEach(function(i){
+                            var id = i.trim();
+                            $.ajax({
+                                url : jsRoutes.controllers.BackOffice.addCategory(id).url,
+                                type : "put",
+                                data: JSON.stringify(data),
+                                contentType: 'application/json'
+                            }).done(function(r){
+                                $(this).removeClass("receiver");
+                                $this.fadeOut('fast');
+                            }).fail(function(r){
+                                console.log(r);
+                            })
+                        });
+                    $(this).removeClass("receiver");
+                }
+            })
+        });
+
+    </script>
+}
+@menu = {
+    @parts.adminMenu()
+}
+@back("Obscon", head, menu) {
+<div class="container">
+    <div class="row">
+        <div class="span12">
+            <div class="page-header">
+                <h1>Categorisation</h1>
+            </div>
+            <ul class="categories">
+                @Droits.values.iterator.map{ d =>
+                    <li data-did="@d">@Messages("droits."+d.id)</li>
+                }
+            </ul>
+
+            <ul class="affaires">
+                @defining(affaires.foldLeft(Map.empty[String,Seq[Affaire]].withDefaultValue(Seq.empty)){(r,a) =>
+                    a.infractions.map{ i => r.+(i -> ( r(i) :+ a ))}
+                            .reduce(_++_)}){ iToA =>
+                    @iToA.map{ k =>
+                        <li data-aid="@k._2.map(_.id.map(_.stringify).getOrElse("")).mkString(",")" draggable="true">@k._1</li>
+                    }
+                }
+            </ul>
+        </div>
+    </div>
+
+</div>
+}

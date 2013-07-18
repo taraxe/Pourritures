@@ -1,28 +1,26 @@
-@(p:Pourri, affaires:Seq[Affaire] = Nil)(implicit app:play.api.Application)
+@(p:Pourri, affaires:Seq[Affaire] = Nil, pic:Option[String] = None, json:Option[play.api.libs.json.JsValue] = None)(implicit app:play.api.Application, req:play.api.mvc.RequestHeader)
 
-@import play.api.Mode
 
 @head = {
   <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/show.css")"/>
 }
-@back("Pourritures", head) {
+@back("Obscon", head) {
     <div class="container">
         <div class="row">
             <div class="span12">
                 <div class="page-header">
-                  <h1>@p.fullname <small>@p.formation.toString</small> </h1>
+                  <h1>@pic.map{ x => <img class="picture" src="@x">}@p.fullname <small>@p.formation.toString.toUpperCase</small> </h1>
                 </div>
                 <div class="btn-toolbar">
-                    <div class="btn-group">
-                        @*<a class="btn btn-mini" href="@routes.Pourritures.index()">Retour</a>*@
-                        <a class="btn btn-mini btn-primary" href="@routes.Pourritures.contrib(p.slug)">Ajouter une affaire</a>
-                    </div>
+                    <a class="btn btn-mini" href="@routes.Pourritures.index()">Retour</a>
+                    <a target="_blank" class="btn btn-mini btn-success" href="http://www.twitter.com/share?via=Pourritures&lang=fr&text=@{helper.urlEncode("Dis donc %s, on a des problèmes avec la justice on dirait! %s".format(p.fullname,routes.Pourritures.show(p.slug).absoluteURL()))}">L'interpeler</a>
+                    <a class="btn btn-mini btn-primary" href="@routes.Pourritures.contrib(p.slug)">Ajouter une affaire</a>
                 </div>
                 <ul class="affaires">
-                    @affaires.sortBy(_.annee.getYear).reverse.map(parts.affaire(_))
+                @affaires.sortBy(_.annee.getYear).reverse.map(parts.affaire(_))
                 </ul>
-
             </div>
+            @json.map(_.toString)
         </div>
     </div>
 }

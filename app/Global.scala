@@ -42,12 +42,7 @@ object Global extends GlobalSettings {
         Some(BSONObjectID.generate),
         (json \ "nom").as[String],
         (json \ "prenom").as[String],
-        (json \ "formation").as[String] match {
-          case "ump" => Formation.UMP
-          case "ps" => Formation.PS
-          case "fn" => Formation.FN
-          case "udi" => Formation.UDI
-        },
+        Formation.withName((json \ "formation").as[String]),
         (json \ "ex").asOpt[Boolean],
         (json \ "gouvernement").asOpt[Boolean]
       ))
@@ -72,8 +67,8 @@ object Global extends GlobalSettings {
                 case s if s.contains("condamnation") => TypeAffaire.condamnation
                 case _ => TypeAffaire.examen
               },
-              (a \ "ammende").asOpt[Int],
-              (a \ "raison").as[Array[String]],
+              (a \ "amende").asOpt[Int],
+              (a \ "infractions").as[Array[String]],
               None,
               true
             )

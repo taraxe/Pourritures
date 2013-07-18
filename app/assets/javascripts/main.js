@@ -1,25 +1,9 @@
 (function(ns, d3, $){
 
-    function removeAccents(strAccents) {
-        var strAccents = strAccents.split('');
-        var strAccentsOut = new Array();
-        var strAccentsLen = strAccents.length;
-        var accents = 'ÀÁÂÃÄÅàáâãäåÒÓÔÕÕÖØòóôõöøÈÉÊËèéêëðÇçÐÌÍÎÏìíîïÙÚÛÜùúûüÑñŠšŸÿýŽž';
-        var accentsOut = "AAAAAAaaaaaaOOOOOOOooooooEEEEeeeeeCcDIIIIiiiiUUUUuuuuNnSsYyyZz";
-        for (var y = 0; y < strAccentsLen; y++) {
-            if (accents.indexOf(strAccents[y]) != -1) {
-                strAccentsOut[y] = accentsOut.substr(accents.indexOf(strAccents[y]), 1);
-            } else
-                strAccentsOut[y] = strAccents[y];
-        }
-        strAccentsOut = strAccentsOut.join('');
-        return strAccentsOut;
-    }
-
-    d3.json('/import.json', function(rawData){
+    d3.json('/affaires.json', function(data){
     d3.json('/assets/data/alternance.json', function(alter){
 
-        var filtered = rawData.filter(function(e){
+        var filtered = data.filter(function(e){
             return e.annee >= 1995;
         });
 
@@ -37,8 +21,6 @@
                 })
                 .tooltip(function(d){
                     var template = $('#tooltip-tmpl').html();
-                    var slug = removeAccents(d[0].name.replace(/ /g, '-').toLowerCase());
-                    /*d[0].url = jsRoutes.controllers.Pourritures.show(slug).url;*/
                     return _.template(template, d[0])
                 });
 
@@ -70,7 +52,7 @@
             });
             f.on('change','li.pourri input', function(){
                 var $this = $(this),
-                    toShow = f.find('li.pourri input:checked').map(function(){ return $this.prop('name')}).toArray();
+                    toShow = f.find('li.pourri input:checked').map(function(i,e){ return $(e).prop('name')}).toArray();
 
                 if(toShow.length > 0) {
                     d3.selectAll(a)
@@ -109,7 +91,7 @@
                 .key(function (d) { return d.name})
                 .rollup(function (values) { return {
                     condamnations: d3.sum(values, function (d) {
-                        return +d.raison.length
+                        return +d.infractions.length
                     }),
                     formation: values[0].formation,
                     lower: d3.min(values, function (d) {
@@ -140,7 +122,7 @@
                 .key(function(d){return d.annee})
                 .sortKeys(d3.ascending)
                 .rollup(function(values){
-                    var f = function (d) {return +d.raison.length},
+                    var f = function (d) {return +d.infractions.length},
                         filter = function(g){ return function(d){ return d.formation === g}};
                     return [
                         d3.sum(values, f), // todo make this generic for every group
@@ -165,9 +147,79 @@
                 .y2(function(d){ return d.values[4]});
 
             d3.select('.cumulated').datum(cumulated).call(chart2);
+        })(filtered);
+
+        /* TODO */
+        (function(data){
+
+            var natures = d3.keys(
+                d3.merge(data.map(function (e) {return e.natures}))
+                  .reduce(function (r, i) {
+                    r["" + i] = i;
+                    return r
+                  }, {}));
+
+            var byGroup = d3.nest()
+                .key(function(d){
+                    return d.formation
+                })
+                .rollup(function(affaires){
+                    return {
+                        "natures" : natures.map(function (e){
+                            return {
+                                "name":e,
+                                "value": affaires.filter(function(i){ return i.natures.indexOf(e)>=0}).length
+                            }
+                    })};
+                })
+                .map(data);
+
+            var r = d3.entries(byGroup).map(function(e){
+                e.value.formation = e.key;
+                return e.value;
+            });
+            var donuts = new ns.charts.Donuts();
+
+            d3.select('.donuts').datum(r).call(donuts);
+
+        })(filtered);
+
+        /* Stacked */
+        (function(data){
+
+            var yAcessor = function (d) {return d.annee};
+            var b = [d3.min(data, yAcessor), d3.max(data,yAcessor)];
+
+            var r = d3.nest()
+                .key(function(d){return d.formation})
+                .key(function(d){return d.annee})
+                .rollup(function(affaires){return affaires.length;})
+                .entries(data).map(function(f){
+                    var res = [];
+                    for (var i = b[0]; i <= b[1]; i++) {
+
+                        var item = f.values.filter(function(e){ return e.key == i });
+                        res.push({
+                            group: f.key,
+                            date: ""+i,
+                            value: item.length > 0 ? item[0].values : 0
+                        })
+                    }
+                    return res;
+                });
+
+            var d = [].concat.apply([],r);
+
+            var chart3 = ns.charts.Stacked({width: 800, height: 350})
+                .tooltip(function(d){
+                    var template = $('#stacked-tmpl').html();
+                    return _.template(template, d)
+                });
+            d3.select('.stacked').datum(d).call(chart3);
+
         })(filtered)
 
-    });
+        });
     });
 
 }(window.pourritures = window.pourritures || {}, d3, jQuery));

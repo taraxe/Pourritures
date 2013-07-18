@@ -9,6 +9,7 @@
     <script src="@routes.Assets.at("javascripts/d3.v3.js")"></script>
     <script src="@routes.Assets.at("javascripts/underscore.js")"></script>
     <script src="@routes.Assets.at("javascripts/jquery.tipsy.js")"></script>
+    <script src="@routes.Assets.at("javascripts/colorbrewer.js")"></script>
     <script src="@routes.Assets.at("javascripts/charts."+"min.".when(app.mode != Mode.Dev)+"js")"></script>
     <script src="@routes.Assets.at("javascripts/main."+"min.".when(app.mode != Mode.Dev)+"js")"></script>
 
@@ -19,8 +20,31 @@
     <meta property="og:description" content="Pourritures.fr recense les affaires des élus de la république Française. Néé de l'initiative opendata, vous pouvez aussi contribuer à l'exhaustivité des données."/>
 
 }
-@main("Pourritures", head) {
-    <h2>Les faits</h2>
+@main("Obscon", head) {
+    @viral()
+    <h2>Statistiques générales</h2>
+    <figure class="cumulated">
+        <svg class="legend">
+            <g transform="translate(10,10)">
+                <g transform="translate(10,10)">
+                    <line x1="0" y1="0" x2="30" y2="0"/>
+                    <text dx="40" dy="4">Nombre d'affaires</text>
+                </g>
+                <g transform="translate(180,10)">
+                    <line x1="0" y1="0" x2="40" y2="0"  stroke-dasharray="5,5"  />
+                    <text dx="40" dy="4">Nombre d'affaires cumulées</text>
+                </g>
+            </g>
+        </svg>
+    </figure>
+
+    <hr/>
+
+    <h2>Par groupe politique et par an</h2>
+    <figure class="stacked"></figure>
+    <hr/>
+
+    <h2>Détail des condamnations</h2>
     <figure class="pourriture">
         <div class="chart">
             <svg class="legend">
@@ -47,26 +71,14 @@
             </ul>
         </div>
     </figure>
-    <hr/>
-    <h2>Les chiffres</h2>
-    <figure class="cumulated">
-        <svg class="legend">
-            <g transform="translate(10,10)">
-                <g transform="translate(10,10)">
-                    <line x1="0" y1="0" x2="30" y2="0"/>
-                    <text dx="40" dy="4">Nombre d'affaires</text>
-                </g>
-                <g transform="translate(180,10)">
-                    <line x1="0" y1="0" x2="40" y2="0"  stroke-dasharray="5,5"  />
-                    <text dx="40" dy="4">Nombre d'affaires cumulées</text>
-                </g>
-            </g>
-        </svg>
-    </figure>
+
+  @*  <hr/>
+    <h2>Typologie des condamnations</h2>
+    <figure class="donuts"></figure>*@
 
     <h2>
         <img src="@routes.Assets.at("images/champions.png")" width="419"/>
-        Les champions
+        Les plus condamnés
     </h2>
     <ul class="high-score"></ul>
 
@@ -85,13 +97,12 @@
             <div class="ribbon-wrapper"><div class="ribbon">GOUV</div></div>
             <% } %>
             <h3><%= name %></h2>
-                <h4><%= nature %></h3>
+                <h4><%= type %></h3>
             <ul>
-                <% _.each(raison,function(item,key,list){ %>
+                <% _.each(infractions,function(item,key,list){ %>
                 <li><%= item %></li>
                 <% }) %>
             </ul>
-            @*<a href="<%= url %>">Détail</a>*@
         </div>
     </script>
     <script type="text/html" id="highscore-tmpl">
@@ -106,5 +117,10 @@
             <% } %>
             </p>
         </li>
+    </script>
+    <script type="text/html" id="stacked-tmpl">
+        <div class="tooltip">
+            <h3><%= value %> <%= group.toUpperCase() %></h3>
+        </div>
     </script>
 }

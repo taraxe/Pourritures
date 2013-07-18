@@ -32,16 +32,20 @@ object Pourritures extends Controller {
     }
   ))
 
-  def show(slug: String) = Action{
+  def show(slug: String) = Action{ implicit request =>
+    import services.NosDeputes
     Async(
       for {
         p <- Pourri.bySlug(slug)
         a <- p.map(_.affaires).getOrElse(Future(Nil))
         all <- Pourri.withAffaires
+        /*rcJson <- NosDeputes.bySlug(slug)
+        widget <- NosDeputes.widget(slug)*/
+        pic <- NosDeputes.pic(slug)
       } yield {
         p match {
           case None => NotFound(views.html.contrib(all))
-          case Some(p) => Ok(views.html.show(p,a))
+          case Some(p) => Ok(views.html.show(p,a, pic))
         }
       }
     )
@@ -59,11 +63,11 @@ object Pourritures extends Controller {
   val pourriForm: Form[Pourri] = Form(mapping(
     "nom" -> nonEmptyText,
     "prenom" -> nonEmptyText,
-    "formation" -> number(min = 0, max = Formation.maxId),
+    "formation" -> nonEmptyText,
     "ex" -> optional(boolean),
     "gouvernement" -> optional(boolean)
-  )((nom: String, prenom: String, formation: Int, ex: Option[Boolean], gouv: Option[Boolean]) => Pourri(None, nom, prenom, Formation(formation), ex, gouv))
-    ((p: Pourri) => Some(p.nom, p.prenom, p.formation.id, p.ex, p.gouvernement))
+  )((nom: String, prenom: String, formation: String, ex: Option[Boolean], gouv: Option[Boolean]) => Pourri(None, nom, prenom, Formation.withName(formation), ex, gouv))
+    ((p: Pourri) => Some(p.nom, p.prenom, p.formation.toString, p.ex, p.gouvernement))
   )
 
   import scala.util.control.Exception._
@@ -77,7 +81,7 @@ object Pourritures extends Controller {
       "annee" -> number(min = 1900, max = new DateTime().year().get()),
       "nature" -> number(min = 0, max = TypeAffaire.maxId),
       "amende" -> optional(number(min = 1)),
-      "raisons" -> nonEmptyText,
+      "infractions" -> nonEmptyText,
       "source" -> nonEmptyText.verifying{ s =>
         (for {
           url <- catching(classOf[MalformedURLException]) opt new URL(s)
@@ -91,7 +95,7 @@ object Pourritures extends Controller {
         }
       }
     )((year: Int, typeAffaireNb: Int, amende: Option[Int], raisons: String, source: String) => Affaire(None, None, new DateTime().withYear(year), TypeAffaire(typeAffaireNb), amende, raisons.split(",").map(_.trim), Some(source), false))
-      ((a: Affaire) => Some(a.annee.year().get(), a.typeAffaire.id, a.amende, a.raisons.mkString(", "), a.source.getOrElse("")))
+      ((a: Affaire) => Some(a.annee.year().get(), a.typeAffaire.id, a.amende, a.infractions.mkString(", "), a.source.getOrElse("")))
     )
   }
 
@@ -150,34 +154,35 @@ object Pourritures extends Controller {
     )
   }
 
-/*
-  def voteAffaire() = Action { implicit request =>
-    Ok("")
-  }
-*/
-
   def javascriptRoutes = Action { implicit request =>
     Ok(
       Routes.javascriptRouter("jsRoutes")(
         routes.javascript.Pourritures.index,
         routes.javascript.Pourritures.show,
-        routes.javascript.Pourritures.contrib
+        routes.javascript.Pourritures.contrib,
+        routes.javascript.BackOffice.update,
+        routes.javascript.BackOffice.addCategory
       )
     ).as("text/javascript")
   }
 
   //json apis
-  def pourrituresJson = Action { implicit request =>
+  def affaires = Action { implicit request =>
       import play.api.libs.json._
+    import play.api.libs.json.Writes._
+
       Async(
         Pourri.withAffaires.flatMap { la =>
             Future.sequence(la.map { p =>
                 p.affaires.map(_.map { a =>
                     Json.toJson(a)(new Writes[Affaire] {
                       def writes(o: Affaire) = Json.obj(
-                        "raison" -> Json.toJson(o.raisons),
-                        "nature" -> Json.toJson(o.typeAffaire.toString),
-                        "annee" -> Json.toJson(o.annee.getYear)
+                        "infractions" -> Json.toJson(o.infractions),
+                        "type" -> Json.toJson(o.typeAffaire.toString),
+                        "annee" -> Json.toJson(o.annee.getYear),
+                        "natures" -> Json.toJson(o.natures)(Writes.traversableWrites(new Writes[Droits.Droits] {
+                          def writes(o: Droits.Droits) = JsString(o.toString)
+                        }))
                       )
                     }).as[JsObject] ++ Json.obj(
                       "name" -> p.fullname,

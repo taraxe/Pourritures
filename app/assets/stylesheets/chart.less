@@ -5,6 +5,30 @@ svg {
   font: 10px sans-serif;
 }
 
+.group {
+  &.ps, &.ps a {
+    fill: @ps;
+  }
+  &.ump, &.ump a {
+    fill: @ump  ;
+  }
+  &.fn, &.fn a {
+    fill : @fn ;
+  }
+  &.udi, &.udi a {
+    fill : @udi ;
+  }
+  &.verts, &.verts a {
+    fill : @verts ;
+  }
+  &.fdg, &.fdg a {
+    fill : @fdg ;
+  }
+  &.pcf, &.pcf a {
+    fill : @pcf ;
+  }
+}
+
 .legend {
   width: 400px;
   height: 40px;
@@ -76,29 +100,6 @@ svg {
   }
   .axis.y line {
     stroke: @grey;
-  }
-  .group {
-    &.ps, &.ps a {
-      fill: @ps;
-    }
-    &.ump, &.ump a {
-      fill: @ump  ;
-    }
-    &.fn, &.fn a {
-      fill : @fn ;
-    }
-    &.udi, &.udi a {
-      fill : @udi ;
-    }
-    &.verts, &.verts a {
-      fill : @verts ;
-    }
-    &.fdg, &.fdg a {
-      fill : @fdg ;
-    }
-    &.pcf, &.pcf a {
-      fill : @pcf ;
-    }
   }
   rect {
     .opacity(0.2)
@@ -179,5 +180,23 @@ svg {
     fill: none;
     shape-rendering: crispEdges;
   }
+}
 
+.donuts {
+  .legend{
+    height: 150px;
+    width: 150px;
+  }
+  width: 800px;
+  height: 200px;
+}
+.stacked {
+  .axis line {
+    fill: none;
+  }
+  width: 800px;
+  height: 350px;
+  line {
+    stroke: black;
+  }
 }
