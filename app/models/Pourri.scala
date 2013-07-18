@@ -145,13 +145,13 @@ object Affaire extends MongoDAO {
     )(unlift(Affaire.unapply))
 
   val collection = db.collection[JSONCollection]("affaires")
-  val alivesQuery = Json.obj("deleted"->Json.obj("$ne"->true), "typeAffaire"->TypeAffaire.condamnation.toString)
+  val alivesQuery = Json.obj("deleted"->Json.obj("$ne"->true))
   def alives(js:JsObject,sort:JsObject = Json.obj()) = find[Affaire](alivesQuery ++ js, sort)
   def byPid(id:BSONObjectID) = find[Affaire](Json.obj("pid"->id)).toList
   def byId(id:BSONObjectID):Future[Option[Affaire]] = find[Affaire](Json.obj("_id"-> Json.toJson(id))).headOption
   def byId(id:String):Future[Option[Affaire]] = byId(BSONObjectID(id))
 
   def uncategorized:Future[List[Affaire]] = find[Affaire](Json.obj("natures" -> Json.arr())).toList
-  def allChecked:Future[List[Affaire]] = alives(Json.obj("checked"->true)).toList // how to get only pid field
+  def allChecked:Future[List[Affaire]] = alives(Json.obj("checked"->true, "typeAffaire"->TypeAffaire.condamnation.toString)).toList // how to get only pid field
   def allUnchecked:Future[List[Affaire]] = alives(Json.obj("checked"->false),Json.obj("_id" -> -1)).toList
 }
