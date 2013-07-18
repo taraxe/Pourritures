@@ -52,7 +52,7 @@
             });
             f.on('change','li.pourri input', function(){
                 var $this = $(this),
-                    toShow = f.find('li.pourri input:checked').map(function(){ return $this.prop('name')}).toArray();
+                    toShow = f.find('li.pourri input:checked').map(function(i,e){ return $(e).prop('name')}).toArray();
 
                 if(toShow.length > 0) {
                     d3.selectAll(a)
