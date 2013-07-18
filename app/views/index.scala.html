@@ -14,6 +14,7 @@
     <script src="@routes.Assets.at("javascripts/main."+"min.".when(app.mode != Mode.Dev)+"js")"></script>
 }
 @main("Obscon", head) {
+    @viral()
     <h2>Statistiques générales</h2>
     <figure class="cumulated">
         <svg class="legend">
@@ -112,7 +113,7 @@
     </script>
     <script type="text/html" id="stacked-tmpl">
         <div class="tooltip">
-            <h3><%= value %> <%= group %></h3>
+            <h3><%= value %> <%= group.toUpperCase() %></h3>
         </div>
     </script>
 }

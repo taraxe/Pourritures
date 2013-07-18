@@ -1,4 +1,4 @@
-@(title: String, head:Html = Html.empty)(content: Html)(implicit app:play.api.Application)
+@(title: String, head:Html = Html.empty, menu:Html = Html.empty)(content: Html)(implicit app:play.api.Application)
 
 @moreHead = {
     <script src="@routes.Assets.at("javascripts/bootstrap.min.js")" type="text/javascript"></script>
@@ -6,12 +6,7 @@
     <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/bootstrap-responsive.min.css")">
     <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/back.css")">
 }
-@menu = {
-    <li><a href="@routes.Pourritures.search()">Contrib</a></li>
-    <li><a href="@routes.BackOffice.index()">Validation</a></li>
-    <li><a href="@routes.BackOffice.categorize()">Categories</a></li>
-    <li><a href="@routes.BackOffice.signOut()">Logout</a></li>
-}
+
 @base("Obscon", head.+=(moreHead)){
     <div class="navbar navbar-inverse">
         <div class="navbar-inner">
