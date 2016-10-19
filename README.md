@@ -2,6 +2,8 @@
 
 In front/ folder
 
+```npm install```
+
 ```npm start```
 
 
