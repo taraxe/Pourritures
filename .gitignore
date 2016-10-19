@@ -9,7 +9,9 @@ dist
 /*.iml
 /out
 /.idea_modules
+front/node_modules
 /.classpath
 /.project
 /RUNNING_PID
 /.settings
+npm-debug.log
