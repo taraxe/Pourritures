@@ -12,7 +12,7 @@ FIRST :
 		Small
 		Testable
 		*/
-
+import './../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 const Router = (props) => routes;
 render(

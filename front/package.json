@@ -26,6 +26,7 @@
     "postcss-loader": "^1.0.0",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
     "webpack": "2.1.0-beta.22",
     "webpack-dev-server": "^2.1.0-beta.0"
   },
@@ -40,6 +41,7 @@
     "redux-actions": "^0.12.0",
     "redux-logger": "^2.7.0",
     "redux-thunk": "^2.1.0",
-    "whatwg-fetch": "^1.0.0"
+    "whatwg-fetch": "^1.0.0",
+    "bootstrap": "^3.3.7"
   }
 }
