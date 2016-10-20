@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
+const autoprefixer = require('autoprefixer');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const OpenBrowserPlugin = require('open-browser-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -13,8 +14,9 @@ module.exports = {
 	devtool: isProd ? 'hidden-source-map' : 'cheap-eval-source-map',
 	entry : [
     	'whatwg-fetch',
-		'./app/index.js'
-	],
+        path.resolve(__dirname, 'app/index.js'),
+        path.resolve(__dirname, 'app/scss/main.scss')
+    ],
     resolve : {
         //root: path.resolve(__dirname, 'app'),
         modules: [path.resolve(__dirname, 'app'), 'node_modules'],
@@ -51,16 +53,15 @@ module.exports = {
                 test: /\.json$/,
                 loaders: ['json-loader'],
                 include: path.resolve(__dirname, 'app'),
-            }/*,
+            },
             {
                 test: /\.scss$/,
-                loader: ExtractTextPlugin.extract({
-                    notExtractLoader: 'style-loader',
-                    loader: ['css-loader?minimize', 'postcss-loader', 'sass-loader', '@epegzz/sass-vars-loader?' + sassVarsConfig],
-                }),
-            }*/
+                loader: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+            }
 		]
 	},
+    postcss: [ autoprefixer({ browsers: ['last 2 versions'] }) ],
+
 	plugins : [
         new HtmlWebpackPlugin({
             template: __dirname + '/app/index.html',
