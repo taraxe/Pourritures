@@ -46,7 +46,12 @@ module.exports = {
 					// 'react-hot',
 					'babel-loader'
 				]
-			}/*,
+			},
+            {
+                test: /\.json$/,
+                loaders: ['json-loader'],
+                include: path.resolve(__dirname, 'app'),
+            }/*,
             {
                 test: /\.scss$/,
                 loader: ExtractTextPlugin.extract({
