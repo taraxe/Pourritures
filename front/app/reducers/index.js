@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux';
 import * as Actions from '../actions/constants';
 import {handleAction, handleActions} from 'redux-actions';
+import { routerReducer } from 'react-router-redux';
 
 const initialState = {
 	isFetching : false,
@@ -44,10 +45,12 @@ const firstReducer = handleActions({
 //       return state;
 // });
 
-const rootReducer = firstReducer/*combineReducers({
-    firstReducer,
-    secondReducer,
-    thirdReducer
-});*/
+const rootReducer = combineReducers({
+    routing: routerReducer,
+    firstReducer
+
+    /*secondReducer,
+    thirdReducer*/
+});
 
 export default rootReducer;
