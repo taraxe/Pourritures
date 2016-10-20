@@ -32,8 +32,11 @@
   },
   "dependencies": {
     "babel-loader": "^6.2.5",
+    "bootstrap": "^3.3.7",
+    "d3": "^4.2.8",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
+    "react-faux-dom": "^3.0.0",
     "react-redux": "^4.4.5",
     "react-router": "^2.8.1",
     "react-router-redux": "^4.0.6",
@@ -41,7 +44,6 @@
     "redux-actions": "^0.12.0",
     "redux-logger": "^2.7.0",
     "redux-thunk": "^2.1.0",
-    "whatwg-fetch": "^1.0.0",
-    "bootstrap": "^3.3.7"
+    "whatwg-fetch": "^1.0.0"
   }
 }
