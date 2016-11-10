@@ -2,23 +2,35 @@ import { combineReducers } from 'redux';
 import * as Actions from '../actions/constants';
 import {handleAction, handleActions} from 'redux-actions';
 import { routerReducer } from 'react-router-redux';
+import * as d3 from "d3";
 
 const initialState = {
-	isFetching : false,
+	isFetchingGroupData : false,
+    groupData: []
 };
 
-const firstReducer = handleActions({
-    /*[Actions.USER_FETCHING]: (state, action) => {
+const dataReducer = handleActions({
+    [Actions.LOAD_GROUP_DATA_FETCHING]: (state, action) => {
       return Object.assign({}, state, {
-        isFetching: true
+          isFetchingGroupData: true
       });
     },
-    [Actions.USER_FETCHED]: (state, action) => {
+    [Actions.LOAD_GROUP_DATA_FETCHED]: (state, action) => {
+
+      const raw = action.payload;
+
+        // TODO reduce the data to fit the chart input
+        const cum = d3
+            .nest().key(d => d.annee)
+            .entries(raw);
+
+        console.log(cum);
+
       return Object.assign({}, state, {
-        isFetching: false,
-        playerOne: action.payload
+          isFetchingGroupData: false,
+          groupData: raw
       });
-    }*/
+    }
 }, initialState);
 
 // function secondReducer(state = initialState, action) {
@@ -47,7 +59,7 @@ const firstReducer = handleActions({
 
 const rootReducer = combineReducers({
     routing: routerReducer,
-    firstReducer
+    data : dataReducer
 
     /*secondReducer,
     thirdReducer*/

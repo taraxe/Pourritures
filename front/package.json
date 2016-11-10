@@ -33,10 +33,10 @@
   "dependencies": {
     "babel-loader": "^6.2.5",
     "bootstrap": "^3.3.7",
-    "d3": "^4.2.8",
+    "d3": "^4.3.0",
     "react": "^15.3.2",
+    "react-c3js": "^0.1.9",
     "react-dom": "^15.3.2",
-    "react-faux-dom": "^3.0.0",
     "react-redux": "^4.4.5",
     "react-router": "^2.8.1",
     "react-router-redux": "^4.0.6",
