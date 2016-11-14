@@ -2,7 +2,9 @@ import React from 'react';
 import pourritures from '../data/pourritures.json';
 import * as d3 from 'd3';
 import Chart from './Chart';
-import Candidates from './Candidates'
+import Candidates from './Candidates';
+import CourtCases from './CourtCases';
+
 const Home = () => {
     const cumulated = d3.nest()
             .key(function(d){return d.annee})
@@ -29,6 +31,7 @@ const Home = () => {
             <Chart width={800} height={600} data={cumulated}/>
           </figure>
           <Candidates />
+          <CourtCases />
       </div>
     );
 };

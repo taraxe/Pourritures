@@ -11,8 +11,11 @@ const Candidates = React.createClass({
       )
     });
     return(
-      <div className="candidatesList">
-        {listCandidates}
+      <div>
+      <h2>Nos candidats</h2>
+        <div className="candidatesList">
+          {listCandidates}
+        </div>
       </div>
     )
   }
