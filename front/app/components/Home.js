@@ -1,5 +1,7 @@
 import React from 'react';
 import GroupChartContainer from '../containers/GroupChartContainer';
+import Candidates from './Candidates';
+import CourtCases from './CourtCases';
 
 const Home = () => {
     return (
@@ -8,6 +10,9 @@ const Home = () => {
           <figure className="cumulated">
             <GroupChartContainer/>
           </figure>
+
+          <Candidates />
+          <CourtCases />
       </div>
     );
 };

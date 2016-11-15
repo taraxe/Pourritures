@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Nicolas Sarkozy",
+    "formation":"Les Républicains"
+  },
+  {
+    "name": "Jean-François Copé",
+    "formation":"Les Républicains"
+  },
+  {
+    "name": "François Fillon",
+    "formation":"Les Républicains"
+  },
+  {
+    "name": "Alain Juppé",
+    "formation":"Les Républicains"
+  },
+  {
+    "name": "Nicolas Dupont-Aignan",
+    "formation": "Debout la France"
+  },
+  {
+    "name": "Marine Le Pen",
+    "formation": "Front national"
+  }
+]
