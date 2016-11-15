@@ -1,11 +1,7 @@
 import React from 'react';
 import GroupChartContainer from '../containers/GroupChartContainer';
-import CandidateList from './CandidateList';
-import CourtCaseList from './CourtCaseList';
-
-import candidates from '../data/candidats.json';
-import courtcases from '../data/courtcases.json';
-
+import CandidateListContainer from '../containers/CandidateListContainer';
+import CourtCaseListContainer from '../containers/CourtCaseListContainer';
 
 const Home = () => {
     return (
@@ -14,8 +10,8 @@ const Home = () => {
           <figure className="cumulated">
             <GroupChartContainer/>
           </figure>
-          <CandidateList data={candidates} />
-          <CourtCaseList data={courtcases}/>
+          <CandidateListContainer/>
+          <CourtCaseListContainer/>
       </div>
     );
 };

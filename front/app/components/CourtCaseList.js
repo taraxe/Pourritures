@@ -5,7 +5,7 @@ const CourtCases = (props) =>
     <div>
         <h2>Nos affaires préférées</h2>
         <div className="courtcasesList">
-            {props.data.map(c => <CourtCase data={c}/>)}
+            {props.data.map(c => <CourtCase key={c.name} data={c}/>)}
         </div>
     </div>;
 
