@@ -23,7 +23,7 @@ class CourtCaseListContainer extends React.Component {
 }
 
 function mapStateToProps(state) {
-    return state.courtCaseNode;
+    return state.courtCasesNode;
 }
 
 export default connect(mapStateToProps)(CourtCaseListContainer);

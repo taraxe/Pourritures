@@ -1,6 +1,8 @@
 import { createAction } from 'redux-actions';
 import * as Action from './constants';
 
+import slugify from '../utils'
+
 import pourritures from '../data/pourritures.json';
 import candidates from '../data/candidats.json';
 import courtCases from '../data/courtcases.json';
@@ -41,5 +43,18 @@ export function fetchCourtCases(){
         new Promise((resolve, _) => resolve(courtCases))
             .then((response) => dispatch(courtCasesFetched(response)))
             .catch((err) => dispatch(courtCasesFetched(new Error(JSON.stringify(err)))));
+    };
+}
+
+const personDetailsFetched = createAction(Action.LOAD_PERSON_DETAILS_DATA_FETCHED);
+const personDetailsFetching = createAction(Action.LOAD_PERSON_DETAILS_DATA_FETCHING);
+
+export function fetchPersonDetails({slug}){
+    return (dispatch) => {
+        dispatch(personDetailsFetching({slug}));
+        const match = pourritures.filter(d => slugify(d.name) === slug) || [];
+        new Promise((resolve, _) => resolve(match))
+            .then((response) => dispatch(personDetailsFetched({data: response, slug})))
+            .catch((err) => dispatch(personDetailsFetched(new Error(JSON.stringify(err)))));
     };
 }

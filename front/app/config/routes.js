@@ -2,6 +2,8 @@ import React from 'react';
 import {Router, Route, IndexRoute, browserHistory} from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 import store from '../store/configureStore';
+import PersonDetailsContainer from '../containers/PersonDetailContainer';
+
 const history = syncHistoryWithStore(browserHistory, store);
 
 import Main from '../components/Main';
@@ -11,8 +13,8 @@ const Routes = (
   <Router history={history}>
     <Route path='/' component={Main}>
         <IndexRoute component={Home}/>
-        {/*<Route path='playerOne' header='Player One' component={PromptContainer}/>
-        <Route path='playerTwo/:playerOne' header='Player Two' component={PromptContainer}/>
+        <Route path='ordures/:slug' header='Ordure' component={PersonDetailsContainer}/>
+        {/*<Route path='playerTwo/:playerOne' header='Player Two' component={PromptContainer}/>
         <Route path='battle' component={ConfirmBattleContainer}/>
         <Route path='results' component={ResultsContainer}/>*/}
     </Route>

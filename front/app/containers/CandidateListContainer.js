@@ -23,7 +23,7 @@ class CandidateListContainer extends React.Component {
 }
 
 function mapStateToProps(state) {
-    return state.candidateNode;
+    return state.candidatesNode;
 }
 
 export default connect(mapStateToProps)(CandidateListContainer);

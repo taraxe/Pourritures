@@ -23,7 +23,7 @@ class GroupChartContainer extends React.Component {
 }
 
 function mapStateToProps(state) {
-  return state.groupNode;
+  return state.groupsNode;
 }
 
 export default connect(mapStateToProps)(GroupChartContainer);
