@@ -8,12 +8,12 @@ const initialState = {
 
 
 const courtCasesReducer = handleActions({
-    [Actions.LOAD_COURTCASES_DATA_FETCHING]: (state, action) => {
+    [Actions.LOAD_COURTCASES_FETCHING]: (state, action) => {
         return Object.assign({}, state, {
             isFetching: true
         });
     },
-    [Actions.LOAD_COURTCASES_DATA_FETCHED]: (state, action) => {
+    [Actions.LOAD_COURTCASES_FETCHED]: (state, action) => {
         const raw = action.payload;
         return Object.assign({}, state, {
             isFetching: false,

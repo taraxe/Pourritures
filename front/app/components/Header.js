@@ -1,9 +1,11 @@
 import React from 'react';
 import {Link} from 'react-router';
+import { withRouter } from 'react-router'
 
 
-const header = () =>
-    <div className='row border-bottom white-bg'>
+const header = (props) =>
+
+    <div className='row border-bottom'>
         <nav className='navbar navbar-static-top' role='navigation'>
             <div className='navbar-header'>
                 <button aria-controls='navbar' aria-expanded='false' data-target='#navbar' data-toggle='collapse' className='navbar-toggle collapsed' type='button'>
@@ -13,8 +15,11 @@ const header = () =>
             </div>
             <div className='navbar-collapse collapse' id='navbar'>
                 <ul className='nav navbar-nav'>
-                    <li className='active'>
+                    <li className={props.router.isActive('/', true) ? 'active' : ''}>
                         <Link to='/' role='button' aria-expanded='false'>Home</Link>
+                    </li>
+                    <li className={props.router.isActive('/about') ? 'active' : ''}>
+                        <Link to='/about' role='button' aria-expanded='false'>About</Link>
                     </li>
                     {/*<li className='dropdown'>
                         <a aria-expanded='false' role='button' href='#' className='dropdown-toggle' data-toggle='dropdown'> Menu item <span className='caret'></span></a>
@@ -65,4 +70,4 @@ const header = () =>
     </div>;
 
 
-export default header;
+export default withRouter(header);

@@ -2,7 +2,7 @@ import React from 'react';
 
 const personDetails = (props) =>
     <div className="personDetail">
-        <h1>{props.data.name}</h1>
+        <h1>Ordure {props.data.name}</h1>
         <ol>
             {props.data.cases.map(c =>
                 <li>

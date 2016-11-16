@@ -11,13 +11,13 @@ const initialState = {
 
 
 const candidatesReducer = handleActions({
-    [Actions.LOAD_PERSON_DETAILS_DATA_FETCHING]: (state, action) => {
+    [Actions.LOAD_PERSON_DETAILS_FETCHING]: (state, action) => {
         console.log(action);
         return Object.assign({}, state, {
             isFetching: true
         });
     },
-    [Actions.LOAD_PERSON_DETAILS_DATA_FETCHED]: (state, action) => {
+    [Actions.LOAD_PERSON_DETAILS_FETCHED]: (state, action) => {
         console.log(action);
         const {data, slug} = action.payload;
         return Object.assign({}, state, {

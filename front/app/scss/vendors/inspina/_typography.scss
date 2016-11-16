@@ -30,3 +30,10 @@ h3, h4, h5 {
   margin-top: 5px;
   font-weight: 600;
 }
+
+// Alignment
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.text-justify        { text-align: justify; }
+.text-nowrap         { white-space: nowrap; }

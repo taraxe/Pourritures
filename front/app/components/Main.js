@@ -8,12 +8,10 @@ class Main extends React.Component {
   render() {
     return (
       <div id='wrapper'>
-        <div id='page-wrapper' className='gray-bg'>
+        <div id='page-wrapper' className="gray-bg">
           <Header/>
-          <div className='wrapper wrapper-content'>
-            <div className='container'>
+          <div className='row wrapper wrapper-content white-bg'>
               {this.props.children}
-            </div>
           </div>
           <Footer/>
         </div>

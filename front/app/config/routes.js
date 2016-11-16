@@ -1,10 +1,11 @@
 import React from 'react';
-import {Router, Route, IndexRoute, browserHistory} from 'react-router';
+import {Router, Route, IndexRoute, hashHistory} from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 import store from '../store/configureStore';
 import PersonDetailsContainer from '../containers/PersonDetailContainer';
+import About from '../components/About';
 
-const history = syncHistoryWithStore(browserHistory, store);
+const history = syncHistoryWithStore(hashHistory, store);
 
 import Main from '../components/Main';
 import Home from '../components/Home';
@@ -14,9 +15,7 @@ const Routes = (
     <Route path='/' component={Main}>
         <IndexRoute component={Home}/>
         <Route path='ordures/:slug' header='Ordure' component={PersonDetailsContainer}/>
-        {/*<Route path='playerTwo/:playerOne' header='Player Two' component={PromptContainer}/>
-        <Route path='battle' component={ConfirmBattleContainer}/>
-        <Route path='results' component={ResultsContainer}/>*/}
+        <Route path='about' header='A propos' component={About}/>
     </Route>
   </Router>
 );
