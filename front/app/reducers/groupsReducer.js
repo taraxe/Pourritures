@@ -35,6 +35,7 @@ const groupsReducer = handleActions({
                 ['Nb Affaires', ...perYer.map(e => e.value)],
                 ['Cumul', ...perYer.reduce(sum, [])]
             ],
+            type: 'spline',
             axis : {
                 type: 'timeseries',
                 tick: {
