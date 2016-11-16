@@ -1,358 +1,358 @@
 [
     {
         "name": "Gérard Dalongeville",
-        "formation":"ps",
+        "party":"ps",
         "nature": "mis en examen",
-        "annee": 2009,
-        "raison": ["détournement de fonds publics","faux et usage de faux","favoritisme","corruption"]
+        "year": 2009,
+        "charges": ["détournement de fonds publics","faux et usage de faux","favoritisme","corruption"]
     },
     {
         "name": "Jean-Pierre Kucheida",
-        "formation":"ps",
-        "annee": 2013,
+        "party":"ps",
+        "year": 2013,
         "ex": true,
         "nature": "condamnation",
         "ammende": 30000,
-        "raison": ["abus de biens sociaux (lors du procès des frais de la Soginorpa)"]
+        "charges": ["abus de biens sociaux (lors du procès des frais de la Soginorpa)"]
     },
     {
         "name": "Dominique Strauss-Kahn",
-        "formation":"ps",
-        "annee": 2012,
+        "party":"ps",
+        "year": 2012,
         "nature": "mis en examen",
-        "raison": ["proxénétisme aggravé en bande organisée"]
+        "charges": ["proxénétisme aggravé en bande organisée"]
     },
     {
         "name": "Dominique Strauss-Kahn",
-        "formation":"ps",
-        "annee": 1999,
+        "party":"ps",
+        "year": 1999,
         "nature": "mis en examen",
         "ammende": 30000,
-        "raison": ["faux et usage de faux (dans l'affaire de la MNEF)"]
+        "charges": ["faux et usage de faux (dans l'affaire de la MNEF)"]
     },
     {
         "name": "Anne Hidalgo",
-        "formation":"ps",
-        "annee": 2012,
+        "party":"ps",
+        "year": 2012,
         "nature": "condamnation",
         "ammende": 40000,
-        "raison": ["infraction à la législation sur la durée du travail"]
+        "charges": ["infraction à la législation sur la durée du travail"]
     },
     {
         "name": "Bernard Granie",
-        "formation":"ps",
-        "annee": 2011,
+        "party":"ps",
+        "year": 2011,
         "nature": "condamnation",
-        "raison": ["corruption"]
+        "charges": ["corruption"]
     },
     {
         "name": "Bertrand Delanöe",
-        "formation":"ps",
-        "annee": 2010,
+        "party":"ps",
+        "year": 2010,
         "nature": "condamnation",
-        "raison": ["atteinte au droit du travail"]
+        "charges": ["atteinte au droit du travail"]
     },
     {
         "name": "Catherine Trautmann",
-        "formation":"ps",
-        "annee": 1999,
+        "party":"ps",
+        "year": 1999,
         "nature": "condamnation",
-        "raison": ["diffamation"]
+        "charges": ["diffamation"]
     },
     {
         "name": "Christian Bourquin",
-        "formation":"ps",
-        "annee": 2012,
+        "party":"ps",
+        "year": 2012,
         "nature": "condamnation",
-        "raison": ["délit de favoritisme"]
+        "charges": ["délit de favoritisme"]
     },
     {
         "name": "Claude Pradille",
-        "formation":"ps",
-        "annee": 1995,
+        "party":"ps",
+        "year": 1995,
         "nature": "condamnation",
-        "raison": ["corruption"]
+        "charges": ["corruption"]
     },
     {
         "name": "Edmond Hervé",
-        "formation":"ps",
-        "annee": 1999,
+        "party":"ps",
+        "year": 1999,
         "nature": "condamnation",
-        "raison": ["manquement à une obligation de sécurité dans l'affaire du sang contaminé"]
+        "charges": ["manquement à une obligation de sécurité dans l'affaire du sang contaminé"]
     },
     {
         "name": "Elie Pigmal",
-        "formation":"ps",
-        "annee": 2012,
+        "party":"ps",
+        "year": 2012,
         "nature": "condamnation",
-        "raison": ["délit de favoritisme"]
+        "charges": ["délit de favoritisme"]
     },
     {
         "name": "François Bernardini",
-        "formation":"ps",
-        "annee": 2001,
+        "party":"ps",
+        "year": 2001,
         "nature": "condamnation",
-        "raison": ["ingérence","détournement de fonds publics","abus de confiance et abus de biens sociaux"]
+        "charges": ["ingérence","détournement de fonds publics","abus de confiance et abus de biens sociaux"]
     },
     {
         "name": "François Xavier Bordeaux",
-        "formation":"ps",
-        "annee": 2011,
+        "party":"ps",
+        "year": 2011,
         "nature": "condamnation",
-        "raison": ["abus de faiblesse"]
+        "charges": ["abus de faiblesse"]
     },
     {
         "name": "Georges Frêche",
-        "formation":"ps",
+        "party":"ps",
         "ex":true,
-        "annee": 2012,
+        "year": 2012,
         "nature": "condamnation",
-        "raison": ["dérapages verbaux multiples"]
+        "charges": ["dérapages verbaux multiples"]
     },
     {
         "name": "Harlem Desir",
-        "formation":"ps",
-        "annee": 1998,
+        "party":"ps",
+        "year": 1998,
         "nature": "condamnation",
-        "raison": ["recel d'abus de confiance"]
+        "charges": ["recel d'abus de confiance"]
     },
     {
         "name": "Henri Emmanuelli",
-        "formation":"ps",
-        "annee": 1997,
+        "party":"ps",
+        "year": 1997,
         "nature": "condamnation",
-        "raison": ["trafic d'influence"]
+        "charges": ["trafic d'influence"]
     },
     {
         "name": "Jack Lang",
-        "formation":"ps",
-        "annee": 2008,
+        "party":"ps",
+        "year": 2008,
         "nature": "condamnation",
-        "raison": ["rupture de contrat"]
+        "charges": ["rupture de contrat"]
     },
     {
         "name": "Jack Mellick",
-        "formation":"ps",
-        "annee": 1997,
+        "party":"ps",
+        "year": 1997,
         "nature": "condamnation",
-        "raison": ["dans l'affaire OM-VA pour faux témoignage"]
+        "charges": ["dans l'affaire OM-VA pour faux témoignage"]
     },
     {
         "name": "Jeanine Ecochard",
-        "formation":"ps",
-        "annee": 1998,
+        "party":"ps",
+        "year": 1998,
         "nature": "condamnation",
-        "raison": ["l'affaire Urba (financement occulte du PS)"]
+        "charges": ["l'affaire Urba (financement occulte du PS)"]
     },
     {
         "name": "Jean-Christophe Cambadélis",
-        "formation":"ps",
-        "annee": 2006,
+        "party":"ps",
+        "year": 2006,
         "nature": "condamnation",
-        "raison": ["affaire de la MNEF"]
+        "charges": ["affaire de la MNEF"]
     },
     {
         "name": "Jean-François Noyes",
-        "formation":"ps",
-        "annee": 2012,
+        "party":"ps",
+        "year": 2012,
         "nature": "condamnation",
-        "raison": ["dans le cadre de l'Affaire Guérini pour association de malfaiteurs en vue de trafic d'influence et recel de trafic d'influence"]
+        "charges": ["dans le cadre de l'Affaire Guérini pour association de malfaiteurs en vue de trafic d'influence et recel de trafic d'influence"]
     },
     {
         "name": "Jean-Marc Ayrault",
-        "formation":"ps",
-        "annee": 1997,
+        "party":"ps",
+        "year": 1997,
         "gouvernement":true,
         "nature": "condamnation",
-        "raison": ["délit de favoritisme"]
+        "charges": ["délit de favoritisme"]
     },
     {
         "name": "Jean-Marie Le Chevallier",
-        "formation":"ps",
-        "annee": 2003,
+        "party":"ps",
+        "year": 2003,
         "nature": "condamnation",
-        "raison": ["subordination de témoin"]
+        "charges": ["subordination de témoin"]
     },
     {
         "name": "Jean-Noel Guérini",
-        "formation":"ps",
-        "annee": 2011,
+        "party":"ps",
+        "year": 2011,
         "nature": "condamnation",
-        "raison": ["prise illégale d'intérêt","trafic d'influence"]
+        "charges": ["prise illégale d'intérêt","trafic d'influence"]
     },
     {
         "name": "Jean-Paul Huchon",
-        "formation":"ps",
-        "annee": 2007,
+        "party":"ps",
+        "year": 2007,
         "nature": "condamnation",
-        "raison": ["prise illégale d'intérêt (et en 2011 par le Conseil d'Etat)"]
+        "charges": ["prise illégale d'intérêt (et en 2011 par le Conseil d'Etat)"]
     },
     {
         "name": "Jean-Pierre Balduyck",
-        "formation":"ps",
-        "annee": 2005,
+        "party":"ps",
+        "year": 2005,
         "nature": "condamnation",
-        "raison": ["délit de favoritisme (a fait appel de sa condamnation)"]
+        "charges": ["délit de favoritisme (a fait appel de sa condamnation)"]
     },
     {
         "name": "Jean-Pierre Destrade",
-        "formation":"ps",
-        "annee": 2005,
+        "party":"ps",
+        "year": 2005,
         "nature": "condamnation",
-        "raison": ["escroquerie","trafic d'influence"]
+        "charges": ["escroquerie","trafic d'influence"]
     },
     {
         "name": "Khadija Aram",
-        "formation":"ps",
+        "party":"ps",
         "ex":true,
-        "annee": 2011,
+        "year": 2011,
         "nature": "condamnation",
-        "raison": ["trafic d'influence","abus de confiance"]
+        "charges": ["trafic d'influence","abus de confiance"]
     },
     {
         "name": "Line Cohen Solal",
-        "formation":"ps",
-        "annee": 2011,
+        "party":"ps",
+        "year": 2011,
         "nature": "condamnation",
-        "raison": ["même affaire que celle touchant Pierre Mauroy"]
+        "charges": ["même affaire que celle touchant Pierre Mauroy"]
     },
     {
         "name": "Malek Boutih",
-        "formation":"ps",
-        "annee": 2006,
+        "party":"ps",
+        "year": 2006,
         "nature": "condamnation",
-        "raison": ["diffamation"]
+        "charges": ["diffamation"]
     },
     {
         "name": "Michel Delebarre",
-        "formation":"ps",
-        "annee": 2005,
+        "party":"ps",
+        "year": 2005,
         "nature": "condamnation",
-        "raison": ["Affaire des Ecoutes Téléphoniques"]
+        "charges": ["Affaire des Ecoutes Téléphoniques"]
     },
     {
         "name": "Michel Laignel",
-        "formation":"ps",
-        "annee": 2006,
+        "party":"ps",
+        "year": 2006,
         "nature": "condamnation",
-        "raison": ["faux","usage de faux","délit de favoritisme","prise illégale d'intérêt","détournement de fonds"]
+        "charges": ["faux","usage de faux","délit de favoritisme","prise illégale d'intérêt","détournement de fonds"]
     },
     {
         "name": "Michel Pezet",
-        "formation":"ps",
-        "annee": 1998,
+        "party":"ps",
+        "year": 1998,
         "nature": "condamnation",
-        "raison": ["recel de fonds utilisés [pour un financement politique] en dehors de tout enrichissement personnel"]
+        "charges": ["recel de fonds utilisés [pour un financement politique] en dehors de tout enrichissement personnel"]
     },
     {
         "name": "Mohamed Abdi",
-        "formation":"ps",
-        "annee": 2007,
+        "party":"ps",
+        "year": 2007,
         "nature": "condamnation",
-        "raison": ["escroquerie"]
+        "charges": ["escroquerie"]
     },
     {
         "name": "Monique Delessard",
-        "formation":"ps",
-        "annee": 2010,
+        "party":"ps",
+        "year": 2010,
         "nature": "condamnation",
-        "raison": ["mariage illégal"]
+        "charges": ["mariage illégal"]
     },
     {
         "name": "Olivier Spithakis",
-        "formation":"ps",
-        "annee": 2005,
+        "party":"ps",
+        "year": 2005,
         "nature": "condamnation",
-        "raison": ["affaire de la MNEF"]
+        "charges": ["affaire de la MNEF"]
     },
     {
         "name": "Patrick Sève",
-        "formation":"ps",
+        "party":"ps",
         "nature": "mis en examen",
-        "annee": 2011,
-        "raison": ["octroie injustifié de marchés publics","soustraction de fonds publics."]
+        "year": 2011,
+        "charges": ["octroie injustifié de marchés publics","soustraction de fonds publics."]
     },
     {
         "name": "Pascal Buchet",
-        "formation":"ps",
-        "annee": 2012,
+        "party":"ps",
+        "year": 2012,
         "nature": "condamnation",
-        "raison": ["harcèlement moral (après le suicide d'une de ses collaboratrice)"]
+        "charges": ["harcèlement moral (après le suicide d'une de ses collaboratrice)"]
     },
     {
         "name": "Philippe Sanmarco",
-        "formation":"ps",
-        "annee": 1997,
+        "party":"ps",
+        "year": 1997,
         "nature": "condamnation",
-        "raison": ["complicité de trafic d'influence dans l'affaire du financement occulte du PS, l'Affaire Urba"]
+        "charges": ["complicité de trafic d'influence dans l'affaire du financement occulte du PS, l'Affaire Urba"]
     },
     {
         "name": "Pierre Mauroy",
-        "formation":"ps",
-        "annee": 2011,
+        "party":"ps",
+        "year": 2011,
         "nature": "condamnation",
-        "raison": ["emploi fictif"]
+        "charges": ["emploi fictif"]
     },
     {
         "name": "Pierre Moscovici",
-        "formation":"ps",
-        "annee": 2001,
+        "party":"ps",
+        "year": 2001,
         "gouvernement":true,
         "nature": "condamnation",
-        "raison": ["atteinte au droit à l'image"]
+        "charges": ["atteinte au droit à l'image"]
     },
     {
         "name": "René Teulade",
-        "formation":"ps",
-        "annee": 2011,
+        "party":"ps",
+        "year": 2011,
         "nature": "condamnation",
-        "raison": ["abus de confiance"]
+        "charges": ["abus de confiance"]
     },
     {
         "name": "Robert Gaïa",
-        "formation":"ps",
-        "annee": 2002,
+        "party":"ps",
+        "year": 2002,
         "nature": "condamnation",
-        "raison": ["délit de favoritisme"]
+        "charges": ["délit de favoritisme"]
     },
     {
         "name": "Ségolène Royal",
-        "formation":"ps",
-        "annee": 2008,
+        "party":"ps",
+        "year": 2008,
         "nature": "condamnation",
-        "raison": ["licenciements abusifs"]
+        "charges": ["licenciements abusifs"]
     },
     {
         "name": "Serge Andréoni",
-        "formation":"ps",
+        "party":"ps",
         "nature": "mis en examen",
-        "annee": 2011,
-        "raison": ["complicité de trafic d'influence dans l'affaire Guérini"]
+        "year": 2011,
+        "charges": ["complicité de trafic d'influence dans l'affaire Guérini"]
     },
     {
         "name": "Sylvie Andrieux",
-        "formation":"ps",
+        "party":"ps",
         "nature": "condamnation",
-        "annee": 2013,
+        "year": 2013,
         "amende" : 100000,
         "prison" : 3,
         "sursis" : 2,
-        "raison": ["complicité de tentative d'escroquerie et de détournements de fonds publics dans l'affaire du financement présumés à hauteur de 700 000 € d'associations présumées fictives"]
+        "charges": ["complicité de tentative d'escroquerie et de détournements de fonds publics dans l'affaire du financement présumés à hauteur de 700 000 € d'associations présumées fictives"]
     },
     {
         "name": "Yacine Chaouat",
-        "formation":"ps",
+        "party":"ps",
         "nature": "mis en examen",
-        "annee": 2011,
-        "raison": ["pour violences conjugales (en appel)"]
+        "year": 2011,
+        "charges": ["pour violences conjugales (en appel)"]
     },
     {
         "name": "Jérome Cahuzac",
-        "formation":"ps",
+        "party":"ps",
         "ex":true,
         "nature": "mis en examen",
-        "annee": 2013,
-        "raison": ["blanchiment d'argent","fraude fiscale"]
+        "year": 2013,
+        "charges": ["blanchiment d'argent","fraude fiscale"]
     },
 
 
@@ -362,10 +362,10 @@
 
     {
         "name": "Jean-Christophe Lagarde",
-        "formation":"udi",
+        "party":"udi",
         "nature": "mis en examen",
-        "annee": 2013,
-        "raison": ["favoritisme dans une affaire de marchés publics"]
+        "year": 2013,
+        "charges": ["favoritisme dans une affaire de marchés publics"]
     },
 
 
@@ -375,605 +375,605 @@
 
     {
         "name": "Alain Agostini",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2008,
-        "raison": ["proxénétisme aggravé en bande organisée"]
+        "year": 2008,
+        "charges": ["proxénétisme aggravé en bande organisée"]
     },
     {
         "name": "Alain Carignon",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 1999,
-        "raison": ["corruption","abus de biens sociaux","subornation de témoins"]
+        "year": 1999,
+        "charges": ["corruption","abus de biens sociaux","subornation de témoins"]
     },
     {
         "name": "Alain Ferrand",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2006,
-        "raison": ["faux","usage de faux"]
+        "year": 2006,
+        "charges": ["faux","usage de faux"]
     },
     {
         "name": "Alain Ferrand",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 1998,
-        "raison": ["prises illégales d’intérêts","condamné pour fraude fiscale"]
+        "year": 1998,
+        "charges": ["prises illégales d’intérêts","condamné pour fraude fiscale"]
     },
     {
         "name": "Alain Juppé",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2007,
-        "raison": ["abus de confiance","recel d’abus de biens sociaux","prise illégale d’intérêt"]
+        "year": 2007,
+        "charges": ["abus de confiance","recel d’abus de biens sociaux","prise illégale d’intérêt"]
     },
     {
         "name": "Alain Tuduri",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2010,
-        "raison": ["discrimination raciale","préemption de biens immobiliers que voulait acheter des personnes d’origines étrangères dans sa commune"]
+        "year": 2010,
+        "charges": ["discrimination raciale","préemption de biens immobiliers que voulait acheter des personnes d’origines étrangères dans sa commune"]
     },
     {
         "name": "Axel Poniatowski",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2010,
-        "raison": ["diffamation"]
+        "year": 2010,
+        "charges": ["diffamation"]
     },
     {
         "name": "Brice Hortefeux",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2010,
-        "raison": ["atteinte à la présomption d’innocence","injure non publique envers un groupe de personnes à raison de leur origine"]
+        "year": 2010,
+        "charges": ["atteinte à la présomption d’innocence","injure non publique envers un groupe de personnes à charges de leur origine"]
     },
     {
         "name": "Brigitte Barèges",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2011,
-        "raison": ["refus de mariage"]
+        "year": 2011,
+        "charges": ["refus de mariage"]
     },
     {
         "name": "Bruno Sandras",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2011,
-        "raison": ["détournement de fonds publics","prise illégale d’intérêts"]
+        "year": 2011,
+        "charges": ["détournement de fonds publics","prise illégale d’intérêts"]
     },
     {
         "name": "Charles Fabre",
-        "formation":"ump",
+        "party":"ump",
         "nature": "mis en examen",
-        "annee": 2010,
-        "raison": ["délit de favoritisme"]
+        "year": 2010,
+        "charges": ["délit de favoritisme"]
     },
     {
         "name": "Charles Pasqua",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2010,
-        "raison": ["trafic d’influence","délit de favoritisme", "faux", "financement illégal de campagne","abus de confiance","cité dans l’affaire de recel d’abus de biens sociaux pour l’association France Afrique Orient","mentionné dans l’affaire du financement occulte du ministère de l’Intérieur et de l’Union des groupements d’achats publics"]
+        "year": 2010,
+        "charges": ["trafic d’influence","délit de favoritisme", "faux", "financement illégal de campagne","abus de confiance","cité dans l’affaire de recel d’abus de biens sociaux pour l’association France Afrique Orient","mentionné dans l’affaire du financement occulte du ministère de l’Intérieur et de l’Union des groupements d’achats publics"]
     },
     {
         "name": "Christian Vanneste",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2007,
-        "raison": ["propos homophobes (confirmé en appel, puis annulé en cassation)"]
+        "year": 2007,
+        "charges": ["propos homophobes (confirmé en appel, puis annulé en cassation)"]
     },
     {
         "name": "Claude Polony",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2009,
-        "raison": ["prise illégale d’intérêt","favoritisme","détournements de fonds"]
+        "year": 2009,
+        "charges": ["prise illégale d’intérêt","favoritisme","détournements de fonds"]
     },
     {
         "name": "Daniel Simonpieri",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2011,
-        "raison": ["favoritisme","fausses factures","emploi fictif"]
+        "year": 2011,
+        "charges": ["favoritisme","fausses factures","emploi fictif"]
     },
     {
         "name": "Damien Meslot",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2010,
-        "raison": ["outrage à magistrat"]
+        "year": 2010,
+        "charges": ["outrage à magistrat"]
     },
     {
         "name": "Damien Meslot",
-        "formation":"ump",
+        "party":"ump",
         "nature": "mis en examen",
-        "annee": 2010,
-        "raison": ["atteinte ou tentative d´atteinte à la sincérité d´un scrutin"]
+        "year": 2010,
+        "charges": ["atteinte ou tentative d´atteinte à la sincérité d´un scrutin"]
     },
     {
         "name": "Denis Gautier-Sauvagnac",
-        "formation":"ump",
+        "party":"ump",
         "nature": "mis en examen",
-        "annee": 2008,
-        "raison": ["blanchiment d’argent"]
+        "year": 2008,
+        "charges": ["blanchiment d’argent"]
     },
     {
         "name": "Denis Jacquat",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2011,
-        "raison": ["abus de confiance","infraction à la législation sur le financement des campagnes électorales"]
+        "year": 2011,
+        "charges": ["abus de confiance","infraction à la législation sur le financement des campagnes électorales"]
     },
     {
         "name": "Didier Schuller",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2007,
-        "raison": ["financement occulte d'activités politiques"]
+        "year": 2007,
+        "charges": ["financement occulte d'activités politiques"]
     },
     {
         "name": "Didier Schuller",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2005,
-        "raison": ["financement illégal de sa campagne"]
+        "year": 2005,
+        "charges": ["financement illégal de sa campagne"]
     },
     {
         "name": "Dominique Paillé",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2004,
-        "raison": ["abus de confiance"]
+        "year": 2004,
+        "charges": ["abus de confiance"]
     },
     {
         "name": "Frédéric Chazal",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2010,
-        "raison": ["diffamation"]
+        "year": 2010,
+        "charges": ["diffamation"]
     },
     {
         "name": "Gaston Flosse",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2011,
-        "raison": ["détournement de fonds publics et prise illégale d’intérêts"]
+        "year": 2011,
+        "charges": ["détournement de fonds publics et prise illégale d’intérêts"]
     },
     {
         "name": "Georges Tron",
-        "formation":"ump",
+        "party":"ump",
         "nature": "mis en examen",
-        "annee": 2011,
-        "raison": ["harcèlement sexuel","agression sexuelle","viol"]
+        "year": 2011,
+        "charges": ["harcèlement sexuel","agression sexuelle","viol"]
     },
     {
         "name": "Gérard Dezempte",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2006,
-        "raison": ["discrimination"]
+        "year": 2006,
+        "charges": ["discrimination"]
     },
     {
         "name": "Gérard Larrat",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2011,
-        "raison": ["constitution de partie civile abusive ou dilatoire dans le but de nuire à son adversaire socialiste"]
+        "year": 2011,
+        "charges": ["constitution de partie civile abusive ou dilatoire dans le but de nuire à son adversaire socialiste"]
     },
     {
         "name": "Gérard Larrat",
-        "formation":"ump",
+        "party":"ump",
         "nature": "mis en examen",
-        "annee": 2011,
-        "raison": ["complicité d’atteinte à la sincérité du scrutin","complicité de faux administratif","usage et complicité de manoeuvre frauduleuse tendant à l’exercice irrégulier du vote par procuration (son élection a été anulée)"]
+        "year": 2011,
+        "charges": ["complicité d’atteinte à la sincérité du scrutin","complicité de faux administratif","usage et complicité de manoeuvre frauduleuse tendant à l’exercice irrégulier du vote par procuration (son élection a été anulée)"]
     },
     {
         "name": "Gilles Forray",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2006,
-        "raison": ["corruption passive","recel d’abus de biens sociaux"]
+        "year": 2006,
+        "charges": ["corruption passive","recel d’abus de biens sociaux"]
     },
     {
         "name": "Guy Drut",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2005,
-        "raison": ["bénéfice d’un emploi fictif"]
+        "year": 2005,
+        "charges": ["bénéfice d’un emploi fictif"]
     },
     {
         "name": "Guy Wildenstein",
-        "formation":"ump",
+        "party":"ump",
         "nature": "mis en examen",
-        "annee": 2011,
-        "raison": ["recel d’abus de confiance"]
+        "year": 2011,
+        "charges": ["recel d’abus de confiance"]
     },
     {
         "name": "Henry Chabert",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2002,
-        "raison": ["recel d’abus de biens sociaux"]
+        "year": 2002,
+        "charges": ["recel d’abus de biens sociaux"]
     },
     {
         "name": "Jacques Blanc",
-        "formation":"ump",
+        "party":"ump",
         "nature": "mis en examen",
-        "annee": 2009,
-        "raison": ["détournement de fonds publics","prise illégale d’intérêt"]
+        "year": 2009,
+        "charges": ["détournement de fonds publics","prise illégale d’intérêt"]
     },
     {
         "name": "Jacques Masdeu-Arus",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2009,
-        "raison": ["corruption passive","recel d’abus de biens sociaux"]
+        "year": 2009,
+        "charges": ["corruption passive","recel d’abus de biens sociaux"]
     },
     {
         "name": "Jacques Myard",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2009,
-        "raison": ["diffamation"]
+        "year": 2009,
+        "charges": ["diffamation"]
     },
     {
         "name": "Jean Reynaud",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2004,
-        "raison": ["prise illégale d’intérêt"]
+        "year": 2004,
+        "charges": ["prise illégale d’intérêt"]
     },
     {
         "name": "Jean Reynaud",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2006,
-        "raison": ["harcèlement moral","dégradation de conditions de travail"]
+        "year": 2006,
+        "charges": ["harcèlement moral","dégradation de conditions de travail"]
     },
     {
         "name": "Jean Tiberi",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2009,
-        "raison": ["occupation illégale des locaux de sa permanence","fraude aux électeurs"]
+        "year": 2009,
+        "charges": ["occupation illégale des locaux de sa permanence","fraude aux électeurs"]
     },
     {
         "name": "Jean-Louis Garnier",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2011,
-        "raison": ["coups et blessures"]
+        "year": 2011,
+        "charges": ["coups et blessures"]
     },
     {
         "name": "Jean-Louis Masson",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 1997,
-        "raison": ["financement de la campagne d’un concurrent afin d’affaiblir sa rivale à droite"]
+        "year": 1997,
+        "charges": ["financement de la campagne d’un concurrent afin d’affaiblir sa rivale à droite"]
     },
     {
         "name": "Jean-Paul Alduy",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2008,
-        "raison": ["son élection est annulée pour fraude"]
+        "year": 2008,
+        "charges": ["son élection est annulée pour fraude"]
     },
     {
         "name": "Jean-Paul Fournier",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2010,
-        "raison": ["prise illégale d’intérêt"]
+        "year": 2010,
+        "charges": ["prise illégale d’intérêt"]
     },
     {
         "name": "Joëlle Ceccaldi-Raynaud",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2006,
-        "raison": ["diffamation","complicité de diffamation"]
+        "year": 2006,
+        "charges": ["diffamation","complicité de diffamation"]
     },
     {
         "name": "Joëlle Ferrand",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2010,
-        "raison": ["prise illégale d’intérêt","malversations"]
+        "year": 2010,
+        "charges": ["prise illégale d’intérêt","malversations"]
     },
     {
         "name": "Laurence Spicher-Bernier",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2011,
-        "raison": ["exercice illégal de la profession d’avocat","escroquerie"]
+        "year": 2011,
+        "charges": ["exercice illégal de la profession d’avocat","escroquerie"]
     },
     {
         "name": "Lionel Cressiot",
-        "formation":"ump",
+        "party":"ump",
         "nature": "mis en examen",
-        "annee": 2011,
-        "raison": ["injures","diffamation"]
+        "year": 2011,
+        "charges": ["injures","diffamation"]
     },
     {
         "name": "Lucette Michaux-Chevry",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2002,
-        "raison": ["favoritisme dans l’attribution de marchés publics"]
+        "year": 2002,
+        "charges": ["favoritisme dans l’attribution de marchés publics"]
     },
     {
         "name": "Manuel Aeschlimann",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2009,
-        "raison": ["favoritisme dans l’attribution d’un marché public"]
+        "year": 2009,
+        "charges": ["favoritisme dans l’attribution d’un marché public"]
     },
     {
         "name": "Marie-Jeanne Bozzi",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2002,
-        "raison": ["proxénétisme aggravé","association de malfaiteurs","dissimulation de travail clandestin"]
+        "year": 2002,
+        "charges": ["proxénétisme aggravé","association de malfaiteurs","dissimulation de travail clandestin"]
     },
     {
         "name": "Marie-Jeanne Bozzi",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2007,
-        "raison": ["soustraction au paiement de l’impôt","omission de déclaration","fraude fiscale"]
+        "year": 2007,
+        "charges": ["soustraction au paiement de l’impôt","omission de déclaration","fraude fiscale"]
     },
     {
         "name": "Marie-Jeanne Bozzi",
-        "formation":"ump",
+        "party":"ump",
         "nature": "mise en examen",
-        "annee": 2009,
-        "raison": ["association de malfaiteurs en vue de la commission d’un homicide en bande organisée"]
+        "year": 2009,
+        "charges": ["association de malfaiteurs en vue de la commission d’un homicide en bande organisée"]
     },
     {
         "name": "Maurice Gutman",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2010,
-        "raison": ["proposition sexuelle à une mineure de 12 ans"]
+        "year": 2010,
+        "charges": ["proposition sexuelle à une mineure de 12 ans"]
     },
     {
         "name": "Michel Buillard",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2011,
-        "raison": ["détournement de fonds publics","prise illégale d’intérêts"]
+        "year": 2011,
+        "charges": ["détournement de fonds publics","prise illégale d’intérêts"]
     },
     {
         "name": "Michel Habig",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2006,
-        "raison": ["pour avoir fair incendier 14 caravanes appartenant à des Roms installées sur un terrain municipal"]
+        "year": 2006,
+        "charges": ["pour avoir fair incendier 14 caravanes appartenant à des Roms installées sur un terrain municipal"]
     },
     {
         "name": "Nicolas Bazire",
-        "formation":"ump",
+        "party":"ump",
         "nature": "mis en examen",
-        "annee": 2011,
-        "raison": ["dans le cadre de l'affaire Karachi"]
+        "year": 2011,
+        "charges": ["dans le cadre de l'affaire Karachi"]
     },
     {
         "name": "Olivier Deleu",
-        "formation":"ump",
+        "party":"ump",
         "nature": "mis en examen",
-        "annee": 2011,
-        "raison": ["injures","diffamation"]
+        "year": 2011,
+        "charges": ["injures","diffamation"]
     },
     {
         "name": "Olivier Rey",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2008,
-        "raison": ["violences","menaces","dégradation grave du bien d’autrui à raison de la religion"]
+        "year": 2008,
+        "charges": ["violences","menaces","dégradation grave du bien d’autrui à charges de la religion"]
     },
     {
         "name": "Pascal Buchet",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2011,
-        "raison": ["harcèlement moral ayant mené au suicide"]
+        "year": 2011,
+        "charges": ["harcèlement moral ayant mené au suicide"]
     },
     {
         "name": "Patrick Balkany",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2003,
-        "raison": ["injure publique","diffamation"]
+        "year": 2003,
+        "charges": ["injure publique","diffamation"]
     },
     {
         "name": "Patrick Balkany",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 1999,
-        "raison": ["pour avoir rémunéré aux frais du contribuable trois personnes désignées comme des employés municipaux mais qui ne s’occupaient que de son appartement de Levallois-Perret et de sa résidence secondaire près de Giverny"]
+        "year": 1999,
+        "charges": ["pour avoir rémunéré aux frais du contribuable trois personnes désignées comme des employés municipaux mais qui ne s’occupaient que de son appartement de Levallois-Perret et de sa résidence secondaire près de Giverny"]
     },
     {
         "name": "Philippe Brun",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2011,
-        "raison": ["fraudes et multiples abus de biens sociaux"]
+        "year": 2011,
+        "charges": ["fraudes et multiples abus de biens sociaux"]
     },
     {
         "name": "Pierre Bédier",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2009,
-        "raison": ["corruption passive","recel d’abus de biens sociaux"]
+        "year": 2009,
+        "charges": ["corruption passive","recel d’abus de biens sociaux"]
     },
     {
         "name": "Philippe Pemezec",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2010,
-        "raison": ["injures"]
+        "year": 2010,
+        "charges": ["injures"]
     },
     {
         "name": "Philippe Pemezec",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2007,
-        "raison": ["irrégularités lors de sa campagne (son élection sera annulée)"]
+        "year": 2007,
+        "charges": ["irrégularités lors de sa campagne (son élection sera annulée)"]
     },
     {
         "name": "Renaud Donnedieu de Vabres",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2004,
-        "raison": ["blanchiment d’argent"]
+        "year": 2004,
+        "charges": ["blanchiment d’argent"]
     },
     {
         "name": "Renaud Donnedieu de Vabres",
-        "formation":"ump",
+        "party":"ump",
         "nature": "mis en examen",
-        "annee": 2004,
-        "raison": ["dans le cadre de l’affaire Karachi"]
+        "year": 2004,
+        "charges": ["dans le cadre de l’affaire Karachi"]
     },
     {
         "name": "René Vestri",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2009,
-        "raison": ["travail dissimulé"]
+        "year": 2009,
+        "charges": ["travail dissimulé"]
     },
     {
         "name": "René Vestri",
-        "formation":"ump",
+        "party":"ump",
         "nature": "mis en examen",
-        "annee": 2009,
-        "raison": ["blanchiment à titre habituel et en bande organisée","trafic d’influence","association de malfaiteurs"]
+        "year": 2009,
+        "charges": ["blanchiment à titre habituel et en bande organisée","trafic d’influence","association de malfaiteurs"]
     },
     {
         "name": "Richard Cazenave",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 1999,
-        "raison": ["abus de biens sociaux"]
+        "year": 1999,
+        "charges": ["abus de biens sociaux"]
     },
     {
         "name": "Richard Cazenave",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2004,
-        "raison": ["recel et complicité d’abus de biens sociaux"]
+        "year": 2004,
+        "charges": ["recel et complicité d’abus de biens sociaux"]
     },
     {
         "name": "Serge Dassault",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 1998,
-        "raison": ["corruption"]
+        "year": 1998,
+        "charges": ["corruption"]
     },
     {
         "name": "Serge Dassault",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2009,
-        "raison": ["pour avoir acheté des voix lors des municipales"]
+        "year": 2009,
+        "charges": ["pour avoir acheté des voix lors des municipales"]
     },
     {
         "name": "Serge Dassault",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2010,
-        "raison": ["procédure abusive"]
+        "year": 2010,
+        "charges": ["procédure abusive"]
     },
     {
         "name": "Thérèse Aillaud",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2002,
-        "raison": ["détournement de fonds publics"]
+        "year": 2002,
+        "charges": ["détournement de fonds publics"]
     },
     {
         "name": "Thierry Gaubert",
-        "formation":"ump",
+        "party":"ump",
         "nature": "mis en examen",
-        "annee": 2008,
-        "raison": ["abus de biens sociaux","escroquerie"]
+        "year": 2008,
+        "charges": ["abus de biens sociaux","escroquerie"]
     },
     {
         "name": "Thierry Gaubert",
-        "formation":"ump",
+        "party":"ump",
         "nature": "mis en examen",
-        "annee": 2008,
-        "raison": ["dans le cadre de l’affaire Karachi"]
+        "year": 2008,
+        "charges": ["dans le cadre de l’affaire Karachi"]
     },
     {
         "name": "Thierry Leprince",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2007,
-        "raison": ["viol sur une mineure de 12 ans"]
+        "year": 2007,
+        "charges": ["viol sur une mineure de 12 ans"]
     },
     {
         "name": "Vincent Toni",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2011,
-        "raison": ["corruption passive"]
+        "year": 2011,
+        "charges": ["corruption passive"]
     },
     {
         "name": "Vincent Toni",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2008,
-        "raison": ["corruption passive"]
+        "year": 2008,
+        "charges": ["corruption passive"]
     },
     {
         "name": "Xavier Dugoin",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 1997,
-        "raison": ["trafic d’alcool","salaires fictifs","corruption"]
+        "year": 1997,
+        "charges": ["trafic d’alcool","salaires fictifs","corruption"]
     },
     {
         "name": "Xavier Dugoin",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2000,
-        "raison": ["abus de confiance","détournement de fonds publics","falsification de documents administratifs","prise illégale d’intérêt"]
+        "year": 2000,
+        "charges": ["abus de confiance","détournement de fonds publics","falsification de documents administratifs","prise illégale d’intérêt"]
     },
     {
         "name": "Xavier Dugoin",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2001,
-        "raison": ["dans le cadre de l’affaire des emplois fictifs du conseil général de l’Essonne (annulée pour vice de forme)"]
+        "year": 2001,
+        "charges": ["dans le cadre de l’affaire des emplois fictifs du conseil général de l’Essonne (annulée pour vice de forme)"]
     },
     {
         "name": "André Santini",
-        "formation":"ump",
+        "party":"ump",
         "nature": "mis en examen",
-        "annee": 2006,
-        "raison": ["prise illégale d'intérêt","faux et usage de faux","détournement de fonds publics"]
+        "year": 2006,
+        "charges": ["prise illégale d'intérêt","faux et usage de faux","détournement de fonds publics"]
     },
     {
         "name": "Eric Woerth",
-        "formation":"ump",
+        "party":"ump",
         "nature": "mis en examen",
-        "annee": 2012,
-        "raison": ["recel dans l'enquête sur l'héritière de L'Oréal Liliane Bettencourt"]
+        "year": 2012,
+        "charges": ["recel dans l'enquête sur l'héritière de L'Oréal Liliane Bettencourt"]
     },
     {
         "name": "Yanick Paternotte",
-        "formation":"ump",
+        "party":"ump",
         "nature": "condamnation",
-        "annee": 2012,
-        "raison": ["abus de faiblesse"]
+        "year": 2012,
+        "charges": ["abus de faiblesse"]
     },
     {
         "name": "Nicolas Sarkozy",
-        "formation":"ump",
+        "party":"ump",
         "nature": "mis en examen",
-        "annee": 2013,
-        "raison": ["abus de faiblesse sur l'héritière de L'Oréal Liliane Bettencourt"]
+        "year": 2013,
+        "charges": ["abus de faiblesse sur l'héritière de L'Oréal Liliane Bettencourt"]
     },
 
 
@@ -982,510 +982,510 @@
 
     {
         "name": "Alexandre Gabriac",
-        "formation":"fn",
+        "party":"fn",
         "nature": "examen",
-        "annee": 2007,
-        "raison": ["pour ses liens étroits avec un commando d'extrême-droite ayant tenté de cambrioler un stand de tir à Saint-Andéol-le-Château, dont l'aventure s'est terminée par le meurtre du Gendarme Ambrosse"]
+        "year": 2007,
+        "charges": ["pour ses liens étroits avec un commando d'extrême-droite ayant tenté de cambrioler un stand de tir à Saint-Andéol-le-Château, dont l'aventure s'est terminée par le meurtre du Gendarme Ambrosse"]
     },
     {
         "name": "Alexandre Gabriac",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2007,
-        "raison": ["apologie de crime contre l'humanité","injures à caractère raciste","violences volontaires ayant entraîné une incapacité de travail supérieure à 8 jours "]
+        "year": 2007,
+        "charges": ["apologie de crime contre l'humanité","injures à caractère raciste","violences volontaires ayant entraîné une incapacité de travail supérieure à 8 jours "]
     },
     {
         "name": "Alexandre Simonnot",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2010,
-        "raison": ["pour avoir détruit un préservatif géant à l'occasion de la journée mondiale contre le Sida"]
+        "year": 2010,
+        "charges": ["pour avoir détruit un préservatif géant à l'occasion de la journée mondiale contre le Sida"]
     },
     {
         "name": "Antoinette Martinet",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 1998,
-        "raison": ["provocation à la haine, à la violence et à la discrimination"]
+        "year": 1998,
+        "charges": ["provocation à la haine, à la violence et à la discrimination"]
     },
     {
         "name": "Bruno Gollnisch",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2007,
-        "raison": ["condamné en première instance et par le Conseil d'État pour contestation de l'existence de crime contre l'humanité (négationnisme)","la Cour de Cassation va pourtant casser sans renvoi l'arrêt de la cour d'appel"]
+        "year": 2007,
+        "charges": ["condamné en première instance et par le Conseil d'État pour contestation de l'existence de crime contre l'humanité (négationnisme)","la Cour de Cassation va pourtant casser sans renvoi l'arrêt de la cour d'appel"]
     },
     {
         "name": "Bruno Mégret",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 1998,
-        "raison": ["pour avoir tenu des propos sur l’inégalité des races"]
+        "year": 1998,
+        "charges": ["pour avoir tenu des propos sur l’inégalité des races"]
     },
     {
         "name": "Bruno Mégret",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2002,
-        "raison": ["pour avoir envoyé aux frais de la commune de Vitrolles plusieurs milliers de lettres appelant à parrainer sa candidature pour l'élection présidentielle"]
+        "year": 2002,
+        "charges": ["pour avoir envoyé aux frais de la commune de Vitrolles plusieurs milliers de lettres appelant à parrainer sa candidature pour l'élection présidentielle"]
     },
     {
         "name": "Bruno Mégret",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2006,
-        "raison": ["détournement de fonds"]
+        "year": 2006,
+        "charges": ["détournement de fonds"]
     },
     {
         "name": "Calude Jaffres",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 1997,
-        "raison": ["pour usurpation de fonction"]
+        "year": 1997,
+        "charges": ["pour usurpation de fonction"]
     },
     {
         "name": "Catherine Mégret",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 1998,
-        "raison": ["pour discrimination et incitation à la discrimination"]
+        "year": 1998,
+        "charges": ["pour discrimination et incitation à la discrimination"]
     },
     {
         "name": "Catherine Mégret",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2002,
-        "raison": ["pour avoir envoyé aux frais de la commune de Vitrolles plusieurs milliers de lettres appelant à parrainer la candidature de son époux pour l'élection présidentielle"]
+        "year": 2002,
+        "charges": ["pour avoir envoyé aux frais de la commune de Vitrolles plusieurs milliers de lettres appelant à parrainer la candidature de son époux pour l'élection présidentielle"]
     },
     {
         "name": "Catherine Mégret",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2006,
-        "raison": ["détournement de fonds"]
+        "year": 2006,
+        "charges": ["détournement de fonds"]
     },
     {
         "name": "Cédric Bégin",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2002,
-        "raison": ["détention sans autorisation de munitions et d'armes, condamné pour incitation à la haine raciale"]
+        "year": 2002,
+        "charges": ["détention sans autorisation de munitions et d'armes, condamné pour incitation à la haine raciale"]
     },
     {
         "name": "Christophe Klein",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2002,
-        "raison": ["provocation à la discrimination raciale"]
+        "year": 2002,
+        "charges": ["provocation à la discrimination raciale"]
     },
     {
         "name": "Claude Jaffrès",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 1997,
-        "raison": ["abus d’autorité","usurpation de fonction"]
+        "year": 1997,
+        "charges": ["abus d’autorité","usurpation de fonction"]
     },
     {
         "name": "Daniel Simonpieri",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2011,
-        "raison": ["favoritisme","fausses factures","emploi fictif"]
+        "year": 2011,
+        "charges": ["favoritisme","fausses factures","emploi fictif"]
     },
     {
         "name": "Denis Monteillet",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 1995,
-        "raison": ["pour avoir inscrit plusieurs personnes de son voisinage sur la liste présentée par son parti au municipales sans les avoir prévenues. Le Conseil d’Etat a annulé les élections des conseillers municipaux FN pour « liste irrégulière »"]
+        "year": 1995,
+        "charges": ["pour avoir inscrit plusieurs personnes de son voisinage sur la liste présentée par son parti au municipales sans les avoir prévenues. Le Conseil d’Etat a annulé les élections des conseillers municipaux FN pour « liste irrégulière »"]
     },
     {
         "name": "Emilien Bonnal",
-        "formation":"fn",
+        "party":"fn",
         "ex":true,
         "nature": "condamnation",
-        "annee": 1985,
-        "raison": ["reconnu coupable de meurtre, alors qu’il collait des affiches pour le FN, pour avoir tué Abdallah Moktari, 23 ans ; qui l’avait insulté"],
+        "year": 1985,
+        "charges": ["reconnu coupable de meurtre, alors qu’il collait des affiches pour le FN, pour avoir tué Abdallah Moktari, 23 ans ; qui l’avait insulté"],
         "prison" : 8
     },
     {
         "name": "Francis Watez",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2007,
+        "year": 2007,
         "ammende": 7500,
-        "raison": ["incitation à la discrimination raciale"]
+        "charges": ["incitation à la discrimination raciale"]
     },
     {
         "name": "François Nicolas-Schmitt",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 1997,
-        "raison": ["détournement de fonds"]
+        "year": 1997,
+        "charges": ["détournement de fonds"]
     },
     {
         "name": "Gilles Lacroix",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 1997,
-        "raison": ["complicité de violence en réunion, avec arme et préméditation","pour complicité de destruction de biens"]
+        "year": 1997,
+        "charges": ["complicité de violence en réunion, avec arme et préméditation","pour complicité de destruction de biens"]
     },
     {
         "name": "Georges Theil",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2001,
-        "raison": ["contestation de crimes contre l'Humanité"]
+        "year": 2001,
+        "charges": ["contestation de crimes contre l'Humanité"]
     },
     {
         "name": "Georges Theil",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2006,
-        "raison": ["contestation de crimes contre l'Humanité"]
+        "year": 2006,
+        "charges": ["contestation de crimes contre l'Humanité"]
     },
     {
         "name": "Guy Cannie",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2011,
-        "raison": ["escroquerie en bande organisée"]
+        "year": 2011,
+        "charges": ["escroquerie en bande organisée"]
     },
     {
         "name": "Jacky Codvelle",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 1990,
-        "raison": ["pour avoir mis le feu à la voiture du député du Rhône et maire PS de la ville, Jean Jacques Queyranne pour fêter le 14 juillet"]
+        "year": 1990,
+        "charges": ["pour avoir mis le feu à la voiture du député du Rhône et maire PS de la ville, Jean Jacques Queyranne pour fêter le 14 juillet"]
     },
     {
         "name": "Jacques Bompard",
-        "formation":"fn",
+        "party":"fn",
         "nature": "mis en examen",
-        "annee": 2010,
-        "raison": ["prise illégale d’intérêt"]
+        "year": 2010,
+        "charges": ["prise illégale d’intérêt"]
     },
     {
         "name": "Jacques Coutela",
-        "formation":"fn",
+        "party":"fn",
         "nature": "mis en examen",
-        "annee": 2011,
-        "raison": ["incitation à la haine raciale (suite à son apologie d’Anders Behring Breivik, auteur des attentats d’Oslo)"]
+        "year": 2011,
+        "charges": ["incitation à la haine raciale (suite à son apologie d’Anders Behring Breivik, auteur des attentats d’Oslo)"]
     },
     {
         "name": "Jean Holtzer",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 1990,
-        "raison": ["coupable de vol à main armé pour avoir braqué une banque (8 ans fermes)"]
+        "year": 1990,
+        "charges": ["coupable de vol à main armé pour avoir braqué une banque (8 ans fermes)"]
     },
     {
         "name": "Jean-Claude Poulet",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 1992,
-        "raison": ["pour avoir battu sa femme pendant quinze ans"]
+        "year": 1992,
+        "charges": ["pour avoir battu sa femme pendant quinze ans"]
     },
     {
         "name": "Jean-Marc Maurice",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2006,
-        "raison": ["pour outrage à agent dépositaire de l'autorité publique"]
+        "year": 2006,
+        "charges": ["pour outrage à agent dépositaire de l'autorité publique"]
     },
     {
         "name": "Jean-Marc Maurice",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2007,
-        "raison": ["vol"]
+        "year": 2007,
+        "charges": ["vol"]
     },
     {
         "name": "Jean-Marc Maurice",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2008,
-        "raison": ["escroquerie"]
+        "year": 2008,
+        "charges": ["escroquerie"]
     },
     {
         "name": "Jean-Marc Maurice",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2009,
-        "raison": ["banqueroute"]
+        "year": 2009,
+        "charges": ["banqueroute"]
     },
     {
         "name": "Jean-Marc Maurice",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2010,
-        "raison": ["travail dissimulé et non déclaré"]
+        "year": 2010,
+        "charges": ["travail dissimulé et non déclaré"]
     },
     {
         "name": "Jean-Marc Maurice",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2011,
-        "raison": ["abus de bien sociaux"]
+        "year": 2011,
+        "charges": ["abus de bien sociaux"]
     },
     {
         "name": "Jean-Marie Le Chevallier",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2001,
-        "raison": ["détournements de fonds publics", "abus de confiance"]
+        "year": 2001,
+        "charges": ["détournements de fonds publics", "abus de confiance"]
     },
     {
         "name": "Jean-Marie Le Chevallier",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2001,
-        "raison": ["subordination de témoins (dans l'affaire du meurtre de son directeur de cabinet)"]
+        "year": 2001,
+        "charges": ["subordination de témoins (dans l'affaire du meurtre de son directeur de cabinet)"]
     },
     {
         "name": "Jean-Yves Douissard",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2002,
-        "raison": ["incitation à la haine raciale"]
+        "year": 2002,
+        "charges": ["incitation à la haine raciale"]
     },
     {
         "name": "Jean-Yves Le Gallou",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 1998,
-        "raison": ["provocation à la haine raciale"]
+        "year": 1998,
+        "charges": ["provocation à la haine raciale"]
     },
     {
         "name": "Joël Klein",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 1998,
-        "raison": ["coups et blessures"]
+        "year": 1998,
+        "charges": ["coups et blessures"]
     },
     {
         "name": "Laurent Mirabeau",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 1994,
-        "raison": ["escroquerie","exercice illégal de la profession de banquier"]
+        "year": 1994,
+        "charges": ["escroquerie","exercice illégal de la profession de banquier"]
     },
     {
         "name": "Louis Aliot",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2008,
-        "raison": ["diffamation"]
+        "year": 2008,
+        "charges": ["diffamation"]
     },
     {
         "name": "Louis de Noëll",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 1997,
-        "raison": ["détournement de fonds"]
+        "year": 1997,
+        "charges": ["détournement de fonds"]
     },
     {
         "name": "Marc Georges",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 1995,
-        "raison": ["pour blessure par balle"]
+        "year": 1995,
+        "charges": ["pour blessure par balle"]
     },
     {
         "name": "Marc Lyoen",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2007,
-        "raison": ["pour avoir employé des clandestins"]
+        "year": 2007,
+        "charges": ["pour avoir employé des clandestins"]
     },
     {
         "name": "Marc Lyoen",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2008,
-        "raison": ["fraude au RSA"]
+        "year": 2008,
+        "charges": ["fraude au RSA"]
     },
     {
         "name": "Marine Le Pen",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2007,
-        "raison": ["diffamation"]
+        "year": 2007,
+        "charges": ["diffamation"]
     },
     {
         "name": "Patrick Bassot",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2012,
-        "raison": ["incitation à la discrimination, à la haine et à la violence à l’encontre des immigrés"]
+        "year": 2012,
+        "charges": ["incitation à la discrimination, à la haine et à la violence à l’encontre des immigrés"]
     },
     {
         "name": "Patrick Binder",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2005,
-        "raison": ["pour injures racistes en public"]
+        "year": 2005,
+        "charges": ["pour injures racistes en public"]
     },
     {
         "name": "Patrick Binder",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2011,
-        "raison": ["injure publique","provocation à la haine raciale"]
+        "year": 2011,
+        "charges": ["injure publique","provocation à la haine raciale"]
     },
     {
         "name": "Philippe Bernard",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2008,
-        "raison": ["faux et falsification","abus de confiance","escroquerie"]
+        "year": 2008,
+        "charges": ["faux et falsification","abus de confiance","escroquerie"]
     },
     {
         "name": "Philippe Viard",
-        "formation":"fn",
+        "party":"fn",
         "nature": "examen",
-        "annee": 1998,
-        "raison": ["discrimination"]
+        "year": 1998,
+        "charges": ["discrimination"]
     },
     {
         "name": "Philippe Viard",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 1998,
-        "raison": ["injures","délit de fuite"]
+        "year": 1998,
+        "charges": ["injures","délit de fuite"]
     },
     {
         "name": "Richard Jacob",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2011,
-        "raison": ["outrage et rebellion"]
+        "year": 2011,
+        "charges": ["outrage et rebellion"]
     },
     {
         "name": "Roger Fabregues",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 1996,
-        "raison": ["trafic de drogues"]
+        "year": 1996,
+        "charges": ["trafic de drogues"]
     },
     {
         "name": "Sylvain Ferrua",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 1996,
-        "raison": ["proxénétisme"]
+        "year": 1996,
+        "charges": ["proxénétisme"]
     },
     {
         "name": "Tanguy Deshayes",
-        "formation":"fn",
+        "party":"fn",
         "nature": "examen",
-        "annee": 2009,
-        "raison": ["menaces de mort"]
+        "year": 2009,
+        "charges": ["menaces de mort"]
     },
     {
         "name": "Xavier Voute",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 1997,
-        "raison": ["pour avoir aspergé de gaz lacrymogène des militants de Ras l'Front (mouvement anti-FN)"]
+        "year": 1997,
+        "charges": ["pour avoir aspergé de gaz lacrymogène des militants de Ras l'Front (mouvement anti-FN)"]
     },
     {
         "name": "Yannick Lecointre",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2011,
-        "raison": ["trafic de drogue (transport, détention, acquisition, cession et emploi non autorisés de stupéfiants)"]
+        "year": 2011,
+        "charges": ["trafic de drogue (transport, détention, acquisition, cession et emploi non autorisés de stupéfiants)"]
     },
     {
         "name": "Jean-Marie Le Pen",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 1995,
-        "raison": ["oublis de plus-value boursière","sous-estimation de loyer"]
+        "year": 1995,
+        "charges": ["oublis de plus-value boursière","sous-estimation de loyer"]
     },
     {
         "name": "Jean-Marie Le Pen",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 1996,
-        "raison": ["pour avoir tenu des propos ayant gravement porté atteinte au président du tribunal d'Auch"]
+        "year": 1996,
+        "charges": ["pour avoir tenu des propos ayant gravement porté atteinte au président du tribunal d'Auch"]
     },
     {
         "name": "Jean-Marie Le Pen",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 1997,
-        "raison": ["pour avoir injurié l'association Ras l'front (mouvement anti-FN) de « mouvement de tueurs de flics »"]
+        "year": 1997,
+        "charges": ["pour avoir injurié l'association Ras l'front (mouvement anti-FN) de « mouvement de tueurs de flics »"]
     },
     {
         "name": "Jean-Marie Le Pen",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 1997,
-        "raison": ["pour avoir injurié le président de SOS-Racisme"]
+        "year": 1997,
+        "charges": ["pour avoir injurié le président de SOS-Racisme"]
     },
     {
         "name": "Jean-Marie Le Pen",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 1997,
-        "raison": ["pour banalisation de crimes contre l'humanité et consentement à l’horrible"]
+        "year": 1997,
+        "charges": ["pour banalisation de crimes contre l'humanité et consentement à l’horrible"]
     },
     {
         "name": "Jean-Marie Le Pen",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 1998,
-        "raison": ["injures publiques et violences sur personne dépositaire de l'autorité publique dans l'exercice de ses fonctions"]
+        "year": 1998,
+        "charges": ["injures publiques et violences sur personne dépositaire de l'autorité publique dans l'exercice de ses fonctions"]
     },
     {
         "name": "Jean-Marie Le Pen",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 1998,
-        "raison": ["pour avoir présenté une tête en carton à l'effigie de Catherine Trautmann"]
+        "year": 1998,
+        "charges": ["pour avoir présenté une tête en carton à l'effigie de Catherine Trautmann"]
     },
     {
         "name": "Jean-Marie Le Pen",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 1998,
-        "raison": ["pour avoir déclaré « Je crois à l'inégalité des races »"]
+        "year": 1998,
+        "charges": ["pour avoir déclaré « Je crois à l'inégalité des races »"]
     },
     {
         "name": "Jean-Marie Le Pen",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 1999,
-        "raison": ["incitation à la haine raciale et apologie de crime de guerre"]
+        "year": 1999,
+        "charges": ["incitation à la haine raciale et apologie de crime de guerre"]
     },
     {
         "name": "Jean-Marie Le Pen",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2002,
-        "raison": ["reproduction sans autorisation un reportage de treize photographies prises par l’AFP"]
+        "year": 2002,
+        "charges": ["reproduction sans autorisation un reportage de treize photographies prises par l’AFP"]
     },
     {
         "name": "Jean-Marie Le Pen",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2004,
-        "raison": ["provocation à la haine raciale"]
+        "year": 2004,
+        "charges": ["provocation à la haine raciale"]
     },
     {
         "name": "Jean-Marie Le Pen",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2005,
-        "raison": ["incitation à la haine raciale"]
+        "year": 2005,
+        "charges": ["incitation à la haine raciale"]
     },
     {
         "name": "Jean-Marie Le Pen",
-        "formation":"fn",
+        "party":"fn",
         "nature": "condamnation",
-        "annee": 2008,
-        "raison": ["complicité d'apologie de crimes de guerre","contestation de crime contre l'humanité"]
+        "year": 2008,
+        "charges": ["complicité d'apologie de crimes de guerre","contestation de crime contre l'humanité"]
     }
 
 ]
