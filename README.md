@@ -1,20 +1,13 @@
 ## Dev
-
 In front/ folder
-
 ```npm install```
-
 ```npm start```
 
-
 ## Production
-
-In front/ folder
-
 ### Build
-
+In front/ folder
 ```npm run production```
 
 ### Deploy
-
-```surge --domain pourritures.surge.sh```
+In front/ folder
+```surge --domain pourritures.surge.sh --project ./dist```
