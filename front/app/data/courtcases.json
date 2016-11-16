@@ -3,5 +3,21 @@
     "name":"Affaire Bygmalion",
     "description":"L'affaire Bygmalion est une affaire politico-financière française.",
     "link": "https://fr.wikipedia.org/wiki/Affaire_Bygmalion"
+  },{
+    "name":"Affaire Cahuzac",
+    "description":"L'affaire Cahuzac est un scandale politico-financier français mettant en cause Jérôme Cahuzac, ministre délégué chargé du Budget lors du déclenchement de l’affaire, en décembre 2012.",
+    "link": "https://fr.wikipedia.org/wiki/Affaire_Cahuzac"
+  },{
+    "name":"Affaire Sarkozy-Kadhafi",
+    "description":"L'affaire Sarkozy-Kadhafi est une affaire politico-financière internationale déclenchée par la publication, par le journal en ligne Mediapart, le 12 mars et le 28 avril 2012, de deux documents laissant supposer l’existence d’un versement de 50 millions d'euros",
+    "link": "https://fr.wikipedia.org/wiki/Affaire_Sarkozy-Kadhafi"
+  },{
+    "name":"Affaire Woerth-Bettencourt",
+    "description":"L'affaire Woerth-Bettencourt est le nom donné par les médias aux procédures judiciaires visant principalement les liens entre l'homme politique Éric Woerth et la femme d'affaires Liliane Bettencourt.",
+    "link": "https://fr.wikipedia.org/wiki/Affaire_Woerth-Bettencourt"
+  },{
+    "name":"Affaire du Carlton de Lille",
+    "description":"L’affaire du Carlton de Lillenote 1 est une affaire autour de René Kojfer, chargé des relations publiques des hôtels Carlton et les Tours. Il a organisé des « parties fines » avec plusieurs notables de la région à Lille, Paris et Washington.",
+    "link": "https://fr.wikipedia.org/wiki/Affaire_du_Carlton_de_Lille"
   }
 ]
