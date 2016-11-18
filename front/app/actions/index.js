@@ -75,3 +75,27 @@ export function fetchContributors(){
             .catch(err => dispatch(contributorsFetched(new Error(JSON.stringify(err)))));
     };
 }
+
+const convictionsFetched = createAction(Action.LOAD_CONVICTIONS_FETCHED);
+const convictionsFetching = createAction(Action.LOAD_CONVICTIONS_FETCHING);
+
+export function fetchConvictions(){
+  return (dispatch) => {
+      dispatch(convictionsFetching());
+      new Promise((resolve, _) => resolve(convictions))
+          .then(response => dispatch(convictionsFetched(response)))
+          .catch(err => dispatch(convictionsFetched(new Error(JSON.stringify(err)))));
+  };
+}
+
+const chargesFetched = createAction(Action.LOAD_CHARGES_FETCHED);
+const chargesFetching = createAction(Action.LOAD_CHARGES_FETCHING);
+
+export function fetchCharges(){
+  return (dispatch) => {
+      dispatch(chargesFetching());
+      new Promise((resolve, _) => resolve(charges))
+          .then(response => dispatch(convictionsFetched(response)))
+          .catch(err => dispatch(chargesFetched(new Error(JSON.stringify(err)))));
+  };
+}
