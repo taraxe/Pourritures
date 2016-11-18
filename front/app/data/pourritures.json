@@ -1,1491 +1,1513 @@
 [
     {
         "name": "Gérard Dalongeville",
-        "party":"ps",
-        "nature": "mis en examen",
+        "party":"Parti socialiste",
+        "conviction": 3,
         "year": 2009,
-        "charges": ["détournement de fonds publics","faux et usage de faux","favoritisme","corruption"]
+        "charges": [1,2,3,4]
     },
     {
         "name": "Jean-Pierre Kucheida",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 2013,
         "ex": true,
-        "nature": "condamnation",
-        "ammende": 30000,
-        "charges": ["abus de biens sociaux (lors du procès des frais de la Soginorpa)"]
+        "conviction": 1,
+        "fine": 30000,
+        "charges": [5],
+        "courtcase":7
     },
     {
         "name": "Dominique Strauss-Kahn",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 2012,
-        "nature": "mis en examen",
-        "charges": ["proxénétisme aggravé en bande organisée"]
+        "conviction": 3,
+        "charges": [6],
+        "courtcase":5
     },
     {
         "name": "Dominique Strauss-Kahn",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 1999,
-        "nature": "mis en examen",
-        "ammende": 30000,
-        "charges": ["faux et usage de faux (dans l'affaire de la MNEF)"]
+        "conviction": 3,
+        "fine": 30000,
+        "charges": [2],
+        "courtcase":6
     },
     {
         "name": "Anne Hidalgo",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 2012,
-        "nature": "condamnation",
-        "ammende": 40000,
-        "charges": ["infraction à la législation sur la durée du travail"]
+        "conviction": 1,
+        "fine": 40000,
+        "charges": [7]
     },
     {
         "name": "Bernard Granie",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 2011,
-        "nature": "condamnation",
-        "charges": ["corruption"]
+        "conviction": 1,
+        "charges": [4]
     },
     {
         "name": "Bertrand Delanöe",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 2010,
-        "nature": "condamnation",
-        "charges": ["atteinte au droit du travail"]
+        "conviction": 1,
+        "charges": [26]
     },
     {
         "name": "Catherine Trautmann",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 1999,
-        "nature": "condamnation",
-        "charges": ["diffamation"]
+        "conviction": 1,
+        "charges": [8]
     },
     {
         "name": "Christian Bourquin",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 2012,
-        "nature": "condamnation",
-        "charges": ["délit de favoritisme"]
+        "conviction": 1,
+        "charges": [3]
     },
     {
         "name": "Claude Pradille",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 1995,
-        "nature": "condamnation",
-        "charges": ["corruption"]
+        "conviction": 1,
+        "charges": [4]
     },
     {
         "name": "Edmond Hervé",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 1999,
-        "nature": "condamnation",
-        "charges": ["manquement à une obligation de sécurité dans l'affaire du sang contaminé"]
+        "conviction": 1,
+        "charges": [27]
     },
     {
         "name": "Elie Pigmal",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 2012,
-        "nature": "condamnation",
-        "charges": ["délit de favoritisme"]
+        "conviction": 1,
+        "charges": [3]
     },
     {
         "name": "François Bernardini",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 2001,
-        "nature": "condamnation",
-        "charges": ["ingérence","détournement de fonds publics","abus de confiance et abus de biens sociaux"]
+        "conviction": 1,
+        "charges": [28,1,12,5]
     },
     {
         "name": "François Xavier Bordeaux",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 2011,
-        "nature": "condamnation",
-        "charges": ["abus de faiblesse"]
-    },
-    {
-        "name": "Georges Frêche",
-        "party":"ps",
-        "ex":true,
-        "year": 2012,
-        "nature": "condamnation",
-        "charges": ["dérapages verbaux multiples"]
+        "conviction": 1,
+        "charges": [9]
     },
     {
         "name": "Harlem Desir",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 1998,
-        "nature": "condamnation",
-        "charges": ["recel d'abus de confiance"]
+        "conviction": 1,
+        "charges": [30]
     },
     {
         "name": "Henri Emmanuelli",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 1997,
-        "nature": "condamnation",
-        "charges": ["trafic d'influence"]
+        "conviction": 1,
+        "charges": [10]
     },
     {
         "name": "Jack Lang",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 2008,
-        "nature": "condamnation",
-        "charges": ["rupture de contrat"]
+        "conviction": 1,
+        "charges": [31]
     },
     {
         "name": "Jack Mellick",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 1997,
-        "nature": "condamnation",
-        "charges": ["dans l'affaire OM-VA pour faux témoignage"]
+        "conviction": 1,
+        "charges": [32],
+        "courtcase":8
     },
     {
         "name": "Jeanine Ecochard",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 1998,
-        "nature": "condamnation",
-        "charges": ["l'affaire Urba (financement occulte du PS)"]
+        "conviction": 1,
+        "charges": [34],
+        "courtcase": 9
     },
     {
         "name": "Jean-Christophe Cambadélis",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 2006,
-        "nature": "condamnation",
-        "charges": ["affaire de la MNEF"]
+        "conviction": 1,
+        "courtcase":6,
+        "charges": [30]
     },
     {
         "name": "Jean-François Noyes",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 2012,
-        "nature": "condamnation",
-        "charges": ["dans le cadre de l'Affaire Guérini pour association de malfaiteurs en vue de trafic d'influence et recel de trafic d'influence"]
+        "conviction": 1,
+        "courtcase":10,
+        "charges": [21, 33]
     },
     {
         "name": "Jean-Marc Ayrault",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 1997,
         "gouvernement":true,
-        "nature": "condamnation",
-        "charges": ["délit de favoritisme"]
+        "conviction": 1,
+        "charges": [3]
     },
     {
         "name": "Jean-Marie Le Chevallier",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 2003,
-        "nature": "condamnation",
-        "charges": ["subordination de témoin"]
+        "conviction": 1,
+        "charges": [35]
     },
     {
         "name": "Jean-Noel Guérini",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 2011,
-        "nature": "condamnation",
-        "charges": ["prise illégale d'intérêt","trafic d'influence"]
+        "conviction": 1,
+        "charges": [11,10]
     },
     {
         "name": "Jean-Paul Huchon",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 2007,
-        "nature": "condamnation",
-        "charges": ["prise illégale d'intérêt (et en 2011 par le Conseil d'Etat)"]
+        "conviction": 1,
+        "charges": [11]
     },
     {
         "name": "Jean-Pierre Balduyck",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 2005,
-        "nature": "condamnation",
-        "charges": ["délit de favoritisme (a fait appel de sa condamnation)"]
+        "conviction": 1,
+        "charges": [3]
     },
     {
         "name": "Jean-Pierre Destrade",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 2005,
-        "nature": "condamnation",
-        "charges": ["escroquerie","trafic d'influence"]
+        "conviction": 1,
+        "charges": [22,10]
     },
     {
         "name": "Khadija Aram",
-        "party":"ps",
+        "party":"Parti socialiste",
         "ex":true,
         "year": 2011,
-        "nature": "condamnation",
-        "charges": ["trafic d'influence","abus de confiance"]
+        "conviction": 1,
+        "charges": [10,12]
     },
     {
         "name": "Line Cohen Solal",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 2011,
-        "nature": "condamnation",
-        "charges": ["même affaire que celle touchant Pierre Mauroy"]
+        "conviction": 1,
+        "charges": [14]
     },
     {
         "name": "Malek Boutih",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 2006,
-        "nature": "condamnation",
-        "charges": ["diffamation"]
+        "conviction": 1,
+        "charges": [8]
     },
     {
         "name": "Michel Delebarre",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 2005,
-        "nature": "condamnation",
-        "charges": ["Affaire des Ecoutes Téléphoniques"]
+        "conviction": 1,
+        "courtcase":11,
+        "charges": [36]
     },
     {
         "name": "Michel Laignel",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 2006,
-        "nature": "condamnation",
-        "charges": ["faux","usage de faux","délit de favoritisme","prise illégale d'intérêt","détournement de fonds"]
+        "conviction": 1,
+        "charges": [2,3,11,13]
     },
     {
         "name": "Michel Pezet",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 1998,
-        "nature": "condamnation",
-        "charges": ["recel de fonds utilisés [pour un financement politique] en dehors de tout enrichissement personnel"]
+        "conviction": 1,
+        "charges": [37]
     },
     {
         "name": "Mohamed Abdi",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 2007,
-        "nature": "condamnation",
-        "charges": ["escroquerie"]
-    },
-    {
-        "name": "Monique Delessard",
-        "party":"ps",
-        "year": 2010,
-        "nature": "condamnation",
-        "charges": ["mariage illégal"]
+        "conviction": 1,
+        "charges": [22]
     },
     {
         "name": "Olivier Spithakis",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 2005,
-        "nature": "condamnation",
-        "charges": ["affaire de la MNEF"]
+        "conviction": 1,
+        "courtcase":6,
+        "charges": [38,1,12]
     },
     {
         "name": "Patrick Sève",
-        "party":"ps",
-        "nature": "mis en examen",
+        "party":"Parti socialiste",
+        "conviction": 3,
         "year": 2011,
-        "charges": ["octroie injustifié de marchés publics","soustraction de fonds publics."]
+        "charges": [39,40]
     },
     {
         "name": "Pascal Buchet",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 2012,
-        "nature": "condamnation",
-        "charges": ["harcèlement moral (après le suicide d'une de ses collaboratrice)"]
+        "conviction": 1,
+        "charges": [41]
     },
     {
         "name": "Philippe Sanmarco",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 1997,
-        "nature": "condamnation",
-        "charges": ["complicité de trafic d'influence dans l'affaire du financement occulte du PS, l'Affaire Urba"]
+        "conviction": 1,
+        "courtcase":9,
+        "charges": [34]
     },
     {
         "name": "Pierre Mauroy",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 2011,
-        "nature": "condamnation",
-        "charges": ["emploi fictif"]
+        "conviction": 1,
+        "charges": [14]
     },
     {
         "name": "Pierre Moscovici",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 2001,
         "gouvernement":true,
-        "nature": "condamnation",
-        "charges": ["atteinte au droit à l'image"]
+        "conviction": 1,
+        "charges": [42]
     },
     {
         "name": "René Teulade",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 2011,
-        "nature": "condamnation",
-        "charges": ["abus de confiance"]
+        "conviction": 1,
+        "charges": [12]
     },
     {
         "name": "Robert Gaïa",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 2002,
-        "nature": "condamnation",
-        "charges": ["délit de favoritisme"]
+        "conviction": 1,
+        "charges": [3]
     },
     {
         "name": "Ségolène Royal",
-        "party":"ps",
+        "party":"Parti socialiste",
         "year": 2008,
-        "nature": "condamnation",
-        "charges": ["licenciements abusifs"]
+        "conviction": 1,
+        "charges": [43]
     },
     {
         "name": "Serge Andréoni",
-        "party":"ps",
-        "nature": "mis en examen",
+        "party":"Parti socialiste",
+        "conviction": 3,
         "year": 2011,
-        "charges": ["complicité de trafic d'influence dans l'affaire Guérini"]
+        "courtcase":10,
+        "charges": [44]
     },
     {
         "name": "Sylvie Andrieux",
-        "party":"ps",
-        "nature": "condamnation",
+        "party":"Parti socialiste",
+        "conviction": 1,
         "year": 2013,
-        "amende" : 100000,
+        "fine" : 100000,
         "prison" : 3,
         "sursis" : 2,
-        "charges": ["complicité de tentative d'escroquerie et de détournements de fonds publics dans l'affaire du financement présumés à hauteur de 700 000 € d'associations présumées fictives"]
+        "charges": [1]
     },
     {
         "name": "Yacine Chaouat",
-        "party":"ps",
-        "nature": "mis en examen",
+        "party":"Parti socialiste",
+        "conviction": 3,
         "year": 2011,
-        "charges": ["pour violences conjugales (en appel)"]
+        "charges": [45]
     },
     {
         "name": "Jérome Cahuzac",
-        "party":"ps",
+        "party":"Parti socialiste",
         "ex":true,
-        "nature": "mis en examen",
+        "conviction": 3,
         "year": 2013,
-        "charges": ["blanchiment d'argent","fraude fiscale"]
+        "charges": [46,47]
     },
-
-
-
-
-
-
     {
         "name": "Jean-Christophe Lagarde",
         "party":"udi",
-        "nature": "mis en examen",
+        "conviction": 3,
         "year": 2013,
-        "charges": ["favoritisme dans une affaire de marchés publics"]
+        "charges": [3]
     },
-
-
-
-
-
-
     {
         "name": "Alain Agostini",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2008,
-        "charges": ["proxénétisme aggravé en bande organisée"]
+        "charges": [6]
     },
     {
         "name": "Alain Carignon",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 1999,
-        "charges": ["corruption","abus de biens sociaux","subornation de témoins"]
+        "charges": [4,5,32]
     },
     {
         "name": "Alain Ferrand",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2006,
-        "charges": ["faux","usage de faux"]
+        "charges": [2]
     },
     {
         "name": "Alain Ferrand",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 1998,
-        "charges": ["prises illégales d’intérêts","condamné pour fraude fiscale"]
+        "charges": [11,47]
     },
     {
         "name": "Alain Juppé",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2007,
-        "charges": ["abus de confiance","recel d’abus de biens sociaux","prise illégale d’intérêt"]
+        "charges": [12,18,11]
     },
     {
         "name": "Alain Tuduri",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2010,
-        "charges": ["discrimination raciale","préemption de biens immobiliers que voulait acheter des personnes d’origines étrangères dans sa commune"]
+        "charges": [3]
     },
     {
         "name": "Axel Poniatowski",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2010,
-        "charges": ["diffamation"]
+        "charges": [8]
     },
     {
         "name": "Brice Hortefeux",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2010,
-        "charges": ["atteinte à la présomption d’innocence","injure non publique envers un groupe de personnes à charges de leur origine"]
+        "courtcase":3,
+        "charges": [48,49]
     },
     {
         "name": "Brigitte Barèges",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2011,
-        "charges": ["refus de mariage"]
+        "charges": [50]
     },
     {
         "name": "Bruno Sandras",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2011,
-        "charges": ["détournement de fonds publics","prise illégale d’intérêts"]
+        "charges": [1,11]
     },
     {
         "name": "Charles Fabre",
-        "party":"ump",
-        "nature": "mis en examen",
+        "party":"Les Républicains",
+        "conviction": 3,
         "year": 2010,
-        "charges": ["délit de favoritisme"]
+        "charges": [3]
     },
     {
         "name": "Charles Pasqua",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2010,
-        "charges": ["trafic d’influence","délit de favoritisme", "faux", "financement illégal de campagne","abus de confiance","cité dans l’affaire de recel d’abus de biens sociaux pour l’association France Afrique Orient","mentionné dans l’affaire du financement occulte du ministère de l’Intérieur et de l’Union des groupements d’achats publics"]
+        "charges": [10,3, 2,12,18]
     },
     {
         "name": "Christian Vanneste",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2007,
-        "charges": ["propos homophobes (confirmé en appel, puis annulé en cassation)"]
+        "charges": [51]
     },
     {
         "name": "Claude Polony",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2009,
-        "charges": ["prise illégale d’intérêt","favoritisme","détournements de fonds"]
+        "charges": [11,3,13]
     },
     {
         "name": "Daniel Simonpieri",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2011,
-        "charges": ["favoritisme","fausses factures","emploi fictif"]
+        "charges": [3,23,14]
     },
     {
         "name": "Damien Meslot",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2010,
-        "charges": ["outrage à magistrat"]
+        "charges": [52]
     },
     {
         "name": "Damien Meslot",
-        "party":"ump",
-        "nature": "mis en examen",
+        "party":"Les Républicains",
+        "conviction": 3,
         "year": 2010,
-        "charges": ["atteinte ou tentative d´atteinte à la sincérité d´un scrutin"]
+        "charges": [53]
     },
     {
         "name": "Denis Gautier-Sauvagnac",
-        "party":"ump",
-        "nature": "mis en examen",
+        "party":"Les Républicains",
+        "conviction": 3,
         "year": 2008,
-        "charges": ["blanchiment d’argent"]
+        "charges": [19]
     },
     {
         "name": "Denis Jacquat",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2011,
-        "charges": ["abus de confiance","infraction à la législation sur le financement des campagnes électorales"]
+        "charges": [12,54]
     },
     {
         "name": "Didier Schuller",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2007,
-        "charges": ["financement occulte d'activités politiques"]
-    },
-    {
-        "name": "Didier Schuller",
-        "party":"ump",
-        "nature": "condamnation",
-        "year": 2005,
-        "charges": ["financement illégal de sa campagne"]
+        "charges": [55]
     },
     {
         "name": "Dominique Paillé",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2004,
-        "charges": ["abus de confiance"]
+        "charges": [12]
     },
     {
         "name": "Frédéric Chazal",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2010,
-        "charges": ["diffamation"]
+        "charges": [8]
     },
     {
         "name": "Gaston Flosse",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2011,
-        "charges": ["détournement de fonds publics et prise illégale d’intérêts"]
+        "charges": [1,11]
     },
     {
         "name": "Georges Tron",
-        "party":"ump",
-        "nature": "mis en examen",
+        "party":"Les Républicains",
+        "conviction": 3,
         "year": 2011,
-        "charges": ["harcèlement sexuel","agression sexuelle","viol"]
+        "charges": [56,57,15]
     },
     {
         "name": "Gérard Dezempte",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2006,
-        "charges": ["discrimination"]
+        "charges": [58]
     },
     {
         "name": "Gérard Larrat",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2011,
-        "charges": ["constitution de partie civile abusive ou dilatoire dans le but de nuire à son adversaire socialiste"]
-    },
-    {
-        "name": "Gérard Larrat",
-        "party":"ump",
-        "nature": "mis en examen",
-        "year": 2011,
-        "charges": ["complicité d’atteinte à la sincérité du scrutin","complicité de faux administratif","usage et complicité de manoeuvre frauduleuse tendant à l’exercice irrégulier du vote par procuration (son élection a été anulée)"]
+        "charges": [59,60,61,62]
     },
     {
         "name": "Gilles Forray",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2006,
-        "charges": ["corruption passive","recel d’abus de biens sociaux"]
+        "charges": [17,18]
     },
     {
         "name": "Guy Drut",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2005,
-        "charges": ["bénéfice d’un emploi fictif"]
+        "charges": [14]
     },
     {
         "name": "Guy Wildenstein",
-        "party":"ump",
-        "nature": "mis en examen",
+        "party":"Les Républicains",
+        "conviction": 3,
         "year": 2011,
-        "charges": ["recel d’abus de confiance"]
+        "charges": [30]
     },
     {
         "name": "Henry Chabert",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2002,
-        "charges": ["recel d’abus de biens sociaux"]
+        "charges": [18]
     },
     {
         "name": "Jacques Blanc",
-        "party":"ump",
-        "nature": "mis en examen",
+        "party":"Les Républicains",
+        "conviction": 3,
         "year": 2009,
-        "charges": ["détournement de fonds publics","prise illégale d’intérêt"]
+        "charges": [1,11]
     },
     {
         "name": "Jacques Masdeu-Arus",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2009,
-        "charges": ["corruption passive","recel d’abus de biens sociaux"]
+        "charges": [17,18]
     },
     {
         "name": "Jacques Myard",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2009,
-        "charges": ["diffamation"]
+        "charges": [8]
     },
     {
         "name": "Jean Reynaud",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2004,
-        "charges": ["prise illégale d’intérêt"]
+        "charges": [11]
     },
     {
         "name": "Jean Reynaud",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2006,
-        "charges": ["harcèlement moral","dégradation de conditions de travail"]
+        "charges": [41,63]
     },
     {
         "name": "Jean Tiberi",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2009,
-        "charges": ["occupation illégale des locaux de sa permanence","fraude aux électeurs"]
+        "courtcase":19,
+        "charges": [64]
     },
     {
         "name": "Jean-Louis Garnier",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2011,
-        "charges": ["coups et blessures"]
-    },
-    {
-        "name": "Jean-Louis Masson",
-        "party":"ump",
-        "nature": "condamnation",
-        "year": 1997,
-        "charges": ["financement de la campagne d’un concurrent afin d’affaiblir sa rivale à droite"]
+        "charges": [65]
     },
     {
         "name": "Jean-Paul Alduy",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2008,
-        "charges": ["son élection est annulée pour fraude"]
+        "charges": [64]
     },
     {
         "name": "Jean-Paul Fournier",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2010,
-        "charges": ["prise illégale d’intérêt"]
+        "charges": [11]
     },
     {
         "name": "Joëlle Ceccaldi-Raynaud",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2006,
-        "charges": ["diffamation","complicité de diffamation"]
+        "charges": [8]
     },
     {
         "name": "Joëlle Ferrand",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2010,
-        "charges": ["prise illégale d’intérêt","malversations"]
+        "charges": [11]
     },
     {
         "name": "Laurence Spicher-Bernier",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2011,
-        "charges": ["exercice illégal de la profession d’avocat","escroquerie"]
+        "charges": [66,22]
     },
     {
         "name": "Lionel Cressiot",
-        "party":"ump",
-        "nature": "mis en examen",
+        "party":"Les Républicains",
+        "conviction": 3,
         "year": 2011,
-        "charges": ["injures","diffamation"]
+        "charges": [16,8]
     },
     {
         "name": "Lucette Michaux-Chevry",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2002,
-        "charges": ["favoritisme dans l’attribution de marchés publics"]
+        "charges": [3]
     },
     {
         "name": "Manuel Aeschlimann",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2009,
-        "charges": ["favoritisme dans l’attribution d’un marché public"]
+        "charges": [3]
     },
     {
         "name": "Marie-Jeanne Bozzi",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2002,
-        "charges": ["proxénétisme aggravé","association de malfaiteurs","dissimulation de travail clandestin"]
+        "charges": [67,21,68]
     },
     {
         "name": "Marie-Jeanne Bozzi",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2007,
-        "charges": ["soustraction au paiement de l’impôt","omission de déclaration","fraude fiscale"]
+        "charges": [69,70,47]
     },
     {
         "name": "Marie-Jeanne Bozzi",
-        "party":"ump",
-        "nature": "mise en examen",
+        "party":"Les Républicains",
+        "conviction": 3,
         "year": 2009,
-        "charges": ["association de malfaiteurs en vue de la commission d’un homicide en bande organisée"]
+        "charges": [21]
     },
     {
         "name": "Maurice Gutman",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2010,
-        "charges": ["proposition sexuelle à une mineure de 12 ans"]
+        "charges": [71]
     },
     {
         "name": "Michel Buillard",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2011,
-        "charges": ["détournement de fonds publics","prise illégale d’intérêts"]
+        "charges": [1,11]
     },
     {
         "name": "Michel Habig",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2006,
-        "charges": ["pour avoir fair incendier 14 caravanes appartenant à des Roms installées sur un terrain municipal"]
+        "charges": [72]
     },
     {
         "name": "Nicolas Bazire",
-        "party":"ump",
-        "nature": "mis en examen",
+        "party":"Les Républicains",
+        "conviction": 3,
         "year": 2011,
-        "charges": ["dans le cadre de l'affaire Karachi"]
+        "courtcase":20,
+        "charges": [1]
     },
     {
         "name": "Olivier Deleu",
-        "party":"ump",
-        "nature": "mis en examen",
+        "party":"Les Républicains",
+        "conviction": 3,
         "year": 2011,
-        "charges": ["injures","diffamation"]
+        "charges": [16,8]
     },
     {
         "name": "Olivier Rey",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2008,
         "charges": ["violences","menaces","dégradation grave du bien d’autrui à charges de la religion"]
     },
     {
         "name": "Pascal Buchet",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2011,
-        "charges": ["harcèlement moral ayant mené au suicide"]
+        "charges": [41]
     },
     {
         "name": "Patrick Balkany",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2003,
-        "charges": ["injure publique","diffamation"]
+        "charges": [16,8]
     },
     {
         "name": "Patrick Balkany",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 1999,
-        "charges": ["pour avoir rémunéré aux frais du contribuable trois personnes désignées comme des employés municipaux mais qui ne s’occupaient que de son appartement de Levallois-Perret et de sa résidence secondaire près de Giverny"]
+        "charges": [5]
     },
     {
         "name": "Philippe Brun",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2011,
-        "charges": ["fraudes et multiples abus de biens sociaux"]
+        "charges": [5]
     },
     {
         "name": "Pierre Bédier",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2009,
-        "charges": ["corruption passive","recel d’abus de biens sociaux"]
+        "charges": [17,18]
     },
     {
         "name": "Philippe Pemezec",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2010,
-        "charges": ["injures"]
+        "charges": [16]
     },
     {
         "name": "Philippe Pemezec",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2007,
-        "charges": ["irrégularités lors de sa campagne (son élection sera annulée)"]
+        "charges": [11]
     },
     {
         "name": "Renaud Donnedieu de Vabres",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2004,
-        "charges": ["blanchiment d’argent"]
+        "charges": [19]
     },
     {
         "name": "Renaud Donnedieu de Vabres",
-        "party":"ump",
-        "nature": "mis en examen",
+        "party":"Les Républicains",
+        "conviction": 3,
         "year": 2004,
-        "charges": ["dans le cadre de l’affaire Karachi"]
+        "courtcase":20,
+        "charges": [38]
     },
     {
         "name": "René Vestri",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2009,
-        "charges": ["travail dissimulé"]
+        "charges": [20]
     },
     {
         "name": "René Vestri",
-        "party":"ump",
-        "nature": "mis en examen",
+        "party":"Les Républicains",
+        "conviction": 3,
         "year": 2009,
-        "charges": ["blanchiment à titre habituel et en bande organisée","trafic d’influence","association de malfaiteurs"]
+        "charges": [46,10,21]
     },
     {
         "name": "Richard Cazenave",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 1999,
-        "charges": ["abus de biens sociaux"]
+        "charges": [5]
     },
     {
         "name": "Richard Cazenave",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2004,
-        "charges": ["recel et complicité d’abus de biens sociaux"]
+        "charges": [38]
     },
     {
         "name": "Serge Dassault",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
+        "year": 1991,
+        "charges": [74]
+    },
+    {
+        "name": "Serge Dassault",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 1998,
-        "charges": ["corruption"]
+        "charges": [4]
     },
     {
         "name": "Serge Dassault",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2009,
-        "charges": ["pour avoir acheté des voix lors des municipales"]
-    },
-    {
-        "name": "Serge Dassault",
-        "party":"ump",
-        "nature": "condamnation",
-        "year": 2010,
-        "charges": ["procédure abusive"]
+        "charges": [75,76,77,78]
     },
     {
         "name": "Thérèse Aillaud",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2002,
-        "charges": ["détournement de fonds publics"]
+        "charges": [1]
     },
     {
         "name": "Thierry Gaubert",
-        "party":"ump",
-        "nature": "mis en examen",
+        "party":"Les Républicains",
+        "conviction": 3,
         "year": 2008,
-        "charges": ["abus de biens sociaux","escroquerie"]
+        "charges": [5,22]
     },
     {
         "name": "Thierry Gaubert",
-        "party":"ump",
-        "nature": "mis en examen",
+        "party":"Les Républicains",
+        "conviction": 3,
         "year": 2008,
-        "charges": ["dans le cadre de l’affaire Karachi"]
+        "courtcase":20,
+        "charges": [18,32]
     },
     {
         "name": "Thierry Leprince",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2007,
-        "charges": ["viol sur une mineure de 12 ans"]
+        "charges": [15]
     },
     {
         "name": "Vincent Toni",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2011,
-        "charges": ["corruption passive"]
+        "charges": [17]
     },
     {
         "name": "Vincent Toni",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2008,
-        "charges": ["corruption passive"]
+        "charges": [17]
     },
     {
         "name": "Xavier Dugoin",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 1997,
-        "charges": ["trafic d’alcool","salaires fictifs","corruption"]
+        "charges": [14,4]
     },
     {
         "name": "Xavier Dugoin",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2000,
-        "charges": ["abus de confiance","détournement de fonds publics","falsification de documents administratifs","prise illégale d’intérêt"]
+        "charges": [12,1,79,11]
     },
     {
         "name": "Xavier Dugoin",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2001,
-        "charges": ["dans le cadre de l’affaire des emplois fictifs du conseil général de l’Essonne (annulée pour vice de forme)"]
+        "charges": [14]
     },
     {
         "name": "André Santini",
-        "party":"ump",
-        "nature": "mis en examen",
+        "party":"Les Républicains",
+        "conviction": 3,
         "year": 2006,
-        "charges": ["prise illégale d'intérêt","faux et usage de faux","détournement de fonds publics"]
+        "charges": [11,2,1]
     },
     {
         "name": "Eric Woerth",
-        "party":"ump",
-        "nature": "mis en examen",
+        "party":"Les Républicains",
+        "conviction": 3,
         "year": 2012,
-        "charges": ["recel dans l'enquête sur l'héritière de L'Oréal Liliane Bettencourt"]
+        "charges": [33,80]
     },
     {
         "name": "Yanick Paternotte",
-        "party":"ump",
-        "nature": "condamnation",
+        "party":"Les Républicains",
+        "conviction": 1,
         "year": 2012,
-        "charges": ["abus de faiblesse"]
+        "charges": [9]
     },
     {
         "name": "Nicolas Sarkozy",
-        "party":"ump",
-        "nature": "mis en examen",
+        "party":"Les Républicains",
+        "conviction": 2,
         "year": 2013,
-        "charges": ["abus de faiblesse sur l'héritière de L'Oréal Liliane Bettencourt"]
-    },
-
-
-
-
-
-    {
-        "name": "Alexandre Gabriac",
-        "party":"fn",
-        "nature": "examen",
-        "year": 2007,
-        "charges": ["pour ses liens étroits avec un commando d'extrême-droite ayant tenté de cambrioler un stand de tir à Saint-Andéol-le-Château, dont l'aventure s'est terminée par le meurtre du Gendarme Ambrosse"]
+        "charges": [9]
     },
     {
         "name": "Alexandre Gabriac",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2007,
-        "charges": ["apologie de crime contre l'humanité","injures à caractère raciste","violences volontaires ayant entraîné une incapacité de travail supérieure à 8 jours "]
+        "charges": [81,82,49,83]
     },
     {
         "name": "Alexandre Simonnot",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2010,
-        "charges": ["pour avoir détruit un préservatif géant à l'occasion de la journée mondiale contre le Sida"]
+        "charges": [84]
     },
     {
         "name": "Antoinette Martinet",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 1998,
-        "charges": ["provocation à la haine, à la violence et à la discrimination"]
+        "charges": [24]
     },
     {
         "name": "Bruno Gollnisch",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2007,
-        "charges": ["condamné en première instance et par le Conseil d'État pour contestation de l'existence de crime contre l'humanité (négationnisme)","la Cour de Cassation va pourtant casser sans renvoi l'arrêt de la cour d'appel"]
+        "charges": [85]
     },
     {
         "name": "Bruno Mégret",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 1998,
-        "charges": ["pour avoir tenu des propos sur l’inégalité des races"]
+        "charges": [24]
     },
     {
         "name": "Bruno Mégret",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2002,
-        "charges": ["pour avoir envoyé aux frais de la commune de Vitrolles plusieurs milliers de lettres appelant à parrainer sa candidature pour l'élection présidentielle"]
+        "charges": [1]
     },
     {
         "name": "Bruno Mégret",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2006,
-        "charges": ["détournement de fonds"]
+        "charges": [13]
     },
     {
-        "name": "Calude Jaffres",
-        "party":"fn",
-        "nature": "condamnation",
+        "name": "Claude Jaffres",
+        "party":"Front National",
+        "conviction": 1,
         "year": 1997,
-        "charges": ["pour usurpation de fonction"]
+        "charges": [86]
     },
     {
         "name": "Catherine Mégret",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 1998,
-        "charges": ["pour discrimination et incitation à la discrimination"]
+        "charges": [24]
     },
     {
         "name": "Catherine Mégret",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2002,
-        "charges": ["pour avoir envoyé aux frais de la commune de Vitrolles plusieurs milliers de lettres appelant à parrainer la candidature de son époux pour l'élection présidentielle"]
+        "charges": [1]
     },
     {
         "name": "Catherine Mégret",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2006,
-        "charges": ["détournement de fonds"]
+        "charges": [13]
     },
     {
         "name": "Cédric Bégin",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2002,
-        "charges": ["détention sans autorisation de munitions et d'armes, condamné pour incitation à la haine raciale"]
+        "charges": [24, 87]
     },
     {
         "name": "Christophe Klein",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2002,
-        "charges": ["provocation à la discrimination raciale"]
-    },
-    {
-        "name": "Claude Jaffrès",
-        "party":"fn",
-        "nature": "condamnation",
-        "year": 1997,
-        "charges": ["abus d’autorité","usurpation de fonction"]
+        "charges": [24]
     },
     {
         "name": "Daniel Simonpieri",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2011,
-        "charges": ["favoritisme","fausses factures","emploi fictif"]
+        "charges": [3,23,14]
     },
     {
         "name": "Denis Monteillet",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 1995,
-        "charges": ["pour avoir inscrit plusieurs personnes de son voisinage sur la liste présentée par son parti au municipales sans les avoir prévenues. Le Conseil d’Etat a annulé les élections des conseillers municipaux FN pour « liste irrégulière »"]
+        "charges": [88]
     },
     {
         "name": "Emilien Bonnal",
-        "party":"fn",
+        "party":"Front National",
         "ex":true,
-        "nature": "condamnation",
+        "conviction": 1,
         "year": 1985,
-        "charges": ["reconnu coupable de meurtre, alors qu’il collait des affiches pour le FN, pour avoir tué Abdallah Moktari, 23 ans ; qui l’avait insulté"],
+        "charges": [89],
         "prison" : 8
     },
     {
         "name": "Francis Watez",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2007,
-        "ammende": 7500,
-        "charges": ["incitation à la discrimination raciale"]
+        "fine": 7500,
+        "charges": [24]
     },
     {
         "name": "François Nicolas-Schmitt",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 1997,
-        "charges": ["détournement de fonds"]
+        "charges": [13]
     },
     {
         "name": "Gilles Lacroix",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 1997,
-        "charges": ["complicité de violence en réunion, avec arme et préméditation","pour complicité de destruction de biens"]
+        "charges": [83]
     },
     {
         "name": "Georges Theil",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2001,
-        "charges": ["contestation de crimes contre l'Humanité"]
+        "charges": [82]
     },
     {
         "name": "Georges Theil",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2006,
-        "charges": ["contestation de crimes contre l'Humanité"]
+        "charges": [82]
     },
     {
         "name": "Guy Cannie",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2011,
-        "charges": ["escroquerie en bande organisée"]
+        "charges": [90]
     },
     {
         "name": "Jacky Codvelle",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 1990,
-        "charges": ["pour avoir mis le feu à la voiture du député du Rhône et maire PS de la ville, Jean Jacques Queyranne pour fêter le 14 juillet"]
+        "charges": [91]
     },
     {
         "name": "Jacques Bompard",
-        "party":"fn",
-        "nature": "mis en examen",
+        "party":"Front National",
+        "conviction": 3,
         "year": 2010,
-        "charges": ["prise illégale d’intérêt"]
+        "charges": [11]
     },
     {
         "name": "Jacques Coutela",
-        "party":"fn",
-        "nature": "mis en examen",
+        "party":"Front National",
+        "conviction": 3,
         "year": 2011,
-        "charges": ["incitation à la haine raciale (suite à son apologie d’Anders Behring Breivik, auteur des attentats d’Oslo)"]
+        "charges": [24]
     },
     {
         "name": "Jean Holtzer",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 1990,
-        "charges": ["coupable de vol à main armé pour avoir braqué une banque (8 ans fermes)"]
+        "charges": [92]
     },
     {
         "name": "Jean-Claude Poulet",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 1992,
-        "charges": ["pour avoir battu sa femme pendant quinze ans"]
+        "charges": [45]
     },
     {
         "name": "Jean-Marc Maurice",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2006,
-        "charges": ["pour outrage à agent dépositaire de l'autorité publique"]
+        "charges": [52]
     },
     {
         "name": "Jean-Marc Maurice",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2007,
-        "charges": ["vol"]
+        "charges": [93]
     },
     {
         "name": "Jean-Marc Maurice",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2008,
-        "charges": ["escroquerie"]
+        "charges": [22]
     },
     {
         "name": "Jean-Marc Maurice",
-        "party":"fn",
-        "nature": "condamnation",
-        "year": 2009,
-        "charges": ["banqueroute"]
-    },
-    {
-        "name": "Jean-Marc Maurice",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2010,
-        "charges": ["travail dissimulé et non déclaré"]
+        "charges": [20]
     },
     {
         "name": "Jean-Marc Maurice",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2011,
-        "charges": ["abus de bien sociaux"]
+        "charges": [5]
     },
     {
         "name": "Jean-Marie Le Chevallier",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2001,
-        "charges": ["détournements de fonds publics", "abus de confiance"]
+        "charges": [1, 12]
     },
     {
         "name": "Jean-Marie Le Chevallier",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2001,
-        "charges": ["subordination de témoins (dans l'affaire du meurtre de son directeur de cabinet)"]
+        "charges": [32]
     },
     {
         "name": "Jean-Yves Douissard",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2002,
-        "charges": ["incitation à la haine raciale"]
+        "charges": [24]
     },
     {
         "name": "Jean-Yves Le Gallou",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 1998,
-        "charges": ["provocation à la haine raciale"]
+        "charges": [25]
     },
     {
         "name": "Joël Klein",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 1998,
-        "charges": ["coups et blessures"]
+        "charges": [65]
     },
     {
         "name": "Laurent Mirabeau",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 1994,
-        "charges": ["escroquerie","exercice illégal de la profession de banquier"]
+        "charges": [22,94]
     },
     {
         "name": "Louis Aliot",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2008,
-        "charges": ["diffamation"]
+        "charges": [8]
     },
     {
         "name": "Louis de Noëll",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 1997,
-        "charges": ["détournement de fonds"]
+        "charges": [13]
     },
     {
         "name": "Marc Georges",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 1995,
-        "charges": ["pour blessure par balle"]
+        "charges": [65]
     },
     {
         "name": "Marc Lyoen",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2007,
-        "charges": ["pour avoir employé des clandestins"]
+        "charges": [68]
     },
     {
         "name": "Marc Lyoen",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2008,
-        "charges": ["fraude au RSA"]
+        "charges": [47]
     },
     {
         "name": "Marine Le Pen",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2007,
-        "charges": ["diffamation"]
+        "charges": [8]
     },
     {
         "name": "Patrick Bassot",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2012,
-        "charges": ["incitation à la discrimination, à la haine et à la violence à l’encontre des immigrés"]
+        "charges": [24]
     },
     {
         "name": "Patrick Binder",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2005,
-        "charges": ["pour injures racistes en public"]
+        "charges": [25]
     },
     {
         "name": "Patrick Binder",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2011,
-        "charges": ["injure publique","provocation à la haine raciale"]
+        "charges": [16,25]
     },
     {
         "name": "Philippe Bernard",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2008,
-        "charges": ["faux et falsification","abus de confiance","escroquerie"]
+        "charges": ["faux et falsification",12,22]
     },
     {
         "name": "Philippe Viard",
-        "party":"fn",
-        "nature": "examen",
+        "party":"Front National",
+        "conviction": 3,
         "year": 1998,
-        "charges": ["discrimination"]
+        "charges": [58]
     },
     {
         "name": "Philippe Viard",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 1998,
-        "charges": ["injures","délit de fuite"]
+        "charges": [16,95]
     },
     {
         "name": "Richard Jacob",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2011,
-        "charges": ["outrage et rebellion"]
+        "charges": [52]
     },
     {
         "name": "Roger Fabregues",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 1996,
-        "charges": ["trafic de drogues"]
+        "charges": [96]
     },
     {
         "name": "Sylvain Ferrua",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 1996,
-        "charges": ["proxénétisme"]
+        "charges": [67]
     },
     {
         "name": "Tanguy Deshayes",
-        "party":"fn",
-        "nature": "examen",
+        "party":"Front National",
+        "conviction": 3,
         "year": 2009,
-        "charges": ["menaces de mort"]
+        "charges": [97]
     },
     {
         "name": "Xavier Voute",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 1997,
-        "charges": ["pour avoir aspergé de gaz lacrymogène des militants de Ras l'Front (mouvement anti-FN)"]
+        "charges": [83]
     },
     {
         "name": "Yannick Lecointre",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2011,
-        "charges": ["trafic de drogue (transport, détention, acquisition, cession et emploi non autorisés de stupéfiants)"]
+        "charges": [96]
     },
     {
         "name": "Jean-Marie Le Pen",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
+        "year": 1960,
+        "charges": [97]
+    },
+    {
+        "name": "Jean-Marie Le Pen",
+        "party":"Front National",
+        "conviction": 1,
+        "year": 1964,
+        "charges": [65]
+    },
+    {
+        "name": "Jean-Marie Le Pen",
+        "party":"Front National",
+        "conviction": 1,
         "year": 1995,
-        "charges": ["oublis de plus-value boursière","sous-estimation de loyer"]
+        "charges": [98]
     },
     {
         "name": "Jean-Marie Le Pen",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 1996,
         "charges": ["pour avoir tenu des propos ayant gravement porté atteinte au président du tribunal d'Auch"]
     },
     {
         "name": "Jean-Marie Le Pen",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 1997,
         "charges": ["pour avoir injurié l'association Ras l'front (mouvement anti-FN) de « mouvement de tueurs de flics »"]
     },
     {
         "name": "Jean-Marie Le Pen",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 1997,
         "charges": ["pour avoir injurié le président de SOS-Racisme"]
     },
     {
         "name": "Jean-Marie Le Pen",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 1997,
         "charges": ["pour banalisation de crimes contre l'humanité et consentement à l’horrible"]
     },
     {
         "name": "Jean-Marie Le Pen",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 1998,
-        "charges": ["injures publiques et violences sur personne dépositaire de l'autorité publique dans l'exercice de ses fonctions"]
+        "charges": [99]
     },
     {
         "name": "Jean-Marie Le Pen",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 1998,
-        "charges": ["pour avoir présenté une tête en carton à l'effigie de Catherine Trautmann"]
+        "charges": [58]
     },
     {
         "name": "Jean-Marie Le Pen",
-        "party":"fn",
-        "nature": "condamnation",
-        "year": 1998,
-        "charges": ["pour avoir déclaré « Je crois à l'inégalité des races »"]
-    },
-    {
-        "name": "Jean-Marie Le Pen",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 1999,
-        "charges": ["incitation à la haine raciale et apologie de crime de guerre"]
+        "charges": [24,100]
     },
     {
         "name": "Jean-Marie Le Pen",
-        "party":"fn",
-        "nature": "condamnation",
-        "year": 2002,
-        "charges": ["reproduction sans autorisation un reportage de treize photographies prises par l’AFP"]
-    },
-    {
-        "name": "Jean-Marie Le Pen",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2004,
-        "charges": ["provocation à la haine raciale"]
+        "charges": [25]
     },
     {
         "name": "Jean-Marie Le Pen",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2005,
-        "charges": ["incitation à la haine raciale"]
+        "charges": [24]
     },
     {
         "name": "Jean-Marie Le Pen",
-        "party":"fn",
-        "nature": "condamnation",
+        "party":"Front National",
+        "conviction": 1,
         "year": 2008,
-        "charges": ["complicité d'apologie de crimes de guerre","contestation de crime contre l'humanité"]
-    }
+        "charges": [100,82]
+    },
+    {
+      "name": "Nicolas Sarkozy",
+      "party": "Les Républicains",
+      "conviction": 3,
+      "year":2013,
+      "courtcase":20,
+      "charges":[101]
+    },
+    {
+      "name": "Nicolas Sarkozy",
+      "party": "Les Républicains",
+      "conviction": 3,
+      "year":2014,
+      "charges":[4,10, 102]
+    },
+    {
+      "name": "Nicolas Sarkozy",
+      "party": "Les Républicains",
+      "conviction": 3,
+      "year":2008,
+      "courtcase":11,
+      "charges":[ 3, 1]
+    },
+    {
+      "name": "Jean-François Mancel",
+      "party": "Les Républicains",
+      "conviction": 3,
+      "year":2000,
+      "charges":[11]
+    },
+    {
+      "name": "Yamina Benguigui",
+      "party": "Parti socialiste",
+      "conviction": 4,
+      "year":2014,
+      "charges":[103]
+    },
+    {
+      "name": "Aquilino Morelle",
+      "party": "Parti socialiste",
+      "conviction": 3,
+      "year":2014,
+      "charges":[104]
 
+    },
+    {
+      "name": "Thomas Thévenoud",
+      "party": "Parti socialiste",
+      "conviction": 3,
+      "year":2014,
+      "charges":[69]
+    },
+    {
+      "name": "Kader Arif",
+      "party": "Parti socialiste",
+      "conviction": 5,
+      "year":2014,
+      "charges":[11]
+    },
+    {
+      "name": "Faouzi Lamdaoui",
+      "party": "Parti socialiste",
+      "conviction": 5,
+      "year":2007,
+      "charges":[5, 38, 2]
+    },
+    {
+      "name": "Jean-Pierre Jouyet",
+      "party": "Parti socialiste",
+      "conviction": 5,
+      "year":2014,
+      "charges":[105]
+    }
+    ,
+    {
+      "name": "Jean Daubigny",
+      "party": "Parti socialiste",
+      "conviction": 3,
+      "year":2016,
+      "charges":[47]
+    }
 ]

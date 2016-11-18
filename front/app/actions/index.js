@@ -8,6 +8,8 @@ import 'whatwg-fetch'
 import pourritures from '../data/pourritures.json';
 import candidates from '../data/candidats.json';
 import courtCases from '../data/courtcases.json';
+import charges from '../data/charges.json';
+import convictions from '../data/convictions.json';
 
 
 const groupsFetched = createAction(Action.LOAD_GROUP_FETCHED);
@@ -73,5 +75,3 @@ export function fetchContributors(){
             .catch(err => dispatch(contributorsFetched(new Error(JSON.stringify(err)))));
     };
 }
-
-

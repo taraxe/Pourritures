@@ -1,0 +1,22 @@
+[
+  {
+    "id":1,
+    "label": "condamnation"
+  },
+  {
+    "id":2,
+    "label": "non-lieu"
+  },
+  {
+    "id":3,
+    "label": "mise en examen"
+  },
+  {
+    "id":4,
+    "label": "Condamnation en appel"
+  },
+  {
+    "id":5,
+    "label": "enquête préliminaire"
+  }
+]

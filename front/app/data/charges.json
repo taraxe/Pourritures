@@ -1,0 +1,320 @@
+[
+  {
+    "id":1,
+    "label": "détournement de fonds publics"
+  },{
+    "id":2,
+    "label": "faux et usage de faux"
+  },{
+    "id":3,
+    "label": "Délit d'octroi d'avantage injustifié (favoritisme)"
+  },{
+    "id":4,
+    "label": "corruption"
+  },{
+    "id":5,
+    "label": "abus de biens sociaux"
+  },{
+    "id":6,
+    "label": "proxénétisme aggravé en bande organisée"
+  },{
+    "id":7,
+    "label": "infraction à la législation sur la durée du travail"
+  },{
+    "id":8,
+    "label":"diffamation"
+  },{
+    "id":9,
+    "label": "abus de faiblesse"
+  },{
+    "id":10,
+    "label": "trafic d'influence"
+  },{
+    "id":11,
+    "label": "prise illégale d'intérêt"
+  },{
+    "id":12,
+    "label": "abus de confiance"
+  },{
+    "id":13,
+    "label": "détournement de fonds"
+  },{
+    "id":14,
+    "label": "emploi fictif"
+  },{
+    "id":15,
+    "label": "viol"
+  },{
+    "id":16,
+    "label": "injures"
+  },{
+    "id":17,
+    "label": "corruption passive"
+  },{
+    "id":18,
+    "label": "recel d’abus de biens sociaux"
+  },{
+    "id":19,
+    "label": "blanchiment d’argent"
+  },{
+    "id":20,
+    "label": "travail dissimulé"
+  },{
+    "id":21,
+    "label": "association de malfaiteurs"
+  },{
+    "id":22,
+    "label": "escroquerie"
+  },{
+    "id":23,
+    "label": "factures fictives"
+  },{
+    "id":24,
+    "label": "incitation à la haine raciale"
+  },{
+    "id":25,
+    "label": "provocation à la haine raciale"
+  },{
+    "id":26,
+    "label": "atteinte au droit du travail"
+  },{
+    "id":27,
+    "label": "manquement à une obligation de sécurité ou de prudence"
+  },{
+    "id":29,
+    "label": "ingérence"
+  },{
+    "id":30,
+    "label": "recel d'abus de confiance"
+  },{
+    "id":31,
+    "label": "rupture de contrat et rétention abusive de droits d'auteur"
+  },{
+    "id":32,
+    "label": "subornation de témoin"
+  },{
+    "id":33,
+    "label": "recel de trafic d'influence"
+  },{
+    "id":34,
+    "label": "financement occulte"
+  },{
+    "id":35,
+    "label": "subordination de témoin"
+  },{
+    "id":36,
+    "label": "placement sur écoutes"
+  },{
+    "id":37,
+    "label": " recel de fonds utilisés en dehors de tout enrichissement personnel"
+  },{
+    "id":38,
+    "label": "complicité d'abus de biens sociaux"
+  },{
+    "id":39,
+    "label": "octroi d'avantages injustifiés"
+  },{
+    "id":40,
+    "label": "soustraction de fonds publics"
+  },{
+    "id":41,
+    "label": "harcèlement moral"
+  },{
+    "id":42,
+    "label": "atteinte au droit à l'image"
+  },{
+    "id":43,
+    "label": "licenciements abusifs"
+  },{
+    "id":44,
+    "label": "complicité de trafic d'influence"
+  },{
+    "id":45,
+    "label": "violences conjugales"
+  },{
+    "id":46,
+    "label": "blanchiment d'argent"
+  },{
+    "id":47,
+    "label": "fraude fiscale"
+  },{
+    "id":48,
+    "label": "atteinte à la présomption d’innocence"
+  },{
+    "id":49,
+    "label": "injure à caractère raciale"
+  },{
+    "id":50,
+    "label": "voie de faits"
+  },{
+    "id":51,
+    "label": "'injures publiques envers un groupe de personnes en raison de leur orientation sexuelle"
+  },{
+    "id":52,
+    "label": "outrage"
+  },{
+    "id":53,
+    "label": "atteinte ou tentative d´atteinte à la sincérité d´un scrutin"
+  },{
+    "id":54,
+    "label":  "infraction à la législation sur le financement des campagnes électorales"
+  },{
+    "id":55,
+    "label": "financement occulte d'activités politiques"
+  },{
+    "id":56,
+    "label": "harcèlement sexuel"
+  },{
+    "id":57,
+    "label": "agression sexuelle"
+  },{
+    "id":58,
+    "label": "discrimination raciale"
+  },{
+    "id":59,
+    "label": "constitution de partie civile abusive ou dilatoire dans le but de nuire à son adversaire socialiste"
+  },{
+    "id":60,
+    "label": "complicité d’atteinte à la sincérité du scrutin"
+  },{
+    "id":61,
+    "label": "complicité de faux administratif"
+  },{
+    "id":62,
+    "label": "usage et complicité de manoeuvre frauduleuse tendant à l’exercice irrégulier du vote par procuration"
+  },{
+    "id":63,
+    "label": "dégradation des conditions de travail"
+  },{
+    "id":64,
+    "label": "fraude électorale"
+  },{
+    "id":65,
+    "label": "coups et blessures"
+  },{
+    "id":66,
+    "label": "exercice illégal de la profession d’avocat"
+  },{
+    "id":67,
+    "label": "proxénétisme aggravé"
+  },{
+    "id":68,
+    "label": "dissimulation de travail clandestin"
+  },{
+    "id":69,
+    "label": "soustraction au paiement de l’impôt"
+  },{
+    "id":70,
+    "label":"omission de déclaration"
+  },{
+    "id":71,
+    "label": "proposition sexuelle à une mineure de 12 ans"
+  },{
+    "id":72,
+    "label": "pour avoir fair incendier 14 caravanes appartenant à des Roms installées sur un terrain municipal"
+  },{
+    "id":73,
+    "label": "soustraction au paiement de l’impôt"
+  },{
+    "id":74,
+    "label": "entrave au fonctionnement du comité d'entreprise"
+  },{
+    "id":75,
+    "label": "achat de votes"
+  },{
+    "id":76,
+    "label": "complicité de financement illicite de campagne électorale"
+  },{
+    "id":77,
+    "label": "financement de campagne électorale en dépassement du plafond autorisé"
+  },{
+    "id":78,
+    "label": "soustraction au paiement de l’impôt"
+  },{
+    "id":79,
+    "label": "falsification de documents administratifs"
+  },{
+    "id":80,
+    "label": "recel de financement illicite de parti politique"
+  },{
+    "id":81,
+    "label": "organisation d'une manifestation interdite"
+  },{
+    "id":82,
+    "label": "apologie de crime contre l'humanité"
+  },{
+    "id":83,
+    "label": "Violence volontaire"
+  },{
+    "id":84,
+    "label": "pour avoir détruit un préservatif géant à l'occasion de la journée mondiale contre le Sida"
+  },{
+    "id":85,
+    "label": "negationisme"
+  },{
+    "id":86,
+    "label": "usurpation de fonction"
+  },{
+    "id":87,
+    "label": "détention d'armes et munition"
+  },{
+    "id":88,
+    "label": "liste irrégulière"
+  },{
+    "id":89,
+    "label": "meurtre"
+  },{
+    "id":90,
+    "label": "escroquerie en bande organisée"
+  },{
+    "id":91,
+    "label": "incendie volontaire"
+  },{
+    "id":92,
+    "label": "vol à main armé"
+  },{
+    "id":93,
+    "label": "vol"
+  },{
+    "id":94,
+    "label": "exercice illégal de la profession de banquier"
+  },{
+    "id":95,
+    "label": "délit de fuite"
+  },{
+    "id":96,
+    "label": "trafic de drogues"
+  },{
+    "id":97,
+    "label": "menaces de mort"
+  },{
+    "id":98,
+    "label": "oublis de plus-value boursière et sous-estimation de loyer"
+  },{
+    "id":99,
+    "label": "violences sur personne dépositaire de l'autorité publique dans l'exercice de ses fonction"
+  },{
+    "id":100,
+    "label": "apologie de crime de guerre"
+  },{
+    "id":101,
+    "label": "rétrocommissions"
+  },{
+    "id":102,
+    "label": "recel de violation du secret profesionnel"
+  },{
+    "id":103,
+    "label": "déclaration de patrimoine intentionellement fausse"
+  },{
+    "id":104,
+    "label": "conflit d'intéret"
+  },{
+    "id":105,
+    "label": "flagrant délit de mensonge"
+  }
+
+
+
+
+
+]
