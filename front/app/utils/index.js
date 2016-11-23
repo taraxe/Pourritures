@@ -1,5 +1,5 @@
 
-const slugify = (name) =>
+export const slugify = (name) =>
     name.toLowerCase()
         .replace(/[àáâãäåÀÁÂÃÄÅ]/g,"a") // replace special a
         .replace(/[èéêëēėÈÉÊË]/g, "e") // replace special e
@@ -9,6 +9,8 @@ const slugify = (name) =>
         .replace(/[\s_-]+/g, '-') // swap any length of whitespace, underscore, hyphen characters with a single -
         .replace(/^-+|-+$/g, ''); // remove leading, trailing -
 
+export const distinct = (value, index, self) => {
+    return self.indexOf(value) === index;
+};
 
-
-export default slugify;
+export default {slugify, distinct};

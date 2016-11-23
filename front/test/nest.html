@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nest sample</title>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<body>
+<script type="application/javascript">
+
+
+
+    (function(d3){
+
+        d3.json('../app/data/convictions.json', json => {
+
+            const nested = d3.nest()
+                    .key(d => d.id)
+                    .rollup(values => values[0].label)
+                    .object(json);
+
+            console.log(nested);
+
+        });
+
+
+
+
+    })(d3)
+</script>
+</body>
+</html>

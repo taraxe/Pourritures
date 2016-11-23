@@ -1,12 +1,11 @@
 import React from 'react';
 import {Link} from 'react-router';
-import slugify from '../utils';
 
 const candidate = (props) =>
-    <div className="ordure-details">
-        <img class="candidate-thumbnail" src={"images/assets/candidates/"+slugify(props.data.name)+".jpg"} />
-        <Link to={"/ordures/"+slugify(props.data.name)}>{props.data.name}</Link>
-        <h3>{props.data.party}</h3>
+    <div className="ordure-details col-md-2">
+        <img className="candidate-thumbnail img-lg img-circle img-shadow" src={"images/assets/candidates/"+props.slug+".jpg"} />
+        <Link to={"/ordures/"+props.slug}>{props.name}</Link>
+        <h3>{props.party}</h3>
     </div>;
 
 export default candidate

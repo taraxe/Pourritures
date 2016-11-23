@@ -1,15 +1,10 @@
 import { createAction } from 'redux-actions';
 import * as Action from './constants';
 
-import slugify from '../utils';
-
 import 'whatwg-fetch'
 
-import pourritures from '../data/pourritures.json';
-import candidates from '../data/candidats.json';
+import { Pourritures, Candidates } from '../models/reference';
 import courtCases from '../data/courtcases.json';
-import charges from '../data/charges.json';
-import convictions from '../data/convictions.json';
 
 
 const groupsFetched = createAction(Action.LOAD_GROUP_FETCHED);
@@ -18,7 +13,7 @@ const groupsFetching = createAction(Action.LOAD_GROUP_FETCHING);
 export function fetchGroups(){
   return (dispatch) => {
       dispatch(groupsFetching());
-      new Promise((resolve, _) => resolve(pourritures))
+      new Promise((resolve, _) => resolve(Pourritures))
           .then(response => dispatch(groupsFetched(response)))
           .catch(err => dispatch(groupsFetched(new Error(JSON.stringify(err)))));
   };
@@ -31,7 +26,7 @@ const candidatesFetching = createAction(Action.LOAD_CANDIDATES_FETCHING);
 export function fetchCandidates(){
     return (dispatch) => {
         dispatch(candidatesFetching());
-        new Promise((resolve, _) => resolve(candidates))
+        new Promise((resolve, _) => resolve(Candidates))
             .then(response => dispatch(candidatesFetched(response)))
             .catch(err => dispatch(candidatesFetched(new Error(JSON.stringify(err)))));
     };
@@ -56,8 +51,8 @@ const personDetailsFetching = createAction(Action.LOAD_PERSON_DETAILS_FETCHING);
 export function fetchPersonDetails({slug}){
     return (dispatch) => {
         dispatch(personDetailsFetching({slug}));
-        const match = pourritures.filter(d => slugify(d.name) === slug) || [];
-        new Promise((resolve, _) => resolve(match))
+        const match = Pourritures.find(d  => d.slug === slug);
+        new Promise((resolve, reject) => match ? resolve(match) : reject())
             .then(response => dispatch(personDetailsFetched({data: response, slug})))
             .catch(err => dispatch(personDetailsFetched(new Error(JSON.stringify(err)))));
     };

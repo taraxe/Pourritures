@@ -1,1513 +1,2021 @@
 [
-    {
-        "name": "Gérard Dalongeville",
-        "party":"Parti socialiste",
-        "conviction": 3,
-        "year": 2009,
-        "charges": [1,2,3,4]
-    },
-    {
-        "name": "Jean-Pierre Kucheida",
-        "party":"Parti socialiste",
-        "year": 2013,
-        "ex": true,
-        "conviction": 1,
-        "fine": 30000,
-        "charges": [5],
-        "courtcase":7
-    },
-    {
-        "name": "Dominique Strauss-Kahn",
-        "party":"Parti socialiste",
-        "year": 2012,
-        "conviction": 3,
-        "charges": [6],
-        "courtcase":5
-    },
-    {
-        "name": "Dominique Strauss-Kahn",
-        "party":"Parti socialiste",
-        "year": 1999,
-        "conviction": 3,
-        "fine": 30000,
-        "charges": [2],
-        "courtcase":6
-    },
-    {
-        "name": "Anne Hidalgo",
-        "party":"Parti socialiste",
-        "year": 2012,
-        "conviction": 1,
-        "fine": 40000,
-        "charges": [7]
-    },
-    {
-        "name": "Bernard Granie",
-        "party":"Parti socialiste",
-        "year": 2011,
-        "conviction": 1,
-        "charges": [4]
-    },
-    {
-        "name": "Bertrand Delanöe",
-        "party":"Parti socialiste",
-        "year": 2010,
-        "conviction": 1,
-        "charges": [26]
-    },
-    {
-        "name": "Catherine Trautmann",
-        "party":"Parti socialiste",
-        "year": 1999,
-        "conviction": 1,
-        "charges": [8]
-    },
-    {
-        "name": "Christian Bourquin",
-        "party":"Parti socialiste",
-        "year": 2012,
-        "conviction": 1,
-        "charges": [3]
-    },
-    {
-        "name": "Claude Pradille",
-        "party":"Parti socialiste",
-        "year": 1995,
-        "conviction": 1,
-        "charges": [4]
-    },
-    {
-        "name": "Edmond Hervé",
-        "party":"Parti socialiste",
-        "year": 1999,
-        "conviction": 1,
-        "charges": [27]
-    },
-    {
-        "name": "Elie Pigmal",
-        "party":"Parti socialiste",
-        "year": 2012,
-        "conviction": 1,
-        "charges": [3]
-    },
-    {
-        "name": "François Bernardini",
-        "party":"Parti socialiste",
-        "year": 2001,
-        "conviction": 1,
-        "charges": [28,1,12,5]
-    },
-    {
-        "name": "François Xavier Bordeaux",
-        "party":"Parti socialiste",
-        "year": 2011,
-        "conviction": 1,
-        "charges": [9]
-    },
-    {
-        "name": "Harlem Desir",
-        "party":"Parti socialiste",
-        "year": 1998,
-        "conviction": 1,
-        "charges": [30]
-    },
-    {
-        "name": "Henri Emmanuelli",
-        "party":"Parti socialiste",
-        "year": 1997,
-        "conviction": 1,
-        "charges": [10]
-    },
-    {
-        "name": "Jack Lang",
-        "party":"Parti socialiste",
-        "year": 2008,
-        "conviction": 1,
-        "charges": [31]
-    },
-    {
-        "name": "Jack Mellick",
-        "party":"Parti socialiste",
-        "year": 1997,
-        "conviction": 1,
-        "charges": [32],
-        "courtcase":8
-    },
-    {
-        "name": "Jeanine Ecochard",
-        "party":"Parti socialiste",
-        "year": 1998,
-        "conviction": 1,
-        "charges": [34],
-        "courtcase": 9
-    },
-    {
-        "name": "Jean-Christophe Cambadélis",
-        "party":"Parti socialiste",
-        "year": 2006,
-        "conviction": 1,
-        "courtcase":6,
-        "charges": [30]
-    },
-    {
-        "name": "Jean-François Noyes",
-        "party":"Parti socialiste",
-        "year": 2012,
-        "conviction": 1,
-        "courtcase":10,
-        "charges": [21, 33]
-    },
-    {
-        "name": "Jean-Marc Ayrault",
-        "party":"Parti socialiste",
-        "year": 1997,
-        "gouvernement":true,
-        "conviction": 1,
-        "charges": [3]
-    },
-    {
-        "name": "Jean-Marie Le Chevallier",
-        "party":"Parti socialiste",
-        "year": 2003,
-        "conviction": 1,
-        "charges": [35]
-    },
-    {
-        "name": "Jean-Noel Guérini",
-        "party":"Parti socialiste",
-        "year": 2011,
-        "conviction": 1,
-        "charges": [11,10]
-    },
-    {
-        "name": "Jean-Paul Huchon",
-        "party":"Parti socialiste",
-        "year": 2007,
-        "conviction": 1,
-        "charges": [11]
-    },
-    {
-        "name": "Jean-Pierre Balduyck",
-        "party":"Parti socialiste",
-        "year": 2005,
-        "conviction": 1,
-        "charges": [3]
-    },
-    {
-        "name": "Jean-Pierre Destrade",
-        "party":"Parti socialiste",
-        "year": 2005,
-        "conviction": 1,
-        "charges": [22,10]
-    },
-    {
-        "name": "Khadija Aram",
-        "party":"Parti socialiste",
-        "ex":true,
-        "year": 2011,
-        "conviction": 1,
-        "charges": [10,12]
-    },
-    {
-        "name": "Line Cohen Solal",
-        "party":"Parti socialiste",
-        "year": 2011,
-        "conviction": 1,
-        "charges": [14]
-    },
-    {
-        "name": "Malek Boutih",
-        "party":"Parti socialiste",
-        "year": 2006,
-        "conviction": 1,
-        "charges": [8]
-    },
-    {
-        "name": "Michel Delebarre",
-        "party":"Parti socialiste",
-        "year": 2005,
-        "conviction": 1,
-        "courtcase":11,
-        "charges": [36]
-    },
-    {
-        "name": "Michel Laignel",
-        "party":"Parti socialiste",
-        "year": 2006,
-        "conviction": 1,
-        "charges": [2,3,11,13]
-    },
-    {
-        "name": "Michel Pezet",
-        "party":"Parti socialiste",
-        "year": 1998,
-        "conviction": 1,
-        "charges": [37]
-    },
-    {
-        "name": "Mohamed Abdi",
-        "party":"Parti socialiste",
-        "year": 2007,
-        "conviction": 1,
-        "charges": [22]
-    },
-    {
-        "name": "Olivier Spithakis",
-        "party":"Parti socialiste",
-        "year": 2005,
-        "conviction": 1,
-        "courtcase":6,
-        "charges": [38,1,12]
-    },
-    {
-        "name": "Patrick Sève",
-        "party":"Parti socialiste",
-        "conviction": 3,
-        "year": 2011,
-        "charges": [39,40]
-    },
-    {
-        "name": "Pascal Buchet",
-        "party":"Parti socialiste",
-        "year": 2012,
-        "conviction": 1,
-        "charges": [41]
-    },
-    {
-        "name": "Philippe Sanmarco",
-        "party":"Parti socialiste",
-        "year": 1997,
-        "conviction": 1,
-        "courtcase":9,
-        "charges": [34]
-    },
-    {
-        "name": "Pierre Mauroy",
-        "party":"Parti socialiste",
-        "year": 2011,
-        "conviction": 1,
-        "charges": [14]
-    },
-    {
-        "name": "Pierre Moscovici",
-        "party":"Parti socialiste",
-        "year": 2001,
-        "gouvernement":true,
-        "conviction": 1,
-        "charges": [42]
-    },
-    {
-        "name": "René Teulade",
-        "party":"Parti socialiste",
-        "year": 2011,
-        "conviction": 1,
-        "charges": [12]
-    },
-    {
-        "name": "Robert Gaïa",
-        "party":"Parti socialiste",
-        "year": 2002,
-        "conviction": 1,
-        "charges": [3]
-    },
-    {
-        "name": "Ségolène Royal",
-        "party":"Parti socialiste",
-        "year": 2008,
-        "conviction": 1,
-        "charges": [43]
-    },
-    {
-        "name": "Serge Andréoni",
-        "party":"Parti socialiste",
-        "conviction": 3,
-        "year": 2011,
-        "courtcase":10,
-        "charges": [44]
-    },
-    {
-        "name": "Sylvie Andrieux",
-        "party":"Parti socialiste",
-        "conviction": 1,
-        "year": 2013,
-        "fine" : 100000,
-        "prison" : 3,
-        "sursis" : 2,
-        "charges": [1]
-    },
-    {
-        "name": "Yacine Chaouat",
-        "party":"Parti socialiste",
-        "conviction": 3,
-        "year": 2011,
-        "charges": [45]
-    },
-    {
-        "name": "Jérome Cahuzac",
-        "party":"Parti socialiste",
-        "ex":true,
-        "conviction": 3,
-        "year": 2013,
-        "charges": [46,47]
-    },
-    {
-        "name": "Jean-Christophe Lagarde",
-        "party":"udi",
-        "conviction": 3,
-        "year": 2013,
-        "charges": [3]
-    },
-    {
-        "name": "Alain Agostini",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2008,
-        "charges": [6]
-    },
-    {
-        "name": "Alain Carignon",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 1999,
-        "charges": [4,5,32]
-    },
-    {
-        "name": "Alain Ferrand",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2006,
-        "charges": [2]
-    },
-    {
-        "name": "Alain Ferrand",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 1998,
-        "charges": [11,47]
-    },
-    {
-        "name": "Alain Juppé",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2007,
-        "charges": [12,18,11]
-    },
-    {
-        "name": "Alain Tuduri",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2010,
-        "charges": [3]
-    },
-    {
-        "name": "Axel Poniatowski",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2010,
-        "charges": [8]
-    },
-    {
-        "name": "Brice Hortefeux",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2010,
-        "courtcase":3,
-        "charges": [48,49]
-    },
-    {
-        "name": "Brigitte Barèges",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2011,
-        "charges": [50]
-    },
-    {
-        "name": "Bruno Sandras",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2011,
-        "charges": [1,11]
-    },
-    {
-        "name": "Charles Fabre",
-        "party":"Les Républicains",
-        "conviction": 3,
-        "year": 2010,
-        "charges": [3]
-    },
-    {
-        "name": "Charles Pasqua",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2010,
-        "charges": [10,3, 2,12,18]
-    },
-    {
-        "name": "Christian Vanneste",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2007,
-        "charges": [51]
-    },
-    {
-        "name": "Claude Polony",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2009,
-        "charges": [11,3,13]
-    },
-    {
-        "name": "Daniel Simonpieri",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2011,
-        "charges": [3,23,14]
-    },
-    {
-        "name": "Damien Meslot",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2010,
-        "charges": [52]
-    },
-    {
-        "name": "Damien Meslot",
-        "party":"Les Républicains",
-        "conviction": 3,
-        "year": 2010,
-        "charges": [53]
-    },
-    {
-        "name": "Denis Gautier-Sauvagnac",
-        "party":"Les Républicains",
-        "conviction": 3,
-        "year": 2008,
-        "charges": [19]
-    },
-    {
-        "name": "Denis Jacquat",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2011,
-        "charges": [12,54]
-    },
-    {
-        "name": "Didier Schuller",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2007,
-        "charges": [55]
-    },
-    {
-        "name": "Dominique Paillé",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2004,
-        "charges": [12]
-    },
-    {
-        "name": "Frédéric Chazal",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2010,
-        "charges": [8]
-    },
-    {
-        "name": "Gaston Flosse",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2011,
-        "charges": [1,11]
-    },
-    {
-        "name": "Georges Tron",
-        "party":"Les Républicains",
-        "conviction": 3,
-        "year": 2011,
-        "charges": [56,57,15]
-    },
-    {
-        "name": "Gérard Dezempte",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2006,
-        "charges": [58]
-    },
-    {
-        "name": "Gérard Larrat",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2011,
-        "charges": [59,60,61,62]
-    },
-    {
-        "name": "Gilles Forray",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2006,
-        "charges": [17,18]
-    },
-    {
-        "name": "Guy Drut",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2005,
-        "charges": [14]
-    },
-    {
-        "name": "Guy Wildenstein",
-        "party":"Les Républicains",
-        "conviction": 3,
-        "year": 2011,
-        "charges": [30]
-    },
-    {
-        "name": "Henry Chabert",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2002,
-        "charges": [18]
-    },
-    {
-        "name": "Jacques Blanc",
-        "party":"Les Républicains",
-        "conviction": 3,
-        "year": 2009,
-        "charges": [1,11]
-    },
-    {
-        "name": "Jacques Masdeu-Arus",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2009,
-        "charges": [17,18]
-    },
-    {
-        "name": "Jacques Myard",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2009,
-        "charges": [8]
-    },
-    {
-        "name": "Jean Reynaud",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2004,
-        "charges": [11]
-    },
-    {
-        "name": "Jean Reynaud",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2006,
-        "charges": [41,63]
-    },
-    {
-        "name": "Jean Tiberi",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2009,
-        "courtcase":19,
-        "charges": [64]
-    },
-    {
-        "name": "Jean-Louis Garnier",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2011,
-        "charges": [65]
-    },
-    {
-        "name": "Jean-Paul Alduy",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2008,
-        "charges": [64]
-    },
-    {
-        "name": "Jean-Paul Fournier",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2010,
-        "charges": [11]
-    },
-    {
-        "name": "Joëlle Ceccaldi-Raynaud",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2006,
-        "charges": [8]
-    },
-    {
-        "name": "Joëlle Ferrand",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2010,
-        "charges": [11]
-    },
-    {
-        "name": "Laurence Spicher-Bernier",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2011,
-        "charges": [66,22]
-    },
-    {
-        "name": "Lionel Cressiot",
-        "party":"Les Républicains",
-        "conviction": 3,
-        "year": 2011,
-        "charges": [16,8]
-    },
-    {
-        "name": "Lucette Michaux-Chevry",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2002,
-        "charges": [3]
-    },
-    {
-        "name": "Manuel Aeschlimann",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2009,
-        "charges": [3]
-    },
-    {
-        "name": "Marie-Jeanne Bozzi",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2002,
-        "charges": [67,21,68]
-    },
-    {
-        "name": "Marie-Jeanne Bozzi",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2007,
-        "charges": [69,70,47]
-    },
-    {
-        "name": "Marie-Jeanne Bozzi",
-        "party":"Les Républicains",
-        "conviction": 3,
-        "year": 2009,
-        "charges": [21]
-    },
-    {
-        "name": "Maurice Gutman",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2010,
-        "charges": [71]
-    },
-    {
-        "name": "Michel Buillard",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2011,
-        "charges": [1,11]
-    },
-    {
-        "name": "Michel Habig",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2006,
-        "charges": [72]
-    },
-    {
-        "name": "Nicolas Bazire",
-        "party":"Les Républicains",
-        "conviction": 3,
-        "year": 2011,
-        "courtcase":20,
-        "charges": [1]
-    },
-    {
-        "name": "Olivier Deleu",
-        "party":"Les Républicains",
-        "conviction": 3,
-        "year": 2011,
-        "charges": [16,8]
-    },
-    {
-        "name": "Olivier Rey",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2008,
-        "charges": ["violences","menaces","dégradation grave du bien d’autrui à charges de la religion"]
-    },
-    {
-        "name": "Pascal Buchet",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2011,
-        "charges": [41]
-    },
-    {
-        "name": "Patrick Balkany",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2003,
-        "charges": [16,8]
-    },
-    {
-        "name": "Patrick Balkany",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 1999,
-        "charges": [5]
-    },
-    {
-        "name": "Philippe Brun",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2011,
-        "charges": [5]
-    },
-    {
-        "name": "Pierre Bédier",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2009,
-        "charges": [17,18]
-    },
-    {
-        "name": "Philippe Pemezec",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2010,
-        "charges": [16]
-    },
-    {
-        "name": "Philippe Pemezec",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2007,
-        "charges": [11]
-    },
-    {
-        "name": "Renaud Donnedieu de Vabres",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2004,
-        "charges": [19]
-    },
-    {
-        "name": "Renaud Donnedieu de Vabres",
-        "party":"Les Républicains",
-        "conviction": 3,
-        "year": 2004,
-        "courtcase":20,
-        "charges": [38]
-    },
-    {
-        "name": "René Vestri",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2009,
-        "charges": [20]
-    },
-    {
-        "name": "René Vestri",
-        "party":"Les Républicains",
-        "conviction": 3,
-        "year": 2009,
-        "charges": [46,10,21]
-    },
-    {
-        "name": "Richard Cazenave",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 1999,
-        "charges": [5]
-    },
-    {
-        "name": "Richard Cazenave",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2004,
-        "charges": [38]
-    },
-    {
-        "name": "Serge Dassault",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 1991,
-        "charges": [74]
-    },
-    {
-        "name": "Serge Dassault",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 1998,
-        "charges": [4]
-    },
-    {
-        "name": "Serge Dassault",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2009,
-        "charges": [75,76,77,78]
-    },
-    {
-        "name": "Thérèse Aillaud",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2002,
-        "charges": [1]
-    },
-    {
-        "name": "Thierry Gaubert",
-        "party":"Les Républicains",
-        "conviction": 3,
-        "year": 2008,
-        "charges": [5,22]
-    },
-    {
-        "name": "Thierry Gaubert",
-        "party":"Les Républicains",
-        "conviction": 3,
-        "year": 2008,
-        "courtcase":20,
-        "charges": [18,32]
-    },
-    {
-        "name": "Thierry Leprince",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2007,
-        "charges": [15]
-    },
-    {
-        "name": "Vincent Toni",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2011,
-        "charges": [17]
-    },
-    {
-        "name": "Vincent Toni",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2008,
-        "charges": [17]
-    },
-    {
-        "name": "Xavier Dugoin",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 1997,
-        "charges": [14,4]
-    },
-    {
-        "name": "Xavier Dugoin",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2000,
-        "charges": [12,1,79,11]
-    },
-    {
-        "name": "Xavier Dugoin",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2001,
-        "charges": [14]
-    },
-    {
-        "name": "André Santini",
-        "party":"Les Républicains",
-        "conviction": 3,
-        "year": 2006,
-        "charges": [11,2,1]
-    },
-    {
-        "name": "Eric Woerth",
-        "party":"Les Républicains",
-        "conviction": 3,
-        "year": 2012,
-        "charges": [33,80]
-    },
-    {
-        "name": "Yanick Paternotte",
-        "party":"Les Républicains",
-        "conviction": 1,
-        "year": 2012,
-        "charges": [9]
-    },
-    {
-        "name": "Nicolas Sarkozy",
-        "party":"Les Républicains",
-        "conviction": 2,
-        "year": 2013,
-        "charges": [9]
-    },
-    {
-        "name": "Alexandre Gabriac",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2007,
-        "charges": [81,82,49,83]
-    },
-    {
-        "name": "Alexandre Simonnot",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2010,
-        "charges": [84]
-    },
-    {
-        "name": "Antoinette Martinet",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 1998,
-        "charges": [24]
-    },
-    {
-        "name": "Bruno Gollnisch",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2007,
-        "charges": [85]
-    },
-    {
-        "name": "Bruno Mégret",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 1998,
-        "charges": [24]
-    },
-    {
-        "name": "Bruno Mégret",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2002,
-        "charges": [1]
-    },
-    {
-        "name": "Bruno Mégret",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2006,
-        "charges": [13]
-    },
-    {
-        "name": "Claude Jaffres",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 1997,
-        "charges": [86]
-    },
-    {
-        "name": "Catherine Mégret",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 1998,
-        "charges": [24]
-    },
-    {
-        "name": "Catherine Mégret",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2002,
-        "charges": [1]
-    },
-    {
-        "name": "Catherine Mégret",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2006,
-        "charges": [13]
-    },
-    {
-        "name": "Cédric Bégin",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2002,
-        "charges": [24, 87]
-    },
-    {
-        "name": "Christophe Klein",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2002,
-        "charges": [24]
-    },
-    {
-        "name": "Daniel Simonpieri",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2011,
-        "charges": [3,23,14]
-    },
-    {
-        "name": "Denis Monteillet",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 1995,
-        "charges": [88]
-    },
-    {
-        "name": "Emilien Bonnal",
-        "party":"Front National",
-        "ex":true,
-        "conviction": 1,
-        "year": 1985,
-        "charges": [89],
-        "prison" : 8
-    },
-    {
-        "name": "Francis Watez",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2007,
-        "fine": 7500,
-        "charges": [24]
-    },
-    {
-        "name": "François Nicolas-Schmitt",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 1997,
-        "charges": [13]
-    },
-    {
-        "name": "Gilles Lacroix",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 1997,
-        "charges": [83]
-    },
-    {
-        "name": "Georges Theil",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2001,
-        "charges": [82]
-    },
-    {
-        "name": "Georges Theil",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2006,
-        "charges": [82]
-    },
-    {
-        "name": "Guy Cannie",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2011,
-        "charges": [90]
-    },
-    {
-        "name": "Jacky Codvelle",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 1990,
-        "charges": [91]
-    },
-    {
-        "name": "Jacques Bompard",
-        "party":"Front National",
-        "conviction": 3,
-        "year": 2010,
-        "charges": [11]
-    },
-    {
-        "name": "Jacques Coutela",
-        "party":"Front National",
-        "conviction": 3,
-        "year": 2011,
-        "charges": [24]
-    },
-    {
-        "name": "Jean Holtzer",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 1990,
-        "charges": [92]
-    },
-    {
-        "name": "Jean-Claude Poulet",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 1992,
-        "charges": [45]
-    },
-    {
-        "name": "Jean-Marc Maurice",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2006,
-        "charges": [52]
-    },
-    {
-        "name": "Jean-Marc Maurice",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2007,
-        "charges": [93]
-    },
-    {
-        "name": "Jean-Marc Maurice",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2008,
-        "charges": [22]
-    },
-    {
-        "name": "Jean-Marc Maurice",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2010,
-        "charges": [20]
-    },
-    {
-        "name": "Jean-Marc Maurice",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2011,
-        "charges": [5]
-    },
-    {
-        "name": "Jean-Marie Le Chevallier",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2001,
-        "charges": [1, 12]
-    },
-    {
-        "name": "Jean-Marie Le Chevallier",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2001,
-        "charges": [32]
-    },
-    {
-        "name": "Jean-Yves Douissard",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2002,
-        "charges": [24]
-    },
-    {
-        "name": "Jean-Yves Le Gallou",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 1998,
-        "charges": [25]
-    },
-    {
-        "name": "Joël Klein",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 1998,
-        "charges": [65]
-    },
-    {
-        "name": "Laurent Mirabeau",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 1994,
-        "charges": [22,94]
-    },
-    {
-        "name": "Louis Aliot",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2008,
-        "charges": [8]
-    },
-    {
-        "name": "Louis de Noëll",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 1997,
-        "charges": [13]
-    },
-    {
-        "name": "Marc Georges",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 1995,
-        "charges": [65]
-    },
-    {
-        "name": "Marc Lyoen",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2007,
-        "charges": [68]
-    },
-    {
-        "name": "Marc Lyoen",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2008,
-        "charges": [47]
-    },
-    {
-        "name": "Marine Le Pen",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2007,
-        "charges": [8]
-    },
-    {
-        "name": "Patrick Bassot",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2012,
-        "charges": [24]
-    },
-    {
-        "name": "Patrick Binder",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2005,
-        "charges": [25]
-    },
-    {
-        "name": "Patrick Binder",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2011,
-        "charges": [16,25]
-    },
-    {
-        "name": "Philippe Bernard",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2008,
-        "charges": ["faux et falsification",12,22]
-    },
-    {
-        "name": "Philippe Viard",
-        "party":"Front National",
-        "conviction": 3,
-        "year": 1998,
-        "charges": [58]
-    },
-    {
-        "name": "Philippe Viard",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 1998,
-        "charges": [16,95]
-    },
-    {
-        "name": "Richard Jacob",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2011,
-        "charges": [52]
-    },
-    {
-        "name": "Roger Fabregues",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 1996,
-        "charges": [96]
-    },
-    {
-        "name": "Sylvain Ferrua",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 1996,
-        "charges": [67]
-    },
-    {
-        "name": "Tanguy Deshayes",
-        "party":"Front National",
-        "conviction": 3,
-        "year": 2009,
-        "charges": [97]
-    },
-    {
-        "name": "Xavier Voute",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 1997,
-        "charges": [83]
-    },
-    {
-        "name": "Yannick Lecointre",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2011,
-        "charges": [96]
-    },
-    {
-        "name": "Jean-Marie Le Pen",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 1960,
-        "charges": [97]
-    },
-    {
-        "name": "Jean-Marie Le Pen",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 1964,
-        "charges": [65]
-    },
-    {
-        "name": "Jean-Marie Le Pen",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 1995,
-        "charges": [98]
-    },
-    {
-        "name": "Jean-Marie Le Pen",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 1996,
-        "charges": ["pour avoir tenu des propos ayant gravement porté atteinte au président du tribunal d'Auch"]
-    },
-    {
-        "name": "Jean-Marie Le Pen",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 1997,
-        "charges": ["pour avoir injurié l'association Ras l'front (mouvement anti-FN) de « mouvement de tueurs de flics »"]
-    },
-    {
-        "name": "Jean-Marie Le Pen",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 1997,
-        "charges": ["pour avoir injurié le président de SOS-Racisme"]
-    },
-    {
-        "name": "Jean-Marie Le Pen",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 1997,
-        "charges": ["pour banalisation de crimes contre l'humanité et consentement à l’horrible"]
-    },
-    {
-        "name": "Jean-Marie Le Pen",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 1998,
-        "charges": [99]
-    },
-    {
-        "name": "Jean-Marie Le Pen",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 1998,
-        "charges": [58]
-    },
-    {
-        "name": "Jean-Marie Le Pen",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 1999,
-        "charges": [24,100]
-    },
-    {
-        "name": "Jean-Marie Le Pen",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2004,
-        "charges": [25]
-    },
-    {
-        "name": "Jean-Marie Le Pen",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2005,
-        "charges": [24]
-    },
-    {
-        "name": "Jean-Marie Le Pen",
-        "party":"Front National",
-        "conviction": 1,
-        "year": 2008,
-        "charges": [100,82]
-    },
-    {
-      "name": "Nicolas Sarkozy",
-      "party": "Les Républicains",
-      "conviction": 3,
-      "year":2013,
-      "courtcase":20,
-      "charges":[101]
-    },
-    {
-      "name": "Nicolas Sarkozy",
-      "party": "Les Républicains",
-      "conviction": 3,
-      "year":2014,
-      "charges":[4,10, 102]
-    },
-    {
-      "name": "Nicolas Sarkozy",
-      "party": "Les Républicains",
-      "conviction": 3,
-      "year":2008,
-      "courtcase":11,
-      "charges":[ 3, 1]
-    },
-    {
-      "name": "Jean-François Mancel",
-      "party": "Les Républicains",
-      "conviction": 3,
-      "year":2000,
-      "charges":[11]
-    },
-    {
-      "name": "Yamina Benguigui",
-      "party": "Parti socialiste",
-      "conviction": 4,
-      "year":2014,
-      "charges":[103]
-    },
-    {
-      "name": "Aquilino Morelle",
-      "party": "Parti socialiste",
-      "conviction": 3,
-      "year":2014,
-      "charges":[104]
-
-    },
-    {
-      "name": "Thomas Thévenoud",
-      "party": "Parti socialiste",
-      "conviction": 3,
-      "year":2014,
-      "charges":[69]
-    },
-    {
-      "name": "Kader Arif",
-      "party": "Parti socialiste",
-      "conviction": 5,
-      "year":2014,
-      "charges":[11]
-    },
-    {
-      "name": "Faouzi Lamdaoui",
-      "party": "Parti socialiste",
-      "conviction": 5,
-      "year":2007,
-      "charges":[5, 38, 2]
-    },
-    {
-      "name": "Jean-Pierre Jouyet",
-      "party": "Parti socialiste",
-      "conviction": 5,
-      "year":2014,
-      "charges":[105]
-    }
-    ,
-    {
-      "name": "Jean Daubigny",
-      "party": "Parti socialiste",
-      "conviction": 3,
-      "year":2016,
-      "charges":[47]
-    }
+  {
+    "name": "Gérard Dalongeville",
+    "party": 1,
+    "conviction": 3,
+    "year": 2009,
+    "charges": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "name": "Jean-Pierre Kucheida",
+    "party": 1,
+    "year": 2013,
+    "ex": true,
+    "conviction": 1,
+    "fine": 30000,
+    "charges": [
+      5
+    ],
+    "courtcase": 7
+  },
+  {
+    "name": "Dominique Strauss-Kahn",
+    "party": 1,
+    "year": 2012,
+    "conviction": 3,
+    "charges": [
+      6
+    ],
+    "courtcase": 5
+  },
+  {
+    "name": "Dominique Strauss-Kahn",
+    "party": 1,
+    "year": 1999,
+    "conviction": 3,
+    "fine": 30000,
+    "charges": [
+      2
+    ],
+    "courtcase": 6
+  },
+  {
+    "name": "Anne Hidalgo",
+    "party": 1,
+    "year": 2012,
+    "conviction": 1,
+    "fine": 40000,
+    "charges": [
+      7
+    ]
+  },
+  {
+    "name": "Bernard Granie",
+    "party": 1,
+    "year": 2011,
+    "conviction": 1,
+    "charges": [
+      4
+    ]
+  },
+  {
+    "name": "Bertrand Delanöe",
+    "party": 1,
+    "year": 2010,
+    "conviction": 1,
+    "charges": [
+      26
+    ]
+  },
+  {
+    "name": "Catherine Trautmann",
+    "party": 1,
+    "year": 1999,
+    "conviction": 1,
+    "charges": [
+      8
+    ]
+  },
+  {
+    "name": "Christian Bourquin",
+    "party": 1,
+    "year": 2012,
+    "conviction": 1,
+    "charges": [
+      3
+    ]
+  },
+  {
+    "name": "Claude Pradille",
+    "party": 1,
+    "year": 1995,
+    "conviction": 1,
+    "charges": [
+      4
+    ]
+  },
+  {
+    "name": "Edmond Hervé",
+    "party": 1,
+    "year": 1999,
+    "conviction": 1,
+    "charges": [
+      27
+    ]
+  },
+  {
+    "name": "Elie Pigmal",
+    "party": 1,
+    "year": 2012,
+    "conviction": 1,
+    "charges": [
+      3
+    ]
+  },
+  {
+    "name": "François Bernardini",
+    "party": 1,
+    "year": 2001,
+    "conviction": 1,
+    "charges": [
+      28,
+      1,
+      12,
+      5
+    ]
+  },
+  {
+    "name": "François Xavier Bordeaux",
+    "party": 1,
+    "year": 2011,
+    "conviction": 1,
+    "charges": [
+      9
+    ]
+  },
+  {
+    "name": "Harlem Desir",
+    "party": 1,
+    "year": 1998,
+    "conviction": 1,
+    "charges": [
+      30
+    ]
+  },
+  {
+    "name": "Henri Emmanuelli",
+    "party": 1,
+    "year": 1997,
+    "conviction": 1,
+    "charges": [
+      10
+    ]
+  },
+  {
+    "name": "Jack Lang",
+    "party": 1,
+    "year": 2008,
+    "conviction": 1,
+    "charges": [
+      31
+    ]
+  },
+  {
+    "name": "Jack Mellick",
+    "party": 1,
+    "year": 1997,
+    "conviction": 1,
+    "charges": [
+      32
+    ],
+    "courtcase": 8
+  },
+  {
+    "name": "Jeanine Ecochard",
+    "party": 1,
+    "year": 1998,
+    "conviction": 1,
+    "charges": [
+      34
+    ],
+    "courtcase": 9
+  },
+  {
+    "name": "Jean-Christophe Cambadélis",
+    "party": 1,
+    "year": 2006,
+    "conviction": 1,
+    "courtcase": 6,
+    "charges": [
+      30
+    ]
+  },
+  {
+    "name": "Jean-François Noyes",
+    "party": 1,
+    "year": 2012,
+    "conviction": 1,
+    "courtcase": 10,
+    "charges": [
+      21,
+      33
+    ]
+  },
+  {
+    "name": "Jean-Marc Ayrault",
+    "party": 1,
+    "year": 1997,
+    "gouvernement": true,
+    "conviction": 1,
+    "charges": [
+      3
+    ]
+  },
+  {
+    "name": "Jean-Marie Le Chevallier",
+    "party": 1,
+    "year": 2003,
+    "conviction": 1,
+    "charges": [
+      35
+    ]
+  },
+  {
+    "name": "Jean-Noel Guérini",
+    "party": 1,
+    "year": 2011,
+    "conviction": 1,
+    "charges": [
+      11,
+      10
+    ]
+  },
+  {
+    "name": "Jean-Paul Huchon",
+    "party": 1,
+    "year": 2007,
+    "conviction": 1,
+    "charges": [
+      11
+    ]
+  },
+  {
+    "name": "Jean-Pierre Balduyck",
+    "party": 1,
+    "year": 2005,
+    "conviction": 1,
+    "charges": [
+      3
+    ]
+  },
+  {
+    "name": "Jean-Pierre Destrade",
+    "party": 1,
+    "year": 2005,
+    "conviction": 1,
+    "charges": [
+      22,
+      10
+    ]
+  },
+  {
+    "name": "Khadija Aram",
+    "party": 1,
+    "ex": true,
+    "year": 2011,
+    "conviction": 1,
+    "charges": [
+      10,
+      12
+    ]
+  },
+  {
+    "name": "Line Cohen Solal",
+    "party": 1,
+    "year": 2011,
+    "conviction": 1,
+    "charges": [
+      14
+    ]
+  },
+  {
+    "name": "Malek Boutih",
+    "party": 1,
+    "year": 2006,
+    "conviction": 1,
+    "charges": [
+      8
+    ]
+  },
+  {
+    "name": "Michel Delebarre",
+    "party": 1,
+    "year": 2005,
+    "conviction": 1,
+    "courtcase": 11,
+    "charges": [
+      36
+    ]
+  },
+  {
+    "name": "Michel Laignel",
+    "party": 1,
+    "year": 2006,
+    "conviction": 1,
+    "charges": [
+      2,
+      3,
+      11,
+      13
+    ]
+  },
+  {
+    "name": "Michel Pezet",
+    "party": 1,
+    "year": 1998,
+    "conviction": 1,
+    "charges": [
+      37
+    ]
+  },
+  {
+    "name": "Mohamed Abdi",
+    "party": 1,
+    "year": 2007,
+    "conviction": 1,
+    "charges": [
+      22
+    ]
+  },
+  {
+    "name": "Olivier Spithakis",
+    "party": 1,
+    "year": 2005,
+    "conviction": 1,
+    "courtcase": 6,
+    "charges": [
+      38,
+      1,
+      12
+    ]
+  },
+  {
+    "name": "Patrick Sève",
+    "party": 1,
+    "conviction": 3,
+    "year": 2011,
+    "charges": [
+      39,
+      40
+    ]
+  },
+  {
+    "name": "Pascal Buchet",
+    "party": 1,
+    "year": 2012,
+    "conviction": 1,
+    "charges": [
+      41
+    ]
+  },
+  {
+    "name": "Philippe Sanmarco",
+    "party": 1,
+    "year": 1997,
+    "conviction": 1,
+    "courtcase": 9,
+    "charges": [
+      34
+    ]
+  },
+  {
+    "name": "Pierre Mauroy",
+    "party": 1,
+    "year": 2011,
+    "conviction": 1,
+    "charges": [
+      14
+    ]
+  },
+  {
+    "name": "Pierre Moscovici",
+    "party": 1,
+    "year": 2001,
+    "gouvernement": true,
+    "conviction": 1,
+    "charges": [
+      42
+    ]
+  },
+  {
+    "name": "René Teulade",
+    "party": 1,
+    "year": 2011,
+    "conviction": 1,
+    "charges": [
+      12
+    ]
+  },
+  {
+    "name": "Robert Gaïa",
+    "party": 1,
+    "year": 2002,
+    "conviction": 1,
+    "charges": [
+      3
+    ]
+  },
+  {
+    "name": "Ségolène Royal",
+    "party": 1,
+    "year": 2008,
+    "conviction": 1,
+    "charges": [
+      43
+    ]
+  },
+  {
+    "name": "Serge Andréoni",
+    "party": 1,
+    "conviction": 3,
+    "year": 2011,
+    "courtcase": 10,
+    "charges": [
+      44
+    ]
+  },
+  {
+    "name": "Sylvie Andrieux",
+    "party": 1,
+    "conviction": 1,
+    "year": 2013,
+    "fine": 100000,
+    "prison": 3,
+    "sursis": 2,
+    "charges": [
+      1
+    ]
+  },
+  {
+    "name": "Yacine Chaouat",
+    "party": 1,
+    "conviction": 3,
+    "year": 2011,
+    "charges": [
+      45
+    ]
+  },
+  {
+    "name": "Jérome Cahuzac",
+    "party": 1,
+    "ex": true,
+    "conviction": 3,
+    "year": 2013,
+    "charges": [
+      46,
+      47
+    ]
+  },
+  {
+    "name": "Jean-Christophe Lagarde",
+    "party": 4,
+    "conviction": 3,
+    "year": 2013,
+    "charges": [
+      3
+    ]
+  },
+  {
+    "name": "Alain Agostini",
+    "party": 2,
+    "conviction": 1,
+    "year": 2008,
+    "charges": [
+      6
+    ]
+  },
+  {
+    "name": "Alain Carignon",
+    "party": 2,
+    "conviction": 1,
+    "year": 1999,
+    "charges": [
+      4,
+      5,
+      32
+    ]
+  },
+  {
+    "name": "Alain Ferrand",
+    "party": 2,
+    "conviction": 1,
+    "year": 2006,
+    "charges": [
+      2
+    ]
+  },
+  {
+    "name": "Alain Ferrand",
+    "party": 2,
+    "conviction": 1,
+    "year": 1998,
+    "charges": [
+      11,
+      47
+    ]
+  },
+  {
+    "name": "Alain Juppé",
+    "party": 2,
+    "conviction": 1,
+    "year": 2007,
+    "charges": [
+      12,
+      18,
+      11
+    ]
+  },
+  {
+    "name": "Alain Tuduri",
+    "party": 2,
+    "conviction": 1,
+    "year": 2010,
+    "charges": [
+      3
+    ]
+  },
+  {
+    "name": "Axel Poniatowski",
+    "party": 2,
+    "conviction": 1,
+    "year": 2010,
+    "charges": [
+      8
+    ]
+  },
+  {
+    "name": "Brice Hortefeux",
+    "party": 2,
+    "conviction": 1,
+    "year": 2010,
+    "courtcase": 3,
+    "charges": [
+      48,
+      49
+    ]
+  },
+  {
+    "name": "Brigitte Barèges",
+    "party": 2,
+    "conviction": 1,
+    "year": 2011,
+    "charges": [
+      50
+    ]
+  },
+  {
+    "name": "Bruno Sandras",
+    "party": 2,
+    "conviction": 1,
+    "year": 2011,
+    "charges": [
+      1,
+      11
+    ]
+  },
+  {
+    "name": "Charles Fabre",
+    "party": 2,
+    "conviction": 3,
+    "year": 2010,
+    "charges": [
+      3
+    ]
+  },
+  {
+    "name": "Charles Pasqua",
+    "party": 2,
+    "conviction": 1,
+    "year": 2010,
+    "charges": [
+      10,
+      3,
+      2,
+      12,
+      18
+    ]
+  },
+  {
+    "name": "Christian Vanneste",
+    "party": 2,
+    "conviction": 1,
+    "year": 2007,
+    "charges": [
+      51
+    ]
+  },
+  {
+    "name": "Claude Polony",
+    "party": 2,
+    "conviction": 1,
+    "year": 2009,
+    "charges": [
+      11,
+      3,
+      13
+    ]
+  },
+  {
+    "name": "Daniel Simonpieri",
+    "party": 2,
+    "conviction": 1,
+    "year": 2011,
+    "charges": [
+      3,
+      23,
+      14
+    ]
+  },
+  {
+    "name": "Damien Meslot",
+    "party": 2,
+    "conviction": 1,
+    "year": 2010,
+    "charges": [
+      52
+    ]
+  },
+  {
+    "name": "Damien Meslot",
+    "party": 2,
+    "conviction": 3,
+    "year": 2010,
+    "charges": [
+      53
+    ]
+  },
+  {
+    "name": "Denis Gautier-Sauvagnac",
+    "party": 2,
+    "conviction": 3,
+    "year": 2008,
+    "charges": [
+      19
+    ]
+  },
+  {
+    "name": "Denis Jacquat",
+    "party": 2,
+    "conviction": 1,
+    "year": 2011,
+    "charges": [
+      12,
+      54
+    ]
+  },
+  {
+    "name": "Didier Schuller",
+    "party": 2,
+    "conviction": 1,
+    "year": 2007,
+    "charges": [
+      55
+    ]
+  },
+  {
+    "name": "Dominique Paillé",
+    "party": 2,
+    "conviction": 1,
+    "year": 2004,
+    "charges": [
+      12
+    ]
+  },
+  {
+    "name": "Frédéric Chazal",
+    "party": 2,
+    "conviction": 1,
+    "year": 2010,
+    "charges": [
+      8
+    ]
+  },
+  {
+    "name": "Gaston Flosse",
+    "party": 2,
+    "conviction": 1,
+    "year": 2011,
+    "charges": [
+      1,
+      11
+    ]
+  },
+  {
+    "name": "Georges Tron",
+    "party": 2,
+    "conviction": 3,
+    "year": 2011,
+    "charges": [
+      56,
+      57,
+      15
+    ]
+  },
+  {
+    "name": "Gérard Dezempte",
+    "party": 2,
+    "conviction": 1,
+    "year": 2006,
+    "charges": [
+      58
+    ]
+  },
+  {
+    "name": "Gérard Larrat",
+    "party": 2,
+    "conviction": 1,
+    "year": 2011,
+    "charges": [
+      59,
+      60,
+      61,
+      62
+    ]
+  },
+  {
+    "name": "Gilles Forray",
+    "party": 2,
+    "conviction": 1,
+    "year": 2006,
+    "charges": [
+      17,
+      18
+    ]
+  },
+  {
+    "name": "Guy Drut",
+    "party": 2,
+    "conviction": 1,
+    "year": 2005,
+    "charges": [
+      14
+    ]
+  },
+  {
+    "name": "Guy Wildenstein",
+    "party": 2,
+    "conviction": 3,
+    "year": 2011,
+    "charges": [
+      30
+    ]
+  },
+  {
+    "name": "Henry Chabert",
+    "party": 2,
+    "conviction": 1,
+    "year": 2002,
+    "charges": [
+      18
+    ]
+  },
+  {
+    "name": "Jacques Blanc",
+    "party": 2,
+    "conviction": 3,
+    "year": 2009,
+    "charges": [
+      1,
+      11
+    ]
+  },
+  {
+    "name": "Jacques Masdeu-Arus",
+    "party": 2,
+    "conviction": 1,
+    "year": 2009,
+    "charges": [
+      17,
+      18
+    ]
+  },
+  {
+    "name": "Jacques Myard",
+    "party": 2,
+    "conviction": 1,
+    "year": 2009,
+    "charges": [
+      8
+    ]
+  },
+  {
+    "name": "Jean Reynaud",
+    "party": 2,
+    "conviction": 1,
+    "year": 2004,
+    "charges": [
+      11
+    ]
+  },
+  {
+    "name": "Jean Reynaud",
+    "party": 2,
+    "conviction": 1,
+    "year": 2006,
+    "charges": [
+      41,
+      63
+    ]
+  },
+  {
+    "name": "Jean Tiberi",
+    "party": 2,
+    "conviction": 1,
+    "year": 2009,
+    "courtcase": 19,
+    "charges": [
+      64
+    ]
+  },
+  {
+    "name": "Jean-Louis Garnier",
+    "party": 2,
+    "conviction": 1,
+    "year": 2011,
+    "charges": [
+      65
+    ]
+  },
+  {
+    "name": "Jean-Paul Alduy",
+    "party": 2,
+    "conviction": 1,
+    "year": 2008,
+    "charges": [
+      64
+    ]
+  },
+  {
+    "name": "Jean-Paul Fournier",
+    "party": 2,
+    "conviction": 1,
+    "year": 2010,
+    "charges": [
+      11
+    ]
+  },
+  {
+    "name": "Joëlle Ceccaldi-Raynaud",
+    "party": 2,
+    "conviction": 1,
+    "year": 2006,
+    "charges": [
+      8
+    ]
+  },
+  {
+    "name": "Joëlle Ferrand",
+    "party": 2,
+    "conviction": 1,
+    "year": 2010,
+    "charges": [
+      11
+    ]
+  },
+  {
+    "name": "Laurence Spicher-Bernier",
+    "party": 2,
+    "conviction": 1,
+    "year": 2011,
+    "charges": [
+      66,
+      22
+    ]
+  },
+  {
+    "name": "Lionel Cressiot",
+    "party": 2,
+    "conviction": 3,
+    "year": 2011,
+    "charges": [
+      16,
+      8
+    ]
+  },
+  {
+    "name": "Lucette Michaux-Chevry",
+    "party": 2,
+    "conviction": 1,
+    "year": 2002,
+    "charges": [
+      3
+    ]
+  },
+  {
+    "name": "Manuel Aeschlimann",
+    "party": 2,
+    "conviction": 1,
+    "year": 2009,
+    "charges": [
+      3
+    ]
+  },
+  {
+    "name": "Marie-Jeanne Bozzi",
+    "party": 2,
+    "conviction": 1,
+    "year": 2002,
+    "charges": [
+      67,
+      21,
+      68
+    ]
+  },
+  {
+    "name": "Marie-Jeanne Bozzi",
+    "party": 2,
+    "conviction": 1,
+    "year": 2007,
+    "charges": [
+      69,
+      70,
+      47
+    ]
+  },
+  {
+    "name": "Marie-Jeanne Bozzi",
+    "party": 2,
+    "conviction": 3,
+    "year": 2009,
+    "charges": [
+      21
+    ]
+  },
+  {
+    "name": "Maurice Gutman",
+    "party": 2,
+    "conviction": 1,
+    "year": 2010,
+    "charges": [
+      71
+    ]
+  },
+  {
+    "name": "Michel Buillard",
+    "party": 2,
+    "conviction": 1,
+    "year": 2011,
+    "charges": [
+      1,
+      11
+    ]
+  },
+  {
+    "name": "Michel Habig",
+    "party": 2,
+    "conviction": 1,
+    "year": 2006,
+    "charges": [
+      72
+    ]
+  },
+  {
+    "name": "Nicolas Bazire",
+    "party": 2,
+    "conviction": 3,
+    "year": 2011,
+    "courtcase": 20,
+    "charges": [
+      1
+    ]
+  },
+  {
+    "name": "Olivier Deleu",
+    "party": 2,
+    "conviction": 3,
+    "year": 2011,
+    "charges": [
+      16,
+      8
+    ]
+  },
+  {
+    "name": "Olivier Rey",
+    "party": 2,
+    "conviction": 1,
+    "year": 2008,
+    "charges": [
+      "violences",
+      "menaces",
+      "dégradation grave du bien d’autrui à charges de la religion"
+    ]
+  },
+  {
+    "name": "Pascal Buchet",
+    "party": 2,
+    "conviction": 1,
+    "year": 2011,
+    "charges": [
+      41
+    ]
+  },
+  {
+    "name": "Patrick Balkany",
+    "party": 2,
+    "conviction": 1,
+    "year": 2003,
+    "charges": [
+      16,
+      8
+    ]
+  },
+  {
+    "name": "Patrick Balkany",
+    "party": 2,
+    "conviction": 1,
+    "year": 1999,
+    "charges": [
+      5
+    ]
+  },
+  {
+    "name": "Philippe Brun",
+    "party": 2,
+    "conviction": 1,
+    "year": 2011,
+    "charges": [
+      5
+    ]
+  },
+  {
+    "name": "Pierre Bédier",
+    "party": 2,
+    "conviction": 1,
+    "year": 2009,
+    "charges": [
+      17,
+      18
+    ]
+  },
+  {
+    "name": "Philippe Pemezec",
+    "party": 2,
+    "conviction": 1,
+    "year": 2010,
+    "charges": [
+      16
+    ]
+  },
+  {
+    "name": "Philippe Pemezec",
+    "party": 2,
+    "conviction": 1,
+    "year": 2007,
+    "charges": [
+      11
+    ]
+  },
+  {
+    "name": "Renaud Donnedieu de Vabres",
+    "party": 2,
+    "conviction": 1,
+    "year": 2004,
+    "charges": [
+      19
+    ]
+  },
+  {
+    "name": "Renaud Donnedieu de Vabres",
+    "party": 2,
+    "conviction": 3,
+    "year": 2004,
+    "courtcase": 20,
+    "charges": [
+      38
+    ]
+  },
+  {
+    "name": "René Vestri",
+    "party": 2,
+    "conviction": 1,
+    "year": 2009,
+    "charges": [
+      20
+    ]
+  },
+  {
+    "name": "René Vestri",
+    "party": 2,
+    "conviction": 3,
+    "year": 2009,
+    "charges": [
+      46,
+      10,
+      21
+    ]
+  },
+  {
+    "name": "Richard Cazenave",
+    "party": 2,
+    "conviction": 1,
+    "year": 1999,
+    "charges": [
+      5
+    ]
+  },
+  {
+    "name": "Richard Cazenave",
+    "party": 2,
+    "conviction": 1,
+    "year": 2004,
+    "charges": [
+      38
+    ]
+  },
+  {
+    "name": "Serge Dassault",
+    "party": 2,
+    "conviction": 1,
+    "year": 1991,
+    "charges": [
+      74
+    ]
+  },
+  {
+    "name": "Serge Dassault",
+    "party": 2,
+    "conviction": 1,
+    "year": 1998,
+    "charges": [
+      4
+    ]
+  },
+  {
+    "name": "Serge Dassault",
+    "party": 2,
+    "conviction": 1,
+    "year": 2009,
+    "charges": [
+      75,
+      76,
+      77,
+      78
+    ]
+  },
+  {
+    "name": "Thérèse Aillaud",
+    "party": 2,
+    "conviction": 1,
+    "year": 2002,
+    "charges": [
+      1
+    ]
+  },
+  {
+    "name": "Thierry Gaubert",
+    "party": 2,
+    "conviction": 3,
+    "year": 2008,
+    "charges": [
+      5,
+      22
+    ]
+  },
+  {
+    "name": "Thierry Gaubert",
+    "party": 2,
+    "conviction": 3,
+    "year": 2008,
+    "courtcase": 20,
+    "charges": [
+      18,
+      32
+    ]
+  },
+  {
+    "name": "Thierry Leprince",
+    "party": 2,
+    "conviction": 1,
+    "year": 2007,
+    "charges": [
+      15
+    ]
+  },
+  {
+    "name": "Vincent Toni",
+    "party": 2,
+    "conviction": 1,
+    "year": 2011,
+    "charges": [
+      17
+    ]
+  },
+  {
+    "name": "Vincent Toni",
+    "party": 2,
+    "conviction": 1,
+    "year": 2008,
+    "charges": [
+      17
+    ]
+  },
+  {
+    "name": "Xavier Dugoin",
+    "party": 2,
+    "conviction": 1,
+    "year": 1997,
+    "charges": [
+      14,
+      4
+    ]
+  },
+  {
+    "name": "Xavier Dugoin",
+    "party": 2,
+    "conviction": 1,
+    "year": 2000,
+    "charges": [
+      12,
+      1,
+      79,
+      11
+    ]
+  },
+  {
+    "name": "Xavier Dugoin",
+    "party": 2,
+    "conviction": 1,
+    "year": 2001,
+    "charges": [
+      14
+    ]
+  },
+  {
+    "name": "André Santini",
+    "party": 2,
+    "conviction": 3,
+    "year": 2006,
+    "charges": [
+      11,
+      2,
+      1
+    ]
+  },
+  {
+    "name": "Eric Woerth",
+    "party": 2,
+    "conviction": 3,
+    "year": 2012,
+    "charges": [
+      33,
+      80
+    ]
+  },
+  {
+    "name": "Yanick Paternotte",
+    "party": 2,
+    "conviction": 1,
+    "year": 2012,
+    "charges": [
+      9
+    ]
+  },
+  {
+    "name": "Nicolas Sarkozy",
+    "party": 2,
+    "conviction": 2,
+    "year": 2013,
+    "charges": [
+      9
+    ]
+  },
+  {
+    "name": "Alexandre Gabriac",
+    "party": 3,
+    "conviction": 1,
+    "year": 2007,
+    "charges": [
+      81,
+      82,
+      49,
+      83
+    ]
+  },
+  {
+    "name": "Alexandre Simonnot",
+    "party": 3,
+    "conviction": 1,
+    "year": 2010,
+    "charges": [
+      84
+    ]
+  },
+  {
+    "name": "Antoinette Martinet",
+    "party": 3,
+    "conviction": 1,
+    "year": 1998,
+    "charges": [
+      24
+    ]
+  },
+  {
+    "name": "Bruno Gollnisch",
+    "party": 3,
+    "conviction": 1,
+    "year": 2007,
+    "charges": [
+      85
+    ]
+  },
+  {
+    "name": "Bruno Mégret",
+    "party": 3,
+    "conviction": 1,
+    "year": 1998,
+    "charges": [
+      24
+    ]
+  },
+  {
+    "name": "Bruno Mégret",
+    "party": 3,
+    "conviction": 1,
+    "year": 2002,
+    "charges": [
+      1
+    ]
+  },
+  {
+    "name": "Bruno Mégret",
+    "party": 3,
+    "conviction": 1,
+    "year": 2006,
+    "charges": [
+      13
+    ]
+  },
+  {
+    "name": "Claude Jaffres",
+    "party": 3,
+    "conviction": 1,
+    "year": 1997,
+    "charges": [
+      86
+    ]
+  },
+  {
+    "name": "Catherine Mégret",
+    "party": 3,
+    "conviction": 1,
+    "year": 1998,
+    "charges": [
+      24
+    ]
+  },
+  {
+    "name": "Catherine Mégret",
+    "party": 3,
+    "conviction": 1,
+    "year": 2002,
+    "charges": [
+      1
+    ]
+  },
+  {
+    "name": "Catherine Mégret",
+    "party": 3,
+    "conviction": 1,
+    "year": 2006,
+    "charges": [
+      13
+    ]
+  },
+  {
+    "name": "Cédric Bégin",
+    "party": 3,
+    "conviction": 1,
+    "year": 2002,
+    "charges": [
+      24,
+      87
+    ]
+  },
+  {
+    "name": "Christophe Klein",
+    "party": 3,
+    "conviction": 1,
+    "year": 2002,
+    "charges": [
+      24
+    ]
+  },
+  {
+    "name": "Daniel Simonpieri",
+    "party": 3,
+    "conviction": 1,
+    "year": 2011,
+    "charges": [
+      3,
+      23,
+      14
+    ]
+  },
+  {
+    "name": "Denis Monteillet",
+    "party": 3,
+    "conviction": 1,
+    "year": 1995,
+    "charges": [
+      88
+    ]
+  },
+  {
+    "name": "Emilien Bonnal",
+    "party": 3,
+    "ex": true,
+    "conviction": 1,
+    "year": 1985,
+    "charges": [
+      89
+    ],
+    "prison": 8
+  },
+  {
+    "name": "Francis Watez",
+    "party": 3,
+    "conviction": 1,
+    "year": 2007,
+    "fine": 7500,
+    "charges": [
+      24
+    ]
+  },
+  {
+    "name": "François Nicolas-Schmitt",
+    "party": 3,
+    "conviction": 1,
+    "year": 1997,
+    "charges": [
+      13
+    ]
+  },
+  {
+    "name": "Gilles Lacroix",
+    "party": 3,
+    "conviction": 1,
+    "year": 1997,
+    "charges": [
+      83
+    ]
+  },
+  {
+    "name": "Georges Theil",
+    "party": 3,
+    "conviction": 1,
+    "year": 2001,
+    "charges": [
+      82
+    ]
+  },
+  {
+    "name": "Georges Theil",
+    "party": 3,
+    "conviction": 1,
+    "year": 2006,
+    "charges": [
+      82
+    ]
+  },
+  {
+    "name": "Guy Cannie",
+    "party": 3,
+    "conviction": 1,
+    "year": 2011,
+    "charges": [
+      90
+    ]
+  },
+  {
+    "name": "Jacky Codvelle",
+    "party": 3,
+    "conviction": 1,
+    "year": 1990,
+    "charges": [
+      91
+    ]
+  },
+  {
+    "name": "Jacques Bompard",
+    "party": 3,
+    "conviction": 3,
+    "year": 2010,
+    "charges": [
+      11
+    ]
+  },
+  {
+    "name": "Jacques Coutela",
+    "party": 3,
+    "conviction": 3,
+    "year": 2011,
+    "charges": [
+      24
+    ]
+  },
+  {
+    "name": "Jean Holtzer",
+    "party": 3,
+    "conviction": 1,
+    "year": 1990,
+    "charges": [
+      92
+    ]
+  },
+  {
+    "name": "Jean-Claude Poulet",
+    "party": 3,
+    "conviction": 1,
+    "year": 1992,
+    "charges": [
+      45
+    ]
+  },
+  {
+    "name": "Jean-Marc Maurice",
+    "party": 3,
+    "conviction": 1,
+    "year": 2006,
+    "charges": [
+      52
+    ]
+  },
+  {
+    "name": "Jean-Marc Maurice",
+    "party": 3,
+    "conviction": 1,
+    "year": 2007,
+    "charges": [
+      93
+    ]
+  },
+  {
+    "name": "Jean-Marc Maurice",
+    "party": 3,
+    "conviction": 1,
+    "year": 2008,
+    "charges": [
+      22
+    ]
+  },
+  {
+    "name": "Jean-Marc Maurice",
+    "party": 3,
+    "conviction": 1,
+    "year": 2010,
+    "charges": [
+      20
+    ]
+  },
+  {
+    "name": "Jean-Marc Maurice",
+    "party": 3,
+    "conviction": 1,
+    "year": 2011,
+    "charges": [
+      5
+    ]
+  },
+  {
+    "name": "Jean-Marie Le Chevallier",
+    "party": 3,
+    "conviction": 1,
+    "year": 2001,
+    "charges": [
+      1,
+      12
+    ]
+  },
+  {
+    "name": "Jean-Marie Le Chevallier",
+    "party": 3,
+    "conviction": 1,
+    "year": 2001,
+    "charges": [
+      32
+    ]
+  },
+  {
+    "name": "Jean-Yves Douissard",
+    "party": 3,
+    "conviction": 1,
+    "year": 2002,
+    "charges": [
+      24
+    ]
+  },
+  {
+    "name": "Jean-Yves Le Gallou",
+    "party": 3,
+    "conviction": 1,
+    "year": 1998,
+    "charges": [
+      25
+    ]
+  },
+  {
+    "name": "Joël Klein",
+    "party": 3,
+    "conviction": 1,
+    "year": 1998,
+    "charges": [
+      65
+    ]
+  },
+  {
+    "name": "Laurent Mirabeau",
+    "party": 3,
+    "conviction": 1,
+    "year": 1994,
+    "charges": [
+      22,
+      94
+    ]
+  },
+  {
+    "name": "Louis Aliot",
+    "party": 3,
+    "conviction": 1,
+    "year": 2008,
+    "charges": [
+      8
+    ]
+  },
+  {
+    "name": "Louis de Noëll",
+    "party": 3,
+    "conviction": 1,
+    "year": 1997,
+    "charges": [
+      13
+    ]
+  },
+  {
+    "name": "Marc Georges",
+    "party": 3,
+    "conviction": 1,
+    "year": 1995,
+    "charges": [
+      65
+    ]
+  },
+  {
+    "name": "Marc Lyoen",
+    "party": 3,
+    "conviction": 1,
+    "year": 2007,
+    "charges": [
+      68
+    ]
+  },
+  {
+    "name": "Marc Lyoen",
+    "party": 3,
+    "conviction": 1,
+    "year": 2008,
+    "charges": [
+      47
+    ]
+  },
+  {
+    "name": "Marine Le Pen",
+    "party": 3,
+    "conviction": 1,
+    "year": 2007,
+    "charges": [
+      8
+    ]
+  },
+  {
+    "name": "Patrick Bassot",
+    "party": 3,
+    "conviction": 1,
+    "year": 2012,
+    "charges": [
+      24
+    ]
+  },
+  {
+    "name": "Patrick Binder",
+    "party": 3,
+    "conviction": 1,
+    "year": 2005,
+    "charges": [
+      25
+    ]
+  },
+  {
+    "name": "Patrick Binder",
+    "party": 3,
+    "conviction": 1,
+    "year": 2011,
+    "charges": [
+      16,
+      25
+    ]
+  },
+  {
+    "name": "Philippe Bernard",
+    "party": 3,
+    "conviction": 1,
+    "year": 2008,
+    "charges": [
+      "faux et falsification",
+      12,
+      22
+    ]
+  },
+  {
+    "name": "Philippe Viard",
+    "party": 3,
+    "conviction": 3,
+    "year": 1998,
+    "charges": [
+      58
+    ]
+  },
+  {
+    "name": "Philippe Viard",
+    "party": 3,
+    "conviction": 1,
+    "year": 1998,
+    "charges": [
+      16,
+      95
+    ]
+  },
+  {
+    "name": "Richard Jacob",
+    "party": 3,
+    "conviction": 1,
+    "year": 2011,
+    "charges": [
+      52
+    ]
+  },
+  {
+    "name": "Roger Fabregues",
+    "party": 3,
+    "conviction": 1,
+    "year": 1996,
+    "charges": [
+      96
+    ]
+  },
+  {
+    "name": "Sylvain Ferrua",
+    "party": 3,
+    "conviction": 1,
+    "year": 1996,
+    "charges": [
+      67
+    ]
+  },
+  {
+    "name": "Tanguy Deshayes",
+    "party": 3,
+    "conviction": 3,
+    "year": 2009,
+    "charges": [
+      97
+    ]
+  },
+  {
+    "name": "Xavier Voute",
+    "party": 3,
+    "conviction": 1,
+    "year": 1997,
+    "charges": [
+      83
+    ]
+  },
+  {
+    "name": "Yannick Lecointre",
+    "party": 3,
+    "conviction": 1,
+    "year": 2011,
+    "charges": [
+      96
+    ]
+  },
+  {
+    "name": "Jean-Marie Le Pen",
+    "party": 3,
+    "conviction": 1,
+    "year": 1960,
+    "charges": [
+      97
+    ]
+  },
+  {
+    "name": "Jean-Marie Le Pen",
+    "party": 3,
+    "conviction": 1,
+    "year": 1964,
+    "charges": [
+      65
+    ]
+  },
+  {
+    "name": "Jean-Marie Le Pen",
+    "party": 3,
+    "conviction": 1,
+    "year": 1995,
+    "charges": [
+      98
+    ]
+  },
+  {
+    "name": "Jean-Marie Le Pen",
+    "party": 3,
+    "conviction": 1,
+    "year": 1996,
+    "charges": [
+      "pour avoir tenu des propos ayant gravement porté atteinte au président du tribunal d'Auch"
+    ]
+  },
+  {
+    "name": "Jean-Marie Le Pen",
+    "party": 3,
+    "conviction": 1,
+    "year": 1997,
+    "charges": [
+      "pour avoir injurié l'association Ras l'front (mouvement anti-FN) de « mouvement de tueurs de flics »"
+    ]
+  },
+  {
+    "name": "Jean-Marie Le Pen",
+    "party": 3,
+    "conviction": 1,
+    "year": 1997,
+    "charges": [
+      "pour avoir injurié le président de SOS-Racisme"
+    ]
+  },
+  {
+    "name": "Jean-Marie Le Pen",
+    "party": 3,
+    "conviction": 1,
+    "year": 1997,
+    "charges": [
+      "pour banalisation de crimes contre l'humanité et consentement à l’horrible"
+    ]
+  },
+  {
+    "name": "Jean-Marie Le Pen",
+    "party": 3,
+    "conviction": 1,
+    "year": 1998,
+    "charges": [
+      99
+    ]
+  },
+  {
+    "name": "Jean-Marie Le Pen",
+    "party": 3,
+    "conviction": 1,
+    "year": 1998,
+    "charges": [
+      58
+    ]
+  },
+  {
+    "name": "Jean-Marie Le Pen",
+    "party": 3,
+    "conviction": 1,
+    "year": 1999,
+    "charges": [
+      24,
+      100
+    ]
+  },
+  {
+    "name": "Jean-Marie Le Pen",
+    "party": 3,
+    "conviction": 1,
+    "year": 2004,
+    "charges": [
+      25
+    ]
+  },
+  {
+    "name": "Jean-Marie Le Pen",
+    "party": 3,
+    "conviction": 1,
+    "year": 2005,
+    "charges": [
+      24
+    ]
+  },
+  {
+    "name": "Jean-Marie Le Pen",
+    "party": 3,
+    "conviction": 1,
+    "year": 2008,
+    "charges": [
+      100,
+      82
+    ]
+  },
+  {
+    "name": "Nicolas Sarkozy",
+    "party": 2,
+    "conviction": 3,
+    "year": 2013,
+    "courtcase": 20,
+    "charges": [
+      101
+    ]
+  },
+  {
+    "name": "Nicolas Sarkozy",
+    "party": 2,
+    "conviction": 3,
+    "year": 2014,
+    "charges": [
+      4,
+      10,
+      102
+    ]
+  },
+  {
+    "name": "Nicolas Sarkozy",
+    "party": 2,
+    "conviction": 3,
+    "year": 2008,
+    "courtcase": 11,
+    "charges": [
+      3,
+      1
+    ]
+  },
+  {
+    "name": "Jean-François Mancel",
+    "party": 2,
+    "conviction": 3,
+    "year": 2000,
+    "charges": [
+      11
+    ]
+  },
+  {
+    "name": "Yamina Benguigui",
+    "party": 1,
+    "conviction": 4,
+    "year": 2014,
+    "charges": [
+      103
+    ]
+  },
+  {
+    "name": "Aquilino Morelle",
+    "party": 1,
+    "conviction": 3,
+    "year": 2014,
+    "charges": [
+      104
+    ]
+  },
+  {
+    "name": "Thomas Thévenoud",
+    "party": 1,
+    "conviction": 3,
+    "year": 2014,
+    "charges": [
+      69
+    ]
+  },
+  {
+    "name": "Kader Arif",
+    "party": 1,
+    "conviction": 5,
+    "year": 2014,
+    "charges": [
+      11
+    ]
+  },
+  {
+    "name": "Faouzi Lamdaoui",
+    "party": 1,
+    "conviction": 5,
+    "year": 2007,
+    "charges": [
+      5,
+      38,
+      2
+    ]
+  },
+  {
+    "name": "Jean-Pierre Jouyet",
+    "party": 1,
+    "conviction": 5,
+    "year": 2014,
+    "charges": [
+      105
+    ]
+  },
+  {
+    "name": "Jean Daubigny",
+    "party": 1,
+    "conviction": 3,
+    "year": 2016,
+    "charges": [
+      47
+    ]
+  }
 ]
