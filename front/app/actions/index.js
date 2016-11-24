@@ -3,8 +3,7 @@ import * as Action from './constants';
 
 import 'whatwg-fetch'
 
-import { Pourritures, Candidates } from '../models/reference';
-import courtCases from '../data/courtcases.json';
+import { Pourritures, Candidates, CourtCases } from '../models/reference';
 
 
 const groupsFetched = createAction(Action.LOAD_GROUP_FETCHED);
@@ -39,7 +38,7 @@ const courtCasesFetching = createAction(Action.LOAD_COURTCASES_FETCHING);
 export function fetchCourtCases(){
     return (dispatch) => {
         dispatch(courtCasesFetching());
-        new Promise((resolve, _) => resolve(courtCases))
+        new Promise((resolve, _) => resolve(CourtCases))
             .then(response => dispatch(courtCasesFetched(response)))
             .catch(err => dispatch(courtCasesFetched(new Error(JSON.stringify(err)))));
     };

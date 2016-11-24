@@ -1,5 +1,5 @@
 import React from 'react';
-import slugify from '../utils';
+import {slugify} from '../utils';
 
 const personDetails = (props) =>
     <div className="personDetail">

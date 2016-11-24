@@ -23,7 +23,9 @@ const Home = () => {
             </div>
             <div className="row">
                 <h1>Nos affaires préférées</h1>
-                <CourtCaseListContainer/>
+                <div className="col-lg-6">
+                    <CourtCaseListContainer/>
+                </div>
             </div>
       </div>
     </div>

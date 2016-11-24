@@ -3,12 +3,11 @@ import CandidateItem from './CandidateItem';
 import chunk from 'lodash/chunk';
 
 const Candidates = function(props) {
-    //console.log("in CandidateList", props);
 
     return (
         <div className="candidatesList">
-            {chunk(props.data,6).map(group =>
-            <div className="row">
+            {chunk(props.data,4).map((group, i) =>
+            <div className="row" key={"group"+i}>
                 {group.map(c =>
                     <CandidateItem key={c.slug} {...c}/>
                 )}

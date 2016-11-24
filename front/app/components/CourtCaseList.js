@@ -1,9 +1,10 @@
 import React from 'react';
 import CourtCase  from './CourtCase';
+import {slugify} from '../utils';
 
-const CourtCases = (props) =>
-        <div className="courtcasesList">
-            {props.data.map(c => <CourtCase key={c.name} data={c}/>)}
-        </div>;
+const CourtCaseList = (props) =>
+        <ul className="list-group">
+            {props.data.map(c => <CourtCase key={slugify(c.name)} {...c}/>)}
+        </ul>;
 
-export default CourtCases
+export default CourtCaseList;

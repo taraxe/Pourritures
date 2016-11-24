@@ -9,8 +9,10 @@ export const slugify = (name) =>
         .replace(/[\s_-]+/g, '-') // swap any length of whitespace, underscore, hyphen characters with a single -
         .replace(/^-+|-+$/g, ''); // remove leading, trailing -
 
-export const distinct = (value, index, self) => {
-    return self.indexOf(value) === index;
-};
+export const distinct = (value, index, self) =>
+    self.indexOf(value) === index;
 
-export default {slugify, distinct};
+export const pluralize = (array, singular, plural) =>
+    array.length > 1 ? plural : singular;
+
+export default {slugify, distinct, pluralize};

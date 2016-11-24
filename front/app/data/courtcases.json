@@ -1,119 +1,122 @@
 [
   {
     "id": 1,
-    "name":"Affaire Bygmalion",
-    "description":"L'affaire Bygmalion est une affaire politico-financière française.",
+    "name": "Affaire Bygmalion",
+    "description": "L'affaire Bygmalion est une affaire politico-financière française.",
     "link": "https://fr.wikipedia.org/wiki/Affaire_Bygmalion"
-  },{
+  },
+  {
     "id": 2,
-    "name":"Affaire Cahuzac",
-    "description":"L'affaire Cahuzac est un scandale politico-financier français mettant en cause Jérôme Cahuzac, ministre délégué chargé du Budget lors du déclenchement de l’affaire, en décembre 2012.",
+    "name": "Affaire Cahuzac",
+    "description": "L'affaire Cahuzac est un scandale politico-financier français mettant en cause Jérôme Cahuzac, ministre délégué chargé du Budget lors du déclenchement de l’affaire, en décembre 2012.",
     "link": "https://fr.wikipedia.org/wiki/Affaire_Cahuzac"
-  },{
+  },
+  {
     "id": 3,
-    "name":"Affaire Sarkozy-Kadhafi",
-    "description":"L'affaire Sarkozy-Kadhafi est une affaire politico-financière internationale déclenchée par la publication, par le journal en ligne Mediapart, le 12 mars et le 28 avril 2012, de deux documents laissant supposer l’existence d’un versement de 50 millions d'euros",
+    "name": "Affaire Sarkozy-Kadhafi",
+    "description": "L'affaire Sarkozy-Kadhafi est une affaire politico-financière internationale déclenchée par la publication, par le journal en ligne Mediapart, le 12 mars et le 28 avril 2012, de deux documents laissant supposer l’existence d’un versement de 50 millions d'euros",
     "link": "https://fr.wikipedia.org/wiki/Affaire_Sarkozy-Kadhafi"
-  },{
+  },
+  {
     "id": 4,
-    "name":"Affaire Woerth-Bettencourt",
-    "description":"L'affaire Woerth-Bettencourt est le nom donné par les médias aux procédures judiciaires visant principalement les liens entre l'homme politique Éric Woerth et la femme d'affaires Liliane Bettencourt.",
+    "name": "Affaire Woerth-Bettencourt",
+    "description": "L'affaire Woerth-Bettencourt est le nom donné par les médias aux procédures judiciaires visant principalement les liens entre l'homme politique Éric Woerth et la femme d'affaires Liliane Bettencourt.",
     "link": "https://fr.wikipedia.org/wiki/Affaire_Woerth-Bettencourt"
-  },{
+  },
+  {
     "id": 5,
-    "name":"Affaire du Carlton de Lille",
-    "description":"L’affaire du Carlton de Lillenote 1 est une affaire autour de René Kojfer, chargé des relations publiques des hôtels Carlton et les Tours. Il a organisé des « parties fines » avec plusieurs notables de la région à Lille, Paris et Washington.",
+    "name": "Affaire du Carlton de Lille",
+    "description": "L’affaire du Carlton de Lillenote 1 est une affaire autour de René Kojfer, chargé des relations publiques des hôtels Carlton et les Tours. Il a organisé des « parties fines » avec plusieurs notables de la région à Lille, Paris et Washington.",
     "link": "https://fr.wikipedia.org/wiki/Affaire_du_Carlton_de_Lille"
-  },{
+  },
+  {
     "id": 6,
-    "name":"Affaire de la MNEF",
-    "description":"affaire d'enrichissement personnel et d'emplois fictifs qui touche la MNEF dans les années 1990",
-    "link":"https://fr.wikipedia.org/wiki/Affaire_de_la_MNEF"
+    "name": "Affaire de la MNEF",
+    "description": "Affaire d'enrichissement personnel et d'emplois fictifs qui touche la MNEF dans les années 1990",
+    "link": "https://fr.wikipedia.org/wiki/Affaire_de_la_MNEF"
   },
   {
     "id": 7,
-    "name":"frais de la Soginorpa",
-    "description":"Le 21 mai 2013, Jean-Pierre Kucheida a été condamné à 30 000 euros d'amende pour abus de biens sociaux lors du procès des frais de la Soginorpa, bailleur social dont il était chargé15.",
-    "link":"https://fr.wikipedia.org/wiki/Jean-Pierre_Kucheida#Condamnation"
+    "name": "Frais de la Soginorpa",
+    "description": "Le 21 mai 2013, Jean-Pierre Kucheida a été condamné à 30 000 euros d'amende pour abus de biens sociaux lors du procès des frais de la Soginorpa, bailleur social dont il était chargé15.",
+    "link": "https://fr.wikipedia.org/wiki/Jean-Pierre_Kucheida#Condamnation"
   },
   {
-      "id": 8,
-      "name":"Affaire VA-OM",
-      "description":"L'affaire VA-OM est une affaire de corruption dans le monde du football français qui a éclaté à la suite du match de championnat remporté 1 à 0 le 20 mai 1993 par l'Olympique de Marseille sur le terrain de l'US Valenciennes-Anzin. Des joueurs de Valenciennes ont déclaré avoir été invités par des émissaires de l'équipe adverse à lever le pied en échange d'une somme d'argent.",
-      "link":"https://fr.wikipedia.org/wiki/Affaire_VA-OM"
+    "id": 8,
+    "name": "Affaire VA-OM",
+    "description": "L'affaire VA-OM est une affaire de corruption dans le monde du football français qui a éclaté à la suite du match de championnat remporté 1 à 0 le 20 mai 1993 par l'Olympique de Marseille sur le terrain de l'US Valenciennes-Anzin. Des joueurs de Valenciennes ont déclaré avoir été invités par des émissaires de l'équipe adverse à lever le pied en échange d'une somme d'argent.",
+    "link": "https://fr.wikipedia.org/wiki/Affaire_VA-OM"
   },
   {
-      "id": 9,
-      "name":"Affaire Urba",
-      "description":"L'affaire Urba porte notamment sur les conditions d'attribution de marchés publics et concerne le financement occulte du Parti Socialiste français. Le volet marseillais de l'affaire concerne la période de janvier 1987 à février 1989.",
-      "link":"https://fr.wikipedia.org/wiki/Affaire_Urba"
+    "id": 9,
+    "name": "Affaire Urba",
+    "description": "L'affaire Urba porte notamment sur les conditions d'attribution de marchés publics et concerne le financement occulte du Parti Socialiste français. Le volet marseillais de l'affaire concerne la période de janvier 1987 à février 1989.",
+    "link": "https://fr.wikipedia.org/wiki/Affaire_Urba"
   },
   {
-      "id": 10,
-      "name":"Affaire Guérini",
-      "description":"L'affaire Guérini est une affaire politico-financière française qui touche à l'exploitation frauduleuse de décharges et à l'obtention de marchés auprès de collectivités par des sociétés soupçonnées de blanchiment d'argent et de liens avec le grand banditisme.",
-      "link":"https://fr.wikipedia.org/wiki/Affaire_Gu%C3%A9rini"
+    "id": 10,
+    "name": "Affaire Guérini",
+    "description": "L'affaire Guérini est une affaire politico-financière française qui touche à l'exploitation frauduleuse de décharges et à l'obtention de marchés auprès de collectivités par des sociétés soupçonnées de blanchiment d'argent et de liens avec le grand banditisme.",
+    "link": "https://fr.wikipedia.org/wiki/Affaire_Gu%C3%A9rini"
   },
   {
-      "id": 11,
-      "name":"Affaire des écoutes de l'Élysée",
-      "description":"L’affaire des écoutes de l’Élysée est une affaire française d’écoutes téléphoniques illégales qui s'est déroulée de 1983 à 1986 sous le premier septennat de François Mitterrand.",
-      "link":"https://fr.wikipedia.org/wiki/Affaire_des_%C3%A9coutes_de_l%27%C3%89lys%C3%A9e"
+    "id": 11,
+    "name": "Affaire des écoutes de l'Élysée",
+    "description": "L’affaire des écoutes de l’Élysée est une affaire française d’écoutes téléphoniques illégales qui s'est déroulée de 1983 à 1986 sous le premier septennat de François Mitterrand.",
+    "link": "https://fr.wikipedia.org/wiki/Affaire_des_%C3%A9coutes_de_l%27%C3%89lys%C3%A9e"
   },
   {
-      "id": 12,
-      "name":"Affaire du siège de GEC-Alsthom Transport",
-      "description":"L’affaire des écoutes de l’Élysée est une affaire française d’écoutes téléphoniques illégales qui s'est déroulée de 1983 à 1986 sous le premier septennat de François Mitterrand.",
-      "link":"https://fr.wikipedia.org/wiki/Affaire_du_si%C3%A8ge_de_GEC-Alsthom_Transport"
+    "id": 12,
+    "name": "Affaire du siège de GEC-Alsthom Transport",
+    "description": "L’affaire des écoutes de l’Élysée est une affaire française d’écoutes téléphoniques illégales qui s'est déroulée de 1983 à 1986 sous le premier septennat de François Mitterrand.",
+    "link": "https://fr.wikipedia.org/wiki/Affaire_du_si%C3%A8ge_de_GEC-Alsthom_Transport"
   },
   {
-      "id": 13,
-      "name":"Affaire de la Sofremi",
-      "description":"L’affaire des écoutes de l’Élysée est une affaire française d’écoutes téléphoniques illégales qui s'est déroulée de 1983 à 1986 sous le premier septennat de François Mitterrand.",
-      "link":"https://fr.wikipedia.org/wiki/Affaire_de_la_Sofremi"
+    "id": 13,
+    "name": "Affaire de la Sofremi",
+    "description": "L’affaire des écoutes de l’Élysée est une affaire française d’écoutes téléphoniques illégales qui s'est déroulée de 1983 à 1986 sous le premier septennat de François Mitterrand.",
+    "link": "https://fr.wikipedia.org/wiki/Affaire_de_la_Sofremi"
   },
   {
-      "id": 14,
-      "name":"Affaire du casino d'Annemasse",
-      "description":"L’affaire des écoutes de l’Élysée est une affaire française d’écoutes téléphoniques illégales qui s'est déroulée de 1983 à 1986 sous le premier septennat de François Mitterrand.",
-      "link":"https://fr.wikipedia.org/wiki/Affaire_du_casino_d%27Annemasse"
+    "id": 14,
+    "name": "Affaire du casino d'Annemasse",
+    "description": "L’affaire des écoutes de l’Élysée est une affaire française d’écoutes téléphoniques illégales qui s'est déroulée de 1983 à 1986 sous le premier septennat de François Mitterrand.",
+    "link": "https://fr.wikipedia.org/wiki/Affaire_du_casino_d%27Annemasse"
   },
   {
-      "id": 15,
-      "name":"Affaire Pétrole contre nourriture",
-      "description":"L’affaire des écoutes de l’Élysée est une affaire française d’écoutes téléphoniques illégales qui s'est déroulée de 1983 à 1986 sous le premier septennat de François Mitterrand.",
-      "link":"https://fr.wikipedia.org/wiki/Affaire_P%C3%A9trole_contre_nourriture"
+    "id": 15,
+    "name": "Affaire Pétrole contre nourriture",
+    "description": "L’affaire des écoutes de l’Élysée est une affaire française d’écoutes téléphoniques illégales qui s'est déroulée de 1983 à 1986 sous le premier septennat de François Mitterrand.",
+    "link": "https://fr.wikipedia.org/wiki/Affaire_P%C3%A9trole_contre_nourriture"
   },
   {
-      "id": 16,
-      "name":"Affaire de la Fondation Hamon",
-      "description":"L’affaire des écoutes de l’Élysée est une affaire française d’écoutes téléphoniques illégales qui s'est déroulée de 1983 à 1986 sous le premier septennat de François Mitterrand.",
-      "link":"https://fr.wikipedia.org/wiki/Affaire_de_la_Fondation_Hamon"
+    "id": 16,
+    "name": "Affaire de la Fondation Hamon",
+    "description": "L’affaire des écoutes de l’Élysée est une affaire française d’écoutes téléphoniques illégales qui s'est déroulée de 1983 à 1986 sous le premier septennat de François Mitterrand.",
+    "link": "https://fr.wikipedia.org/wiki/Affaire_de_la_Fondation_Hamon"
   },
   {
-      "id": 17,
-      "name":"Affaire des ventes d'armes à l'Angola",
-      "description":"L’affaire des écoutes de l’Élysée est une affaire française d’écoutes téléphoniques illégales qui s'est déroulée de 1983 à 1986 sous le premier septennat de François Mitterrand.",
-      "link":"https://fr.wikipedia.org/wiki/Affaire_des_ventes_d%27armes_%C3%A0_l%27Angola"
+    "id": 17,
+    "name": "Affaire des ventes d'armes à l'Angola",
+    "description": "L’affaire des écoutes de l’Élysée est une affaire française d’écoutes téléphoniques illégales qui s'est déroulée de 1983 à 1986 sous le premier septennat de François Mitterrand.",
+    "link": "https://fr.wikipedia.org/wiki/Affaire_des_ventes_d%27armes_%C3%A0_l%27Angola"
   },
   {
-        "id": 18,
-        "name":"Affaire Robert Boulin",
-        "description":"L’affaire des écoutes de l’Élysée est une affaire française d’écoutes téléphoniques illégales qui s'est déroulée de 1983 à 1986 sous le premier septennat de François Mitterrand.",
-        "link":"https://fr.wikipedia.org/wiki/Affaire_Robert_Boulin"
-    },
-    {
-          "id": 19,
-          "name":"Affaire des faux électeurs du 3e arrondissement de Paris",
-          "description":"L'affaire des faux électeurs du 3e arrondissement de Paris est une affaire de fraude électorale qui aurait consisté à inscrire sur les listes électorales du 3e arrondissement de Paris des personnes qui n'y résidaient pas, afin d'assurer une victoire de la majorité RPR-UDF dans l'arrondissement aux élections municipales de 1989 et 1995.",
-          "link":"https://fr.wikipedia.org/wiki/Affaire_des_faux_%C3%A9lecteurs_du_3e_arrondissement_de_Paris"
-      },
-      {
-            "id": 20,
-            "name":"Affaire des frégates d'Arabie saoudite et des sous-marins du Pakistan",
-            "description":"L’affaire des frégates d’Arabie saoudite et des sous-marins du Pakistan, communément désignée sous diverses appellations dans la presse et notamment sous le nom d’« affaire Karachi », est une affaire politico-financière qui concerne deux contrats d’armement signés en 1994. ",
-            "link":"https://fr.wikipedia.org/wiki/Affaire_des_fr%C3%A9gates_d%27Arabie_saoudite_et_des_sous-marins_du_Pakistan"
-        }
-
-
+    "id": 18,
+    "name": "Affaire Robert Boulin",
+    "description": "L’affaire des écoutes de l’Élysée est une affaire française d’écoutes téléphoniques illégales qui s'est déroulée de 1983 à 1986 sous le premier septennat de François Mitterrand.",
+    "link": "https://fr.wikipedia.org/wiki/Affaire_Robert_Boulin"
+  },
+  {
+    "id": 19,
+    "name": "Affaire des faux électeurs du 3e arrondissement de Paris",
+    "description": "L'affaire des faux électeurs du 3e arrondissement de Paris est une affaire de fraude électorale qui aurait consisté à inscrire sur les listes électorales du 3e arrondissement de Paris des personnes qui n'y résidaient pas, afin d'assurer une victoire de la majorité RPR-UDF dans l'arrondissement aux élections municipales de 1989 et 1995.",
+    "link": "https://fr.wikipedia.org/wiki/Affaire_des_faux_%C3%A9lecteurs_du_3e_arrondissement_de_Paris"
+  },
+  {
+    "id": 20,
+    "name": "Affaire des frégates d'Arabie saoudite et des sous-marins du Pakistan",
+    "description": "L’affaire des frégates d’Arabie saoudite et des sous-marins du Pakistan, communément désignée sous diverses appellations dans la presse et notamment sous le nom d’« affaire Karachi », est une affaire politico-financière qui concerne deux contrats d’armement signés en 1994. ",
+    "link": "https://fr.wikipedia.org/wiki/Affaire_des_fr%C3%A9gates_d%27Arabie_saoudite_et_des_sous-marins_du_Pakistan"
+  }
 ]

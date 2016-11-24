@@ -8,45 +8,24 @@ import cases from '../data/courtcases.json';
 
 import pourritures from '../data/pourritures.json';
 import candidates from '../data/candidats.json';
+import courtcases from '../data/courtcases.json';
 
-export const PartyMap = d3.nest()
-        .key(d => d.id)
+const nestBy = (array, keyFunction, transform = d => d) => d3.nest()
+        .key(keyFunction)
         .rollup(values => {
             return {
-                label: values[0].label,
-                shortLabel: values[0].shortLabel
+                ...transform(values[0])
             }
         })
-        .object(parties);
+        .object(array);
 
-export const ConvictionMap = d3.nest()
-        .key(d => d.id)
-        .rollup(values => {
-            return {
-                label: values[0].label
-            }
-        })
-        .object(convictions);
-
-export const ChargeMap = d3.nest()
-        .key(d => d.id)
-        .rollup(values => {
-            return {
-                label: values[0].label
-            }
-        })
-        .object(charges);
-
-export const CourtcaseMap = d3.nest()
-    .key(d => d.id)
-    .rollup(values => {
-        return {
-            name: values[0].name,
-            description: values[0].description,
-            link: values[0].link,
-        }
-    })
-    .object(cases);
+const PartyMap = nestBy(parties, d => d.id);
+const ConvictionMap = nestBy(convictions, d => d.id);
+const ChargeMap = nestBy(charges, d => d.id);
+const CourtcaseMap = nestBy(cases, d => d.id);
+const PourritureMap = nestBy(pourritures, d => slugify(d.name), d => {
+    return { ...d, slug: slugify(d.name)}
+});
 
 export const Pourritures = pourritures.map(p => {
     return {
@@ -59,7 +38,6 @@ export const Pourritures = pourritures.map(p => {
 export const Candidates = candidates.map( c => {
     const slug = slugify(c.name);
     const dossiers = pourritures.filter(p => slugify(p.name) == slug);
-    //const cases = dossiers.map(d => d.courtcase).filter(distinct).map(id => CourtcaseMap[id]).filter(c => c !== undefined);
     return {
         slug,
         pourritures: dossiers,
@@ -68,6 +46,13 @@ export const Candidates = candidates.map( c => {
     }
 });
 
+export const CourtCases = courtcases.map(c => {
+        const ps = pourritures.filter(p => p.courtcase === c.id).concat([]);
+        return {
+            pourritures: ps.map(p => PourritureMap[slugify(p.name)]),
+            ...c
+        }
+    }).filter(c => c.pourritures.length > 0).sort((a,b) => b.pourritures.length > a.pourritures.length);
 
-export default { PartyMap, ConvictionMap, ChargeMap, CourtcaseMap, Pourritures, Candidates }
+export default { Pourritures, Candidates, CourtCases }
 
