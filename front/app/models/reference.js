@@ -1,5 +1,7 @@
 import * as d3 from "d3";
 import {slugify, distinct} from '../utils';
+import compact from "lodash/compact";
+
 
 import charges from '../data/charges.json';
 import convictions from '../data/convictions.json';
@@ -24,13 +26,19 @@ const ConvictionMap = nestBy(convictions, d => d.id);
 const ChargeMap = nestBy(charges, d => d.id);
 const CourtcaseMap = nestBy(cases, d => d.id);
 const PourritureMap = nestBy(pourritures, d => slugify(d.name), d => {
-    return { ...d, slug: slugify(d.name)}
+    const chs = d.charges.map(ch => ChargeMap[ch])
+    return {
+        ...d,
+        slug: slugify(d.name),
+        charges: compact(chs).map(ch => ch.label),
+        conviction: ConvictionMap[d.conviction].label
+    }
 });
 
 export const Pourritures = pourritures.map(p => {
     return {
-        slug: slugify(p.name),
         ...p,
+        slug: slugify(p.name),
         party: p.party ? PartyMap[p.party] : undefined
     }
 });

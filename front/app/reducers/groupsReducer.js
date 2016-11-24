@@ -2,8 +2,6 @@ import * as Actions from '../actions/constants';
 import {handleActions} from 'redux-actions';
 import * as d3 from "d3";
 
-import { PartyMap } from '../models/reference';
-
 const initialState = {
     isFetching : true,
     data: []
