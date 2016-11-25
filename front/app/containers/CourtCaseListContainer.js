@@ -22,8 +22,6 @@ class CourtCaseListContainer extends React.Component {
     }
 }
 
-function mapStateToProps(state) {
-    return state.courtCasesNode;
-}
+const mapStateToProps = (state) => state.courtCasesNode;
 
 export default connect(mapStateToProps)(CourtCaseListContainer);
