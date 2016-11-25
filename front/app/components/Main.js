@@ -10,7 +10,7 @@ class Main extends React.Component {
       <div id='wrapper'>
         <div id='page-wrapper' className="gray-bg">
           <Header/>
-          <div className='row wrapper wrapper-content white-bg'>
+          <div className='row wrapper white-bg'>
               {this.props.children}
           </div>
           <Footer/>
