@@ -1,7 +1,7 @@
 import React from 'react';
 import store from '../store/configureStore';
 import CourtCaseList from '../components/CourtCaseList';
-import { fetchCourtCases } from '../actions';
+import { fetchCourtCases } from '../actions/internal';
 import { connect } from 'react-redux';
 
 class CourtCaseListContainer extends React.Component {

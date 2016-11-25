@@ -1,7 +1,7 @@
 import React from 'react';
 import store from '../store/configureStore';
 import PersonDetails from '../components/PersonDetails';
-import { fetchPersonDetails } from '../actions';
+import { fetchPersonDetails } from '../actions/internal';
 import { connect } from 'react-redux';
 
 class PersonDetailsContainer extends React.Component {

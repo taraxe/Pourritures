@@ -1,7 +1,7 @@
 import React from 'react';
 import store from '../store/configureStore';
 import ContributorsList from '../components/ContributorsList';
-import { fetchContributors } from '../actions';
+import { fetchContributors } from '../actions/external';
 import { connect } from 'react-redux';
 
 class ContributorsContainer extends React.Component {
