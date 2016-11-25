@@ -17,7 +17,7 @@ class PersonDetailsContainer extends React.Component {
         if (this.props.isFetching){
             return <span>Loading</span>
         } else {
-            return <PersonDetails data={this.props} />;
+            return <PersonDetails {...this.props} />;
         }
     }
 }

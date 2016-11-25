@@ -47,8 +47,8 @@ const personDetailsFetching = createAction(Action.LOAD_PERSON_DETAILS_FETCHING);
 export function fetchPersonDetails({slug}){
     return (dispatch) => {
         dispatch(personDetailsFetching({slug}));
-        const match = Pourritures.find(d  => d.slug === slug);
-        (match ? Promise.resolve(match) : Promise.reject())
+        const match = Pourritures.filter(d  => d.slug === slug) || [];
+        (match.length > 0 ? Promise.resolve(match) : Promise.reject())
             .then(response => dispatch(personDetailsFetched({data: response, slug})))
             .catch(err => dispatch(personDetailsFetched(new Error(JSON.stringify(err)))));
     };

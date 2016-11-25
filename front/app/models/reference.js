@@ -36,10 +36,13 @@ const PourritureMap = nestBy(pourritures, d => slugify(d.name), d => {
 });
 
 export const Pourritures = pourritures.map(p => {
+    const chs = p.charges.map(ch => ChargeMap[ch])
     return {
         ...p,
         slug: slugify(p.name),
-        party: p.party ? PartyMap[p.party] : undefined
+        party: p.party ? PartyMap[p.party] : undefined,
+        conviction: ConvictionMap[p.conviction],
+        charges: compact(chs).map(ch => ch.label)
     }
 });
 

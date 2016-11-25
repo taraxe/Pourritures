@@ -12,19 +12,17 @@ const initialState = {
 
 const candidatesReducer = handleActions({
     [Actions.LOAD_PERSON_DETAILS_FETCHING]: (state, action) => {
-        console.log(action);
         return Object.assign({}, state, {
             isFetching: true
         });
     },
     [Actions.LOAD_PERSON_DETAILS_FETCHED]: (state, action) => {
-        console.log(action);
-        const {data, slug} = action.payload;
+        const {data, _} = action.payload;
         return Object.assign({}, state, {
             isFetching: false,
-            slug,
-            name: data[0].name || "",
-            cases: data
+            slug: data[0].slug,
+            name: data[0].name,
+            cases: data,
         });
     }
 }, initialState);
