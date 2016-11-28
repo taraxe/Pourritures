@@ -1,10 +1,16 @@
 import React from 'react';
 import {slugify} from '../utils';
 
-const personDetails = (props) =>
-    <div className='container'>
+const personDetails = (props) => {
+    const style = {
+        backgroundImage: "url(/images/assets/candidates/"+props.slug+".jpg)",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+    };
+
+    return (<div className='container'>
         <div className='row wrapper wrapper-content'>
-            <img className="img-lg" src={"/images/assets/candidates/" + props.slug + ".jpg"}/>
+            <img className="img-lg img-circle" style={style}/>
             <h1 className="m-b-lg">{props.name}</h1>
             <ol>
                 {props.cases.map( (c,i) =>
@@ -19,6 +25,6 @@ const personDetails = (props) =>
                 )}
             </ol>
         </div>
-    </div>;
+    </div>)};
 
 export default personDetails
