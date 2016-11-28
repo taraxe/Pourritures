@@ -48,7 +48,7 @@ export const Pourritures = pourritures.map(p => {
 
 export const Candidates = candidates.map( c => {
     const slug = slugify(c.name);
-    const dossiers = pourritures.filter(p => slugify(p.name) == slug);
+    const dossiers = Pourritures.filter(p => slugify(p.name) == slug);
     return {
         slug,
         pourritures: dossiers,

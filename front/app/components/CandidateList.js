@@ -1,19 +1,17 @@
 import React from 'react';
 import CandidateItem from './CandidateItem';
-import chunk from 'lodash/chunk';
 
-const Candidates = function(props) {
+const Candidates = (props) => {
+        const style = {
+            display : "flex",
+            flexWrap: "wrap",
+        };
 
-    return (
-        <div className="candidatesList">
-            {chunk(props.data,4).map((group, i) =>
-            <div className="row" key={"group"+i}>
-                {group.map(c =>
-                    <CandidateItem key={c.slug} {...c}/>
-                )}
-            </div>
+        return (<div style={style}>
+            {props.data.map(c =>
+                <CandidateItem key={c.slug} {...c}/>
             )}
-        </div>
-    );
-};
+            <div className="clear"></div>
+        </div>)};
+
 export default Candidates;

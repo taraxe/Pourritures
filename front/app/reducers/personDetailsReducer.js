@@ -17,17 +17,17 @@ const candidatesReducer = handleActions({
         });
     },
     [Actions.LOAD_PERSON_DETAILS_FETCHED]: (state, action) => {
-        const {data, _} = action.payload;
-
+        const {pourritures, slug, name} = action.payload;
+        //console.log(action.payload);
         const perYer = d3.nest()
             .key(d => d.year)
             .sortKeys(d3.descending)
-            .entries(data);
+            .entries(pourritures);
 
         return Object.assign({}, state, {
             isFetching: false,
-            slug: data[0].slug,
-            name: data[0].name,
+            slug,
+            name,
             casesPerYear: perYer,
         });
     }

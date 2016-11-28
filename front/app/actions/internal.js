@@ -47,9 +47,10 @@ const personDetailsFetching = createAction(Action.LOAD_PERSON_DETAILS_FETCHING);
 export function fetchPersonDetails({slug}){
     return (dispatch) => {
         dispatch(personDetailsFetching({slug}));
-        const match = Pourritures.filter(d  => d.slug === slug) || [];
-        (match.length > 0 ? Promise.resolve(match) : Promise.reject())
-            .then(response => dispatch(personDetailsFetched({data: response, slug})))
+        const match = Candidates.find(d  => d.slug === slug);
+        console.log(match);
+        (match ? Promise.resolve(match) : Promise.reject())
+            .then(response => dispatch(personDetailsFetched(response)))
             .catch(err => dispatch(personDetailsFetched(new Error(JSON.stringify(err)))));
     };
 }

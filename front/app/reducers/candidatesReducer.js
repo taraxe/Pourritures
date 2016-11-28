@@ -15,7 +15,6 @@ const candidatesReducer = handleActions({
     },
     [Actions.LOAD_CANDIDATES_FETCHED]: (state, action) => {
         const raw = action.payload;
-        //console.log("HIT",raw);
         return Object.assign({}, state, {
             isFetching: false,
             data: raw

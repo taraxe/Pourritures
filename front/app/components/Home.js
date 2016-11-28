@@ -22,7 +22,7 @@ const Home = () => {
             </div>
             <div className="row wrapper wrapper-content">
                 <h1 className="m-b-lg">Nos affaires préférées</h1>
-                <div className="col-lg-6">
+                <div className="col-lg-10">
                     <CourtCaseListContainer/>
                 </div>
             </div>
