@@ -1,5 +1,5 @@
 import React from 'react';
-import {slugify} from '../utils';
+import {capitalize} from '../utils';
 
 const personDetails = (props) => {
     const style = {
@@ -12,15 +12,15 @@ const personDetails = (props) => {
         <div className='row wrapper wrapper-content'>
             <img className="img-lg img-circle" style={style}/>
             <h1 className="m-b-lg">{props.name}</h1>
-            <ol>
-                {props.cases.map( (c,i) =>
-                    <li key={"case-"+i}>
-                        <h2>{c.year}</h2>
-                        <ul>
-                            {c.charges.map((r,i) =>
-                                <li key={"charge-"+i}>{r}</li>
+            <ol className="unstyled">
+                {props.casesPerYear.map( ({ key, values }, i) =>
+                    <li key={"case-"+key+"-"+i}>
+                        <h2>{key}</h2>
+                        <ol className="unstyled">
+                            {values.map(({conviction, charges},i) =>
+                                <li key={"charge-"+key+"-"+i}>{capitalize(conviction.label)} pour {charges.join(", ")}</li>
                             )}
-                        </ul>
+                        </ol>
                     </li>
                 )}
             </ol>

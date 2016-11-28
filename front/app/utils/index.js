@@ -1,3 +1,4 @@
+import isString from 'lodash/isString';
 
 export const slugify = (name) =>
     name.toLowerCase()
@@ -15,4 +16,8 @@ export const distinct = (value, index, self) =>
 export const pluralize = (array, singular, plural) =>
     array.length > 1 ? plural : singular;
 
-export default {slugify, distinct, pluralize};
+export const capitalize = (string) => {
+    if (isString(string)) return string.charAt(0).toUpperCase() + string.slice(1);
+};
+
+export default {slugify, distinct, pluralize, capitalize};

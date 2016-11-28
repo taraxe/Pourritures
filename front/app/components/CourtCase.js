@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router';
-import { pluralize } from '../utils';
+import { pluralize, capitalize } from '../utils';
 
 const courtCase = (props) =>
     <li className="list-group-item">
@@ -11,7 +11,7 @@ const courtCase = (props) =>
             <h4>{pluralize(props.pourritures, "Elu impliqué", "Elus impliqués")}:</h4>
             <ul className="unstyled">
                 {props.pourritures.map(p =>
-                    <li key={p.slug}><Link to={"/ordures/"+p.slug}>{p.name}</Link> <small>{p.conviction} pour {p.charges.join(", ")}</small></li>
+                    <li key={p.slug}><Link to={"/ordures/"+p.slug}>{p.name}</Link> <small>{capitalize(p.conviction)} pour {p.charges.join(", ")}</small></li>
                 )}
             </ul>
             <span className="pull-right"><a href={props.link} target="_blank">En savoir plus</a></span>

@@ -8,7 +8,7 @@ const ContributorsList = function(props) {
 
 
     return (
-        <ul>
+        <ul className="unstyled">
             {props.data.map(contributor)}
         </ul>
     );
