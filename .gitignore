@@ -15,3 +15,4 @@ front/node_modules
 /RUNNING_PID
 /.settings
 npm-debug.log
+.DS_Store
