@@ -18,7 +18,7 @@ const groupsReducer = handleActions({
         const raw = action.payload;
 
         const perYer = d3.nest()
-            .key(d => d.annee)
+            .key(d => d.year)
             .sortKeys(d3.ascending)
             .rollup( values => values.length)
             .entries(raw);
@@ -45,14 +45,14 @@ const groupsReducer = handleActions({
         };
 
         const perYerPerGroup = d3.nest()
-            .key(d => d.annee)
+            .key(d => d.year)
             .sortKeys(d3.ascending)
             .rollup(function(values){
-                const filter = g => d => d.formation === g;
+                const filter = g => d => d.party.shortLabel === g;
                 return {
-                 ps: values.filter(filter("ps")).length,
-                 lr: values.filter(filter("ump")).length,
-                 fn: values.filter(filter("fn")).length
+                 ps: values.filter(filter("PS")).length,
+                 lr: values.filter(filter("UMP")).length,
+                 fn: values.filter(filter("FN")).length
                 }
             })
             .entries(raw);
@@ -79,8 +79,6 @@ const groupsReducer = handleActions({
                 }
             }
         };
-
-        console.log("Sum", perYerPerGroup);
 
         return Object.assign({}, state, {
             isFetching: false,

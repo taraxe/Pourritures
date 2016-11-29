@@ -1,7 +1,7 @@
 import React from 'react';
 import store from '../store/configureStore';
 import PersonDetails from '../components/PersonDetails';
-import { fetchPersonDetails } from '../actions';
+import { fetchPersonDetails } from '../actions/internal';
 import { connect } from 'react-redux';
 
 class PersonDetailsContainer extends React.Component {
@@ -17,7 +17,7 @@ class PersonDetailsContainer extends React.Component {
         if (this.props.isFetching){
             return <span>Loading</span>
         } else {
-            return <PersonDetails data={this.props} />;
+            return <PersonDetails {...this.props} />;
         }
     }
 }

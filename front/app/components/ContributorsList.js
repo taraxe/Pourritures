@@ -2,13 +2,13 @@ import React from 'react';
 
 const ContributorsList = function(props) {
     const contributor = (c) =>
-        <li className="col-lg-4">
+        <li key={c.name} className="col-lg-4">
             <a href={c.url}><img className="img-rounded img-md" src={c.avatar} alt={c.name}/></a>
         </li>;
 
 
     return (
-        <ul>
+        <ul className="unstyled">
             {props.data.map(contributor)}
         </ul>
     );

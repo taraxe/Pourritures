@@ -1,0 +1,32 @@
+[
+  {
+    "id" : 1,
+    "label": "Parti socialiste",
+    "shortLabel": "PS"
+  },
+  {
+    "id" : 2,
+    "label": "Les Républicains",
+    "shortLabel": "LR"
+  },
+  {
+    "id" : 3,
+    "label": "Front National",
+    "shortLabel": "FN"
+  },
+  {
+    "id" : 4,
+    "label": "Union des Démocrates et Indépendants",
+    "shortLabel": "UDI"
+  },
+  {
+    "id" : 5,
+    "label": "Mouvement Démocrate",
+    "shortLabel": "Modem"
+  },
+  {
+    "id" : 6,
+    "label": "Europe Ecologie Les Verts",
+    "shortLabel": "EELV"
+  }
+]

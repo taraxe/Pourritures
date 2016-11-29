@@ -12,19 +12,23 @@ const initialState = {
 
 const candidatesReducer = handleActions({
     [Actions.LOAD_PERSON_DETAILS_FETCHING]: (state, action) => {
-        console.log(action);
         return Object.assign({}, state, {
             isFetching: true
         });
     },
     [Actions.LOAD_PERSON_DETAILS_FETCHED]: (state, action) => {
-        console.log(action);
-        const {data, slug} = action.payload;
+        const {data, _} = action.payload;
+
+        const perYer = d3.nest()
+            .key(d => d.year)
+            .sortKeys(d3.descending)
+            .entries(data);
+
         return Object.assign({}, state, {
             isFetching: false,
-            slug,
-            name: data[0].name || "",
-            cases: data
+            slug: data[0].slug,
+            name: data[0].name,
+            casesPerYear: perYer,
         });
     }
 }, initialState);

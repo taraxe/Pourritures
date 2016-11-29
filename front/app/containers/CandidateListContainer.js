@@ -1,7 +1,7 @@
 import React from 'react';
 import store from '../store/configureStore';
 import CandidateList from '../components/CandidateList';
-import { fetchCandidates } from '../actions';
+import { fetchCandidates } from '../actions/internal';
 import { connect } from 'react-redux';
 
 class CandidateListContainer extends React.Component {

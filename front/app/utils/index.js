@@ -1,5 +1,6 @@
+import isString from 'lodash/isString';
 
-const slugify = (name) =>
+export const slugify = (name) =>
     name.toLowerCase()
         .replace(/[àáâãäåÀÁÂÃÄÅ]/g,"a") // replace special a
         .replace(/[èéêëēėÈÉÊË]/g, "e") // replace special e
@@ -9,6 +10,14 @@ const slugify = (name) =>
         .replace(/[\s_-]+/g, '-') // swap any length of whitespace, underscore, hyphen characters with a single -
         .replace(/^-+|-+$/g, ''); // remove leading, trailing -
 
+export const distinct = (value, index, self) =>
+    self.indexOf(value) === index;
 
+export const pluralize = (array, singular, plural) =>
+    array.length > 1 ? plural : singular;
 
-export default slugify;
+export const capitalize = (string) => {
+    if (isString(string)) return string.charAt(0).toUpperCase() + string.slice(1);
+};
+
+export default {slugify, distinct, pluralize, capitalize};

@@ -1,7 +1,7 @@
 import React from 'react';
 import store from '../store/configureStore';
 import GroupChart from '../components/GroupChart';
-import { fetchGroups } from '../actions';
+import { fetchGroups } from '../actions/internal';
 import { connect } from 'react-redux';
 
 class GroupChartContainer extends React.Component {

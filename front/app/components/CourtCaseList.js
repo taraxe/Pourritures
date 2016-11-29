@@ -1,9 +1,32 @@
 import React from 'react';
 import CourtCase  from './CourtCase';
+import {slugify} from '../utils';
+import take from 'lodash/take';
 
-const CourtCases = (props) =>
-        <div className="courtcasesList">
-            {props.data.map(c => <CourtCase key={c.name} data={c}/>)}
-        </div>;
+class CourtCaseList extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            expanded: false
+        }
 
-export default CourtCases
+    }
+
+    onClick(event) {
+        this.setState({expanded: true});
+    }
+
+    render() {
+        const toShow = this.state.expanded ? this.props.data : take(this.props.data, 6);
+        return (
+            <div>
+                <ul className="list-group">
+                    {toShow.map(c => <CourtCase key={slugify(c.name)} {...c}/>)}
+                </ul>
+                { !this.state.expanded ? <a onClick={ (e) => this.onClick(e) }>Plus d'affaires</a> : ''}
+            </div>
+        )
+    }
+}
+
+export default CourtCaseList;
