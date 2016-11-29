@@ -20,7 +20,7 @@ const personDetails = (props) => {
                             <h2>{key}</h2>
                             <ol className="unstyled">
                                 {values.map(({conviction, charges}, i) =>
-                                    <li key={"charge-" + key + "-" + i}>{capitalize(conviction)} pour {charges.join(", ")}</li>
+                                    <li key={"charge-" + key + "-" + i}>{capitalize(conviction.label)} pour {charges.join(", ")}</li>
                                 )}
                             </ol>
                         </li>
