@@ -17,7 +17,7 @@ class GroupChartContainer extends React.Component {
     if (this.props.isFetching){
       return <span>Loading</span>
     } else {
-      const data = this.props.type === 'cumulated' ? this.props.data.summed : this.props.data.grouped;
+      const data =  this.props.data[this.props.type];
       return <GroupChart data={data} />;
     }
   }

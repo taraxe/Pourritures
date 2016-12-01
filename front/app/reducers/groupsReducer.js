@@ -1,6 +1,8 @@
 import * as Actions from '../actions/constants';
 import {handleActions} from 'redux-actions';
 import * as d3 from "d3";
+import { PartyColors } from '../models/reference';
+
 
 const initialState = {
     isFetching : true,
@@ -21,7 +23,7 @@ const groupsReducer = handleActions({
             .key(d => d.year)
             .sortKeys(d3.ascending)
             .rollup( values => values.length)
-            .entries(raw);
+            .entries(raw.filter(d => d.year > 2000));
 
         const sum = (prev, curr) => {
             const last = prev.slice(-1)[0] || 0;
@@ -48,11 +50,12 @@ const groupsReducer = handleActions({
             .key(d => d.year)
             .sortKeys(d3.ascending)
             .rollup(function(values){
-                const filter = g => d => d.party.shortLabel === g;
+                const withParty = g => d => d.party.shortLabel === g;
                 return {
-                 ps: values.filter(filter("PS")).length,
-                 lr: values.filter(filter("UMP")).length,
-                 fn: values.filter(filter("FN")).length
+                 ps: values.filter(withParty("PS")).length,
+                 lr: values.filter(withParty("LR")).length,
+                 fn: values.filter(withParty("FN")).length,
+                 //udi: values.filter(withParty("UDI")).length
                 }
             })
             .entries(raw);
@@ -63,15 +66,12 @@ const groupsReducer = handleActions({
                 ['Année', ...perYer.map(e => e.key)],
                 ['PS', ...perYerPerGroup.map(e => e.value.ps)],
                 ['LR', ...perYerPerGroup.map(e => e.value.lr)],
+                //['UDI', ...perYerPerGroup.map(e => e.value.udi)],
                 ['FN', ...perYerPerGroup.map(e => e.value.fn)]
             ],
-            colors: {
-                FN: '#0000ff',
-                PS: '#ff0000',
-                LR: '#3695ff'
-            },
-            groups: [['FN', 'LR', 'PS']],
-            type: 'bar',
+            colors: PartyColors,
+            groups: [['FN', 'LR', 'PS'/*, 'UDI'*/]],
+            type: 'area-spline',
             axis : {
                 type: 'timeseries',
                 tick: {
@@ -80,11 +80,26 @@ const groupsReducer = handleActions({
             }
         };
 
+        const perGroup = d3.nest()
+            .key(d => d.party.shortLabel)
+            .rollup(values => values.length)
+            .entries(raw);
+
+        console.log(perGroup);
+
+        const splitted = {
+            columns : perGroup.map(g => [g.key, g.value]),
+            colors: PartyColors,
+            //groups: [['FN', 'LR', 'PS']],
+            type: 'donut'
+        };
+
         return Object.assign({}, state, {
             isFetching: false,
             data : {
                 summed,
-                grouped
+                splitted,
+                grouped,
             }
         });
     }

@@ -2,31 +2,37 @@
   {
     "id" : 1,
     "label": "Parti socialiste",
-    "shortLabel": "PS"
+    "shortLabel": "PS",
+    "color": "#ff0000"
   },
   {
     "id" : 2,
     "label": "Les Républicains",
-    "shortLabel": "LR"
+    "shortLabel": "LR",
+    "color": "#3695ff"
   },
   {
     "id" : 3,
     "label": "Front National",
-    "shortLabel": "FN"
+    "shortLabel": "FN",
+    "color": "#0000ff"
   },
   {
     "id" : 4,
     "label": "Union des Démocrates et Indépendants",
-    "shortLabel": "UDI"
+    "shortLabel": "UDI",
+    "color": "#4c317e"
   },
   {
     "id" : 5,
     "label": "Mouvement Démocrate",
-    "shortLabel": "Modem"
+    "shortLabel": "Modem",
+    "color": "#fa7100"
   },
   {
     "id" : 6,
     "label": "Europe Ecologie Les Verts",
-    "shortLabel": "EELV"
+    "shortLabel": "EELV",
+    "color": "#6cad00"
   }
 ]
