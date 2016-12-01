@@ -15,7 +15,9 @@ const candidate = (props) => {
     return (
         <div className="p-md m-t-md m-b-md" style={style}>
             <div className="text-center">
-                <img className="img-lg img-circle" style={imgStyle}/>
+                <Link to={"/ordures/" + props.slug}>
+                    <img className="img-lg img-circle" style={imgStyle}/>
+                </Link>
                 <span className="clear"/>
                 <Link to={"/ordures/" + props.slug}><h2>{props.name}</h2></Link>
                 <span>{props.party}</span>
