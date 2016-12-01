@@ -4,8 +4,12 @@ import * as d3 from "d3";
 
 const initialState = {
     isFetching : true,
-    name: '',
-    slug: '',
+    name: undefined,
+    slug: undefined,
+    nbMandats: undefined,
+    twitter: undefined,
+    email: undefined,
+    responsabilites: [],
     cases : []
 };
 
@@ -29,6 +33,17 @@ const candidatesReducer = handleActions({
             slug,
             name,
             casesPerYear: perYer,
+        });
+    },
+    [Actions.LOAD_DEPUTE_FETCHED]: (state, action) => {
+        const raw = action.payload;
+        const merged = raw.depute || raw.senateur;
+
+        return Object.assign({}, state, {
+            isFetching: false,
+            nbMandats: merged.nb_mandats,
+            twitter: merged.twitter,
+            responsabilites: merged.responsabilites
         });
     }
 }, initialState);
