@@ -9,7 +9,11 @@ class GroupChart extends React.Component {
 
   render() {
       return (
-          <C3Chart data={this.props.data}/>
+          <figure>
+              <figcaption className="text-center">{this.props.title}</figcaption>
+              <C3Chart data={this.props.data} padding={this.props.padding}/>
+          </figure>
+
       )
   }
 }

@@ -66,6 +66,7 @@ export const CourtCases = courtcases.map(c => {
     }).filter(c => c.pourritures.length > 0).sort((a,b) => b.pourritures.length > a.pourritures.length);
 
 export const PartyColors = d3.nest().key(d => d.shortLabel).rollup(values => values[0].color).object(parties);
+export const PartyList = parties.map(d => d.shortLabel);
 
-export default { Pourritures, Candidates, CourtCases, PartyColors }
+export default { Pourritures, Candidates, CourtCases, PartyColors, PartyList }
 

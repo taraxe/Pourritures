@@ -17,14 +17,14 @@ class GroupChartContainer extends React.Component {
     if (this.props.isFetching){
       return <span>Loading</span>
     } else {
-      const data =  this.props.data[this.props.type];
-      return <GroupChart data={data} />;
+      const data = this.props.charts[this.props.type];
+      return <GroupChart {...data}/>;
     }
   }
 }
 
 function mapStateToProps(state) {
-  return state.groupsNode;
+  return state.chartsNode;
 }
 
 export default connect(mapStateToProps)(GroupChartContainer);

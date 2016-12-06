@@ -48,9 +48,22 @@ export function fetchPersonDetails({slug}){
     return (dispatch) => {
         dispatch(personDetailsFetching({slug}));
         const match = Candidates.find(d  => d.slug === slug);
-        console.log(match);
         (match ? Promise.resolve(match) : Promise.reject())
             .then(response => dispatch(personDetailsFetched(response)))
             .catch(err => dispatch(personDetailsFetched(new Error(JSON.stringify(err)))));
     };
 }
+
+const statsFetched = createAction(Action.LOAD_STATS_FETCHED);
+const statsFetching = createAction(Action.LOAD_STATS_FETCHING);
+
+export function fetchStats(){
+    return (dispatch) => {
+        dispatch(statsFetching());
+        Promise.resolve(Pourritures)
+            .then(response => dispatch(statsFetched(response)))
+            .catch(err => dispatch(personDetailsFetched(new Error(JSON.stringify(err)))));
+    };
+}
+
+
