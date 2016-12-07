@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router';
+import { pluralize} from '../utils';
 
 const candidate = (props) => {
     const style = {
@@ -13,14 +14,17 @@ const candidate = (props) => {
     };
 
     return (
-        <div className="p-md m-t-md m-b-md" style={style}>
+        <div className="p-md m-l-md m-r-md m-t-md m-b-md border-left-right border-top-bottom" style={style}>
             <div className="text-center">
                 <Link to={"/ordures/" + props.slug}>
-                    <img className="img-lg img-circle" style={imgStyle}/>
+                    <img className="img-lg img-circle m-b-sm" style={imgStyle}/>
                 </Link>
                 <span className="clear"/>
-                <Link to={"/ordures/" + props.slug}><h2>{props.name}</h2></Link>
-                <span>{props.party}</span>
+                <small>{props.party}</small>
+                <Link to={"/ordures/" + props.slug}>
+                    <h2 className="m-t-none">{props.name}</h2>
+                    {props.fileCount < 1 ? "": <p className="text-danger">{props.fileCount} {pluralize(props.fileCount, "dossier", "dossiers")},<br/>{props.convictedCount} {pluralize(props.convictedCount, "condamnation", "condamnations")}</p>}
+                </Link>
             </div>
         </div>
     );

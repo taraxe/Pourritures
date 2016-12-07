@@ -34,5 +34,41 @@
     "label": "Europe Ecologie Les Verts",
     "shortLabel": "EELV",
     "color": "#6cad00"
+  },
+  {
+    "id" : 7,
+    "label": "Lutte Ouvrière",
+    "shortLabel": "FO",
+    "color": "#9A0000"
+  },
+  {
+    "id" : 8,
+    "label": "En marche !",
+    "shortLabel": "EM",
+    "color": "#FFFFFF"
+  },
+  {
+    "id" : 9,
+    "label": "Nouveau Parti Anticapitaliste",
+    "shortLabel": "NPA",
+    "color": "#000000"
+  },
+  {
+    "id" : 10,
+    "label": "Solidarité et Progrès",
+    "shortLabel": "S&P",
+    "color": "#FFCC04"
+  },
+  {
+    "id" : 11,
+    "label": "Debout la France",
+    "shortLabel": "S&P",
+    "color": "#613787"
+  },
+  {
+    "id" : 12,
+    "label": "Front de Gauche",
+    "shortLabel": "FG",
+    "color": "#B50000"
   }
 ]

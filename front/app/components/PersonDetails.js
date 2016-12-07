@@ -14,7 +14,8 @@ const personDetails = (props) => {
             <div className='row wrapper wrapper-content'>
                 <img className="img-lg img-circle" style={style}/>
                 <h1 className="m-b-lg">{props.name}</h1>
-                <strong>{props.nbMandats} mandats</strong>
+
+                <h2>Affaires</h2>
                 <ol className="unstyled">
                     {props.casesPerYear.map(({key, values}, i) =>
                         <li key={"case-" + key + "-" + i}>
@@ -33,6 +34,7 @@ const personDetails = (props) => {
                 </div>) : ""}
             </div>
             <div className="row wrapper wrapper-content">
+                <h2>Les mandats</h2>
                 <ol>
                     {props.responsabilites.map(({responsabilite},i) =>
                         <li key={"resp-"+i}>{capitalize(responsabilite.organisme)} : {capitalize(responsabilite.fonction)}</li>
