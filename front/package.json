@@ -37,6 +37,7 @@
     "lodash": "^4.17.2",
     "react": "^15.3.2",
     "react-c3js": "^0.1.9",
+    "react-document-title": "^2.0.2",
     "react-dom": "^15.3.2",
     "react-redux": "^4.4.5",
     "react-router": "^2.8.1",

@@ -3,14 +3,17 @@ import ChartContainer from '../containers/ChartContainer';
 import CandidateListContainer from '../containers/CandidateListContainer';
 import CourtCaseListContainer from '../containers/CourtCaseListContainer';
 import StatsContainer from '../containers/StatsContainer';
+import Intro from './Intro';
+import DocumentTitle from 'react-document-title';
 
 const Home = () => {
     return (
+        <DocumentTitle title={window.pourritures.title+' : Accueil'}>
         <div className='container'>
             <div className="row wrapper wrapper-content border-bottom">
                 <h1>Pendant les affaires, les affaires continuent</h1>
                 <div className="col-lg-12">
-                    <p>Lorem ipsum</p>
+                    <Intro/>
                 </div>
             </div>
             <div className="row wrapper wrapper-content">
@@ -38,6 +41,7 @@ const Home = () => {
                 </div>
             </div>
       </div>
+    </DocumentTitle>
     );
 };
 

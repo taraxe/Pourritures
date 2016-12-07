@@ -1,7 +1,9 @@
 import React from 'react';
 import ContributorsContainer from '../containers/ContributorsContainer'
+import DocumentTitle from 'react-document-title';
 
 const about = (props) =>
+    <DocumentTitle title={window.pourritures.title+' : A propos'}>
             <div className="container">
                     <div className="row">
                             <h1>Motivation</h1>
@@ -16,7 +18,8 @@ const about = (props) =>
                             <p>D'après <a href="//github.com/taraxe/Pourritures" target="_blank">Github</a></p>
                             <ContributorsContainer/>
                     </div>
-            </div>;
+            </div>
+    </DocumentTitle>;
 
 
 export default about
