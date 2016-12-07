@@ -23,7 +23,7 @@ const candidate = (props) => {
                 <small>{props.party}</small>
                 <Link to={"/ordures/" + props.slug}>
                     <h2 className="m-t-none">{props.name}</h2>
-                    {props.fileCount < 1 ? "": <p className="text-danger">{props.fileCount} {pluralize(props.fileCount, "dossier", "dossiers")},<br/>{props.convictedCount} {pluralize(props.convictedCount, "condamnation", "condamnations")}</p>}
+                    {props.fileCount < 1 ? "": <p className="text-danger">{props.fileCount} {pluralize(props.fileCount, "affaire", "affaires")},<br/>{props.convictedCount} {pluralize(props.convictedCount, "condamnation", "condamnations")}</p>}
                 </Link>
             </div>
         </div>

@@ -17,7 +17,7 @@ class StatsContainer extends React.Component {
     if (this.props.isFetching){
       return <span>Loading</span>
     } else {
-      return <Stats {...this.props}/>;
+      return <Stats {...this.props.data}/>;
     }
   }
 }
