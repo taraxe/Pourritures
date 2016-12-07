@@ -27,7 +27,7 @@ const statsReducer = handleActions({
             totalElected,
             totalFiles,
             totalConvicted,
-            avConvictedByElected: (totalElected/totalFiles).toFixed(2)
+            avConvictedByElected: (totalFiles/totalElected).toFixed(2)
         };
 
         console.log(stats);
