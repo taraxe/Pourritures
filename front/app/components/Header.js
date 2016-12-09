@@ -61,13 +61,13 @@ const header = (props) =>
                         </ul>
                     </li>*/}
                 </ul>
-                <ul className='nav navbar-top-links navbar-right'>
+                {/*<ul className='nav navbar-top-links navbar-right'>
                     <li>
                         <a href='login.html'>
                             <i className='fa fa-sign-out'></i> Log out
                         </a>
                     </li>
-                </ul>
+                </ul>*/}
             </div>
         </nav>
     </div>;

@@ -6,6 +6,7 @@ const initialState = {
     isFetching : true,
     name: undefined,
     slug: undefined,
+    image: undefined,
     nbMandats: undefined,
     twitter: undefined,
     email: undefined,
@@ -21,8 +22,8 @@ const candidatesReducer = handleActions({
         });
     },
     [Actions.LOAD_PERSON_DETAILS_FETCHED]: (state, action) => {
-        const {pourritures, slug, name} = action.payload;
-        //console.log(action.payload);
+        const {pourritures, slug, name, image} = action.payload;
+
         const perYer = d3.nest()
             .key(d => d.year)
             .sortKeys(d3.descending)
@@ -32,6 +33,7 @@ const candidatesReducer = handleActions({
             isFetching: false,
             slug,
             name,
+            image,
             casesPerYear: perYer,
         });
     },
@@ -39,11 +41,19 @@ const candidatesReducer = handleActions({
         const raw = action.payload;
         const merged = raw.depute || raw.senateur;
 
+        console.log(raw);
+
+        const nbMandats = merged ? merged.nb_mandats : 0;
+        const twitter = merged ? merged.twitter : undefined;
+        const img = merged ? `http://www.nosdeputes.fr/depute/photo/${merged.slug}/250` : undefined;
+        const responsabilites = merged ? merged.responsabilites : [];
+
         return Object.assign({}, state, {
             isFetching: false,
-            nbMandats: merged.nb_mandats,
-            twitter: merged.twitter,
-            responsabilites: merged.responsabilites
+            nbMandats,
+            twitter,
+            image: state.image || img,
+            responsabilites
         });
     }
 }, initialState);

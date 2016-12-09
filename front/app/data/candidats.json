@@ -1,78 +1,97 @@
 [
   {
     "name": "Nicolas Sarkozy",
-    "party":"Les Républicains"
+    "party":"Les Républicains",
+    "image": "/images/assets/candidates/nicolas-sarkozy.jpg"
   },
   {
     "name": "Jean-François Copé",
-    "party":"Les Républicains"
+    "party":"Les Républicains",
+    "image": "/images/assets/candidates/jean-francois-cope.jpg"
   },
   {
     "name": "François Fillon",
-    "party":"Les Républicains"
+    "party":"Les Républicains",
+    "image": "/images/assets/candidates/francois-fillon.jpg"
   },
   {
     "name": "Alain Juppé",
-    "party":"Les Républicains"
+    "party":"Les Républicains",
+    "image": "/images/assets/candidates/alain-juppe.jpg"
   },
   {
     "name": "Nathalie Kosciusko-Morizet",
-    "party":"Les Républicains"
+    "party":"Les Républicains",
+    "image": "/images/assets/candidates/nathalie-kosciusko-morizet.jpg"
   },
   {
     "name": "Bruno Le Maire",
-    "party":"Les Républicains"
+    "party":"Les Républicains",
+    "image": "/images/assets/candidates/bruno-le-maire.jpg"
   },
   {
     "name": "Jean-Frédéric Poisson",
-    "party":"Les Républicains"
+    "party":"Les Républicains",
+    "image": "/images/assets/candidates/jean-frederic-poisson.jpg"
   },
   {
     "name": "Nicolas Dupont-Aignan",
-    "party": "Debout la France"
+    "party": "Debout la France",
+    "image": "/images/assets/candidates/nicolas-dupont-aignan.jpg"
   },
   {
     "name": "Marine Le Pen",
-    "party": "Front national"
+    "party": "Front national",
+    "image": "/images/assets/candidates/marine-le-pen.jpg"
   },
   {
     "name": "Nathalie Arthaud",
-    "party": "Lutte ouvrière"
+    "party": "Lutte ouvrière",
+    "image": "/images/assets/candidates/nathalie-arthaud.png"
   },
   {
     "name": "Philippe Poutou",
-    "party": "Nouveau Parti anticapitaliste"
+    "party": "Nouveau Parti anticapitaliste",
+    "image": "/images/assets/candidates/philippe-poutou.jpg"
   },
   {
     "name": "Jean-Luc Mélenchon",
-    "party": "Front de gauche"
+    "party": "Front de gauche",
+    "image": "/images/assets/candidates/jean-luc-melenchon.jpg"
   },
   {
     "name": "Benoît Hamon",
-    "party": "Parti socialiste"
+    "party": "Parti socialiste",
+    "image": "/images/assets/candidates/benoit-hamon.jpg"
   },
   {
     "name": "Arnaud Montebourg",
-    "party": "Parti socialiste"
+    "party": "Parti socialiste",
+    "image": "/images/assets/candidates/arnaud-montebourg.png"
   },
   {
     "name": "François Hollande",
-    "party": "Parti socialiste"
+    "party": "Parti socialiste",
+    "image": "/images/assets/candidates/francois-hollande.jpg"
   },
   {
     "name": "Manuel Valls",
-    "party": "Parti socialiste"
+    "party": "Parti socialiste",
+    "image": "/images/assets/candidates/manuel-valls.JPG"
   },
   {
     "name": "Emmanuel Macron",
-    "party": "En marche !"
+    "party": "En marche !",
+    "image": "/images/assets/candidates/emmanuel-macron.jpg"
   },
   {
     "name": "François Bayrou",
-    "party": "Mouvement démocrate"
+    "party": "Mouvement démocrate",
+    "image": "/images/assets/candidates/francois-bayrou.jpg"
   },
   {
     "name": "Jacques Cheminade",
-    "party": "Solidarité et progrès"
+    "party": "Solidarité et progrès",
+    "image": "/images/assets/candidates/jacques-cheminade.jpg"
   }
 ]

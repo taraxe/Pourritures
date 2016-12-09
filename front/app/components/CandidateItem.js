@@ -8,7 +8,7 @@ const candidate = (props) => {
     };
 
     const imgStyle = {
-        backgroundImage: "url(/images/assets/candidates/" + props.slug + ".jpg)",
+        backgroundImage: "url("+props.image+")",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat"
     };

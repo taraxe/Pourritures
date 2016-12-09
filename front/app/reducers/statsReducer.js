@@ -30,7 +30,6 @@ const statsReducer = handleActions({
             avConvictedByElected: (totalFiles/totalElected).toFixed(2)
         };
 
-        console.log(stats);
         return Object.assign({}, state, {
             isFetching: false,
             data: stats
