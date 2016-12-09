@@ -1,38 +1,8 @@
 [
   {
-    "name": "Nicolas Sarkozy",
-    "party":"Les Républicains",
-    "image": "/images/assets/candidates/nicolas-sarkozy.jpg"
-  },
-  {
-    "name": "Jean-François Copé",
-    "party":"Les Républicains",
-    "image": "/images/assets/candidates/jean-francois-cope.jpg"
-  },
-  {
     "name": "François Fillon",
     "party":"Les Républicains",
     "image": "/images/assets/candidates/francois-fillon.jpg"
-  },
-  {
-    "name": "Alain Juppé",
-    "party":"Les Républicains",
-    "image": "/images/assets/candidates/alain-juppe.jpg"
-  },
-  {
-    "name": "Nathalie Kosciusko-Morizet",
-    "party":"Les Républicains",
-    "image": "/images/assets/candidates/nathalie-kosciusko-morizet.jpg"
-  },
-  {
-    "name": "Bruno Le Maire",
-    "party":"Les Républicains",
-    "image": "/images/assets/candidates/bruno-le-maire.jpg"
-  },
-  {
-    "name": "Jean-Frédéric Poisson",
-    "party":"Les Républicains",
-    "image": "/images/assets/candidates/jean-frederic-poisson.jpg"
   },
   {
     "name": "Nicolas Dupont-Aignan",
@@ -70,11 +40,6 @@
     "image": "/images/assets/candidates/arnaud-montebourg.png"
   },
   {
-    "name": "François Hollande",
-    "party": "Parti socialiste",
-    "image": "/images/assets/candidates/francois-hollande.jpg"
-  },
-  {
     "name": "Manuel Valls",
     "party": "Parti socialiste",
     "image": "/images/assets/candidates/manuel-valls.JPG"
@@ -93,5 +58,40 @@
     "name": "Jacques Cheminade",
     "party": "Solidarité et progrès",
     "image": "/images/assets/candidates/jacques-cheminade.jpg"
+  },
+  {
+    "name": "Yannick Jadot",
+    "party": "EELV",
+    "image": "/images/assets/candidates/.jpg"
+  },
+  {
+    "name": "Antoine Waechter",
+    "party": "Mouvement écologiste indépendant",
+    "image": "/images/assets/candidates/.jpg"
+  },
+  {
+    "name": "Sylvia Pinel",
+    "party": "Parti radical de gauche",
+    "image": "/images/assets/candidates/.jpg"
+  },
+  {
+    "name": "Jean Lassalle",
+    "party": "ex-MoDem",
+    "image": "/images/assets/candidates/.jpg"
+  },
+  {
+    "name": "Rama Yade",
+    "party": "ex-UDI",
+    "image": "/images/assets/candidates/.jpg"
+  },
+  {
+    "name": "Henri Guaino",
+    "party": "Les Républicains",
+    "image": "/images/assets/candidates/.jpg"
+  },
+  {
+    "name": "Michèle Alliot-Marie",
+    "party": "Les Républicains",
+    "image": "/images/assets/candidates/.jpg"
   }
 ]
