@@ -8,8 +8,16 @@ import Impulse from '../components/Impulse';
 import Main from '../components/Main';
 import Home from '../components/Home';
 
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-32862303-4');
+
+function logPageView() {
+  ReactGA.set({ page: window.location.pathname });
+  ReactGA.pageview(window.location.pathname);
+}
+
 const Routes = (
-  <Router history={browserHistory} onUpdate={() => window.scrollTo(0, 0)}>
+  <Router history={browserHistory} onUpdate={() => {window.scrollTo(0, 0); logPageView();}}>
     <Route path='/' component={Main}>
         <IndexRoute component={Home}/>
         <Route path='ordures/:slug' header='Ordure' component={PersonDetailsContainer}/>

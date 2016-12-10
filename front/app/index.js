@@ -17,7 +17,7 @@ import './../node_modules/bootstrap/dist/css/bootstrap.min.css'
 const Router = (props) => routes;
 render(
 		<Provider store={store}>
-			<Router/>
+			<Router />
 		</Provider>,
 	document.getElementById('app')
 );
