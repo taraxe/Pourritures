@@ -1,13 +1,23 @@
 import React from 'react';
 import DocumentTitle from 'react-document-title';
 
+class IframeComponent extends React.Component {
+
+  render(){
+    var Iframe=this.props.iframe;
+
+    return(
+      <div>
+       <Iframe src={this.props.src} height={this.props.height} width={this.props.width} frameBorder={this.props.frameBorder} marginHeight={this.props.marginHeight} marginWidth={this.props.marginWidth} />
+      </div>
+    )
+  }
+};
 
 const Contribute = (props) =>
     <DocumentTitle title={window.pourritures.title+' : Contribuer'}>
             <div className="container">
-                    <div className="row">
-                            {/*<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>*/}
-                    </div>
+              <IframeComponent iframe='iframe' src="https://docs.google.com/forms/d/e/1FAIpQLSeEHzRIn4yi93uKvZbauZXRtVlptO3sgfnC-j29XcHNBiXseA/viewform?embedded=true" height="600px" width="100%" frameBorder="0" marginHeight="0" marginWidth="0" />
             </div>
     </DocumentTitle>;
 
