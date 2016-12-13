@@ -62,36 +62,36 @@
   {
     "name": "Yannick Jadot",
     "party": "EELV",
-    "image": "/images/assets/candidates/.jpg"
+    "image": "/images/assets/candidates/yannick-jadot.jpg"
   },
   {
     "name": "Antoine Waechter",
     "party": "Mouvement écologiste indépendant",
-    "image": "/images/assets/candidates/.jpg"
+    "image": "/images/assets/candidates/antoine-waechter.jpg"
   },
   {
     "name": "Sylvia Pinel",
     "party": "Parti radical de gauche",
-    "image": "/images/assets/candidates/.jpg"
+    "image": "/images/assets/candidates/sylvia-pinel.jpg"
   },
   {
     "name": "Jean Lassalle",
     "party": "ex-MoDem",
-    "image": "/images/assets/candidates/.jpg"
+    "image": "/images/assets/candidates/jean-lassalle.jpg"
   },
   {
     "name": "Rama Yade",
     "party": "ex-UDI",
-    "image": "/images/assets/candidates/.jpg"
+    "image": "/images/assets/candidates/rama-yade.jpg"
   },
   {
     "name": "Henri Guaino",
     "party": "Les Républicains",
-    "image": "/images/assets/candidates/.jpg"
+    "image": "/images/assets/candidates/henri-guaino.jpg"
   },
   {
     "name": "Michèle Alliot-Marie",
     "party": "Les Républicains",
-    "image": "/images/assets/candidates/.jpg"
+    "image": "/images/assets/candidates/michele-alliot-marie.jpg"
   }
 ]
